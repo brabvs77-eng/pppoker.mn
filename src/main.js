@@ -1,58 +1,187 @@
-const navbar = document.getElementById('navbar')
-const navToggle = document.getElementById('navToggle')
-const navLinks = document.getElementById('navLinks')
+import { translations, getLang, setLang, t } from './i18n.js'
 
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 50)
-})
+function getNestedValue(obj, path) {
+  return path.split('.').reduce((o, k) => o && o[k], obj)
+}
 
-navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active')
-})
+function applyTranslations(lang) {
+  const tr = t(lang)
+  document.documentElement.lang = lang
+  document.title = tr.meta.title
 
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('active')
+  const metaDesc = document.querySelector('meta[name="description"]')
+  if (metaDesc) metaDesc.content = tr.meta.description
+  const metaKw = document.querySelector('meta[name="keywords"]')
+  if (metaKw) metaKw.content = tr.meta.keywords
+
+  const ogTitle = document.querySelector('meta[property="og:title"]')
+  if (ogTitle) ogTitle.content = tr.meta.ogTitle
+  const ogDesc = document.querySelector('meta[property="og:description"]')
+  if (ogDesc) ogDesc.content = tr.meta.ogDesc
+  const twTitle = document.querySelector('meta[name="twitter:title"]')
+  if (twTitle) twTitle.content = tr.meta.ogTitle
+  const twDesc = document.querySelector('meta[name="twitter:description"]')
+  if (twDesc) twDesc.content = tr.meta.ogDesc
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n')
+    const val = getNestedValue(tr, key)
+    if (val) el.textContent = val
   })
-})
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', e => {
-    const target = document.querySelector(anchor.getAttribute('href'))
-    if (!target) return
-    e.preventDefault()
-    const offset = 80
-    const y = target.getBoundingClientRect().top + window.pageYOffset - offset
-    window.scrollTo({ top: y, behavior: 'smooth' })
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.getAttribute('data-i18n-html')
+    const val = getNestedValue(tr, key)
+    if (val) el.innerHTML = val
   })
-})
 
-const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible')
+  const langLabel = document.getElementById('langLabel')
+  if (langLabel) langLabel.textContent = tr.langName
+}
+
+function initLangSwitcher() {
+  const btn = document.getElementById('langBtn')
+  const menu = document.getElementById('langMenu')
+
+  btn.addEventListener('click', () => {
+    const open = menu.classList.toggle('open')
+    btn.setAttribute('aria-expanded', open)
+  })
+
+  menu.querySelectorAll('button[data-lang]').forEach(b => {
+    b.addEventListener('click', () => {
+      const lang = b.getAttribute('data-lang')
+      setLang(lang)
+      applyTranslations(lang)
+      menu.classList.remove('open')
+      btn.setAttribute('aria-expanded', 'false')
+    })
+  })
+
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.lang-switcher')) {
+      menu.classList.remove('open')
+      btn.setAttribute('aria-expanded', 'false')
     }
   })
-}, observerOptions)
+}
 
-document.querySelectorAll(
-  '.game-card, .feature-card, .academy-card, .movie-card, .step, .faq-item, .table-item'
-).forEach(el => {
-  el.classList.add('fade-up')
-  observer.observe(el)
+function initNavbar() {
+  const navbar = document.getElementById('navbar')
+  const navToggle = document.getElementById('navToggle')
+  const navLinks = document.getElementById('navLinks')
+
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 50)
+  })
+
+  navToggle.addEventListener('click', () => {
+    const active = navLinks.classList.toggle('active')
+    navToggle.setAttribute('aria-expanded', active)
+  })
+
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active')
+      navToggle.setAttribute('aria-expanded', 'false')
+    })
+  })
+}
+
+function initSmoothScroll() {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', e => {
+      const target = document.querySelector(anchor.getAttribute('href'))
+      if (!target) return
+      e.preventDefault()
+      const y = target.getBoundingClientRect().top + window.pageYOffset - 80
+      window.scrollTo({ top: y, behavior: 'smooth' })
+    })
+  })
+}
+
+function initSlider() {
+  const track = document.getElementById('sliderTrack')
+  const dotsContainer = document.getElementById('sliderDots')
+  const prevBtn = document.getElementById('sliderPrev')
+  const nextBtn = document.getElementById('sliderNext')
+  if (!track) return
+
+  const slides = track.querySelectorAll('.slide')
+  const total = slides.length
+  let current = 0
+  let autoTimer
+
+  for (let i = 0; i < total; i++) {
+    const dot = document.createElement('button')
+    dot.classList.add('slider-dot')
+    dot.setAttribute('role', 'tab')
+    dot.setAttribute('aria-label', `Slide ${i + 1}`)
+    if (i === 0) dot.classList.add('active')
+    dot.addEventListener('click', () => goTo(i))
+    dotsContainer.appendChild(dot)
+  }
+
+  function goTo(index) {
+    current = ((index % total) + total) % total
+    track.style.transform = `translateX(-${current * 100}%)`
+    dotsContainer.querySelectorAll('.slider-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current)
+    })
+  }
+
+  prevBtn.addEventListener('click', () => { goTo(current - 1); resetAuto() })
+  nextBtn.addEventListener('click', () => { goTo(current + 1); resetAuto() })
+
+  function resetAuto() {
+    clearInterval(autoTimer)
+    autoTimer = setInterval(() => goTo(current + 1), 5000)
+  }
+
+  resetAuto()
+
+  let startX = 0
+  track.addEventListener('touchstart', e => { startX = e.touches[0].clientX }, { passive: true })
+  track.addEventListener('touchend', e => {
+    const diff = startX - e.changedTouches[0].clientX
+    if (Math.abs(diff) > 50) {
+      diff > 0 ? goTo(current + 1) : goTo(current - 1)
+      resetAuto()
+    }
+  }, { passive: true })
+}
+
+function initAnimations() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible')
+    })
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' })
+
+  document.querySelectorAll(
+    '.game-card, .feature-card, .academy-card, .movie-card, .step, .faq-item, .table-item, .slide'
+  ).forEach(el => {
+    el.classList.add('fade-up')
+    observer.observe(el)
+  })
+}
+
+function initFromURL() {
+  const params = new URLSearchParams(window.location.search)
+  const urlLang = params.get('lang')
+  if (urlLang && translations[urlLang]) {
+    setLang(urlLang)
+    return urlLang
+  }
+  return getLang()
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const lang = initFromURL()
+  applyTranslations(lang)
+  initLangSwitcher()
+  initNavbar()
+  initSmoothScroll()
+  initSlider()
+  initAnimations()
 })
-
-const style = document.createElement('style')
-style.textContent = `
-  .fade-up {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  .fade-up.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`
-document.head.appendChild(style)

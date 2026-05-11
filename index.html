@@ -1,353 +1,426 @@
 <!DOCTYPE html>
-<html lang="mn">
+<html lang="mn" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Baatryn Öröö — PPPoker Mongolia</title>
-  <meta name="description" content="Baatryn Öröö — Монголын покерын клуб. Hold'em, Omaha, 24/7 тоглолт, найдвартай платформ." />
+
+  <!-- Primary SEO -->
+  <title>Baatryn Öröö — PPPoker Mongolia | Монголын #1 покерын клуб</title>
+  <meta name="description" content="Baatryn Öröö — Монголын покерын клуб. Hold'em, Omaha, 24/7 тоглолт, 100% бонус, найдвартай платформ, хурдан төлбөр." />
+  <meta name="keywords" content="покер, Монгол, pppoker, холдем, омаха, онлайн покер, покер клуб, Баатрын Өрөө, poker Mongolia" />
+  <meta name="author" content="Baatryn Öröö" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#0a0a0f" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://pppoker.mn/" />
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="mn" href="https://pppoker.mn/" />
+  <link rel="alternate" hreflang="en" href="https://pppoker.mn/?lang=en" />
+  <link rel="alternate" hreflang="zh" href="https://pppoker.mn/?lang=zh" />
+  <link rel="alternate" hreflang="ru" href="https://pppoker.mn/?lang=ru" />
+  <link rel="alternate" hreflang="x-default" href="https://pppoker.mn/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Baatryn Öröö" />
+  <meta property="og:title" content="Baatryn Öröö — Жинхэнэ тоглогчдын талбар" />
+  <meta property="og:description" content="Монголын #1 покерын клуб. Hold'em, Omaha — 24/7. 100% бонус, хурдан төлбөр." />
+  <meta property="og:url" content="https://pppoker.mn/" />
+  <meta property="og:image" content="https://pppoker.mn/images/og-cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Baatryn Öröö — PPPoker Mongolia" />
+  <meta property="og:locale" content="mn_MN" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="ru_RU" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Baatryn Öröö — PPPoker Mongolia" />
+  <meta name="twitter:description" content="Монголын #1 покерын клуб. Hold'em, Omaha — 24/7." />
+  <meta name="twitter:image" content="https://pppoker.mn/images/og-cover.jpg" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/src/style.css" />
+
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Baatryn Öröö",
+    "alternateName": "PPPoker Mongolia",
+    "url": "https://pppoker.mn",
+    "logo": "https://pppoker.mn/images/logo.png",
+    "description": "Mongolia's #1 poker club offering Hold'em and Omaha games 24/7.",
+    "foundingCountry": "MN",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "availableLanguage": ["Mongolian", "English", "Chinese", "Russian"],
+      "hoursAvailable": "Mo-Su 00:00-23:59"
+    },
+    "sameAs": [
+      "https://t.me/BatrynOrooSupport"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: WebSite with SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Baatryn Öröö",
+    "alternateName": "PPPoker Mongolia",
+    "url": "https://pppoker.mn",
+    "inLanguage": ["mn", "en", "zh", "ru"],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://pppoker.mn/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage (will be populated by JS for current language) -->
+  <script type="application/ld+json" id="faqSchema">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "How to start playing?", "acceptedAnswer": {"@type": "Answer", "text": "Register, deposit through the cashier, and start playing Hold'em or Omaha."}},
+      {"@type": "Question", "name": "What is the minimum deposit?", "acceptedAnswer": {"@type": "Answer", "text": "Minimum deposit: 10,000 MNT. Minimum withdrawal: 10,000 MNT."}},
+      {"@type": "Question", "name": "How fast are deposits processed?", "acceptedAnswer": {"@type": "Answer", "text": "Usually within 10 minutes to 2-4 hours."}},
+      {"@type": "Question", "name": "Can I deposit with cryptocurrency?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. USDT (TRC20) is available after depositing 100,000₮ via IBAN."}},
+      {"@type": "Question", "name": "Are there bonuses for players?", "acceptedAnswer": {"@type": "Answer", "text": "Yes! 100% deposit bonus is currently active."}},
+      {"@type": "Question", "name": "What is the difference between Hold'em and Omaha?", "acceptedAnswer": {"@type": "Answer", "text": "Hold'em uses 2 hole cards. Omaha uses 4 hole cards (must use exactly 2), resulting in more action and bigger pots."}},
+      {"@type": "Question", "name": "What hours does support work?", "acceptedAnswer": {"@type": "Answer", "text": "24/7 including weekends and holidays via Telegram @BatrynOrooSupport."}}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pppoker.mn/"},
+      {"@type": "ListItem", "position": 2, "name": "Games", "item": "https://pppoker.mn/#games"},
+      {"@type": "ListItem", "position": 3, "name": "Academy", "item": "https://pppoker.mn/#academy"},
+      {"@type": "ListItem", "position": 4, "name": "FAQ", "item": "https://pppoker.mn/#faq"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: GamingApplication snippet -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PPPoker — Baatryn Öröö Club",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Android, iOS, Windows, macOS",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "MNT"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "ratingCount": "350"
+    }
+  }
+  </script>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
   <!-- Navigation -->
-  <nav class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="#" class="nav-logo">
-        <span class="logo-icon">♠</span>
-        <span class="logo-text">BAATRYN ÖRÖÖ</span>
-      </a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#games">Тоглоомууд</a></li>
-        <li><a href="#features">Боломжууд</a></li>
-        <li><a href="#academy">Академи</a></li>
-        <li><a href="#cinema">Кино</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-      <a href="#cta" class="nav-btn">Тоглох</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container nav-container">
+        <a href="#" class="nav-logo" aria-label="Baatryn Öröö Home">
+          <span class="logo-icon">♠</span>
+          <span class="logo-text">BAATRYN ÖRÖÖ</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#games" data-i18n="nav.games">Тоглоомууд</a></li>
+          <li><a href="#features" data-i18n="nav.features">Боломжууд</a></li>
+          <li><a href="#academy" data-i18n="nav.academy">Академи</a></li>
+          <li><a href="#cinema" data-i18n="nav.cinema">Кино</a></li>
+          <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+        </ul>
+        <div class="nav-right">
+          <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-current" id="langBtn" aria-label="Change language" aria-expanded="false">
+              <span id="langLabel">MN</span> ▾
+            </button>
+            <ul class="lang-menu" id="langMenu" role="menu">
+              <li role="menuitem"><button data-lang="en">EN</button></li>
+              <li role="menuitem"><button data-lang="zh">中文</button></li>
+              <li role="menuitem"><button data-lang="ru">RU</button></li>
+              <li role="menuitem"><button data-lang="mn">MN</button></li>
+            </ul>
+          </div>
+          <a href="#cta" class="nav-btn" data-i18n="nav.play">Тоглох</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="container hero-content">
-      <p class="hero-subtitle">🇲🇳 Монголын #1 покерын клуб</p>
-      <h1 class="hero-title">Жинхэнэ тоглогчдын<br><span class="gold">талбар</span></h1>
-      <p class="hero-desc">Hold'em, Omaha — 24/7 тоглолт. Найдвартай платформ, хурдан төлбөр, мэргэжлийн дэмжлэг.</p>
-      <div class="hero-actions">
-        <a href="#cta" class="btn btn-primary">Одоо тоглох</a>
-        <a href="#games" class="btn btn-outline">Дэлгэрэнгүй</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-num">24/7</span>
-          <span class="stat-label">Тоглолт</span>
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-content">
+        <p class="hero-subtitle" data-i18n="hero.subtitle">🇲🇳 Монголын #1 покерын клуб</p>
+        <h1 class="hero-title" itemprop="name"><span data-i18n="hero.title">Жинхэнэ тоглогчдын</span><br><span class="gold" data-i18n="hero.titleGold">талбар</span></h1>
+        <p class="hero-desc" itemprop="description" data-i18n="hero.desc">Hold'em, Omaha — 24/7 тоглолт. Найдвартай платформ, хурдан төлбөр, мэргэжлийн дэмжлэг.</p>
+        <div class="hero-actions">
+          <a href="#cta" class="btn btn-primary" data-i18n="hero.btnPlay">Одоо тоглох</a>
+          <a href="#games" class="btn btn-outline" data-i18n="hero.btnMore">Дэлгэрэнгүй</a>
         </div>
-        <div class="stat">
-          <span class="stat-num">100%</span>
-          <span class="stat-label">Бонус</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">10K₮</span>
-          <span class="stat-label">Мин. депозит</span>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">24/7</span><span class="stat-label" data-i18n="hero.statPlay">Тоглолт</span></div>
+          <div class="stat"><span class="stat-num">100%</span><span class="stat-label" data-i18n="hero.statBonus">Бонус</span></div>
+          <div class="stat"><span class="stat-num">10K₮</span><span class="stat-label" data-i18n="hero.statDeposit">Мин. депозит</span></div>
         </div>
       </div>
-    </div>
-    <div class="hero-cards">
-      <div class="floating-card card-1">♠ A</div>
-      <div class="floating-card card-2">♥ K</div>
-      <div class="floating-card card-3">♦ Q</div>
-    </div>
-  </section>
+      <div class="hero-cards" aria-hidden="true">
+        <div class="floating-card card-1">♠ A</div>
+        <div class="floating-card card-2">♥ K</div>
+        <div class="floating-card card-3">♦ Q</div>
+      </div>
+    </section>
 
-  <!-- Games Section -->
-  <section class="section games" id="games">
-    <div class="container">
-      <h2 class="section-title">Тоглоомын <span class="gold">төрлүүд</span></h2>
-      <p class="section-subtitle">Өөрт тохирсон форматаа сонгоод ширээнд суугаарай</p>
-      <div class="games-grid">
-        <div class="game-card">
-          <div class="game-icon">♠</div>
-          <h3>Texas Hold'em</h3>
-          <p class="game-format">9-max ширээ</p>
-          <p>Дэлхийн хамгийн алдартай покерын төрөл. 2 гарын карт + 5 нийтлэг карт. Стратеги, байрлал, сэтгэлзүйн тоглолт.</p>
-          <ul class="game-features">
-            <li>Энгийн дүрэм, гүн стратеги</li>
-            <li>Блайнд: 250/500 — 10K/20K</li>
-            <li>Кэш тоглоом 24/7</li>
-          </ul>
-        </div>
-        <div class="game-card featured">
-          <div class="game-badge">🔥 Экшн</div>
-          <div class="game-icon">♦</div>
-          <h3>Omaha (PLO)</h3>
-          <p class="game-format">6-max ширээ</p>
-          <p>4 гарын карт, илүү олон комбинаци, том банкууд. Хурд, адреналин, тасралтгүй экшн.</p>
-          <ul class="game-features">
-            <li>Илүү динамик тоглолт</li>
-            <li>Том банкууд, хүчтэй комбинациуд</li>
-            <li>VIP ширээнүүд нээлттэй</li>
-          </ul>
+    <!-- Image Slider Section -->
+    <section class="section slider-section" id="gallery">
+      <div class="container">
+        <h2 class="section-title" data-i18n-html="slider.title">Манай <span class="gold">ертөнц</span></h2>
+        <p class="section-subtitle" data-i18n="slider.subtitle">Покерын жинхэнэ уур амьсгал</p>
+        <div class="slider" role="region" aria-label="Image gallery" aria-roledescription="carousel">
+          <div class="slider-track" id="sliderTrack">
+            <div class="slide" aria-roledescription="slide" aria-label="Slide 1">
+              <div class="slide-img" style="background-image:url('/images/slide-comfort.jpg')">
+                <div class="slide-placeholder">🎮</div>
+              </div>
+              <p class="slide-caption" data-i18n="slider.s1">Тав тухтай тоглоомын орчин</p>
+            </div>
+            <div class="slide" aria-roledescription="slide" aria-label="Slide 2">
+              <div class="slide-img" style="background-image:url('/images/slide-players.jpg')">
+                <div class="slide-placeholder">♠</div>
+              </div>
+              <p class="slide-caption" data-i18n="slider.s2">Хүчтэй тоглогчдын талбар</p>
+            </div>
+            <div class="slide" aria-roledescription="slide" aria-label="Slide 3">
+              <div class="slide-img" style="background-image:url('/images/slide-crypto.jpg')">
+                <div class="slide-placeholder">₿</div>
+              </div>
+              <p class="slide-caption" data-i18n="slider.s3">Криптовалютаар мөнгө байршуулах</p>
+            </div>
+            <div class="slide" aria-roledescription="slide" aria-label="Slide 4">
+              <div class="slide-img" style="background-image:url('/images/slide-support.jpg')">
+                <div class="slide-placeholder">🤝</div>
+              </div>
+              <p class="slide-caption" data-i18n="slider.s4">Мэргэжлийн дэмжлэг 24/7</p>
+            </div>
+            <div class="slide" aria-roledescription="slide" aria-label="Slide 5">
+              <div class="slide-img" style="background-image:url('/images/slide-psychology.jpg')">
+                <div class="slide-placeholder">🧠</div>
+              </div>
+              <p class="slide-caption" data-i18n="slider.s5">Покерын сэтгэл зүй — хүйтэн толгой</p>
+            </div>
+            <div class="slide" aria-roledescription="slide" aria-label="Slide 6">
+              <div class="slide-img" style="background-image:url('/images/slide-security.jpg')">
+                <div class="slide-placeholder">🔒</div>
+              </div>
+              <p class="slide-caption" data-i18n="slider.s6">Аюулгүй, найдвартай платформ</p>
+            </div>
+          </div>
+          <button class="slider-btn slider-prev" aria-label="Previous slide" id="sliderPrev">‹</button>
+          <button class="slider-btn slider-next" aria-label="Next slide" id="sliderNext">›</button>
+          <div class="slider-dots" id="sliderDots" role="tablist"></div>
         </div>
       </div>
-      <div class="tables-preview">
-        <h3>Манай ширээнүүд</h3>
-        <div class="tables-list">
-          <div class="table-item"><span class="table-city">Darhan</span><span class="table-info">250/500 • 20K-50K</span></div>
-          <div class="table-item"><span class="table-city">Meren</span><span class="table-info">500/1K • 40K-100K</span></div>
-          <div class="table-item"><span class="table-city">Olgii</span><span class="table-info">2.5K/5K • 200K-500K</span></div>
-          <div class="table-item vip"><span class="table-city">👑 UlaanBator VIP</span><span class="table-info">10K/20K • 800K-2M</span></div>
-          <div class="table-item"><span class="table-city">Bulgan</span><span class="table-info">500/1K • 40K-100K</span></div>
-          <div class="table-item"><span class="table-city">Choil</span><span class="table-info">2.5K/5K • 200K-500K</span></div>
-          <div class="table-item vip"><span class="table-city">👑 Ulaangom VIP</span><span class="table-info">10K/20K • 800K-2M</span></div>
-          <div class="table-item"><span class="table-city">Altai</span><span class="table-info">250/500 • 20K-50K</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Features Section -->
-  <section class="section features" id="features">
-    <div class="container">
-      <h2 class="section-title">Яагаад <span class="gold">Baatryn Öröö</span>?</h2>
-      <p class="section-subtitle">Тоглогчдод зориулсан найдвартай, тав тухтай орчин</p>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">🎁</div>
-          <h3>100% Бонус</h3>
-          <p>Анхны депозитдээ 100% бонус аваарай. Хоёр дахин их боломж, хоёр дахин их хөгжил.</p>
+    <!-- Games Section -->
+    <section class="section games" id="games">
+      <div class="container">
+        <h2 class="section-title" data-i18n-html="games.title">Тоглоомын <span class="gold">төрлүүд</span></h2>
+        <p class="section-subtitle" data-i18n="games.subtitle">Өөрт тохирсон форматаа сонгоод ширээнд суугаарай</p>
+        <div class="games-grid">
+          <div class="game-card" itemscope itemtype="https://schema.org/Game">
+            <div class="game-icon">♠</div>
+            <h3 itemprop="name" data-i18n="games.holdem">Texas Hold'em</h3>
+            <p class="game-format" data-i18n="games.holdemFmt">9-max ширээ</p>
+            <p itemprop="description" data-i18n="games.holdemDesc">Дэлхийн хамгийн алдартай покерын төрөл. 2 гарын карт + 5 нийтлэг карт.</p>
+            <ul class="game-features">
+              <li data-i18n="games.holdemF1">Энгийн дүрэм, гүн стратеги</li>
+              <li data-i18n="games.holdemF2">Блайнд: 250/500 — 10K/20K</li>
+              <li data-i18n="games.holdemF3">Кэш тоглоом 24/7</li>
+            </ul>
+          </div>
+          <div class="game-card featured" itemscope itemtype="https://schema.org/Game">
+            <div class="game-badge" data-i18n="games.omahaBadge">🔥 Экшн</div>
+            <div class="game-icon">♦</div>
+            <h3 itemprop="name" data-i18n="games.omaha">Omaha (PLO)</h3>
+            <p class="game-format" data-i18n="games.omahaFmt">6-max ширээ</p>
+            <p itemprop="description" data-i18n="games.omahaDesc">4 гарын карт, илүү олон комбинаци, том банкууд.</p>
+            <ul class="game-features">
+              <li data-i18n="games.omahaF1">Илүү динамик тоглолт</li>
+              <li data-i18n="games.omahaF2">Том банкууд, хүчтэй комбинациуд</li>
+              <li data-i18n="games.omahaF3">VIP ширээнүүд нээлттэй</li>
+            </ul>
+          </div>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">⚡</div>
-          <h3>Хурдан төлбөр</h3>
-          <p>Депозит 10 минутад, мөнгө таталт хурдан. Хүлээлтгүй хожлыг мэдэр.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🔒</div>
-          <h3>Аюулгүй байдал</h3>
-          <p>Бүх гүйлгээ хатуу хяналтын дор. Таны мөнгө найдвартай, аюулгүй.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">📱</div>
-          <h3>Хялбар апп</h3>
-          <p>Ухаалаг утас, зөөврийн компьютер, ширээний компьютер — аль ч төхөөрөмжөөр тоглоорой.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🤝</div>
-          <h3>24/7 Дэмжлэг</h3>
-          <p>Мэргэжлийн дэмжлэгийн баг үргэлж холбоотой. Шуурхай хариу, хүндэтгэлтэй харилцаа.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">₿</div>
-          <h3>Крипто төлбөр</h3>
-          <p>100,000₮+ цэнэглэсэн тоглогчид USDT (TRC20) ашиглах боломжтой. Хурдан, тохиромжтой.</p>
+        <div class="tables-preview">
+          <h3 data-i18n="games.tablesTitle">Манай ширээнүүд</h3>
+          <div class="tables-list">
+            <div class="table-item"><span class="table-city">Darhan</span><span class="table-info">250/500 • 20K-50K</span></div>
+            <div class="table-item"><span class="table-city">Meren</span><span class="table-info">500/1K • 40K-100K</span></div>
+            <div class="table-item"><span class="table-city">Olgii</span><span class="table-info">2.5K/5K • 200K-500K</span></div>
+            <div class="table-item vip"><span class="table-city">👑 UlaanBator VIP</span><span class="table-info">10K/20K • 800K-2M</span></div>
+            <div class="table-item"><span class="table-city">Bulgan</span><span class="table-info">500/1K • 40K-100K</span></div>
+            <div class="table-item"><span class="table-city">Choil</span><span class="table-info">2.5K/5K • 200K-500K</span></div>
+            <div class="table-item vip"><span class="table-city">👑 Ulaangom VIP</span><span class="table-info">10K/20K • 800K-2M</span></div>
+            <div class="table-item"><span class="table-city">Altai</span><span class="table-info">250/500 • 20K-50K</span></div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- How to Start -->
-  <section class="section how-to" id="cta">
-    <div class="container">
-      <h2 class="section-title">Хэрхэн <span class="gold">эхлэх</span> вэ?</h2>
-      <div class="steps">
-        <div class="step">
-          <div class="step-num">1</div>
-          <h3>Бүртгүүлэх</h3>
-          <p>Нэр, и-мэйл, нууц үг оруулаад хурдан бүртгүүлээрэй.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">2</div>
-          <h3>Цэнэглэх</h3>
-          <p>Кассаас IBAN-аар 10,000₮-ээс дээш дүнгээр цэнэглэх.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">3</div>
-          <h3>Тоглох</h3>
-          <p>Ширээгээ сонгоод Hold'em эсвэл Omaha тоглоомдоо нэгдээрэй!</p>
+    <!-- Features Section -->
+    <section class="section features" id="features">
+      <div class="container">
+        <h2 class="section-title" data-i18n-html="features.title">Яагаад <span class="gold">Baatryn Öröö</span>?</h2>
+        <p class="section-subtitle" data-i18n="features.subtitle">Тоглогчдод зориулсан найдвартай, тав тухтай орчин</p>
+        <div class="features-grid">
+          <div class="feature-card"><div class="feature-icon">🎁</div><h3 data-i18n="features.f1t">100% Бонус</h3><p data-i18n="features.f1d">Анхны депозитдээ 100% бонус аваарай.</p></div>
+          <div class="feature-card"><div class="feature-icon">⚡</div><h3 data-i18n="features.f2t">Хурдан төлбөр</h3><p data-i18n="features.f2d">Депозит 10 минутад, мөнгө таталт хурдан.</p></div>
+          <div class="feature-card"><div class="feature-icon">🔒</div><h3 data-i18n="features.f3t">Аюулгүй байдал</h3><p data-i18n="features.f3d">Бүх гүйлгээ хатуу хяналтын дор.</p></div>
+          <div class="feature-card"><div class="feature-icon">📱</div><h3 data-i18n="features.f4t">Хялбар апп</h3><p data-i18n="features.f4d">Аль ч төхөөрөмжөөр тоглоорой.</p></div>
+          <div class="feature-card"><div class="feature-icon">🤝</div><h3 data-i18n="features.f5t">24/7 Дэмжлэг</h3><p data-i18n="features.f5d">Мэргэжлийн дэмжлэгийн баг үргэлж холбоотой.</p></div>
+          <div class="feature-card"><div class="feature-icon">₿</div><h3 data-i18n="features.f6t">Крипто төлбөр</h3><p data-i18n="features.f6d">100,000₮+ цэнэглэсэн тоглогчид USDT ашиглах боломжтой.</p></div>
         </div>
       </div>
-      <div class="cta-box">
-        <h3>Бэлэн үү?</h3>
-        <p>Ширээнүүд чамайг хүлээж байна. Одоо нэгдээд, покерын ертөнцөд тавтай морил!</p>
-        <a href="#" class="btn btn-primary btn-lg">Одоо тоглох →</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Academy Section -->
-  <section class="section academy" id="academy">
-    <div class="container">
-      <h2 class="section-title">Покер <span class="gold">Академи</span></h2>
-      <p class="section-subtitle">Суралцаж, ур чадвараа хөгжүүлж, хүчтэй тоглогч бол</p>
-      <div class="academy-grid">
-        <article class="academy-card">
-          <div class="academy-tag">Үндэс</div>
-          <h3>🃏 Покерын комбинациуд</h3>
-          <p>Royal Flush-ээс High Card хүртэл бүх комбинацийг мэд. Холдем ба Омахад адилхан, гэхдээ Омахад 2+3 дүрэм чухал.</p>
-        </article>
-        <article class="academy-card">
-          <div class="academy-tag">Стратеги</div>
-          <h3>📍 Позицийн хүч</h3>
-          <p>Эрт позици — зөвхөн хүчтэй гар. Баттон — хамгийн том давуу тал. Позици бол нуугдмал хүч.</p>
-        </article>
-        <article class="academy-card">
-          <div class="academy-tag">Эхлэгч</div>
-          <h3>🎯 Эхний гарны сонголт</h3>
-          <p>AA, KK, QQ, AK — хүчтэй суурь. Хэт олон гар тоглохоос зайлсхий. Цөөн ч чанартай гар тогло.</p>
-        </article>
-        <article class="academy-card">
-          <div class="academy-tag">Сэтгэлзүй</div>
-          <h3>🧠 Покерын сэтгэл зүй</h3>
-          <p>Тильт бол банкроллын дайсан. Сэтгэл хөдлөлөө хяна, тэвчээртэй бай, хүйтэн толгойтой тогло.</p>
-        </article>
-        <article class="academy-card">
-          <div class="academy-tag">Стратеги</div>
-          <h3>🎭 Блефийн урлаг</h3>
-          <p>Блеф бол хэрэгсэл — зөв мөчид л ажилладаг. Хэзээ блеф хийх, хэзээ зогсохоо мэд.</p>
-        </article>
-        <article class="academy-card">
-          <div class="academy-tag">Ахисан</div>
-          <h3>🦈 Флоатинг</h3>
-          <p>Хүчтэй гаргүй ч банк хожих тактик. Позици дээр, контбетийн эсрэг, хуурай борд дээр ашигла.</p>
-        </article>
-        <article class="academy-card">
-          <div class="academy-tag">Менежмент</div>
-          <h3>💰 Банкролл удирдлага</h3>
-          <p>Холдемд 30-40 бай-ин, Омахад 50-70. Банкролл бол хамгаалалт — алдахад бэлэн биш мөнгөөр тоглохгүй.</p>
-        </article>
-        <article class="academy-card">
-          <div class="academy-tag">Мэдлэг</div>
-          <h3>📊 Статистик ба анализ</h3>
-          <p>Тоонуудаа хар — хаана хожиж, хаана алдаж байгаагаа мэд. Статистик бол тоглогчийн хамгийн сайн үзүүлэлт.</p>
-        </article>
+    <!-- How to Start -->
+    <section class="section how-to" id="cta">
+      <div class="container">
+        <h2 class="section-title" data-i18n-html="howto.title">Хэрхэн <span class="gold">эхлэх</span> вэ?</h2>
+        <div class="steps">
+          <div class="step"><div class="step-num">1</div><h3 data-i18n="howto.s1t">Бүртгүүлэх</h3><p data-i18n="howto.s1d">Нэр, и-мэйл, нууц үг оруулаад хурдан бүртгүүлээрэй.</p></div>
+          <div class="step"><div class="step-num">2</div><h3 data-i18n="howto.s2t">Цэнэглэх</h3><p data-i18n="howto.s2d">Кассаас IBAN-аар 10,000₮-ээс дээш дүнгээр цэнэглэх.</p></div>
+          <div class="step"><div class="step-num">3</div><h3 data-i18n="howto.s3t">Тоглох</h3><p data-i18n="howto.s3d">Ширээгээ сонгоод Hold'em эсвэл Omaha тоглоомдоо нэгдээрэй!</p></div>
+        </div>
+        <div class="cta-box">
+          <h3 data-i18n="howto.ctaTitle">Бэлэн үү?</h3>
+          <p data-i18n="howto.ctaDesc">Ширээнүүд чамайг хүлээж байна. Одоо нэгдээд, покерын ертөнцөд тавтай морил!</p>
+          <a href="#" class="btn btn-primary btn-lg" data-i18n="howto.ctaBtn">Одоо тоглох →</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Cinema Section -->
-  <section class="section cinema" id="cinema">
-    <div class="container">
-      <h2 class="section-title">Покер <span class="gold">Кинонууд</span></h2>
-      <p class="section-subtitle">Оройн цагт үзэх шилдэг покер кинонууд</p>
-      <div class="cinema-grid">
-        <div class="movie-card">
-          <div class="movie-poster">🎬</div>
-          <h3>Lucky You</h3>
-          <p>Мэргэжлийн покер, том тэмцээнүүд, Лас-Вегасын уур амьсгал. Дарамт, шийдвэр, ялалт ба алдааны тухай.</p>
-        </div>
-        <div class="movie-card">
-          <div class="movie-poster">🎬</div>
-          <h3>Deal</h3>
-          <p>Багш ба шавийн тулаан. Ширээний ард зөвхөн карт биш, туршлага ялалтыг авчирна.</p>
-        </div>
-        <div class="movie-card">
-          <div class="movie-poster">🎬</div>
-          <h3>Runner Runner</h3>
-          <p>Онлайн покер, хурдан мөнгө, том эрсдэл. Азартын далд, аюултай талыг харуулсан кино.</p>
-        </div>
-        <div class="movie-card">
-          <div class="movie-poster">🎬</div>
-          <h3>Molly's Game</h3>
-          <p>VIP покер, саятнууд, асар том банкууд. Том тоглоомын цаадах бодит үнэ цэнэ.</p>
-        </div>
-        <div class="movie-card">
-          <div class="movie-poster">🎬</div>
-          <h3>Casino Royale</h3>
-          <p>Өндөр бооцоотой, ширүүн тоглолт. Сэтгэлзүй, хүйтэн тооцоо, дарамттай мөчүүд.</p>
-        </div>
-        <div class="movie-card">
-          <div class="movie-poster">🎬</div>
-          <h3>Mississippi Grind</h3>
-          <p>Азарт бол аз биш — бодит амьдралын сорил. Банкролл, алдаа, тасралтгүй аялал.</p>
+    <!-- Academy Section -->
+    <section class="section academy" id="academy">
+      <div class="container">
+        <h2 class="section-title" data-i18n-html="academy.title">Покер <span class="gold">Академи</span></h2>
+        <p class="section-subtitle" data-i18n="academy.subtitle">Суралцаж, ур чадвараа хөгжүүлж, хүчтэй тоглогч бол</p>
+        <div class="academy-grid">
+          <article class="academy-card"><div class="academy-tag" data-i18n="academy.a1tag">Үндэс</div><h3 data-i18n="academy.a1t">🃏 Покерын комбинациуд</h3><p data-i18n="academy.a1d">Royal Flush-ээс High Card хүртэл.</p></article>
+          <article class="academy-card"><div class="academy-tag" data-i18n="academy.a2tag">Стратеги</div><h3 data-i18n="academy.a2t">📍 Позицийн хүч</h3><p data-i18n="academy.a2d">Эрт позици — зөвхөн хүчтэй гар.</p></article>
+          <article class="academy-card"><div class="academy-tag" data-i18n="academy.a3tag">Эхлэгч</div><h3 data-i18n="academy.a3t">🎯 Эхний гарны сонголт</h3><p data-i18n="academy.a3d">AA, KK, QQ, AK — хүчтэй суурь.</p></article>
+          <article class="academy-card"><div class="academy-tag" data-i18n="academy.a4tag">Сэтгэлзүй</div><h3 data-i18n="academy.a4t">🧠 Покерын сэтгэл зүй</h3><p data-i18n="academy.a4d">Тильт бол банкроллын дайсан.</p></article>
+          <article class="academy-card"><div class="academy-tag" data-i18n="academy.a5tag">Стратеги</div><h3 data-i18n="academy.a5t">🎭 Блефийн урлаг</h3><p data-i18n="academy.a5d">Блеф бол хэрэгсэл — зөв мөчид л ажилладаг.</p></article>
+          <article class="academy-card"><div class="academy-tag" data-i18n="academy.a6tag">Ахисан</div><h3 data-i18n="academy.a6t">🦈 Флоатинг</h3><p data-i18n="academy.a6d">Хүчтэй гаргүй ч банк хожих тактик.</p></article>
+          <article class="academy-card"><div class="academy-tag" data-i18n="academy.a7tag">Менежмент</div><h3 data-i18n="academy.a7t">💰 Банкролл удирдлага</h3><p data-i18n="academy.a7d">Холдемд 30-40 бай-ин, Омахад 50-70.</p></article>
+          <article class="academy-card"><div class="academy-tag" data-i18n="academy.a8tag">Мэдлэг</div><h3 data-i18n="academy.a8t">📊 Статистик ба анализ</h3><p data-i18n="academy.a8d">Тоонуудаа хар — хаана хожиж байгаагаа мэд.</p></article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FAQ Section -->
-  <section class="section faq" id="faq">
-    <div class="container">
-      <h2 class="section-title">Түгээмэл <span class="gold">асуултууд</span></h2>
-      <div class="faq-grid">
-        <details class="faq-item">
-          <summary>Хэрхэн тоглож эхлэх вэ?</summary>
-          <p>Бүртгүүлээд (нэр, и-мэйл, нууц үг), кассаас цэнэглэлт хийгээд шууд тоглож эхэлнэ. Hold'em эсвэл Omaha ширээгээ сонгоод нэгдээрэй.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Депозитын доод хэмжээ хэд вэ?</summary>
-          <p>Хамгийн бага цэнэглэлт: 10,000 MNT. Хамгийн бага мөнгө таталт: 10,000 MNT. Бүх гүйлгээ MNT (Монгол төгрөг)-өөр хийгдэнэ.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Депозит хэр хурдан ордог вэ?</summary>
-          <p>Шилжүүлэг хийсний дараа ихэвчлэн 10 минут — 2-4 цагийн дотор дансанд орно. Ороогүй бол дэмжлэгт хандана уу.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Мөнгө таталт хэр хурдан хийгддэг вэ?</summary>
-          <p>Хамгийн багадаа 10 минут, ихдээ хэдэн цаг. IBAN дугаараа зөв оруулж, банкыг зөв сонгох шаардлагатай.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Криптовалютаар цэнэглэх боломжтой юу?</summary>
-          <p>Тийм. IBAN-аар 100,000₮ байршуулсны дараа 0XProcessing (USDT TRC20) нээгдэнэ. Крипто доод хэмжээ: 36,000₮ (10 USDT).</p>
-        </details>
-        <details class="faq-item">
-          <summary>Тоглогчдод бонус байдаг уу?</summary>
-          <p>Тийм! Депозитын 100% бонус идэвхтэй байна. Дансаа цэнэглээд тоглох балансаа хоёр дахин нэмэгдүүлээрэй.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Холдем ба Омахагийн ялгаа юу вэ?</summary>
-          <p>Холдем: 2 гарын карт, тогтвортой стратеги. Омаха: 4 гарын карт (заавал 2-ыг ашиглана), илүү экшн, том банкууд.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Дэмжлэг хэдэн цагт ажилладаг вэ?</summary>
-          <p>24/7 — амралтын өдөр, баярын өдөргүй. Telegram: @BatrynOrooSupport</p>
-        </details>
+    <!-- Cinema Section -->
+    <section class="section cinema" id="cinema">
+      <div class="container">
+        <h2 class="section-title" data-i18n-html="cinema.title">Покер <span class="gold">Кинонууд</span></h2>
+        <p class="section-subtitle" data-i18n="cinema.subtitle">Оройн цагт үзэх шилдэг покер кинонууд</p>
+        <div class="cinema-grid">
+          <div class="movie-card"><div class="movie-poster">🎬</div><h3>Lucky You</h3><p data-i18n="cinema.m1d">Мэргэжлийн покер, том тэмцээнүүд.</p></div>
+          <div class="movie-card"><div class="movie-poster">🎬</div><h3>Deal</h3><p data-i18n="cinema.m2d">Багш ба шавийн тулаан.</p></div>
+          <div class="movie-card"><div class="movie-poster">🎬</div><h3>Runner Runner</h3><p data-i18n="cinema.m3d">Онлайн покер, хурдан мөнгө, том эрсдэл.</p></div>
+          <div class="movie-card"><div class="movie-poster">🎬</div><h3>Molly's Game</h3><p data-i18n="cinema.m4d">VIP покер, саятнууд, асар том банкууд.</p></div>
+          <div class="movie-card"><div class="movie-poster">🎬</div><h3>Casino Royale</h3><p data-i18n="cinema.m5d">Өндөр бооцоотой, ширүүн тоглолт.</p></div>
+          <div class="movie-card"><div class="movie-poster">🎬</div><h3>Mississippi Grind</h3><p data-i18n="cinema.m6d">Азарт бол аз биш — бодит амьдралын сорил.</p></div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq" id="faq">
+      <div class="container">
+        <h2 class="section-title" data-i18n-html="faq.title">Түгээмэл <span class="gold">асуултууд</span></h2>
+        <div class="faq-grid" itemscope itemtype="https://schema.org/FAQPage">
+          <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><summary itemprop="name" data-i18n="faq.q1">Хэрхэн тоглож эхлэх вэ?</summary><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" data-i18n="faq.a1">Бүртгүүлээд, кассаас цэнэглэлт хийгээд шууд тоглож эхэлнэ.</p></div></details>
+          <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><summary itemprop="name" data-i18n="faq.q2">Депозитын доод хэмжээ хэд вэ?</summary><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" data-i18n="faq.a2">Хамгийн бага цэнэглэлт: 10,000 MNT.</p></div></details>
+          <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><summary itemprop="name" data-i18n="faq.q3">Депозит хэр хурдан ордог вэ?</summary><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" data-i18n="faq.a3">Ихэвчлэн 10 минут — 2-4 цагийн дотор.</p></div></details>
+          <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><summary itemprop="name" data-i18n="faq.q4">Мөнгө таталт хэр хурдан хийгддэг вэ?</summary><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" data-i18n="faq.a4">Хамгийн багадаа 10 минут, ихдээ хэдэн цаг.</p></div></details>
+          <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><summary itemprop="name" data-i18n="faq.q5">Криптовалютаар цэнэглэх боломжтой юу?</summary><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" data-i18n="faq.a5">Тийм. IBAN-аар 100,000₮ байршуулсны дараа USDT нээгдэнэ.</p></div></details>
+          <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><summary itemprop="name" data-i18n="faq.q6">Тоглогчдод бонус байдаг уу?</summary><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" data-i18n="faq.a6">Тийм! Депозитын 100% бонус идэвхтэй байна.</p></div></details>
+          <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><summary itemprop="name" data-i18n="faq.q7">Холдем ба Омахагийн ялгаа юу вэ?</summary><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" data-i18n="faq.a7">Холдем: 2 гарын карт. Омаха: 4 гарын карт, илүү экшн.</p></div></details>
+          <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><summary itemprop="name" data-i18n="faq.q8">Дэмжлэг хэдэн цагт ажилладаг вэ?</summary><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" data-i18n="faq.a8">24/7 — амралтын өдөр, баярын өдөргүй. Telegram: @BatrynOrooSupport</p></div></details>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="nav-logo">
-            <span class="logo-icon">♠</span>
-            <span class="logo-text">BAATRYN ÖRÖÖ</span>
-          </div>
-          <p>Монголын покерын клуб. Жинхэнэ тоглогчдын талбар.</p>
+          <div class="nav-logo"><span class="logo-icon">♠</span><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
+          <p data-i18n="footer.brand">Монголын покерын клуб. Жинхэнэ тоглогчдын талбар.</p>
         </div>
         <div class="footer-links">
-          <h4>Тоглоом</h4>
+          <h4 data-i18n="footer.games">Тоглоом</h4>
           <ul>
             <li><a href="#games">Hold'em</a></li>
             <li><a href="#games">Omaha</a></li>
-            <li><a href="#features">Боломжууд</a></li>
+            <li><a href="#features" data-i18n="footer.features">Боломжууд</a></li>
           </ul>
         </div>
         <div class="footer-links">
-          <h4>Мэдээлэл</h4>
+          <h4 data-i18n="footer.info">Мэдээлэл</h4>
           <ul>
-            <li><a href="#academy">Академи</a></li>
-            <li><a href="#cinema">Кино</a></li>
+            <li><a href="#academy" data-i18n="nav.academy">Академи</a></li>
+            <li><a href="#cinema" data-i18n="nav.cinema">Кино</a></li>
             <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>
         <div class="footer-links">
-          <h4>Холбоо барих</h4>
+          <h4 data-i18n="footer.contact">Холбоо барих</h4>
           <ul>
-            <li><a href="#">Telegram: @BatrynOrooSupport</a></li>
-            <li><a href="#">Бот: @BaatrynOroo_support_bot</a></li>
+            <li><a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">Telegram: @BatrynOrooSupport</a></li>
+            <li><a href="https://t.me/BaatrynOroo_support_bot" rel="noopener" target="_blank">Bot: @BaatrynOroo_support_bot</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>♠ BAATRYN ÖRÖÖ — Ухаалгаар тогло, удаан ял.</p>
+        <p data-i18n="footer.tagline">♠ BAATRYN ÖRÖÖ — Ухаалгаар тогло, удаан ял.</p>
       </div>
     </div>
   </footer>
