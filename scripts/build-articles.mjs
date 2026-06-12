@@ -11,6 +11,7 @@ const root = join(__dirname, '..')
 const contentDir = join(root, 'content', 'articles')
 const outDir = join(root, 'articles')
 
+const TELEGRAM_PLAY = 'https://t.me/BatrynOrooSupport'
 const ARTICLES = []
 
 function parseFrontmatter(raw) {
@@ -147,7 +148,7 @@ function nav() {
           <li><a href="/#faq">FAQ</a></li>
         </ul>
         <div class="nav-right">
-          <a href="/#cta" class="nav-btn">Тоглох</a>
+          <a href="${TELEGRAM_PLAY}" class="nav-btn" rel="noopener" target="_blank">Тоглох</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -157,7 +158,10 @@ function nav() {
   </header>`
 }
 
-function footer() {
+function footer(articles) {
+  const articleLinks = articles
+    .map(a => `            <li><a href="/articles/${a.slug}/">${a.listTitle}</a></li>`)
+    .join('\n')
   return `  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -168,9 +172,7 @@ function footer() {
         <div class="footer-links">
           <h4>Нийтлэл</h4>
           <ul>
-            <li><a href="/articles/mongol-poker-sistem/">Монгол покер систем</a></li>
-            <li><a href="/articles/mongol-poker-tatah/">Монгол покер татах</a></li>
-            <li><a href="/articles/online-poker-mongol-2026/">Онлайн покер Монгол</a></li>
+${articleLinks}
           </ul>
         </div>
         <div class="footer-links">
@@ -187,7 +189,7 @@ function footer() {
   </footer>`
 }
 
-function articlePage(article) {
+function articlePage(article, allArticles) {
   const { slug, metaTitle, metaDesc, title, html } = article
   const url = `https://pppoker.mn/articles/${slug}/`
   const jsonLd = JSON.stringify({
@@ -236,12 +238,12 @@ ${nav()}
 ${html}
       </article>
       <div class="article-cta">
-        <a href="/#cta" class="btn btn-primary">Одоо тоглох →</a>
+        <a href="${TELEGRAM_PLAY}" class="btn btn-primary" rel="noopener" target="_blank">Одоо тоглох →</a>
         <a href="/articles/" class="btn btn-outline">Бусад нийтлэл</a>
       </div>
     </div>
   </main>
-${footer()}
+${footer(allArticles)}
   <script type="module" src="/src/article-page.js"></script>
 </body>
 </html>`
@@ -290,7 +292,7 @@ ${cards}
       </div>
     </div>
   </main>
-${footer()}
+${footer(articles)}
   <script type="module" src="/src/article-page.js"></script>
 </body>
 </html>`
@@ -309,6 +311,7 @@ for (const file of files) {
     metaTitle: meta['Meta Title'] || h1,
     metaDesc: meta['Meta Description'] || '',
     title: h1,
+    listTitle: meta['List Title'] || h1.replace(/\|.*/, '').trim().slice(0, 40),
     html: mdToHtml(body),
   })
 }
@@ -318,7 +321,7 @@ mkdirSync(outDir, { recursive: true })
 for (const article of ARTICLES) {
   const dir = join(outDir, article.slug)
   mkdirSync(dir, { recursive: true })
-  writeFileSync(join(dir, 'index.html'), articlePage(article))
+  writeFileSync(join(dir, 'index.html'), articlePage(article, ARTICLES))
 }
 
 writeFileSync(join(outDir, 'index.html'), indexPage(ARTICLES))
