@@ -20,3 +20,22 @@ This repository (`pppoker.mn`) is the Baatryn Öröö poker club website — a M
 - Site sections: Hero, Games, Features, How-to, Academy, Cinema, FAQ, Footer
 - No backend — static site only
 - Images not yet added to repo (analyzed & cataloged, pending integration)
+
+### Content & SEO workflow (thruuu)
+
+Orchestrator: **`CLAUDE.md`** (full pipeline). Quick ref: `content/CONTENT.md`.
+
+| Path | Purpose |
+|------|---------|
+| **`CLAUDE.md`** | **Orchestrator** — `create article`, 12-step agent pipeline |
+| `GUIDELINE.md` | Brand voice, Zipf logic, AI visibility, GSC keywords |
+| `content/CONTENT.md` | Short reference (points to CLAUDE.md) |
+| `content/GUIDELINE_MAKER.md` | Interview to regenerate GUIDELINE.md |
+| `.claude/agents/` | researcher → editor-in-chief (6 agents) |
+| `briefs/` | thruuu content briefs |
+| `drafts/` | Finished markdown drafts |
+| `knowledge/` | GSC, semantics (`semantic-core.example.md`) |
+
+**Commands:** `create article` · `create guideline` · after draft: publish to `i18n.js` / `index.html`
+
+**Core rules:** Sacred outline headings · Zipf keyword tiers · Default language: Mongolian
