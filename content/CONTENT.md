@@ -37,9 +37,28 @@ Agent definitions: `.claude/agents/*.md`
 | Article Summary | Title, slug, meta, word count, tone |
 | Content Outline | Exact heading structure |
 | Food For Thought | Research URLs (first 800 words each) |
-| Top Topics | Keywords to weave in |
+| Top Topics | Keywords to weave in — **apply Zipf logic** (see below) |
 | Frequent Questions | Answer in body, not as headings |
 | Links | Placed by linker agent |
+
+## Zipf logic (Top Topics & semantics)
+
+When parsing a brief or GSC export, treat keyword lists as **Zipfian distributions**:
+
+- **Rank 1–3** → head: title, intro, primary sections, highest lexical weight
+- **Rank 4–10** → mid: body sections, meta, features
+- **Rank 11+** and low-impression GSC queries → long tail: FAQ, how-to, dedicated blocks
+
+**Agent responsibilities:**
+
+| Agent | Zipf task |
+|-------|-----------|
+| `head-of-research` | Sort Top Topics by frequency; tag head/mid/tail in Strategic Guidance |
+| `writer` | Allocate word count proportionally — more copy for head, dedicated answers for tail |
+| `humanizer` | Vary vocabulary; remove repetitive head-term stuffing |
+| `editor-in-chief` | Verify head topics appear in title/intro; tail topics covered; no keyword spam |
+
+Full rules and pppoker.mn examples: `GUIDELINE.md` → **Zipf Logic**.
 
 ## Language detection
 

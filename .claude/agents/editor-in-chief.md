@@ -40,7 +40,7 @@ Evaluate every item below. Be honest. A ✓ you don't mean is worse than a ✗ y
 | **Language consistent** | Is the entire draft written in the correct language? Note the language used. |
 | **AI Visibility principles** | Which AI visibility principles from GUIDELINE.md were applied (Ski Ramp, H2s as prompts, definitive language, entity richness, sentiment target)? |
 | **Links placed** | List every link that was placed. Note any unplaced links flagged by the linker. |
-| **Top Topics covered** | List the key Top Topics from the brief and confirm which were woven into the content. Flag any high-priority topics that are missing. |
+| **Top Topics covered** | List the key Top Topics from the brief and confirm which were woven into the content. Flag any high-priority topics that are missing. Verify Zipf tiers: head (rank 1–3) in title/intro, mid in body, long tail in FAQ or dedicated sections; no head-term stuffing. |
 | **Quotes & Stats used** | Were quotes and stats from the research brief used in the draft? List them with their source links. Note if any are new external links added beyond the original brief. |
 | **Research Brief reflected** | Does the draft reflect the strategic guidance from the head of research? Were the highlighted insights and differentiation angles included? |
 

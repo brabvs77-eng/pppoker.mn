@@ -51,6 +51,8 @@ Your structural bible. Contains the heading hierarchy and notes between headings
 **Top Topics**
 Keywords to weave naturally into the content. Higher frequency = higher priority. Keywords showing `NaN` or `undefined` were added manually by the SEO strategist — include them at least once regardless.
 
+**Zipf distribution (apply GUIDELINE.md):** Top Topics are usually rank-ordered by SERP frequency. Treat rank 1–3 as head (title, intro, most prominent sections), 4–10 as mid (body), 11+ as long tail (FAQ or dedicated subsections). Do not repeat head terms in every paragraph — use entities and synonyms.
+
 **Frequent Questions**
 Do not use these as headings. Answer them naturally within the body copy where they fit.
 

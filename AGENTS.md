@@ -37,4 +37,4 @@ Content creation follows the [thruuu-claude-writer](https://github.com/thruuu/th
 
 **To write SEO content:** drop a thruuu brief in `briefs/`, then ask to **create article**. Apply approved drafts to `index.html` and `src/i18n.js`.
 
-**Core rule:** Content Outline headings from briefs are never changed by any agent.
+**Core rules:** Content Outline headings from briefs are never changed by any agent. **Zipf logic** — weight head/mid/tail keywords by rank (see `GUIDELINE.md`).

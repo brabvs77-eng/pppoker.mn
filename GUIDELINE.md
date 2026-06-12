@@ -37,6 +37,30 @@ Energetic, trustworthy, player-focused. Use «та» sparingly; prefer inclusive
 - онлайн покер монгол, покер монгол, монгол покер
 - baatryn oroo, bluff poker mongolia, pppoker
 
+## Zipf Logic (keyword distribution)
+
+**Zipf's law:** word/query frequency drops roughly in inverse proportion to rank — a few head terms dominate volume; most traffic also comes from a long tail of many rare phrases.
+
+Apply this when writing and when mapping thruuu **Top Topics** or GSC data:
+
+| Tier | Role | pppoker.mn examples | Where to use |
+|------|------|---------------------|--------------|
+| **Head** | Highest volume, highest competition | `poker`, `покер`, `онлайн покер` | Title, H1, hero, first 20% (Ski Ramp) |
+| **Mid** | Brand + intent modifiers | `pppoker`, `poker mongolia`, `онлайн покер монгол`, `baatryn oroo` | Meta, section intros, features |
+| **Long tail** | Low volume each, high total in aggregate | `монгол покер систэм`, `монгол покер татах`, `bluff poker mongolia` | FAQ, how-to, app/download blocks |
+
+### Rules for writers
+
+1. **Weight by rank, don't stuff** — Top Topics from briefs are usually Zipf-ordered. Cover rank 1–3 topics prominently; ranks 4–10 at least once each; tail topics in FAQ or dedicated subsections.
+2. **One head term per block** — Don't repeat the same head keyword in every paragraph. Use entities and synonyms (PPPoker, Hold'em, клуб, тоглох).
+3. **Pillar + tail** — Head/mid terms anchor the page; long-tail phrases get their own FAQ or H2 section with internal links back to hero/CTA.
+4. **Natural frequency** — If a thruuu topic shows `NaN` or was added manually, include it once minimum. Never force equal repetition across all keywords.
+5. **Small markets (Mongolia)** — Zipf curves are flatter; GSC may show 0 clicks but impressions on tail queries — still worth dedicated copy.
+
+### Head-of-research note
+
+When compiling `research-brief.md`, sort Top Topics and GSC exports by frequency/impressions descending and label tiers (head / mid / tail) for the writer.
+
 ## AI Visibility Settings
 - **Ski Ramp: A** — Key insight or CTA in the first 20–30% of each section/page block
 - **H2s as User Prompts: B** — Use question-style H2 in FAQ where natural; declarative elsewhere

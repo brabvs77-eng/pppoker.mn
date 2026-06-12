@@ -56,6 +56,7 @@ Based on your analysis, write a short briefing for the writer. This is not a lis
 - Which Frequent Questions are most important to answer
 - Which Top Topics are highest priority
 - Any gaps in competitor coverage the writer can fill
+- **Zipf tiers** — label head (rank 1–3), mid (4–10), and long-tail (11+) topics from Top Topics and any GSC data in `knowledge/`; tell the writer where each tier should appear (title/intro vs body vs FAQ)
 
 Keep this section focused and actionable — 5 to 10 bullet points maximum.
 
