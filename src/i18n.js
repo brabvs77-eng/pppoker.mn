@@ -73,6 +73,7 @@ export const translations = {
       a6tag: 'Ахисан', a6t: '🦈 Флоатинг', a6d: 'Хүчтэй гаргүй ч банк хожих тактик.',
       a7tag: 'Менежмент', a7t: '💰 Банкролл удирдлага', a7d: 'Холдемд 30-40 бай-ин, Омахад 50-70.',
       a8tag: 'Мэдлэг', a8t: '📊 Статистик ба анализ', a8d: 'Тоонуудаа хар — хаана хожиж байгаагаа мэд.',
+      termsLink: 'Покерын нэр томьёо — бүрэн толь бичиг',
     },
     cinema: {
       title: 'Покер <span class="gold">Кинонууд</span>',
@@ -182,6 +183,7 @@ export const translations = {
       a6tag: 'Advanced', a6t: '🦈 Floating', a6d: 'Win pots without a strong hand.',
       a7tag: 'Management', a7t: '💰 Bankroll Management', a7d: 'Hold\'em 30-40 buy-ins, Omaha 50-70.',
       a8tag: 'Knowledge', a8t: '📊 Statistics & Analysis', a8d: 'Track your numbers — know where you\'re winning.',
+      termsLink: 'Poker glossary — full term guide',
     },
     cinema: {
       title: 'Poker <span class="gold">Movies</span>',
@@ -291,6 +293,7 @@ export const translations = {
       a6tag: '进阶', a6t: '🦈 漂浮', a6d: '没有强牌也能赢得底池的战术。',
       a7tag: '管理', a7t: '💰 资金管理', a7d: '德州30-40个买入，奥马哈50-70个。',
       a8tag: '知识', a8t: '📊 统计与分析', a8d: '看数据——知道你在哪里赢。',
+      termsLink: '扑克术语——完整词汇表',
     },
     cinema: {
       title: '扑克<span class="gold">电影</span>',
@@ -400,6 +403,7 @@ export const translations = {
       a6tag: 'Продвинутый', a6t: '🦈 Флоатинг', a6d: 'Выигрывайте банки без сильной руки.',
       a7tag: 'Менеджмент', a7t: '💰 Управление банкроллом', a7d: 'Холдем 30-40 бай-инов, Омаха 50-70.',
       a8tag: 'Знания', a8t: '📊 Статистика и анализ', a8d: 'Следите за цифрами — знайте, где вы выигрываете.',
+      termsLink: 'Покерные термины — полный глоссарий',
     },
     cinema: {
       title: 'Покер <span class="gold">Кино</span>',
