@@ -14,12 +14,14 @@ All academy cards linked to articles.
 | cash-game-mongol | published |
 | pppoker-klub-vs-betting | published |
 
-## Phase 4 — remaining
+## Phase 4 — DONE
 
-- poker-terms-mn
+| Slug | Status |
+|------|--------|
+| poker-terms-mn | published |
 
 ## Phase 5 — Brand-parasite (after 50–60 core)
 
 See `content/BRAND-PARASITE-STRATEGY.md`.
 
-**Total published:** 17 articles
+**Total published:** 18 articles
