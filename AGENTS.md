@@ -20,3 +20,21 @@ This repository (`pppoker.mn`) is the Baatryn Öröö poker club website — a M
 - Site sections: Hero, Games, Features, How-to, Academy, Cinema, FAQ, Footer
 - No backend — static site only
 - Images not yet added to repo (analyzed & cataloged, pending integration)
+
+### Content & SEO workflow (thruuu)
+
+Content creation follows the [thruuu-claude-writer](https://github.com/thruuu/thruuu-claude-writer) multi-agent pipeline:
+
+| Path | Purpose |
+|------|---------|
+| `GUIDELINE.md` | Brand voice, SEO keywords, AI visibility rules for Baatryn Öröö |
+| `content/CONTENT.md` | Orchestrator steps (`create article`, brief parsing, pipeline) |
+| `content/GUIDELINE_MAKER.md` | Interview to regenerate GUIDELINE.md |
+| `.claude/agents/` | researcher, head-of-research, writer, humanizer, linker, editor-in-chief |
+| `briefs/` | Drop downloaded thruuu content briefs here |
+| `drafts/` | Finished article drafts (markdown) |
+| `knowledge/` | GSC exports, semantics, club notes (read by research agent) |
+
+**To write SEO content:** drop a thruuu brief in `briefs/`, then ask to **create article**. Apply approved drafts to `index.html` and `src/i18n.js`.
+
+**Core rule:** Content Outline headings from briefs are never changed by any agent.
