@@ -2,20 +2,17 @@
 
 Pipeline launched 2026-06-12. Orchestrator: `CLAUDE.md`.
 
-## Phase 2 — IN PROGRESS (iteration 1 done)
+## Phase 2 — iteration 2 done
 
 | Slug | Status |
 |------|--------|
-| poker-kombinatsiud | published |
-| ehnii-gar-songolt | published |
-| pozitsiin-huch | published |
-| holdem-vs-omaha | published |
-| poker-setgel-zui | pending |
-| blef-uriag | pending |
-| bankroll-udirdlaga | pending |
-| floating-taktik | pending |
+| poker-setgel-zui | published |
+| bankroll-udirdlaga | published |
+| blef-uriag | published |
+| floating-taktik | published |
+| statistik-analiz | pending (a8) |
 
-## Phase 1 — DONE
+## Phase 2 — iteration 1 done
 
 | Slug | Status | File |
 |------|--------|------|
