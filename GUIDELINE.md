@@ -1,97 +1,132 @@
-# GUIDELINE.md — Baatryn Öröö (pppoker.mn) Writing Style Guide
+# GUIDELINE.md — Baatryn Öröö Writing Style Guide
 
 ## Brand Context
-Baatryn Öröö is Mongolia's PPPoker club — an online poker community for Hold'em and Omaha. The site (`pppoker.mn`) is a Mongolian-language marketing and info hub: games, bonuses, deposits, academy content, and support via Telegram.
+
+Baatryn Öröö (PPPoker Mongolia) is Mongolia's online poker club on the PPPoker platform. The site `pppoker.mn` is a Mongolian-language marketing hub: Hold'em and Omaha, 24/7 tables, deposits from 10,000₮, 100% bonus, USDT for qualified players, and 24/7 Telegram support.
 
 ## Target Audience
-Mongolian poker players (and Russian/English speakers in Mongolia) looking for a trusted online club. Mix of beginners and regulars. They search in Cyrillic Mongolian and Latin (`poker`, `pppoker`, `baatryn oroo`, `монгол покер`, `онлайн покер монгол`).
 
-Expertise level: 2/5 — explain poker terms briefly when needed, but don't lecture.
+Mongolian poker players and expats in Mongolia. Mix of beginners learning Hold'em/Omaha and regular cash-game players. They search in **Cyrillic Mongolian** and **Latin** (`poker`, `pppoker`, `baatryn oroo`, `монгол покер`).
+
+**Expertise level:** 2/5 — explain terms briefly, never lecture.
+
+**Typical intent:** find a trusted club, download the app, understand deposits/bonuses, compare formats (Hold'em vs Omaha).
 
 ## Brand Voice
+
 - Confident and welcoming
 - Direct and practical
-- Premium but not arrogant (gold/dark brand aesthetic)
-- Mongolian-first (Cyrillic); Latin for brands (PPPoker, Hold'em, USDT)
+- Premium but not arrogant (dark + gold brand)
+- Mongolian-first; Latin for global brands (PPPoker, Hold'em, USDT)
 
 ## Tone
-Energetic, trustworthy, player-focused. Use «та» sparingly; prefer inclusive «тоглогч» / «та бүхэн» where natural. No hype or guaranteed-win language. Support channels: @BatrynOrooSupport.
+
+Energetic, trustworthy, player-focused. Prefer «тоглогч» / «та бүхэн» over heavy «та». No guaranteed-win hype. Support: @BatrynOrooSupport.
+
+For EN/ZH/RU variants in `i18n.js`: same voice, culturally natural — not machine-translated stiffness.
 
 ## Writing Style
 
 ### Language
 - **Primary:** Mongolian (Cyrillic)
-- **Secondary in meta/keywords:** Latin (`poker mongolia`, `baatryn oroo`, `bluff poker mongolia`, `pppoker`)
-- Keep FAQ answers concise (2–4 sentences)
+- **Meta/keywords:** Cyrillic + Latin (`poker mongolia`, `baatryn oroo`, `bluff poker mongolia`)
+- FAQ answers: 2–4 sentences
 
-### Sentence and Paragraph Length
+### Sentence and paragraph length
 - Short paragraphs: 2–3 sentences max
-- Scannable lists for steps, features, and FAQ
+- Lists for steps, features, FAQ, academy tips
 
-### Intros
-- Lead with the player benefit or answer (Ski Ramp)
-- No «энэ нийтлэлд бид…» filler
+### Intros (Ski Ramp)
+- Lead with benefit or direct answer in first 20–30%
+- No «энэ нийтлэлд бид…», no slow warm-up
 
-### SEO Keywords (GSC — weave naturally)
-- монгол покер систэм, монгол покер татах
-- онлайн покер монгол, покер монгол, монгол покер
-- baatryn oroo, bluff poker mongolia, pppoker
+### How insights are delivered
+- Facts first: limits, blinds, deposit minimums, support hours
+- Name real entities: PPPoker, IBAN, USDT TRC20, Telegram
+- Tie claims to club specifics (VIP tables, club names: UlaanBator VIP, etc.)
+
+### Structural patterns
+- `##` / `###` per thruuu outline only — never invent extra heading levels
+- Bold sparingly for key terms
+- Numbered steps for how-to content
 
 ## Zipf Logic (keyword distribution)
 
-**Zipf's law:** word/query frequency drops roughly in inverse proportion to rank — a few head terms dominate volume; most traffic also comes from a long tail of many rare phrases.
+**Zipf's law:** frequency ≈ 1/rank. Few head terms drive most volume; long tail of rare queries adds up.
 
-Apply this when writing and when mapping thruuu **Top Topics** or GSC data:
+| Tier | Role | pppoker.mn examples | Placement |
+|------|------|---------------------|-----------|
+| **Head** | High volume, high competition | `poker`, `покер`, `онлайн покер` | Title, H1, hero, intro |
+| **Mid** | Brand + intent | `pppoker`, `poker mongolia`, `онлайн покер монгол`, `baatryn oroo` | Meta, features, section intros |
+| **Long tail** | Low each, high aggregate | `монгол покер систэм`, `монгол покер татах`, `bluff poker mongolia` | FAQ, how-to, app download |
 
-| Tier | Role | pppoker.mn examples | Where to use |
-|------|------|---------------------|--------------|
-| **Head** | Highest volume, highest competition | `poker`, `покер`, `онлайн покер` | Title, H1, hero, first 20% (Ski Ramp) |
-| **Mid** | Brand + intent modifiers | `pppoker`, `poker mongolia`, `онлайн покер монгол`, `baatryn oroo` | Meta, section intros, features |
-| **Long tail** | Low volume each, high total in aggregate | `монгол покер систэм`, `монгол покер татах`, `bluff poker mongolia` | FAQ, how-to, app/download blocks |
+### Writer rules
+1. Weight by rank — don't stuff head terms in every paragraph
+2. Rank 1–3 prominent; 4–10 at least once; tail → dedicated FAQ/block
+3. Pillar (head/mid) + tail pages link internally to CTA
+4. Manual/NaN topics in briefs: include ≥1 time
+5. Mongolia: flat Zipf curve — GSC impressions with 0 clicks still matter
 
-### Rules for writers
-
-1. **Weight by rank, don't stuff** — Top Topics from briefs are usually Zipf-ordered. Cover rank 1–3 topics prominently; ranks 4–10 at least once each; tail topics in FAQ or dedicated subsections.
-2. **One head term per block** — Don't repeat the same head keyword in every paragraph. Use entities and synonyms (PPPoker, Hold'em, клуб, тоглох).
-3. **Pillar + tail** — Head/mid terms anchor the page; long-tail phrases get their own FAQ or H2 section with internal links back to hero/CTA.
-4. **Natural frequency** — If a thruuu topic shows `NaN` or was added manually, include it once minimum. Never force equal repetition across all keywords.
-5. **Small markets (Mongolia)** — Zipf curves are flatter; GSC may show 0 clicks but impressions on tail queries — still worth dedicated copy.
-
-### Head-of-research note
-
-When compiling `research-brief.md`, sort Top Topics and GSC exports by frequency/impressions descending and label tiers (head / mid / tail) for the writer.
+### GSC queries (confirmed on site)
+| Query | Tier |
+|-------|------|
+| монгол покер систэм | tail |
+| монгол покер татах | tail |
+| bluff poker mongolia | tail |
+| baatryn oroo | mid |
+| онлайн покер монгол | mid |
+| покер монгол / монгол покер | mid/tail |
 
 ## AI Visibility Settings
-- **Ski Ramp: A** — Key insight or CTA in the first 20–30% of each section/page block
-- **H2s as User Prompts: B** — Use question-style H2 in FAQ where natural; declarative elsewhere
-- **Definitive Language: B** — «PPPoker бол…», «Монгол покер систем нь…» for definitions
-- **Entity Richness: B** — Name PPPoker, Hold'em, Omaha, USDT, IBAN, Telegram; avoid trash-talking competitors
-- **Sentiment Target: ~0.45** — Facts + light enthusiasm, no hard sell
+
+- **Ski Ramp: A (Always)** — Key insight or CTA in first 20–30%. Example: «PPPoker клубт 10,000₮-өөр эхлэж болно» before background.
+- **H2s as User Prompts: B (When it fits)** — FAQ as questions («Монгол покер хэрхэн татах вэ?»); declarative H2 elsewhere.
+- **Definitive Language: B (Usually)** — «Монгол покер систем нь…», «PPPoker бол…» for definitions; narrative allowed in academy/cinema.
+- **Entity Richness: B (Moderate)** — Name PPPoker, Hold'em, Omaha, USDT, IBAN, Telegram; competitors only for positioning, not promotion.
+- **Sentiment Target: ~0.45** — Fact + light enthusiasm. State terms, then why it matters to the player.
 
 ## Entity and Reference Style
-- Brand: **Baatryn Öröö** / **Баатрын Өрөө** / `baatryn oroo`
-- Platform: **PPPoker**, **PPPoker Mongolia**
-- Games: Texas Hold'em, Omaha (PLO)
-- Payments: 10,000₮ min deposit, IBAN, USDT (TRC20) after 100,000₮
-- Support: @BatrynOrooSupport, @BaatrynOroo_support_bot
+
+| Entity | Usage |
+|--------|--------|
+| Baatryn Öröö / Баатрын Өрөө / baatryn oroo | Brand |
+| PPPoker / PPPoker Mongolia | Platform |
+| Texas Hold'em, Omaha (PLO) | Games |
+| 10,000₮ min deposit/withdrawal | Payments |
+| IBAN, USDT (TRC20) after 100,000₮ | Payments |
+| @BatrynOrooSupport | Support |
 
 ## Formatting Rules
-- Markdown for drafts in `drafts/`
-- Use `##` / `###` per content brief outline — **never change brief headings**
+
+- Markdown in `drafts/`
+- Never change brief outline headings
 - Bold key terms sparingly
-- No tables unless the brief requires comparison
+- Tables only when brief requires comparison
+- Site HTML: use existing `section`, `section-title`, `gold` span classes
 
 ## Taboos
-- No guaranteed winnings or «бүр мөнгө хожино» claims
+
+- No guaranteed winnings («бүр хожино», «ашиг бүртгэл»)
 - No em-dashes
-- No filler: «өнөөдрийн дижитал ертөнцөд», «мэдээж»
-- No fake stats or invented quotes
-- No API keys or secrets in content files
-- Don't copy competitor app copy verbatim (e.g. Bluff Poker) — position Baatryn Öröö distinctly
+- No filler: «өнөөдрийн дижитал ертөнцөд», «мэдээж», «чухал нь»
+- No invented stats or fake quotes
+- No API keys in content files
+- No verbatim competitor copy (Bluff Poker, PokerStars, etc.)
+- No Russian SEO spam in Mongolian body copy unless brief targets RU
+
+## Benchmark References
+
+Awareness only — do not copy tone or copy:
+
+- PPPoker global brand (platform mechanics)
+- Google Trends MN competitors: turbo poker, megamax poker, one king poker (app discovery queries)
+- Mongolian search: Latin `poker` often beats Cyrillic in Trends — use both in meta
 
 ## Content Pipeline
-Based on [thruuu-claude-writer](https://github.com/thruuu/thruuu-claude-writer):
-1. Drop thruuu brief in `briefs/`
-2. Optional context in `knowledge/`
-3. Run pipeline per `content/CONTENT.md` (research → write → humanize → link → edit)
-4. Output in `drafts/` — integrate into `index.html` / `i18n.js` when publishing to site
+
+Orchestrator: **`CLAUDE.md`**
+
+1. thruuu brief → `briefs/`
+2. GSC / semantics → `knowledge/`
+3. **create article** → agents in `.claude/agents/`
+4. Approve `drafts/[slug].md` → `src/i18n.js` + `index.html`

@@ -8,11 +8,15 @@ dist
 # Content pipeline (thruuu-style) — keep structure, ignore working files
 briefs/*
 !briefs/.gitkeep
+!briefs/README.md
 drafts/*
 !drafts/.gitkeep
+!drafts/README.md
 knowledge/*
 !knowledge/.gitkeep
 !knowledge/README.md
+!knowledge/semantic-core.example.md
 .claude/research/
+!.claude/research/.gitkeep
 wordstat-*.json
 google-trends-*.json

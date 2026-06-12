@@ -23,18 +23,19 @@ This repository (`pppoker.mn`) is the Baatryn Öröö poker club website — a M
 
 ### Content & SEO workflow (thruuu)
 
-Content creation follows the [thruuu-claude-writer](https://github.com/thruuu/thruuu-claude-writer) multi-agent pipeline:
+Orchestrator: **`CLAUDE.md`** (full pipeline). Quick ref: `content/CONTENT.md`.
 
 | Path | Purpose |
 |------|---------|
-| `GUIDELINE.md` | Brand voice, SEO keywords, AI visibility rules for Baatryn Öröö |
-| `content/CONTENT.md` | Orchestrator steps (`create article`, brief parsing, pipeline) |
+| **`CLAUDE.md`** | **Orchestrator** — `create article`, 12-step agent pipeline |
+| `GUIDELINE.md` | Brand voice, Zipf logic, AI visibility, GSC keywords |
+| `content/CONTENT.md` | Short reference (points to CLAUDE.md) |
 | `content/GUIDELINE_MAKER.md` | Interview to regenerate GUIDELINE.md |
-| `.claude/agents/` | researcher, head-of-research, writer, humanizer, linker, editor-in-chief |
-| `briefs/` | Drop downloaded thruuu content briefs here |
-| `drafts/` | Finished article drafts (markdown) |
-| `knowledge/` | GSC exports, semantics, club notes (read by research agent) |
+| `.claude/agents/` | researcher → editor-in-chief (6 agents) |
+| `briefs/` | thruuu content briefs |
+| `drafts/` | Finished markdown drafts |
+| `knowledge/` | GSC, semantics (`semantic-core.example.md`) |
 
-**To write SEO content:** drop a thruuu brief in `briefs/`, then ask to **create article**. Apply approved drafts to `index.html` and `src/i18n.js`.
+**Commands:** `create article` · `create guideline` · after draft: publish to `i18n.js` / `index.html`
 
-**Core rules:** Content Outline headings from briefs are never changed by any agent. **Zipf logic** — weight head/mid/tail keywords by rank (see `GUIDELINE.md`).
+**Core rules:** Sacred outline headings · Zipf keyword tiers · Default language: Mongolian

@@ -1,20 +1,15 @@
-# CONTENT.md — Article & SEO Content Orchestrator (thruuu pipeline)
+# CONTENT.md — Content pipeline reference
 
-Adapted from [thruuu-claude-writer](https://github.com/thruuu/thruuu-claude-writer). Use when creating articles, landing copy, or SEO expansions for **pppoker.mn**.
+> **Primary orchestrator:** [`CLAUDE.md`](../CLAUDE.md) — read this for the full step-by-step pipeline (Claude Code / Cursor agents).
+
+This file is a quick reference. All orchestration logic lives in `CLAUDE.md`.
 
 ## Quick start
 
-1. Ensure `GUIDELINE.md` exists in repo root (brand voice for Baatryn Öröö)
-2. Download a content brief from [thruuu](https://thruuu.com) → save to `briefs/`
-3. Optional: add notes, GSC exports, or stats to `knowledge/`
-4. Tell the agent: **create article**
-
-## Core rules (entire pipeline)
-
-- **Heading structure is sacred** — no agent changes Content Outline headings (wording, level, or order). Only silent typo fixes.
-- **Outline notes are writer instructions**, not headings.
-- **GUIDELINE.md** applies to writer, humanizer, editor-in-chief. **Writer Directive** in the brief overrides GUIDELINE where they conflict.
-- **Researchers never write article prose.**
+1. `GUIDELINE.md` in repo root (brand voice — already created for Baatryn Öröö)
+2. thruuu brief → `briefs/`
+3. Optional: `knowledge/` (GSC, semantics — see `semantic-core.example.md`)
+4. Command: **create article**
 
 ## Agent pipeline
 
@@ -22,59 +17,22 @@ Adapted from [thruuu-claude-writer](https://github.com/thruuu/thruuu-claude-writ
 |------|--------|--------|
 | 1 | `researcher` (parallel) | `.claude/research/*.md` |
 | 2 | `head-of-research` | `.claude/research/research-brief.md` |
-| 3 | `writer` | `drafts/[slug].md` (−10% word count) |
+| 3 | `writer` | `drafts/[slug].md` |
 | 4 | `humanizer` | `drafts/[slug].md` |
 | 5 | `linker` | `drafts/[slug].md` |
-| 6 | `editor-in-chief` | final draft + checklist; deletes `.claude/research/` |
+| 6 | `editor-in-chief` | final + checklist |
 
-Agent definitions: `.claude/agents/*.md`
+Agents: `.claude/agents/*.md`
 
-## Brief elements
+## Zipf logic
 
-| Element | Usage |
-|---------|--------|
-| Writer Directive | Highest priority instructions |
-| Article Summary | Title, slug, meta, word count, tone |
-| Content Outline | Exact heading structure |
-| Food For Thought | Research URLs (first 800 words each) |
-| Top Topics | Keywords to weave in — **apply Zipf logic** (see below) |
-| Frequent Questions | Answer in body, not as headings |
-| Links | Placed by linker agent |
+Top Topics ranked head (1–3) → mid (4–10) → tail (11+). Details in `GUIDELINE.md`.
 
-## Zipf logic (Top Topics & semantics)
+## Site publish
 
-When parsing a brief or GSC export, treat keyword lists as **Zipfian distributions**:
+Approved drafts → `src/i18n.js` + `index.html`. See `CLAUDE.md` → Site integration.
 
-- **Rank 1–3** → head: title, intro, primary sections, highest lexical weight
-- **Rank 4–10** → mid: body sections, meta, features
-- **Rank 11+** and low-impression GSC queries → long tail: FAQ, how-to, dedicated blocks
+## Other files
 
-**Agent responsibilities:**
-
-| Agent | Zipf task |
-|-------|-----------|
-| `head-of-research` | Sort Top Topics by frequency; tag head/mid/tail in Strategic Guidance |
-| `writer` | Allocate word count proportionally — more copy for head, dedicated answers for tail |
-| `humanizer` | Vary vocabulary; remove repetitive head-term stuffing |
-| `editor-in-chief` | Verify head topics appear in title/intro; tail topics covered; no keyword spam |
-
-Full rules and pppoker.mn examples: `GUIDELINE.md` → **Zipf Logic**.
-
-## Language detection
-
-1. Content Outline language
-2. Writer Directive region
-3. Default: **Mongolian (Cyrillic)** for this site
-
-## Site integration
-
-After `drafts/[slug].md` is approved:
-
-- Short copy → `src/i18n.js` keys + `data-i18n` in `index.html`
-- New sections → follow existing CSS patterns (`section`, `section-title`, `gold` accent)
-- Meta → `i18n.js` `meta` block + static fallback in `index.html`
-
-## Reference files
-
-- `content/GUIDELINE_MAKER.md` — interview to rebuild GUIDELINE.md
-- `content/GUIDELINE_EXAMPLE.md` — thruuu reference example
+- `content/GUIDELINE_MAKER.md` — rebuild GUIDELINE via interview
+- `content/GUIDELINE_EXAMPLE.md` — thruuu reference
