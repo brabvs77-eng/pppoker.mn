@@ -46,8 +46,8 @@ export const translations = {
     features: {
       title: 'Яагаад <span class="gold">Baatryn Öröö</span>?',
       subtitle: 'Тоглогчдод зориулсан найдвартай, тав тухтай орчин',
-      f1t: '100% Бонус', f1d: 'Анхны депозитдээ 100% бонус аваарай. Хоёр дахин их боломж, хоёр дахин их хөгжил.',
-      f2t: 'Хурдан төлбөр', f2d: 'Депозит 10 минутад, мөнгө таталт хурдан. Хүлээлтгүй хожлыг мэдэр.',
+      f1t: '100% Бонус', f1d: 'Анхны депозитдээ 100% бонус аваарай. Хоёр дахин их боломж, хоёр дахин их хөгжил.', f1link: 'Нөхцөл унших →',
+      f2t: 'Хурдан төлбөр', f2d: 'Депозит 10 минутад, мөнгө таталт хурдан. Хүлээлтгүй хожлыг мэдэр.', f2link: 'Депозит, таталт →',
       f3t: 'Аюулгүй байдал', f3d: 'Бүх гүйлгээ хатуу хяналтын дор. Таны мөнгө найдвартай, аюулгүй.',
       f4t: 'Хялбар апп', f4d: 'Монгол покер татах — PPPoker апп Android, iOS, Windows, macOS дээр. Аль ч төхөөрөмжөөр тоглоорой.',
       f5t: '24/7 Дэмжлэг', f5d: 'Мэргэжлийн дэмжлэгийн баг үргэлж холбоотой. Шуурхай хариу, хүндэтгэлтэй харилцаа.',
@@ -155,8 +155,8 @@ export const translations = {
     features: {
       title: 'Why <span class="gold">Baatryn Öröö</span>?',
       subtitle: 'Reliable, comfortable environment for players',
-      f1t: '100% Bonus', f1d: 'Get 100% bonus on your first deposit. Double the opportunity, double the fun.',
-      f2t: 'Fast Payments', f2d: 'Deposits in 10 minutes, fast withdrawals. Feel the thrill without waiting.',
+      f1t: '100% Bonus', f1d: 'Get 100% bonus on your first deposit. Double the opportunity, double the fun.', f1link: 'Bonus terms →',
+      f2t: 'Fast Payments', f2d: 'Deposits in 10 minutes, fast withdrawals. Feel the thrill without waiting.', f2link: 'Deposit & withdraw →',
       f3t: 'Security', f3d: 'All transactions under strict control. Your money is safe and secure.',
       f4t: 'Easy App', f4d: 'Mongol poker download — PPPoker app on Android, iOS, Windows, macOS. Play on any device.',
       f5t: '24/7 Support', f5d: 'Professional support team always available. Fast response, respectful service.',
@@ -264,8 +264,8 @@ export const translations = {
     features: {
       title: '为什么选择<span class="gold">Baatryn Öröö</span>？',
       subtitle: '为玩家打造的可靠、舒适环境',
-      f1t: '100%奖金', f1d: '首次存款即享100%奖金。双倍机会，双倍乐趣。',
-      f2t: '快速支付', f2d: '存款10分钟到账，快速提款。无需等待即享胜利。',
+      f1t: '100%奖金', f1d: '首次存款即享100%奖金。双倍机会，双倍乐趣。', f1link: '奖金条款 →',
+      f2t: '快速支付', f2d: '存款10分钟到账，快速提款。无需等待即享胜利。', f2link: '存取款 →',
       f3t: '安全保障', f3d: '所有交易严格监控。您的资金安全有保障。',
       f4t: '便捷应用', f4d: '手机、笔记本、台式机——任何设备均可游戏。',
       f5t: '24/7客服', f5d: '专业客服团队随时在线。快速响应，尊重服务。',
@@ -373,8 +373,8 @@ export const translations = {
     features: {
       title: 'Почему <span class="gold">Baatryn Öröö</span>?',
       subtitle: 'Надёжная и комфортная среда для игроков',
-      f1t: 'Бонус 100%', f1d: 'Получите 100% бонус на первый депозит. Вдвое больше возможностей.',
-      f2t: 'Быстрые выплаты', f2d: 'Депозит за 10 минут, быстрый вывод. Почувствуйте победу без ожидания.',
+      f1t: 'Бонус 100%', f1d: 'Получите 100% бонус на первый депозит. Вдвое больше возможностей.', f1link: 'Условия бонуса →',
+      f2t: 'Быстрые выплаты', f2d: 'Депозит за 10 минут, быстрый вывод. Почувствуйте победу без ожидания.', f2link: 'Депозит и вывод →',
       f3t: 'Безопасность', f3d: 'Все транзакции под строгим контролем. Ваши деньги в безопасности.',
       f4t: 'Удобное приложение', f4d: 'Смартфон, ноутбук, ПК — играйте на любом устройстве.',
       f5t: 'Поддержка 24/7', f5d: 'Профессиональная команда поддержки всегда на связи.',
