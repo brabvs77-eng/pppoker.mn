@@ -1,46 +1,25 @@
 # Article plan — pppoker.mn
 
-Pipeline launched 2026-06-12. Orchestrator: `CLAUDE.md`.
+## Phase 2 — DONE (Academy 8/8)
 
-## Phase 2 — iteration 2 done
+All academy cards linked to articles.
+
+## Phase 3 — DONE (trust & GSC)
 
 | Slug | Status |
 |------|--------|
-| poker-setgel-zui | published |
-| bankroll-udirdlaga | published |
-| blef-uriag | published |
-| floating-taktik | published |
-| statistik-analiz | pending (a8) |
+| 100-bonus-nuhtsul | published |
+| deposit-withdraw-mongol | published |
+| bluff-poker-mongolia | published |
+| cash-game-mongol | published |
+| pppoker-klub-vs-betting | published |
 
-## Phase 2 — iteration 1 done
+## Phase 4 — remaining
 
-| Slug | Status | File |
-|------|--------|------|
-| mongol-poker-sistem | final | `content/articles/mongol-poker-sistem.md` |
-| mongol-poker-tatah | final | `content/articles/mongol-poker-tatah.md` |
-| online-poker-mongol-2026 | final | `content/articles/online-poker-mongol-2026.md` |
+- poker-terms-mn
 
-Briefs: `briefs/*.md` (gitignored working copies).
-
-## Phase 2 — Academy (next)
-
-- poker-kombinatsiud, pozitsiin-huch, ehnii-gar-songolt, poker-setgel-zui
-
-## Phase 3 — Formats
-
-- holdem-vs-omaha, cash-game-mongol, pppoker-klub-vs-betting, bluff-poker-mongolia
-
-## Phase 4 — Trust
-
-- 100-bonus-nuhtsul, deposit-withdraw-mongol, poker-terms-mn
-
-## Phase 5 — Brand-parasite (after 50–60 core articles)
+## Phase 5 — Brand-parasite (after 50–60 core)
 
 See `content/BRAND-PARASITE-STRATEGY.md`.
 
-## Publish checklist (per article)
-
-1. Approve draft in `content/articles/`
-2. Add route/page on site (or expand SPA)
-3. Update internal links in existing articles
-4. Submit URL in GSC
+**Total published:** 17 articles

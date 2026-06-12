@@ -629,6 +629,19 @@ img { max-width: 100%; display: block; }
   color: var(--text-muted);
   font-size: 0.9rem;
   line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.feature-link {
+  display: inline-block;
+  color: var(--gold);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.feature-link:hover {
+  color: var(--gold-light);
+  text-decoration: underline;
 }
 
 /* === HOW TO / CTA === */
