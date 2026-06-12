@@ -4,7 +4,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "articles:build": "node scripts/build-articles.mjs",
+    "predev": "node scripts/build-articles.mjs",
     "dev": "vite",
+    "prebuild": "node scripts/build-articles.mjs",
     "build": "vite build",
     "preview": "vite preview"
   },

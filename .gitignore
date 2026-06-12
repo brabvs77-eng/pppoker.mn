@@ -16,6 +16,7 @@ knowledge/*
 !knowledge/.gitkeep
 !knowledge/README.md
 !knowledge/semantic-core.example.md
+!knowledge/semantic-core.md
 .claude/research/
 !.claude/research/.gitkeep
 wordstat-*.json
