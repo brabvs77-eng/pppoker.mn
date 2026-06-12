@@ -1,18 +1,21 @@
 #!/usr/bin/env node
 /**
- * Renders content/articles/*.md → articles/index.html + articles/{slug}/index.html
+ * Renders content/articles/*.md + content/articles/{lang}/*.md
+ * → articles/ + {lang}/articles/
  */
-import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'fs'
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync, statSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
+import { ARTICLE_I18N, LANG_LABELS } from './article-i18n.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = join(__dirname, '..')
 const contentDir = join(root, 'content', 'articles')
-const outDir = join(root, 'articles')
-
 const TELEGRAM_PLAY = 'https://t.me/BatrynOrooSupport'
+const SITE = 'https://pppoker.mn'
+
 const ARTICLES = []
+const GROUPS = new Map()
 
 function parseFrontmatter(raw) {
   const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/)
@@ -116,6 +119,28 @@ function mdToHtml(md) {
   return out.join('\n')
 }
 
+function articlePath(article) {
+  if (article.lang === 'mn') return `/articles/${article.slug}/`
+  return `/${article.lang}/articles/${article.slug}/`
+}
+
+function articleUrl(article) {
+  return `${SITE}${articlePath(article)}`
+}
+
+function homeUrl(lang) {
+  return lang === 'mn' ? `${SITE}/` : `${SITE}/?lang=${lang}`
+}
+
+function articlesIndexPath(lang) {
+  return lang === 'mn' ? '/articles/' : `/${lang}/articles/`
+}
+
+function outFilePath(article) {
+  const rel = articlePath(article).replace(/^\//, '').replace(/\/$/, '')
+  return join(root, rel, 'index.html')
+}
+
 function faviconHead() {
   return `  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -139,23 +164,65 @@ function metrikaBody() {
   return `  <noscript><div><img src="https://mc.yandex.ru/watch/109810225" style="position:absolute; left:-9999px;" alt="" /></div></noscript>`
 }
 
-function nav() {
+function hreflangHead(article) {
+  const group = GROUPS.get(article.groupId) || {}
+  const lines = []
+  const defaultArticle = group.mn || article
+  for (const [lang, a] of Object.entries(group)) {
+    lines.push(`  <link rel="alternate" hreflang="${lang}" href="${articleUrl(a)}" />`)
+  }
+  if (group.mn) {
+    lines.push(`  <link rel="alternate" hreflang="x-default" href="${articleUrl(defaultArticle)}" />`)
+  }
+  return lines.join('\n')
+}
+
+function langSwitcher(article) {
+  const group = GROUPS.get(article.groupId) || {}
+  const langs = Object.keys(group).sort((a, b) => (a === 'mn' ? -1 : b === 'mn' ? 1 : a.localeCompare(b)))
+  if (langs.length <= 1) return ''
+
+  const t = ARTICLE_I18N[article.lang] || ARTICLE_I18N.mn
+  const items = langs
+    .map(lang => {
+      const a = group[lang]
+      const active = lang === article.lang ? ' class="active"' : ''
+      return `              <li role="menuitem"><a href="${articlePath(a)}"${active}>${LANG_LABELS[lang] || lang.toUpperCase()}</a></li>`
+    })
+    .join('\n')
+
+  return `          <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-current" id="langBtn" aria-label="${t.langSwitcher.aria}" aria-expanded="false">
+              <span id="langLabel">${LANG_LABELS[article.lang] || article.lang.toUpperCase()}</span> ▾
+            </button>
+            <ul class="lang-menu" id="langMenu" role="menu">
+${items}
+            </ul>
+          </div>`
+}
+
+function nav(article) {
+  const lang = article.lang
+  const t = ARTICLE_I18N[lang] || ARTICLE_I18N.mn
+  const home = homeUrl(lang)
+  const hash = lang === 'mn' ? '' : `?lang=${lang}`
   return `  <header>
     <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
       <div class="container nav-container">
-        <a href="/" class="nav-logo" aria-label="Baatryn Öröö Home">
+        <a href="${home}" class="nav-logo" aria-label="${t.nav.homeAria}">
           <span class="logo-icon">♠</span>
           <span class="logo-text">BAATRYN ÖRÖÖ</span>
         </a>
         <ul class="nav-links" id="navLinks">
-          <li><a href="/#games">Тоглоомууд</a></li>
-          <li><a href="/#features">Боломжууд</a></li>
-          <li><a href="/articles/" class="active">Нийтлэл</a></li>
-          <li><a href="/#academy">Академи</a></li>
-          <li><a href="/#faq">FAQ</a></li>
+          <li><a href="${home}#games">${t.nav.games}</a></li>
+          <li><a href="${home}#features">${t.nav.features}</a></li>
+          <li><a href="${articlesIndexPath(lang)}" class="active">${t.nav.articles}</a></li>
+          <li><a href="${home}#academy">${t.nav.academy}</a></li>
+          <li><a href="${home}#faq">${t.nav.faq}</a></li>
         </ul>
         <div class="nav-right">
-          <a href="${TELEGRAM_PLAY}" class="nav-btn" rel="noopener" target="_blank">Тоглох</a>
+${langSwitcher(article)}
+          <a href="${TELEGRAM_PLAY}" class="nav-btn" rel="noopener" target="_blank">${t.nav.play}</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -165,53 +232,63 @@ function nav() {
   </header>`
 }
 
-function footer(articles) {
+function footer(lang, articles) {
+  const t = ARTICLE_I18N[lang] || ARTICLE_I18N.mn
   const articleLinks = articles
-    .map(a => `            <li><a href="/articles/${a.slug}/">${a.listTitle}</a></li>`)
+    .map(a => `            <li><a href="${articlePath(a)}">${a.listTitle}</a></li>`)
     .join('\n')
   return `  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="nav-logo"><span class="logo-icon">♠</span><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
-          <p>Монголын покерын клуб. Онлайн покер — жинхэнэ тоглогчдын талбар.</p>
+          <p>${t.footer.brand}</p>
         </div>
         <div class="footer-links">
-          <h4>Нийтлэл</h4>
+          <h4>${t.footer.articles}</h4>
           <ul>
 ${articleLinks}
           </ul>
         </div>
         <div class="footer-links">
-          <h4>Холбоо</h4>
+          <h4>${t.footer.contact}</h4>
           <ul>
             <li><a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>♠ BAATRYN ÖRÖÖ — Ухаалгаар тогло, удаан ял.</p>
+        <p>${t.footer.tagline}</p>
       </div>
     </div>
   </footer>`
 }
 
-function articlePage(article, allArticles) {
-  const { slug, metaTitle, metaDesc, title, html } = article
-  const url = `https://pppoker.mn/articles/${slug}/`
+function articlePage(article, langArticles) {
+  const { slug, metaTitle, metaDesc, title, html, lang } = article
+  const t = ARTICLE_I18N[lang] || ARTICLE_I18N.mn
+  const url = articleUrl(article)
   const jsonLd = JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: title,
     description: metaDesc,
     author: { '@type': 'Organization', name: 'Baatryn Öröö' },
-    publisher: { '@type': 'Organization', name: 'Baatryn Öröö', url: 'https://pppoker.mn' },
+    publisher: { '@type': 'Organization', name: 'Baatryn Öröö', url: SITE },
     mainEntityOfPage: url,
-    inLanguage: 'mn',
+    inLanguage: lang,
   })
 
+  const hreflang = hreflangHead(article)
+  const ogAlts =
+    lang !== 'mn' && GROUPS.get(article.groupId)?.mn
+      ? `  <meta property="og:locale:alternate" content="mn_MN" />`
+      : lang === 'mn' && GROUPS.get(article.groupId)?.en
+        ? `  <meta property="og:locale:alternate" content="en_US" />`
+        : ''
+
   return `<!DOCTYPE html>
-<html lang="mn">
+<html lang="${t.htmlLang}">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -219,13 +296,15 @@ function articlePage(article, allArticles) {
   <meta name="description" content="${metaDesc}" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="${url}" />
+${hreflang}
 ${faviconHead()}
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Baatryn Öröö" />
   <meta property="og:title" content="${metaTitle}" />
   <meta property="og:description" content="${metaDesc}" />
   <meta property="og:url" content="${url}" />
-  <meta property="og:locale" content="mn_MN" />
+  <meta property="og:locale" content="${t.ogLocale}" />
+${ogAlts}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
@@ -236,50 +315,106 @@ ${metrikaHead()}
 <body>
 ${metrikaBody()}
   <a href="#main-content" class="skip-link">Skip to content</a>
-${nav()}
+${nav(article)}
   <main id="main-content" class="article-page">
     <div class="container">
       <nav class="article-breadcrumb" aria-label="Breadcrumb">
-        <a href="/">Нүүр</a> <span>/</span> <a href="/articles/">Нийтлэл</a> <span>/</span> <span>${title}</span>
+        <a href="${homeUrl(lang)}">${t.breadcrumb.home}</a> <span>/</span> <a href="${articlesIndexPath(lang)}">${t.breadcrumb.articles}</a> <span>/</span> <span>${title}</span>
       </nav>
       <article class="article-body">
 ${html}
       </article>
       <div class="article-cta">
-        <a href="${TELEGRAM_PLAY}" class="btn btn-primary" rel="noopener" target="_blank">Одоо тоглох →</a>
-        <a href="/articles/" class="btn btn-outline">Бусад нийтлэл</a>
+        <a href="${TELEGRAM_PLAY}" class="btn btn-primary" rel="noopener" target="_blank">${t.cta.play}</a>
+        <a href="${articlesIndexPath(lang)}" class="btn btn-outline">${t.cta.more}</a>
       </div>
     </div>
   </main>
-${footer(allArticles)}
+${footer(lang, langArticles)}
   <script type="module" src="/src/article-page.js"></script>
 </body>
 </html>`
 }
 
-function indexPage(articles) {
+function indexLangSwitcher(currentLang) {
+  const hubs = [
+    { lang: 'mn', path: '/articles/' },
+    { lang: 'en', path: '/en/articles/' },
+  ]
+  const t = ARTICLE_I18N[currentLang] || ARTICLE_I18N.mn
+  const items = hubs
+    .map(({ lang, path }) => {
+      const active = lang === currentLang ? ' class="active"' : ''
+      return `              <li role="menuitem"><a href="${path}"${active}>${LANG_LABELS[lang]}</a></li>`
+    })
+    .join('\n')
+  return `          <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-current" id="langBtn" aria-label="${t.langSwitcher.aria}" aria-expanded="false">
+              <span id="langLabel">${LANG_LABELS[currentLang]}</span> ▾
+            </button>
+            <ul class="lang-menu" id="langMenu" role="menu">
+${items}
+            </ul>
+          </div>`
+}
+
+function navForIndex(lang) {
+  const t = ARTICLE_I18N[lang] || ARTICLE_I18N.mn
+  const home = homeUrl(lang)
+  return `  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container nav-container">
+        <a href="${home}" class="nav-logo" aria-label="${t.nav.homeAria}">
+          <span class="logo-icon">♠</span>
+          <span class="logo-text">BAATRYN ÖRÖÖ</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="${home}#games">${t.nav.games}</a></li>
+          <li><a href="${home}#features">${t.nav.features}</a></li>
+          <li><a href="${articlesIndexPath(lang)}" class="active">${t.nav.articles}</a></li>
+          <li><a href="${home}#academy">${t.nav.academy}</a></li>
+          <li><a href="${home}#faq">${t.nav.faq}</a></li>
+        </ul>
+        <div class="nav-right">
+${indexLangSwitcher(lang)}
+          <a href="${TELEGRAM_PLAY}" class="nav-btn" rel="noopener" target="_blank">${t.nav.play}</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>`
+}
+
+function indexPage(lang, articles) {
+  const t = ARTICLE_I18N[lang] || ARTICLE_I18N.mn
   const cards = articles
     .map(
-      a => `        <a href="/articles/${a.slug}/" class="article-card">
-          <span class="article-card-tag">Покер</span>
+      a => `        <a href="${articlePath(a)}" class="article-card">
+          <span class="article-card-tag">${t.index.cardTag}</span>
           <h2>${a.title}</h2>
           <p>${a.metaDesc}</p>
-          <span class="article-card-link">Унших →</span>
+          <span class="article-card-link">${t.index.read}</span>
         </a>`
     )
     .join('\n')
 
   return `<!DOCTYPE html>
-<html lang="mn">
+<html lang="${t.htmlLang}">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Покер нийтлэл | Baatryn Öröö — онлайн покер Монгол</title>
-  <meta name="description" content="Онлайн покер Монгол: монгол покер систем, татах заавар, хаана тоглох. Baatryn Öröö покерын нийтлэлүүд." />
-  <link rel="canonical" href="https://pppoker.mn/articles/" />
+  <title>${t.index.metaTitle}</title>
+  <meta name="description" content="${t.index.metaDesc}" />
+  <link rel="canonical" href="${t.index.canonical}" />
+  <link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/" />
+  <link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/" />
+  <link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/" />
 ${faviconHead()}
-  <meta property="og:title" content="Покер нийтлэл — Baatryn Öröö" />
-  <meta property="og:url" content="https://pppoker.mn/articles/" />
+  <meta property="og:title" content="${t.index.metaTitle}" />
+  <meta property="og:url" content="${t.index.canonical}" />
+  <meta property="og:locale" content="${t.ogLocale}" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
@@ -289,50 +424,89 @@ ${metrikaHead()}
 <body>
 ${metrikaBody()}
   <a href="#main-content" class="skip-link">Skip to content</a>
-${nav()}
+${navForIndex(lang)}
   <main id="main-content" class="article-page">
     <div class="container">
       <header class="article-index-header">
-        <h1 class="article-title">Покер <span class="gold">нийтлэл</span></h1>
-        <p class="article-index-desc">Онлайн покер Монгол — заавар, систем, хаана тоглох. Baatryn Öröö клубын мэдээлэл.</p>
+        <h1 class="article-title">${t.index.title}</h1>
+        <p class="article-index-desc">${t.index.desc}</p>
       </header>
       <div class="article-grid">
 ${cards}
       </div>
     </div>
   </main>
-${footer(articles)}
+${footer(lang, articles)}
   <script type="module" src="/src/article-page.js"></script>
 </body>
 </html>`
 }
 
-// Load markdown files
-const files = readdirSync(contentDir).filter(f => f.endsWith('.md') && f !== 'README.md')
-
-for (const file of files) {
-  const raw = readFileSync(join(contentDir, file), 'utf8')
+function loadMarkdown(filePath, langOverride) {
+  const raw = readFileSync(filePath, 'utf8')
   const { meta, body } = parseFrontmatter(raw)
-  const slug = meta.Slug || file.replace('.md', '')
+  const slug = meta.Slug || filePath.split('/').pop().replace('.md', '')
+  const lang = langOverride || meta.Language || 'mn'
+  const groupId = meta['Source Slug'] || slug
   const h1 = body.match(/^# (.+)$/m)?.[1] || slug
-  ARTICLES.push({
+  return {
     slug,
+    lang,
+    groupId,
     metaTitle: meta['Meta Title'] || h1,
     metaDesc: meta['Meta Description'] || '',
     title: h1,
     listTitle: meta['List Title'] || h1.replace(/\|.*/, '').trim().slice(0, 40),
     html: mdToHtml(body),
-  })
+  }
 }
 
-mkdirSync(outDir, { recursive: true })
+// Load MN articles (flat files)
+for (const file of readdirSync(contentDir).filter(f => f.endsWith('.md') && f !== 'README.md')) {
+  ARTICLES.push(loadMarkdown(join(contentDir, file), 'mn'))
+}
 
+// Load translated articles (content/articles/{lang}/*.md)
+for (const entry of readdirSync(contentDir)) {
+  const sub = join(contentDir, entry)
+  if (!statSync(sub).isDirectory()) continue
+  const lang = entry
+  if (!['en', 'ru', 'zh'].includes(lang)) continue
+  for (const file of readdirSync(sub).filter(f => f.endsWith('.md'))) {
+    ARTICLES.push(loadMarkdown(join(sub, file), lang))
+  }
+}
+
+// Build translation groups
 for (const article of ARTICLES) {
-  const dir = join(outDir, article.slug)
-  mkdirSync(dir, { recursive: true })
-  writeFileSync(join(dir, 'index.html'), articlePage(article, ARTICLES))
+  if (!GROUPS.has(article.groupId)) GROUPS.set(article.groupId, {})
+  GROUPS.get(article.groupId)[article.lang] = article
 }
 
-writeFileSync(join(outDir, 'index.html'), indexPage(ARTICLES))
+const byLang = { mn: [], en: [], ru: [], zh: [] }
+for (const article of ARTICLES) {
+  if (!byLang[article.lang]) byLang[article.lang] = []
+  byLang[article.lang].push(article)
+}
 
-console.log(`Built ${ARTICLES.length} articles → articles/`)
+let built = 0
+for (const article of ARTICLES) {
+  const langArticles = byLang[article.lang]
+  const outPath = outFilePath(article)
+  mkdirSync(dirname(outPath), { recursive: true })
+  writeFileSync(outPath, articlePage(article, langArticles))
+  built++
+}
+
+for (const lang of ['mn', 'en']) {
+  const list = byLang[lang]
+  if (!list?.length) continue
+  const indexOut =
+    lang === 'mn' ? join(root, 'articles', 'index.html') : join(root, lang, 'articles', 'index.html')
+  mkdirSync(dirname(indexOut), { recursive: true })
+  writeFileSync(indexOut, indexPage(lang, list))
+}
+
+const enCount = byLang.en?.length || 0
+const mnCount = byLang.mn?.length || 0
+console.log(`Built ${built} article pages (${mnCount} MN + ${enCount} EN) → articles/ + en/articles/`)

@@ -2,25 +2,27 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 import { readdirSync, existsSync } from 'fs'
 
+function collectArticleInputs(dir, inputs, prefix) {
+  if (!existsSync(dir)) return
+  const indexPath = resolve(dir, 'index.html')
+  if (existsSync(indexPath)) {
+    inputs[`${prefix}articlesIndex`] = indexPath
+  }
+  for (const name of readdirSync(dir, { withFileTypes: true })) {
+    if (!name.isDirectory()) continue
+    const htmlPath = resolve(dir, name.name, 'index.html')
+    if (existsSync(htmlPath)) {
+      inputs[`${prefix}article-${name.name}`] = htmlPath
+    }
+  }
+}
+
 function getArticleInputs() {
-  const articlesDir = resolve(__dirname, 'articles')
   const inputs = {
     main: resolve(__dirname, 'index.html'),
   }
-  if (!existsSync(articlesDir)) return inputs
-
-  const indexPath = resolve(articlesDir, 'index.html')
-  if (existsSync(indexPath)) {
-    inputs.articlesIndex = indexPath
-  }
-
-  for (const name of readdirSync(articlesDir, { withFileTypes: true })) {
-    if (!name.isDirectory()) continue
-    const htmlPath = resolve(articlesDir, name.name, 'index.html')
-    if (existsSync(htmlPath)) {
-      inputs[`article-${name.name}`] = htmlPath
-    }
-  }
+  collectArticleInputs(resolve(__dirname, 'articles'), inputs, '')
+  collectArticleInputs(resolve(__dirname, 'en', 'articles'), inputs, 'en-')
   return inputs
 }
 
