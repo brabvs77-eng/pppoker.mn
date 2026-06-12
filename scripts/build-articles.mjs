@@ -116,6 +116,13 @@ function mdToHtml(md) {
   return out.join('\n')
 }
 
+function faviconHead() {
+  return `  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />`
+}
+
 function metrikaHead() {
   return `  <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
@@ -212,6 +219,7 @@ function articlePage(article, allArticles) {
   <meta name="description" content="${metaDesc}" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="${url}" />
+${faviconHead()}
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Baatryn Öröö" />
   <meta property="og:title" content="${metaTitle}" />
@@ -269,6 +277,7 @@ function indexPage(articles) {
   <title>Покер нийтлэл | Baatryn Öröö — онлайн покер Монгол</title>
   <meta name="description" content="Онлайн покер Монгол: монгол покер систем, татах заавар, хаана тоглох. Baatryn Öröö покерын нийтлэлүүд." />
   <link rel="canonical" href="https://pppoker.mn/articles/" />
+${faviconHead()}
   <meta property="og:title" content="Покер нийтлэл — Baatryn Öröö" />
   <meta property="og:url" content="https://pppoker.mn/articles/" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
