@@ -24,4 +24,8 @@ All academy cards linked to articles.
 
 See `content/BRAND-PARASITE-STRATEGY.md`.
 
-**Total published:** 18 articles
+## I18n — multilingual articles
+
+See `content/I18N-TRANSLATION-PLAN.md` — EN → RU → ZH, `/en/articles/{slug}/` URL scheme.
+
+**Total published:** 18 articles (MN only)
