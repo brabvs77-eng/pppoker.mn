@@ -1,5 +1,5 @@
 ---
-Meta Title: Монгол покер систем гэж юу вэ? Baatryn Öröö ба PPPoker
+Meta Title: Монгол покер систем | Онлайн покер — Baatryn Öröö
 Meta Description: Монгол покер систем — PPPoker дээрх Baatryn Öröö клуб. Hold'em, Omaha, 24/7 ширээ, 10,000₮-өөр эхлэх, 100% бонус.
 Slug: mongol-poker-sistem
 Language: mn

@@ -1,5 +1,5 @@
 ---
-Meta Title: Монгол покер хэрхэн татах вэ? PPPoker апп — бүрэн заавар
+Meta Title: Монгол покер татах | Онлайн покер апп — Baatryn Öröö
 Meta Description: Монгол покер татах алхам алхмаар: PPPoker Android, iOS, PC дээр суулгаж, Baatryn Öröö клубт нэгдэх, 10,000₮-өөр цэнэглэх.
 Slug: mongol-poker-tatah
 Language: mn

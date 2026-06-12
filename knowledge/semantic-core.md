@@ -41,7 +41,19 @@ Updated: 2026-06-12. Sources: GSC, Google Trends MN, competitor SERP review.
 - No PPPoker club-specific guides in MN Cyrillic
 - Weak answers for «монгол покер систем», «монгол покер татах»
 
-## Phase 1 articles (active)
+## Keyword strategy (2026-06)
+
+**Discovery = Покер / онлайн покер** (head, Google Trends MN ~68 for `poker`).
+**PPPoker** = low/zero MN search volume — keep as **supporting entity** (how-to, app install), not in title/H1.
+
+| Layer | Terms | Where |
+|-------|-------|-------|
+| Head | покер, онлайн покер, poker | Title, H1, hero, article hub |
+| Mid | онлайн покер монгол, покер монгол, baatryn oroo | Meta, intro, body |
+| Brand | Baatryn Öröö / Баатрын Өрөө | CTA, trust blocks |
+| Technical | PPPoker | Install steps, FAQ «апп», not main keyword |
+
+Do not remove PPPoker from content — players need it to find/install the app. Shift **SEO packaging** to покер-first.
 1. mongol-poker-sistem
 2. mongol-poker-tatah
 3. online-poker-mongol-2026
