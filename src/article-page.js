@@ -22,4 +22,25 @@ function initNavbar() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', initNavbar)
+function initLangSwitcher() {
+  const btn = document.getElementById('langBtn')
+  const menu = document.getElementById('langMenu')
+  if (!btn || !menu) return
+
+  btn.addEventListener('click', () => {
+    const open = menu.classList.toggle('open')
+    btn.setAttribute('aria-expanded', open)
+  })
+
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.lang-switcher')) {
+      menu.classList.remove('open')
+      btn.setAttribute('aria-expanded', 'false')
+    }
+  })
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initNavbar()
+  initLangSwitcher()
+})

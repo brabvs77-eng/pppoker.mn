@@ -1,9 +1,13 @@
 # Articles — published drafts
 
-Markdown articles from the content pipeline (`CLAUDE.md`). After site routing is added, each slug becomes a URL:
+Markdown articles from the content pipeline (`CLAUDE.md`).
 
-- `/articles/mongol-poker-sistem`
-- `/articles/mongol-poker-tatah`
-- `/articles/online-poker-mongol-2026`
+## Structure
 
-Source of truth for approved copy until integrated into HTML.
+- **MN (default):** `content/articles/{slug}.md` → `/articles/{slug}/`
+- **Translations:** `content/articles/{lang}/{slug}.md` → `/{lang}/articles/{slug}/`
+- Link translations with `Source Slug:` in frontmatter (MN group id)
+
+## I18n
+
+See `content/I18N-TRANSLATION-PLAN.md`.

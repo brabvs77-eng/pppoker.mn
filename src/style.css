@@ -207,6 +207,27 @@ img { max-width: 100%; display: block; }
   color: var(--gold);
 }
 
+.lang-menu a {
+  display: block;
+  width: 100%;
+  color: var(--text-muted);
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: var(--transition);
+  text-align: left;
+}
+
+.lang-menu a:hover {
+  background: rgba(201, 168, 76, 0.12);
+  color: var(--gold);
+}
+
+.lang-menu a.active {
+  color: var(--gold);
+}
+
 /* Skip Link */
 .skip-link {
   position: absolute;
