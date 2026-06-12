@@ -714,6 +714,12 @@ img { max-width: 100%; display: block; }
   transition: var(--transition);
 }
 
+a.academy-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
 .academy-card:hover {
   border-color: var(--gold-dark);
   transform: translateY(-3px);
@@ -743,6 +749,22 @@ img { max-width: 100%; display: block; }
   color: var(--text-muted);
   font-size: 0.85rem;
   line-height: 1.5;
+}
+
+.section-link-wrap {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.section-link {
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.section-link:hover {
+  color: var(--gold-light);
+  text-decoration: underline;
 }
 
 /* === CINEMA === */

@@ -41,6 +41,7 @@ export const translations = {
       omahaDesc: '4 гарын карт, илүү олон комбинаци, том банкууд. Хурд, адреналин, тасралтгүй экшн.',
       omahaF1: 'Илүү динамик тоглолт', omahaF2: 'Том банкууд, хүчтэй комбинациуд', omahaF3: 'VIP ширээнүүд нээлттэй',
       tablesTitle: 'Манай ширээнүүд',
+      compareLink: 'Hold\'em vs Omaha — ялгаа, аль нь эхлэгчид?',
     },
     features: {
       title: 'Яагаад <span class="gold">Baatryn Öröö</span>?',
@@ -149,6 +150,7 @@ export const translations = {
       omahaDesc: '4 hole cards, more combinations, bigger pots. Speed, adrenaline, non-stop action.',
       omahaF1: 'More dynamic gameplay', omahaF2: 'Big pots, strong combos', omahaF3: 'VIP tables available',
       tablesTitle: 'Our Tables',
+      compareLink: 'Hold\'em vs Omaha — which format for beginners?',
     },
     features: {
       title: 'Why <span class="gold">Baatryn Öröö</span>?',
@@ -257,6 +259,7 @@ export const translations = {
       omahaDesc: '4张底牌，更多组合，更大底池。速度、肾上腺素、不间断动作。',
       omahaF1: '更具活力的游戏', omahaF2: '大底池，强组合', omahaF3: 'VIP牌桌开放',
       tablesTitle: '我们的牌桌',
+      compareLink: '德州扑克 vs 奥马哈 — 新手选哪个？',
     },
     features: {
       title: '为什么选择<span class="gold">Baatryn Öröö</span>？',
@@ -365,6 +368,7 @@ export const translations = {
       omahaDesc: '4 карманные карты, больше комбинаций, крупные банки. Скорость, адреналин, безостановочный экшн.',
       omahaF1: 'Более динамичная игра', omahaF2: 'Крупные банки, сильные комбинации', omahaF3: 'VIP-столы доступны',
       tablesTitle: 'Наши столы',
+      compareLink: 'Hold\'em vs Omaha — что выбрать новичку?',
     },
     features: {
       title: 'Почему <span class="gold">Baatryn Öröö</span>?',
