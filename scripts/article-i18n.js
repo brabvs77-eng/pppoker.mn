@@ -93,6 +93,37 @@ export const ARTICLE_I18N = {
     },
     langSwitcher: { label: 'RU', aria: 'Сменить язык' },
   },
+  zh: {
+    htmlLang: 'zh',
+    ogLocale: 'zh_CN',
+    nav: {
+      games: '游戏',
+      features: '特色',
+      articles: '文章',
+      academy: '学院',
+      faq: '常见问题',
+      play: '开始游戏',
+      homeAria: 'Baatryn Öröö 首页',
+    },
+    breadcrumb: { home: '首页', articles: '文章' },
+    cta: { play: '立即游戏 →', more: '更多文章' },
+    footer: {
+      brand: '蒙古扑克俱乐部。在线扑克——真正玩家的竞技场。',
+      articles: '文章',
+      contact: '联系',
+      tagline: '♠ BAATRYN ÖRÖÖ — 智取牌局，长久制胜。',
+    },
+    index: {
+      title: '扑克<span class="gold">文章</span>',
+      desc: '蒙古在线扑克——指南、系统、在哪里玩。Baatryn Öröö 俱乐部信息。',
+      metaTitle: '扑克文章 | Baatryn Öröö — 蒙古在线扑克',
+      metaDesc: '蒙古在线扑克：蒙古扑克系统、下载应用、在哪里玩。Baatryn Öröö 俱乐部指南。',
+      cardTag: '扑克',
+      read: '阅读 →',
+      canonical: 'https://pppoker.mn/zh/articles/',
+    },
+    langSwitcher: { label: '中文', aria: '切换语言' },
+  },
 }
 
 export const LANG_LABELS = { mn: 'MN', en: 'EN', ru: 'RU', zh: '中文' }

@@ -225,9 +225,9 @@ I18n-2  RU: Tier 1 pillars (3)            ← done (2026-06-13)
 I18n-3  EN+RU: Tier 2 trust (5)           ← done (2026-06-13)
 I18n-4  EN: Tier 3 academy (5)           ← done (2026-06-13)
 I18n-5  RU: Tier 3 academy (5)            ← done (2026-06-13)
-I18n-6  ZH: Tier 1 + Tier 2 (8)          ← next (EN+RU complete)
+I18n-6  ZH: Tier 1 + Tier 2 (8)          ← done (2026-06-13)
 I18n-7  Auto sitemap + FAQ schema i18n
-I18n-8  Tier 4 + remaining ZH
+I18n-8  ZH: Tier 3 + Tier 4 (10)         ← next
 ```
 
 ---
