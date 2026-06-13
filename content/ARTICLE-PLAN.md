@@ -36,6 +36,7 @@ See `content/I18N-TRANSLATION-PLAN.md`.
 | I18n-4 EN Tier 3 academy (5) | published |
 | I18n-5 RU Tier 3 academy (5) | published |
 | I18n Tier 4 EN strategy (5) | published |
+| I18n RU Tier 4 strategy (5) | published |
 | I18n-6 ZH Tier 1+2 (8) | pending |
 
-**Total published:** 18 MN + 18 EN + 13 RU articles (EN = full MN parity)
+**Total published:** 18 MN + 18 EN + 18 RU articles (full MN parity EN + RU)
