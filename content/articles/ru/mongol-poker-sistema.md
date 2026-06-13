@@ -76,7 +76,7 @@ PPPoker — это **платформа**, а не одна игра. После
 
 1. **Скачать PPPoker** — Android, iOS, Windows, macOS
 2. **Вступить в Baatryn Öröö** — поиск клуба в приложении
-3. **[Пополнить](https://pppoker.mn/?lang=ru#howto)** — от 10,000₮, затем выбрать стол
+3. **[Пополнить](https://pppoker.mn/?lang=ru#cta)** — от 10,000₮, затем выбрать стол
 
 Пошаговая инструкция: [монгол покер скачать](https://pppoker.mn/ru/articles/mongol-poker-skachat/).
 

@@ -76,7 +76,7 @@ PPPoker 是一个**平台**，不是单一游戏。安装后你可以：
 
 1. **下载 PPPoker** — Android、iOS、Windows、macOS
 2. **加入 Baatryn Öröö** — 在应用内搜索俱乐部
-3. **[存款](https://pppoker.mn/?lang=zh#howto)** — 10,000₮ 起，然后选牌桌
+3. **[存款](https://pppoker.mn/?lang=zh#cta)** — 10,000₮ 起，然后选牌桌
 
 完整安装指南：[蒙古扑克下载](https://pppoker.mn/zh/articles/mongol-poker-xiazai/)。
 

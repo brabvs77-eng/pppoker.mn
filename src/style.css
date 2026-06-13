@@ -150,6 +150,16 @@ img { max-width: 100%; display: block; }
   transform: translateY(-1px);
 }
 
+.nav-mobile-play {
+  display: none;
+}
+
+.nav-btn--menu {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
 /* Language Switcher */
 .lang-switcher {
   position: relative;
@@ -1130,6 +1140,18 @@ a.academy-card {
 
   .nav-btn {
     display: none;
+  }
+
+  .nav-mobile-play {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+
+  .nav-mobile-play .nav-btn {
+    display: flex;
   }
 
   .nav-toggle {

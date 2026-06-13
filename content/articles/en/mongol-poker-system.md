@@ -75,7 +75,7 @@ Find the club as **Baatryn Öröö**, **Баатрын Өрөө**, or **baatryn 
 
 1. **Download PPPoker** — Android, iOS, Windows, macOS
 2. **Join Baatryn Öröö** — club search in the app
-3. **[Deposit](https://pppoker.mn/?lang=en#howto)** — from 10,000₮, then pick a table
+3. **[Deposit](https://pppoker.mn/?lang=en#cta)** — from 10,000₮, then pick a table
 
 Full install guide: [mongol poker download](https://pppoker.mn/en/articles/mongol-poker-download/).
 
