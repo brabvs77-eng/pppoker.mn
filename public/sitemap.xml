@@ -19,16 +19,28 @@
     <loc>https://pppoker.mn/articles/mongol-poker-sistem/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/mongol-poker-sistem/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/mongol-poker-system/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/mongol-poker-sistema/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/mongol-poker-sistem/" />
   </url>
   <url>
     <loc>https://pppoker.mn/articles/mongol-poker-tatah/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/mongol-poker-tatah/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/mongol-poker-download/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/mongol-poker-skachat/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/mongol-poker-tatah/" />
   </url>
   <url>
     <loc>https://pppoker.mn/articles/online-poker-mongol-2026/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/online-poker-mongol-2026/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/online-poker-mongolia-2026/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/online-poker-mongoliya-2026/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/online-poker-mongol-2026/" />
   </url>
   <url>
     <loc>https://pppoker.mn/articles/poker-kombinatsiud/</loc>
@@ -111,6 +123,16 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/ru/articles/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/" />
   </url>
   <url>
@@ -119,6 +141,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/mongol-poker-sistem/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/mongol-poker-system/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/mongol-poker-sistema/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/mongol-poker-sistem/" />
   </url>
   <url>
@@ -127,6 +150,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/mongol-poker-tatah/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/mongol-poker-download/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/mongol-poker-skachat/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/mongol-poker-tatah/" />
   </url>
   <url>
@@ -135,6 +159,34 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/online-poker-mongol-2026/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/online-poker-mongolia-2026/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/online-poker-mongoliya-2026/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/online-poker-mongol-2026/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/ru/articles/mongol-poker-sistema/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/mongol-poker-sistem/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/mongol-poker-system/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/mongol-poker-sistema/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/mongol-poker-sistem/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/ru/articles/mongol-poker-skachat/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/mongol-poker-tatah/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/mongol-poker-download/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/mongol-poker-skachat/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/mongol-poker-tatah/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/ru/articles/online-poker-mongoliya-2026/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/online-poker-mongol-2026/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/online-poker-mongolia-2026/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/online-poker-mongoliya-2026/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/online-poker-mongol-2026/" />
   </url>
 </urlset>

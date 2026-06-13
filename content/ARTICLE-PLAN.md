@@ -24,13 +24,14 @@ All academy cards linked to articles.
 
 See `content/BRAND-PARASITE-STRATEGY.md`.
 
-## I18n — multilingual articles (in progress)
+## I18n — multilingual articles
 
 See `content/I18N-TRANSLATION-PLAN.md`.
 
 | Phase | Status |
 |-------|--------|
 | I18n-1 EN pillars (3) | published |
-| I18n-2+ | pending |
+| I18n-2 RU pillars (3) | published |
+| I18n-3 EN+RU Tier 2 trust (5) | pending |
 
-**Total published:** 18 MN + 3 EN articles
+**Total published:** 18 MN + 3 EN + 3 RU articles
