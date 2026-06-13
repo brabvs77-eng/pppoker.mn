@@ -21,3 +21,5 @@ knowledge/*
 !.claude/research/.gitkeep
 wordstat-*.json
 google-trends-*.json
+gsc-export.json
+gsc-*.json
