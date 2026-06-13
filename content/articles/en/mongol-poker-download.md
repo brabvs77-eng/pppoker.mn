@@ -90,7 +90,7 @@ First time? Try 10,000₮ and confirm withdrawal works before scaling up.
 3. Start at 250/500 blinds if you are learning
 4. Take a seat and play
 
-Overview on the main site: [how to start](https://pppoker.mn/?lang=en#howto).
+Overview on the main site: [how to start](https://pppoker.mn/?lang=en#cta).
 
 ## Troubleshooting
 

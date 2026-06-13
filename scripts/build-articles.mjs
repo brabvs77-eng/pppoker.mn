@@ -143,10 +143,7 @@ function outFilePath(article) {
 }
 
 function faviconHead() {
-  return `  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="icon" href="/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />`
+  return `  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />`
 }
 
 function metrikaHead() {
@@ -176,6 +173,12 @@ function hreflangHead(article) {
     lines.push(`  <link rel="alternate" hreflang="x-default" href="${articleUrl(defaultArticle)}" />`)
   }
   return lines.join('\n')
+}
+
+function mobilePlayNavItem(playLabel) {
+  return `          <li class="nav-mobile-play">
+            <a href="${TELEGRAM_PLAY}" class="nav-btn nav-btn--menu" rel="noopener" target="_blank">${playLabel}</a>
+          </li>`
 }
 
 function langSwitcher(article) {
@@ -220,6 +223,7 @@ function nav(article) {
           <li><a href="${articlesIndexPath(lang)}" class="active">${t.nav.articles}</a></li>
           <li><a href="${home}#academy">${t.nav.academy}</a></li>
           <li><a href="${home}#faq">${t.nav.faq}</a></li>
+${mobilePlayNavItem(t.nav.play)}
         </ul>
         <div class="nav-right">
 ${langSwitcher(article)}
@@ -377,6 +381,7 @@ function navForIndex(lang) {
           <li><a href="${articlesIndexPath(lang)}" class="active">${t.nav.articles}</a></li>
           <li><a href="${home}#academy">${t.nav.academy}</a></li>
           <li><a href="${home}#faq">${t.nav.faq}</a></li>
+${mobilePlayNavItem(t.nav.play)}
         </ul>
         <div class="nav-right">
 ${indexLangSwitcher(lang)}

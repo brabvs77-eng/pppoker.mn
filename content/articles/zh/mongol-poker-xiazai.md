@@ -91,7 +91,7 @@ Stage: final
 3. 学习阶段从 250/500 盲注开始
 4. 入座游戏
 
-主站入门概览：[如何开始](https://pppoker.mn/?lang=zh#howto)。
+主站入门概览：[如何开始](https://pppoker.mn/?lang=zh#cta)。
 
 ## 故障排除
 
