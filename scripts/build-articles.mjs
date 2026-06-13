@@ -340,6 +340,7 @@ function indexLangSwitcher(currentLang) {
   const hubs = [
     { lang: 'mn', path: '/articles/' },
     { lang: 'en', path: '/en/articles/' },
+    { lang: 'ru', path: '/ru/articles/' },
   ]
   const t = ARTICLE_I18N[currentLang] || ARTICLE_I18N.mn
   const items = hubs
@@ -410,6 +411,7 @@ function indexPage(lang, articles) {
   <link rel="canonical" href="${t.index.canonical}" />
   <link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/" />
   <link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/" />
+  <link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/" />
   <link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/" />
 ${faviconHead()}
   <meta property="og:title" content="${t.index.metaTitle}" />
@@ -498,7 +500,7 @@ for (const article of ARTICLES) {
   built++
 }
 
-for (const lang of ['mn', 'en']) {
+for (const lang of ['mn', 'en', 'ru']) {
   const list = byLang[lang]
   if (!list?.length) continue
   const indexOut =
@@ -508,5 +510,6 @@ for (const lang of ['mn', 'en']) {
 }
 
 const enCount = byLang.en?.length || 0
+const ruCount = byLang.ru?.length || 0
 const mnCount = byLang.mn?.length || 0
-console.log(`Built ${built} article pages (${mnCount} MN + ${enCount} EN) → articles/ + en/articles/`)
+console.log(`Built ${built} article pages (${mnCount} MN + ${enCount} EN + ${ruCount} RU)`)

@@ -62,6 +62,37 @@ export const ARTICLE_I18N = {
     },
     langSwitcher: { label: 'EN', aria: 'Change language' },
   },
+  ru: {
+    htmlLang: 'ru',
+    ogLocale: 'ru_RU',
+    nav: {
+      games: 'Игры',
+      features: 'Возможности',
+      articles: 'Статьи',
+      academy: 'Академия',
+      faq: 'FAQ',
+      play: 'Играть',
+      homeAria: 'Baatryn Öröö — главная',
+    },
+    breadcrumb: { home: 'Главная', articles: 'Статьи' },
+    cta: { play: 'Играть →', more: 'Другие статьи' },
+    footer: {
+      brand: 'Покерный клуб в Монголии. Онлайн-покер — столы для настоящих игроков.',
+      articles: 'Статьи',
+      contact: 'Контакты',
+      tagline: '♠ BAATRYN ÖRÖÖ — Играй с умом, побеждай долго.',
+    },
+    index: {
+      title: 'Покер <span class="gold">статьи</span>',
+      desc: 'Онлайн покер Монгол — гайды, система, где играть. Клуб Baatryn Öröö.',
+      metaTitle: 'Статьи о покере | Baatryn Öröö — онлайн покер Монгол',
+      metaDesc: 'Онлайн покер Монгол: система монгол покер, скачать приложение, где играть. Гайды клуба Baatryn Öröö.',
+      cardTag: 'Покер',
+      read: 'Читать →',
+      canonical: 'https://pppoker.mn/ru/articles/',
+    },
+    langSwitcher: { label: 'RU', aria: 'Сменить язык' },
+  },
 }
 
 export const LANG_LABELS = { mn: 'MN', en: 'EN', ru: 'RU', zh: '中文' }
