@@ -38,6 +38,6 @@ See `content/I18N-TRANSLATION-PLAN.md`.
 | I18n Tier 4 EN strategy (5) | published |
 | I18n RU Tier 4 strategy (5) | published |
 | I18n-6 ZH Tier 1+2 (8) | published |
-| I18n-7 ZH Tier 3+4 (10) | pending |
+| I18n-7 ZH Tier 3+4 (10) | published |
 
-**Total published:** 18 MN + 18 EN + 18 RU + 8 ZH articles
+**Total published:** 18 MN + 18 EN + 18 RU + 18 ZH articles (full MN parity ZH)

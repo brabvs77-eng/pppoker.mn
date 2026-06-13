@@ -227,7 +227,8 @@ I18n-4  EN: Tier 3 academy (5)           ← done (2026-06-13)
 I18n-5  RU: Tier 3 academy (5)            ← done (2026-06-13)
 I18n-6  ZH: Tier 1 + Tier 2 (8)          ← done (2026-06-13)
 I18n-7  Auto sitemap + FAQ schema i18n
-I18n-8  ZH: Tier 3 + Tier 4 (10)         ← next
+I18n-8  ZH: Tier 3 + Tier 4 (10)         ← done (2026-06-13)
+I18n-9  Auto sitemap + FAQ schema i18n   ← next
 ```
 
 ---
