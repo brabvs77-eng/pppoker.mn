@@ -12,7 +12,9 @@
     "preview": "vite preview",
     "gsc": "node scripts/gsc.mjs",
     "gsc:test": "node scripts/gsc.mjs test",
-    "gsc:export": "node scripts/gsc.mjs export"
+    "gsc:export": "node scripts/gsc.mjs export",
+    "gsc:sitemap": "node scripts/gsc.mjs sitemap submit",
+    "gsc:index": "node scripts/gsc.mjs index"
   },
   "devDependencies": {
     "googleapis": "^173.0.0",

@@ -12,37 +12,64 @@
  *   node scripts/gsc.mjs queries [--days 28] [--limit 50]
  *   node scripts/gsc.mjs pages  [--days 28] [--limit 50]
  *   node scripts/gsc.mjs export [--days 28] [--out knowledge/gsc-export.json]
+ *   node scripts/gsc.mjs sitemap submit [--url https://pppoker.mn/sitemap.xml]
+ *   node scripts/gsc.mjs sitemap list
+ *   node scripts/gsc.mjs index URL [URL...]          # Indexing API (needs enable + Owner)
+ *   node scripts/gsc.mjs index-sitemap [--file public/sitemap.xml]
  */
-import { writeFileSync } from 'fs'
+import { readFileSync, writeFileSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { google } from 'googleapis'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = join(__dirname, '..')
-const SCOPES = ['https://www.googleapis.com/auth/webmasters.readonly']
+const SCOPES = {
+  read: ['https://www.googleapis.com/auth/webmasters.readonly'],
+  write: ['https://www.googleapis.com/auth/webmasters'],
+  index: ['https://www.googleapis.com/auth/indexing'],
+}
 
 const HELP = `
 GSC API — pppoker.mn
 
 Commands:
-  test     Check credentials and API access
-  sites    List properties available to the service account
-  queries  Top search queries (stdout table)
-  pages    Top landing pages (stdout table)
-  export   Save queries + pages + summary to JSON
+  test            Check credentials and API access
+  sites           List properties available to the service account
+  queries         Top search queries (stdout table)
+  pages           Top landing pages (stdout table)
+  export          Save queries + pages + summary to JSON
+  sitemap submit  Ping Google to recrawl sitemap.xml (recommended)
+  sitemap list    Show submitted sitemaps and status
+  index URL...    Notify Google about URL update (Indexing API)
+  index-sitemap   Submit all URLs from local sitemap via Indexing API
 
 Options:
   --days N     Lookback window (default: 28)
   --limit N    Row limit per report (default: 50, max: 25000)
   --out PATH   Export file path (default: knowledge/gsc-export.json)
   --site URL   Override GSC_SITE_URL
+  --url URL    Sitemap URL for sitemap submit (default: https://pppoker.mn/sitemap.xml)
+  --file PATH  Local sitemap for index-sitemap (default: public/sitemap.xml)
 `.trim()
 
 function parseArgs(argv) {
-  const args = { command: null, days: 28, limit: 50, out: join(root, 'knowledge', 'gsc-export.json'), site: null }
+  const args = {
+    command: null,
+    subcommand: null,
+    days: 28,
+    limit: 50,
+    out: join(root, 'knowledge', 'gsc-export.json'),
+    site: null,
+    sitemapUrl: 'https://pppoker.mn/sitemap.xml',
+    sitemapFile: join(root, 'public', 'sitemap.xml'),
+    urls: [],
+  }
   const rest = [...argv]
   if (rest.length && !rest[0].startsWith('-')) args.command = rest.shift()
+  if (args.command === 'sitemap' && rest.length && !rest[0].startsWith('-')) {
+    args.subcommand = rest.shift()
+  }
 
   for (let i = 0; i < rest.length; i++) {
     const a = rest[i]
@@ -50,7 +77,10 @@ function parseArgs(argv) {
     else if (a === '--limit') args.limit = Number(rest[++i])
     else if (a === '--out') args.out = rest[++i]
     else if (a === '--site') args.site = rest[++i]
+    else if (a === '--url') args.sitemapUrl = rest[++i]
+    else if (a === '--file') args.sitemapFile = rest[++i]
     else if (a === '--help' || a === '-h') args.command = 'help'
+    else if (a.startsWith('http')) args.urls.push(a)
   }
   return args
 }
@@ -72,12 +102,24 @@ function loadCredentials() {
   return info
 }
 
-function getClient(info) {
-  const auth = new google.auth.GoogleAuth({
+function getAuth(info, scopeKey) {
+  return new google.auth.GoogleAuth({
     credentials: info,
-    scopes: SCOPES,
+    scopes: SCOPES[scopeKey],
   })
-  return google.searchconsole({ version: 'v1', auth })
+}
+
+function getSearchConsole(info, scopeKey = 'read') {
+  return google.searchconsole({ version: 'v1', auth: getAuth(info, scopeKey) })
+}
+
+function getIndexing(info) {
+  return google.indexing({ version: 'v3', auth: getAuth(info, 'index') })
+}
+
+function parseSitemapLocs(filePath) {
+  const xml = readFileSync(filePath, 'utf8')
+  return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1])
 }
 
 function dateRange(days) {
@@ -209,6 +251,69 @@ async function cmdPages(service, siteUrl, opts) {
   printTable(rows, 'page')
 }
 
+async function cmdSitemapSubmit(service, siteUrl, opts) {
+  await service.sitemaps.submit({
+    siteUrl,
+    feedpath: opts.sitemapUrl,
+  })
+  console.log(`Submitted sitemap: ${opts.sitemapUrl}`)
+  console.log('Google will recrawl URLs listed in the sitemap (not instant indexing).')
+}
+
+async function cmdSitemapList(service, siteUrl) {
+  const { data } = await service.sitemaps.list({ siteUrl })
+  const entries = data.sitemap || []
+  if (!entries.length) {
+    console.log('No sitemaps found.')
+    return
+  }
+  for (const s of entries) {
+    console.log(`${s.path}`)
+    console.log(`  lastSubmitted: ${s.lastSubmitted || '—'}`)
+    console.log(`  lastDownloaded: ${s.lastDownloaded || '—'}`)
+    console.log(`  pending: ${s.isPending ?? false}`)
+    console.log(`  errors: ${s.errors ?? 0}, warnings: ${s.warnings ?? 0}`)
+  }
+}
+
+async function cmdIndex(info, urls) {
+  if (!urls.length) {
+    throw new Error('Provide at least one URL: node scripts/gsc.mjs index https://pppoker.mn/...')
+  }
+  const indexing = getIndexing(info)
+  let ok = 0
+  for (const url of urls) {
+    try {
+      const { data } = await indexing.urlNotifications.publish({
+        requestBody: { url, type: 'URL_UPDATED' },
+      })
+      console.log(`OK  ${url}`)
+      if (data.urlNotificationMetadata?.latestUpdate?.notifyTime) {
+        console.log(`    notifyTime: ${data.urlNotificationMetadata.latestUpdate.notifyTime}`)
+      }
+      ok++
+    } catch (err) {
+      const msg = err.response?.data?.error?.message || err.message
+      console.error(`FAIL ${url}`)
+      console.error(`     ${msg}`)
+    }
+  }
+  console.log(`\nIndexed ${ok}/${urls.length} URL(s)`)
+  if (ok < urls.length) {
+    process.exitCode = 1
+  }
+}
+
+async function cmdIndexSitemap(info, opts) {
+  const urls = parseSitemapLocs(opts.sitemapFile)
+  if (!urls.length) {
+    throw new Error(`No <loc> entries in ${opts.sitemapFile}`)
+  }
+  const batch = urls.slice(0, opts.limit)
+  console.log(`Submitting ${batch.length} URL(s) from ${opts.sitemapFile}`)
+  await cmdIndex(info, batch)
+}
+
 async function cmdExport(service, siteUrl, opts) {
   const range = dateRange(opts.days)
   const [queries, pages] = await Promise.all([
@@ -238,24 +343,37 @@ async function main() {
   }
 
   const info = loadCredentials()
-  const service = getClient(info)
-  const siteUrl = await resolveSiteUrl(service, opts.site)
+  const readService = getSearchConsole(info, 'read')
+  const siteUrl = await resolveSiteUrl(readService, opts.site)
 
   switch (opts.command) {
     case 'test':
-      await cmdTest(service, siteUrl)
+      await cmdTest(readService, siteUrl)
       break
     case 'sites':
-      await cmdSites(service)
+      await cmdSites(readService)
       break
     case 'queries':
-      await cmdQueries(service, siteUrl, opts)
+      await cmdQueries(readService, siteUrl, opts)
       break
     case 'pages':
-      await cmdPages(service, siteUrl, opts)
+      await cmdPages(readService, siteUrl, opts)
       break
     case 'export':
-      await cmdExport(service, siteUrl, opts)
+      await cmdExport(readService, siteUrl, opts)
+      break
+    case 'sitemap': {
+      const writeService = getSearchConsole(info, 'write')
+      if (opts.subcommand === 'submit') await cmdSitemapSubmit(writeService, siteUrl, opts)
+      else if (opts.subcommand === 'list') await cmdSitemapList(readService, siteUrl)
+      else throw new Error('Use: sitemap submit | sitemap list')
+      break
+    }
+    case 'index':
+      await cmdIndex(info, opts.urls)
+      break
+    case 'index-sitemap':
+      await cmdIndexSitemap(info, opts)
       break
     default:
       console.error(`Unknown command: ${opts.command}\n\n${HELP}`)
