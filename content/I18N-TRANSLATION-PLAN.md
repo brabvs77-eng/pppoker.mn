@@ -222,8 +222,8 @@ content/articles/mongol-poker-sistem.en.md
 I18n-0  Plan + pipeline refactor          ← this document
 I18n-1  EN: Tier 1 pillars (3)            ← done
 I18n-2  RU: Tier 1 pillars (3)            ← done (2026-06-13)
-I18n-3  EN+RU: Tier 2 trust (5)           ← next
-I18n-4  EN: Tier 3 academy (5)
+I18n-3  EN+RU: Tier 2 trust (5)           ← done (2026-06-13)
+I18n-4  EN: Tier 3 academy (5)           ← next
 I18n-5  RU: Tier 2–3 remaining
 I18n-6  ZH: Tier 1 + Tier 2 (8)
 I18n-7  Auto sitemap + FAQ schema i18n
