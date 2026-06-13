@@ -34,6 +34,7 @@ See `content/I18N-TRANSLATION-PLAN.md`.
 | I18n-2 RU pillars (3) | published |
 | I18n-3 EN+RU Tier 2 trust (5) | published |
 | I18n-4 EN Tier 3 academy (5) | published |
-| I18n-5 RU Tier 2–3 remaining | pending |
+| I18n-5 RU Tier 3 academy (5) | published |
+| I18n-6 ZH Tier 1+2 (8) | pending |
 
-**Total published:** 18 MN + 13 EN + 8 RU articles
+**Total published:** 18 MN + 13 EN + 13 RU articles
