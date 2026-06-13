@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "articles:build": "node scripts/build-articles.mjs",
+    "sitemap:build": "node scripts/build-articles.mjs",
     "predev": "node scripts/build-articles.mjs",
     "dev": "vite",
     "prebuild": "node scripts/build-articles.mjs",

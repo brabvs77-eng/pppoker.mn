@@ -7,6 +7,7 @@ import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync, statSy
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { ARTICLE_I18N, LANG_LABELS } from './article-i18n.js'
+import { writeSitemap } from './sitemap.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = join(__dirname, '..')
@@ -516,3 +517,6 @@ const ruCount = byLang.ru?.length || 0
 const zhCount = byLang.zh?.length || 0
 const mnCount = byLang.mn?.length || 0
 console.log(`Built ${built} article pages (${mnCount} MN + ${enCount} EN + ${ruCount} RU + ${zhCount} ZH)`)
+
+const { outPath: sitemapPath, urlCount } = writeSitemap(GROUPS, byLang, root)
+console.log(`Wrote sitemap (${urlCount} URLs) → ${sitemapPath.replace(root + '/', '')}`)

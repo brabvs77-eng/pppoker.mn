@@ -1,4 +1,5 @@
 import { translations, getLang, setLang, t } from './i18n.js'
+import { applyFaqSchema } from './faq-schema.js'
 
 function getNestedValue(obj, path) {
   return path.split('.').reduce((o, k) => o && o[k], obj)
@@ -37,6 +38,8 @@ function applyTranslations(lang) {
 
   const langLabel = document.getElementById('langLabel')
   if (langLabel) langLabel.textContent = tr.langName
+
+  applyFaqSchema(lang)
 }
 
 function initLangSwitcher() {

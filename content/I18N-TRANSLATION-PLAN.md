@@ -159,11 +159,14 @@ content/articles/mongol-poker-sistem.en.md
 - [ ] Article cards in academy: optional `data-i18n` titles — or keep MN titles with «read in EN» badge until translated
 
 ### 4. Sitemap
-- [ ] Auto-generate `sitemap.xml` in build script (backlog)
-- [ ] Include all lang URLs with `xhtml:link` hreflang entries
+- [x] Auto-generate `sitemap.xml` in build script (`scripts/sitemap.mjs`)
+- [x] Include all lang URLs with `xhtml:link` hreflang entries
 
 ### 5. `robots.txt`
 - No change — single sitemap is enough.
+
+### 6. Homepage FAQ schema
+- [x] Sync FAQ JSON-LD on lang change (`src/faq-schema.js` + `main.js`)
 
 ---
 
@@ -228,7 +231,7 @@ I18n-5  RU: Tier 3 academy (5)            ← done (2026-06-13)
 I18n-6  ZH: Tier 1 + Tier 2 (8)          ← done (2026-06-13)
 I18n-7  Auto sitemap + FAQ schema i18n
 I18n-8  ZH: Tier 3 + Tier 4 (10)         ← done (2026-06-13)
-I18n-9  Auto sitemap + FAQ schema i18n   ← next
+I18n-9  Auto sitemap + FAQ schema i18n   ← done (2026-06-13)
 ```
 
 ---
