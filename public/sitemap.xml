@@ -48,6 +48,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/poker-kombinatsiud/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/poker-hand-rankings/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/poker-kombinatsii/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/poker-kombinatsiud/" />
   </url>
   <url>
@@ -56,6 +57,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/ehnii-gar-songolt/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/starting-hand-selection/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/vybor-startovykh-ruk/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/ehnii-gar-songolt/" />
   </url>
   <url>
@@ -69,6 +71,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/holdem-vs-omaha/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/holdem-vs-omaha/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/holdem-vs-omaha/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/holdem-vs-omaha/" />
   </url>
   <url>
@@ -82,6 +85,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/bankroll-udirdlaga/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/bankroll-management/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/bankroll-menedzhment/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/bankroll-udirdlaga/" />
   </url>
   <url>
@@ -150,6 +154,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/poker-terms-mn/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/poker-terms-glossary/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/poker-terminy-slovar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/poker-terms-mn/" />
   </url>
   <url>
@@ -320,6 +325,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/poker-kombinatsiud/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/poker-hand-rankings/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/poker-kombinatsii/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/poker-kombinatsiud/" />
   </url>
   <url>
@@ -328,6 +334,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/holdem-vs-omaha/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/holdem-vs-omaha/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/holdem-vs-omaha/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/holdem-vs-omaha/" />
   </url>
   <url>
@@ -336,6 +343,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/ehnii-gar-songolt/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/starting-hand-selection/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/vybor-startovykh-ruk/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/ehnii-gar-songolt/" />
   </url>
   <url>
@@ -344,6 +352,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/bankroll-udirdlaga/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/bankroll-management/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/bankroll-menedzhment/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/bankroll-udirdlaga/" />
   </url>
   <url>
@@ -352,6 +361,52 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/poker-terms-mn/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/poker-terms-glossary/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/poker-terminy-slovar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/poker-terms-mn/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/ru/articles/poker-kombinatsii/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/poker-kombinatsiud/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/poker-hand-rankings/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/poker-kombinatsii/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/poker-kombinatsiud/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/ru/articles/holdem-vs-omaha/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/holdem-vs-omaha/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/holdem-vs-omaha/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/holdem-vs-omaha/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/holdem-vs-omaha/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/ru/articles/vybor-startovykh-ruk/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/ehnii-gar-songolt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/starting-hand-selection/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/vybor-startovykh-ruk/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/ehnii-gar-songolt/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/ru/articles/bankroll-menedzhment/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/bankroll-udirdlaga/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/bankroll-management/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/bankroll-menedzhment/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/bankroll-udirdlaga/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/ru/articles/poker-terminy-slovar/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/poker-terms-mn/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/poker-terms-glossary/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/poker-terminy-slovar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/poker-terms-mn/" />
   </url>
 </urlset>
