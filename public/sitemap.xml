@@ -64,6 +64,9 @@
     <loc>https://pppoker.mn/articles/pozitsiin-huch/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/pozitsiin-huch/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/table-position-poker/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/pozitsiin-huch/" />
   </url>
   <url>
     <loc>https://pppoker.mn/articles/holdem-vs-omaha/</loc>
@@ -78,6 +81,9 @@
     <loc>https://pppoker.mn/articles/poker-setgel-zui/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/poker-setgel-zui/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/poker-psychology-mindset/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/poker-setgel-zui/" />
   </url>
   <url>
     <loc>https://pppoker.mn/articles/bankroll-udirdlaga/</loc>
@@ -92,16 +98,25 @@
     <loc>https://pppoker.mn/articles/blef-uriag/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/blef-uriag/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/art-of-bluffing/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/blef-uriag/" />
   </url>
   <url>
     <loc>https://pppoker.mn/articles/floating-taktik/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/floating-taktik/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/floating-strategy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/floating-taktik/" />
   </url>
   <url>
     <loc>https://pppoker.mn/articles/statistik-analiz/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/statistik-analiz/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/poker-statistics-analysis/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/statistik-analiz/" />
   </url>
   <url>
     <loc>https://pppoker.mn/articles/100-bonus-nuhtsul/</loc>
@@ -363,6 +378,46 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/poker-terms-glossary/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/poker-terminy-slovar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/poker-terms-mn/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/en/articles/table-position-poker/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/pozitsiin-huch/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/table-position-poker/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/pozitsiin-huch/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/en/articles/poker-psychology-mindset/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/poker-setgel-zui/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/poker-psychology-mindset/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/poker-setgel-zui/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/en/articles/art-of-bluffing/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/blef-uriag/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/art-of-bluffing/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/blef-uriag/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/en/articles/floating-strategy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/floating-taktik/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/floating-strategy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/floating-taktik/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/en/articles/poker-statistics-analysis/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/statistik-analiz/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/poker-statistics-analysis/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/statistik-analiz/" />
   </url>
   <url>
     <loc>https://pppoker.mn/ru/articles/poker-kombinatsii/</loc>
