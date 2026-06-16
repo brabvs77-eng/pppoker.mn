@@ -149,7 +149,7 @@ function faviconHead() {
 
 function navLogo(home, ariaLabel) {
   return `        <a href="${home}" class="nav-logo" aria-label="${ariaLabel}">
-          <img src="/images/logo.png" alt="" class="logo-img" width="40" height="40" />
+          <img src="/images/logo.webp" alt="" class="logo-img" width="40" height="40" />
           <span class="logo-text">BAATRYN ÖRÖÖ</span>
         </a>`
 }
@@ -251,7 +251,7 @@ function footer(lang, articles) {
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="nav-logo"><img src="/images/logo.png" alt="" class="logo-img" width="40" height="40" /><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
+          <div class="nav-logo"><img src="/images/logo.webp" alt="" class="logo-img" width="40" height="40" /><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
           <p>${t.footer.brand}</p>
         </div>
         <div class="footer-links">

@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "images:compress": "node scripts/compress-images.mjs",
     "slider:prepare": "node scripts/prepare-slider-images.mjs",
     "articles:build": "node scripts/build-articles.mjs",
     "sitemap:build": "node scripts/build-articles.mjs",

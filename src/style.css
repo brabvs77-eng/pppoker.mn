@@ -16,6 +16,9 @@
   --radius: 12px;
   --radius-lg: 20px;
   --transition: 0.3s ease;
+  --pattern-trefoil: url('/images/patterns/trefoil-tile.svg');
+  --pattern-shield: url('/images/patterns/shield-watermark.svg');
+  --pattern-ornament: url('/images/patterns/section-ornament.svg');
 }
 
 /* === RESET === */
@@ -32,10 +35,48 @@ html {
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: var(--bg-dark);
+  background: transparent;
   color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-color: var(--bg-dark);
+  background-image:
+    radial-gradient(ellipse at 12% 8%, rgba(201, 168, 76, 0.12) 0%, transparent 52%),
+    radial-gradient(ellipse at 88% 92%, rgba(201, 168, 76, 0.09) 0%, transparent 48%),
+    radial-gradient(ellipse at 50% 50%, rgba(201, 168, 76, 0.04) 0%, transparent 70%),
+    var(--pattern-trefoil);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 88px 88px;
+  background-attachment: fixed;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 0 0, rgba(201, 168, 76, 0.05) 0%, transparent 28%),
+    radial-gradient(circle at 100% 0, rgba(201, 168, 76, 0.05) 0%, transparent 28%),
+    radial-gradient(circle at 0 100%, rgba(201, 168, 76, 0.04) 0%, transparent 28%),
+    radial-gradient(circle at 100% 100%, rgba(201, 168, 76, 0.04) 0%, transparent 28%);
+}
+
+body > header,
+body > main,
+body > footer {
+  position: relative;
+  z-index: 1;
 }
 
 a {
@@ -303,6 +344,7 @@ img { max-width: 100%; display: block; }
   position: absolute;
   inset: 0;
   background:
+    var(--pattern-shield) center 58% / min(420px, 72vw) auto no-repeat,
     radial-gradient(ellipse at 20% 50%, rgba(201, 168, 76, 0.08) 0%, transparent 60%),
     radial-gradient(ellipse at 80% 20%, rgba(201, 168, 76, 0.05) 0%, transparent 50%),
     radial-gradient(ellipse at 50% 80%, rgba(39, 174, 96, 0.03) 0%, transparent 40%);
@@ -478,6 +520,17 @@ img { max-width: 100%; display: block; }
 /* === SECTIONS === */
 .section {
   padding: 100px 0;
+  position: relative;
+}
+
+.section > .container > .section-title::before {
+  content: '';
+  display: block;
+  width: min(240px, 60vw);
+  height: 28px;
+  margin: 0 auto 20px;
+  background: var(--pattern-ornament) center / contain no-repeat;
+  opacity: 0.9;
 }
 
 .section-title {
@@ -500,7 +553,7 @@ img { max-width: 100%; display: block; }
 
 /* === GAMES === */
 .games {
-  background: var(--bg-surface);
+  background: rgba(15, 15, 23, 0.78);
 }
 
 .games-grid {
@@ -706,7 +759,7 @@ img { max-width: 100%; display: block; }
 
 /* === HOW TO / CTA === */
 .how-to {
-  background: var(--bg-surface);
+  background: rgba(15, 15, 23, 0.78);
 }
 
 .steps {
@@ -770,7 +823,7 @@ img { max-width: 100%; display: block; }
 
 /* === ACADEMY === */
 .academy {
-  background: var(--bg-dark);
+  background: rgba(10, 10, 15, 0.75);
 }
 
 .academy-grid {
@@ -842,7 +895,7 @@ a.academy-card {
 
 /* === CINEMA === */
 .cinema {
-  background: var(--bg-surface);
+  background: rgba(15, 15, 23, 0.78);
 }
 
 .cinema-grid {
@@ -888,7 +941,7 @@ a.academy-card {
 
 /* === FAQ === */
 .faq {
-  background: var(--bg-dark);
+  background: rgba(10, 10, 15, 0.75);
 }
 
 .faq-grid {
@@ -954,7 +1007,7 @@ a.academy-card {
 
 /* === FOOTER === */
 .footer {
-  background: var(--bg-surface);
+  background: rgba(15, 15, 23, 0.94);
   border-top: 1px solid var(--border);
   padding: 60px 0 30px;
 }
@@ -1005,7 +1058,7 @@ a.academy-card {
 
 /* === SLIDER === */
 .slider-section {
-  background: var(--bg-dark);
+  background: rgba(10, 10, 15, 0.72);
   overflow: hidden;
 }
 
