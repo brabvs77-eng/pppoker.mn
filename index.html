@@ -18,6 +18,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
+  <!-- Critical assets -->
+  <link rel="preload" href="/images/logo.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/slide-comfort.webp" as="image" type="image/webp" />
+
   <!-- Canonical -->
   <link rel="canonical" href="https://pppoker.mn/" />
 
@@ -35,9 +39,9 @@
   <meta property="og:description" content="Монголын #1 покерын клуб. Hold'em, Omaha — 24/7. 100% бонус, хурдан төлбөр." />
   <meta property="og:url" content="https://pppoker.mn/" />
   <meta property="og:image" content="https://pppoker.mn/images/og-cover.jpg" />
-  <meta property="og:image:width" content="1080" />
-  <meta property="og:image:height" content="1350" />
-  <meta property="og:image:alt" content="Baatryn Öröö — PPPoker Mongolia" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+  <meta property="og:image:alt" content="Baatryn Öröö — Монголын онлайн покер клуб" />
   <meta property="og:locale" content="mn_MN" />
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:locale:alternate" content="zh_CN" />
@@ -48,11 +52,8 @@
   <meta name="twitter:title" content="Baatryn Öröö — PPPoker Mongolia" />
   <meta name="twitter:description" content="Монголын #1 покерын клуб. Hold'em, Omaha — 24/7." />
   <meta name="twitter:image" content="https://pppoker.mn/images/og-cover.jpg" />
+  <meta name="twitter:image:alt" content="Baatryn Öröö — Монголын онлайн покер клуб" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/src/style.css" />
 
   <!-- JSON-LD: Organization -->
@@ -170,7 +171,7 @@
     <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
       <div class="container nav-container">
         <a href="/" class="nav-logo" aria-label="Baatryn Öröö Home">
-          <img src="/images/logo.webp" alt="" class="logo-img" width="40" height="40" />
+          <img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" fetchpriority="high" />
           <span class="logo-text">BAATRYN ÖRÖÖ</span>
         </a>
         <ul class="nav-links" id="navLinks">
@@ -211,7 +212,7 @@
       <div class="hero-bg"></div>
       <div class="container hero-content">
         <p class="hero-subtitle">
-          <img src="/images/flags/mn.svg" alt="" class="hero-flag" width="22" height="15" decoding="async" />
+          <img src="/images/flags/mn.svg" alt="Монгол улсын далбаа" class="hero-flag" width="22" height="15" decoding="async" data-i18n-alt="hero.flagAlt" />
           <span data-i18n="hero.subtitle">Монголын #1 покерын клуб</span>
         </p>
         <h1 class="hero-title" itemprop="name"><span data-i18n="hero.title">Жинхэнэ тоглогчдын</span><br><span class="gold" data-i18n="hero.titleGold">талбар</span></h1>
@@ -241,32 +242,38 @@
         <div class="slider" role="region" aria-label="Image gallery" aria-roledescription="carousel">
           <div class="slider-track" id="sliderTrack">
             <div class="slide" aria-roledescription="slide" aria-label="Slide 1">
-              <div class="slide-img slide-img--photo" style="background-image:url('/images/slide-comfort.webp')">
+              <div class="slide-img slide-img--photo">
+                <img src="/images/slide-comfort.webp" alt="Тав тухтай тоглоомын орчин" width="1600" height="900" fetchpriority="high" decoding="async" data-i18n-alt="slider.s1" />
               </div>
               <p class="slide-caption" data-i18n="slider.s1">Тав тухтай тоглоомын орчин</p>
             </div>
             <div class="slide" aria-roledescription="slide" aria-label="Slide 2">
-              <div class="slide-img slide-img--photo" style="background-image:url('/images/slide-players.webp')">
+              <div class="slide-img slide-img--photo">
+                <img src="/images/slide-players.webp" alt="Хүчтэй тоглогчдын талбар" width="1600" height="900" loading="lazy" decoding="async" data-i18n-alt="slider.s2" />
               </div>
               <p class="slide-caption" data-i18n="slider.s2">Хүчтэй тоглогчдын талбар</p>
             </div>
             <div class="slide" aria-roledescription="slide" aria-label="Slide 3">
-              <div class="slide-img slide-img--photo" style="background-image:url('/images/slide-crypto.webp')">
+              <div class="slide-img slide-img--photo">
+                <img src="/images/slide-crypto.webp" alt="Криптовалютаар мөнгө байршуулах" width="1600" height="900" loading="lazy" decoding="async" data-i18n-alt="slider.s3" />
               </div>
               <p class="slide-caption" data-i18n="slider.s3">Криптовалютаар мөнгө байршуулах</p>
             </div>
             <div class="slide" aria-roledescription="slide" aria-label="Slide 4">
-              <div class="slide-img slide-img--photo" style="background-image:url('/images/slide-support.webp')">
+              <div class="slide-img slide-img--photo">
+                <img src="/images/slide-support.webp" alt="Мэргэжлийн дэмжлэг 24/7" width="1600" height="900" loading="lazy" decoding="async" data-i18n-alt="slider.s4" />
               </div>
               <p class="slide-caption" data-i18n="slider.s4">Мэргэжлийн дэмжлэг 24/7</p>
             </div>
             <div class="slide" aria-roledescription="slide" aria-label="Slide 5">
-              <div class="slide-img slide-img--photo" style="background-image:url('/images/slide-psychology.webp')">
+              <div class="slide-img slide-img--photo">
+                <img src="/images/slide-psychology.webp" alt="Покерын сэтгэл зүй — хүйтэн толгой" width="1600" height="900" loading="lazy" decoding="async" data-i18n-alt="slider.s5" />
               </div>
               <p class="slide-caption" data-i18n="slider.s5">Покерын сэтгэл зүй — хүйтэн толгой</p>
             </div>
             <div class="slide" aria-roledescription="slide" aria-label="Slide 6">
-              <div class="slide-img slide-img--photo" style="background-image:url('/images/slide-security.webp')">
+              <div class="slide-img slide-img--photo">
+                <img src="/images/slide-security.webp" alt="Аюулгүй, найдвартай платформ" width="1600" height="900" loading="lazy" decoding="async" data-i18n-alt="slider.s6" />
               </div>
               <p class="slide-caption" data-i18n="slider.s6">Аюулгүй, найдвартай платформ</p>
             </div>
@@ -419,7 +426,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="nav-logo"><img src="/images/logo.webp" alt="" class="logo-img" width="40" height="40" /><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
+          <div class="nav-logo"><img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" /><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
           <p data-i18n="footer.brand">Монголын покерын клуб. Жинхэнэ тоглогчдын талбар.</p>
         </div>
         <div class="footer-links">

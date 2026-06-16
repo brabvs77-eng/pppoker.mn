@@ -37,6 +37,16 @@ function applyTranslations(lang) {
   if (twTitle) twTitle.content = tr.meta.ogTitle
   const twDesc = document.querySelector('meta[name="twitter:description"]')
   if (twDesc) twDesc.content = tr.meta.ogDesc
+  const ogImageAlt = document.querySelector('meta[property="og:image:alt"]')
+  if (ogImageAlt && tr.meta.ogImageAlt) ogImageAlt.content = tr.meta.ogImageAlt
+  const twImageAlt = document.querySelector('meta[name="twitter:image:alt"]')
+  if (twImageAlt && tr.meta.ogImageAlt) twImageAlt.content = tr.meta.ogImageAlt
+
+  document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+    const key = el.getAttribute('data-i18n-alt')
+    const val = getNestedValue(tr, key)
+    if (val) el.alt = val
+  })
 
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n')

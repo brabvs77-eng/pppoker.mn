@@ -10,6 +10,7 @@ import { ARTICLE_I18N, LANG_LABELS } from './article-i18n.js'
 import { writeSitemap } from './sitemap.mjs'
 import { PLAY_URL, SUPPORT_TELEGRAM } from './site-links.js'
 import { FAVICON_HEAD } from './favicon-head.js'
+import { logoImgTag, ogImageMeta, preloadHead } from './site-images.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = join(__dirname, '..')
@@ -149,7 +150,7 @@ function faviconHead() {
 
 function navLogo(home, ariaLabel) {
   return `        <a href="${home}" class="nav-logo" aria-label="${ariaLabel}">
-          <img src="/images/logo.webp" alt="" class="logo-img" width="40" height="40" />
+          ${logoImgTag({ fetchPriority: 'high' })}
           <span class="logo-text">BAATRYN ÖRÖÖ</span>
         </a>`
 }
@@ -251,7 +252,7 @@ function footer(lang, articles) {
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="nav-logo"><img src="/images/logo.webp" alt="" class="logo-img" width="40" height="40" /><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
+          <div class="nav-logo">${logoImgTag()}<span class="logo-text">BAATRYN ÖRÖÖ</span></div>
           <p>${t.footer.brand}</p>
         </div>
         <div class="footer-links">
@@ -316,9 +317,8 @@ ${faviconHead()}
   <meta property="og:url" content="${url}" />
   <meta property="og:locale" content="${t.ogLocale}" />
 ${ogAlts}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+${ogImageMeta(metaTitle)}
+${preloadHead()}
   <link rel="stylesheet" href="/src/style.css" />
   <script type="application/ld+json">${jsonLd}</script>
 ${metrikaHead()}
@@ -428,9 +428,8 @@ ${faviconHead()}
   <meta property="og:title" content="${t.index.metaTitle}" />
   <meta property="og:url" content="${t.index.canonical}" />
   <meta property="og:locale" content="${t.ogLocale}" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+${ogImageMeta(t.index.metaTitle)}
+${preloadHead()}
   <link rel="stylesheet" href="/src/style.css" />
 ${metrikaHead()}
 </head>
