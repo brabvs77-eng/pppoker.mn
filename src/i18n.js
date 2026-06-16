@@ -8,6 +8,7 @@ export const translations = {
       keywords: 'монгол покер систэм, монгол покер татах, bluff poker mongolia, baatryn oroo, онлайн покер монгол, покер монгол, монгол покер, покер, pppoker, холдем, омаха, покер клуб, Баатрын Өрөө',
       ogTitle: 'Baatryn Öröö — Монгол покер, онлайн покер Монгол',
       ogDesc: 'Монголын #1 покерын клуб. PPPoker систем — Hold\'em, Omaha 24/7. Монгол покер татах, 100% бонус.',
+      ogImageAlt: 'Baatryn Öröö — Монголын онлайн покер клуб',
     },
     nav: { games: 'Тоглоомууд', features: 'Боломжууд', articles: 'Нийтлэл', academy: 'Академи', cinema: 'Кино', faq: 'FAQ', play: 'Тоглох' },
     hero: {
@@ -20,6 +21,7 @@ export const translations = {
       statPlay: 'Тоглолт',
       statBonus: 'Бонус',
       statDeposit: 'Мин. депозит',
+      flagAlt: 'Монгол улсын далбаа',
     },
     slider: {
       title: 'Манай <span class="gold">ертөнц</span>',
@@ -118,6 +120,7 @@ export const translations = {
       keywords: 'bluff poker mongolia, baatryn oroo, mongol poker system, mongol poker download, online poker mongolia, poker mongolia, mongol poker, poker, pppoker, holdem, omaha, poker club',
       ogTitle: 'Baatryn Öröö — Online Poker Mongolia',
       ogDesc: 'Mongolia\'s #1 poker club. PPPoker system — Hold\'em, Omaha 24/7. Mongol poker download, 100% bonus.',
+      ogImageAlt: 'Baatryn Öröö — online poker club in Mongolia',
     },
     nav: { games: 'Games', features: 'Features', articles: 'Articles', academy: 'Academy', cinema: 'Cinema', faq: 'FAQ', play: 'Play Now' },
     hero: {
@@ -130,6 +133,7 @@ export const translations = {
       statPlay: 'Games',
       statBonus: 'Bonus',
       statDeposit: 'Min. Deposit',
+      flagAlt: 'Mongolia flag',
     },
     slider: {
       title: 'Our <span class="gold">World</span>',
@@ -228,6 +232,7 @@ export const translations = {
       keywords: '扑克, 蒙古, pppoker, 德州扑克, 奥马哈, 在线扑克, 扑克俱乐部',
       ogTitle: 'Baatryn Öröö — 真正玩家的竞技场',
       ogDesc: '蒙古第一扑克俱乐部。德州扑克、奥马哈 — 全天候。100%存款奖金。',
+      ogImageAlt: 'Baatryn Öröö — 蒙古在线扑克俱乐部',
     },
     nav: { games: '游戏', features: '特色', articles: '文章', academy: '学院', cinema: '电影', faq: '常见问题', play: '开始游戏' },
     hero: {
@@ -240,6 +245,7 @@ export const translations = {
       statPlay: '牌局',
       statBonus: '奖金',
       statDeposit: '最低存款',
+      flagAlt: '蒙古国旗',
     },
     slider: {
       title: '我们的<span class="gold">世界</span>',
@@ -338,6 +344,7 @@ export const translations = {
       keywords: 'монгол покер систэм, монгол покер татах, bluff poker mongolia, baatryn oroo, онлайн покер монгол, покер монгол, монгол покер, покер, pppoker, холдем, омаха',
       ogTitle: 'Baatryn Öröö — Онлайн покер Монгол',
       ogDesc: 'Покер-клуб №1 в Монголии. PPPoker система — Hold\'em, Omaha 24/7.',
+      ogImageAlt: 'Baatryn Öröö — онлайн покер-клуб в Монголии',
     },
     nav: { games: 'Игры', features: 'Возможности', articles: 'Статьи', academy: 'Академия', cinema: 'Кино', faq: 'FAQ', play: 'Играть' },
     hero: {
@@ -350,6 +357,7 @@ export const translations = {
       statPlay: 'Игры',
       statBonus: 'Бонус',
       statDeposit: 'Мин. депозит',
+      flagAlt: 'Флаг Монголии',
     },
     slider: {
       title: 'Наш <span class="gold">мир</span>',

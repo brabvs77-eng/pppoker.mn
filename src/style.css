@@ -1,3 +1,13 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/inter/800.css';
+@import '@fontsource/inter/900.css';
+@import '@fontsource/playfair-display/700.css';
+@import '@fontsource/playfair-display/800.css';
+@import '@fontsource/playfair-display/900.css';
+
 /* === VARIABLES === */
 :root {
   --bg-dark: #0a0a0f;
@@ -1086,23 +1096,25 @@ a.academy-card {
 .slide-img {
   aspect-ratio: 16 / 9;
   width: 100%;
-  background-size: cover;
-  background-position: center;
   background-color: var(--bg-dark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   position: relative;
+  overflow: hidden;
 }
 
-.slide-img--photo {
-  background-size: cover;
+.slide-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .slide-img::after {
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 1;
+  pointer-events: none;
   background: linear-gradient(0deg, rgba(10,10,15,0.85) 0%, rgba(10,10,15,0.1) 50%, rgba(10,10,15,0.3) 100%);
 }
 
@@ -1252,6 +1264,10 @@ a.academy-card {
   .slide-img {
     aspect-ratio: auto;
     height: clamp(300px, 82vw, 440px);
+  }
+
+  .slide-img img {
+    height: 100%;
   }
 
   .slide-caption {
