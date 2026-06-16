@@ -19,7 +19,7 @@ This repository (`pppoker.mn`) is the Baatryn Öröö poker club website — a M
 - Design: dark theme (#0a0a0f), gold accents (#c9a84c), Playfair Display + Inter fonts
 - Site sections: Hero, Games, Features, How-to, Academy, Cinema, FAQ, Footer
 - No backend — static site only
-- Images not yet added to repo (analyzed & cataloged, pending integration)
+- Images in `public/images/` (logo.png, slide-*.png, og-cover.png); favicons in `public/`
 
 ### Content & SEO workflow (thruuu)
 

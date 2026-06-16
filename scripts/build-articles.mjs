@@ -9,6 +9,7 @@ import { fileURLToPath } from 'url'
 import { ARTICLE_I18N, LANG_LABELS } from './article-i18n.js'
 import { writeSitemap } from './sitemap.mjs'
 import { PLAY_URL, SUPPORT_TELEGRAM } from './site-links.js'
+import { FAVICON_HEAD } from './favicon-head.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = join(__dirname, '..')
@@ -143,7 +144,14 @@ function outFilePath(article) {
 }
 
 function faviconHead() {
-  return `  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />`
+  return FAVICON_HEAD
+}
+
+function navLogo(home, ariaLabel) {
+  return `        <a href="${home}" class="nav-logo" aria-label="${ariaLabel}">
+          <img src="/images/logo.png" alt="" class="logo-img" width="40" height="40" />
+          <span class="logo-text">BAATRYN ÖRÖÖ</span>
+        </a>`
 }
 
 function metrikaHead() {
@@ -213,10 +221,7 @@ function nav(article) {
   return `  <header>
     <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
       <div class="container nav-container">
-        <a href="${home}" class="nav-logo" aria-label="${t.nav.homeAria}">
-          <span class="logo-icon">♠</span>
-          <span class="logo-text">BAATRYN ÖRÖÖ</span>
-        </a>
+        ${navLogo(home, t.nav.homeAria)}
         <ul class="nav-links" id="navLinks">
           <li><a href="${home}#games">${t.nav.games}</a></li>
           <li><a href="${home}#features">${t.nav.features}</a></li>
@@ -246,7 +251,7 @@ function footer(lang, articles) {
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="nav-logo"><span class="logo-icon">♠</span><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
+          <div class="nav-logo"><img src="/images/logo.png" alt="" class="logo-img" width="40" height="40" /><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
           <p>${t.footer.brand}</p>
         </div>
         <div class="footer-links">
@@ -371,10 +376,7 @@ function navForIndex(lang) {
   return `  <header>
     <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
       <div class="container nav-container">
-        <a href="${home}" class="nav-logo" aria-label="${t.nav.homeAria}">
-          <span class="logo-icon">♠</span>
-          <span class="logo-text">BAATRYN ÖRÖÖ</span>
-        </a>
+        ${navLogo(home, t.nav.homeAria)}
         <ul class="nav-links" id="navLinks">
           <li><a href="${home}#games">${t.nav.games}</a></li>
           <li><a href="${home}#features">${t.nav.features}</a></li>
