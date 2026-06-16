@@ -11,7 +11,7 @@ export const translations = {
     },
     nav: { games: 'Тоглоомууд', features: 'Боломжууд', articles: 'Нийтлэл', academy: 'Академи', cinema: 'Кино', faq: 'FAQ', play: 'Тоглох' },
     hero: {
-      subtitle: '🇲🇳 Монголын #1 покерын клуб',
+      subtitle: 'Монголын #1 покерын клуб',
       title: 'Жинхэнэ тоглогчдын',
       titleGold: 'талбар',
       desc: 'Монгол покер, онлайн покер Монгол — 24/7 тоглолт. PPPoker систем, хурдан төлбөр, мэргэжлийн дэмжлэг.',
@@ -121,7 +121,7 @@ export const translations = {
     },
     nav: { games: 'Games', features: 'Features', articles: 'Articles', academy: 'Academy', cinema: 'Cinema', faq: 'FAQ', play: 'Play Now' },
     hero: {
-      subtitle: '🇲🇳 Mongolia\'s #1 Poker Club',
+      subtitle: 'Mongolia\'s #1 Poker Club',
       title: 'The Arena of',
       titleGold: 'Real Players',
       desc: 'Mongol poker & online poker Mongolia — 24/7 games. PPPoker system, fast payments, pro support.',
@@ -231,7 +231,7 @@ export const translations = {
     },
     nav: { games: '游戏', features: '特色', articles: '文章', academy: '学院', cinema: '电影', faq: '常见问题', play: '开始游戏' },
     hero: {
-      subtitle: '🇲🇳 蒙古第一扑克俱乐部',
+      subtitle: '蒙古第一扑克俱乐部',
       title: '真正玩家的',
       titleGold: '竞技场',
       desc: '德州扑克、奥马哈 — 全天候牌局。可靠平台、快速支付、专业支持。',
@@ -341,7 +341,7 @@ export const translations = {
     },
     nav: { games: 'Игры', features: 'Возможности', articles: 'Статьи', academy: 'Академия', cinema: 'Кино', faq: 'FAQ', play: 'Играть' },
     hero: {
-      subtitle: '🇲🇳 Покер-клуб №1 в Монголии',
+      subtitle: 'Покер-клуб №1 в Монголии',
       title: 'Арена настоящих',
       titleGold: 'игроков',
       desc: 'Hold\'em, Omaha — игры 24/7. Надёжная платформа, быстрые выплаты, профессиональная поддержка.',

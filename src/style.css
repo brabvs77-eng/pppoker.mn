@@ -316,12 +316,25 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-subtitle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55em;
   font-size: 1rem;
   color: var(--gold);
   font-weight: 600;
   margin-bottom: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.hero-flag {
+  width: 1.35em;
+  height: auto;
+  aspect-ratio: 22 / 15;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(201, 168, 76, 0.25);
+  flex-shrink: 0;
 }
 
 .hero-title {
