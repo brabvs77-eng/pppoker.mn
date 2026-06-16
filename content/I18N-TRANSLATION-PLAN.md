@@ -1,18 +1,17 @@
 # I18n Translation Plan — pppoker.mn
 
-Updated: 2026-06-12. Status: **planning** (MN = source of truth, 18 articles published).
+Updated: 2026-06-16. Status: **done** — 72 articles (18 MN + 18 EN + 18 RU + 18 ZH), homepage i18n, auto sitemap, FAQ schema sync.
 
 ## Current state
 
 | Layer | Languages | Mechanism |
 |-------|-----------|-----------|
-| **Homepage** (`index.html`) | MN, EN, ZH, RU | Client-side `src/i18n.js` + `?lang=en\|zh\|ru` |
-| **Articles** (`/articles/*`) | MN only | `content/articles/*.md` → `build-articles.mjs` |
-| **hreflang** | Homepage only | `/?lang=en` etc. — articles have no alternates |
-| **FAQ JSON-LD** | MN only | Static in `index.html`; not synced on lang switch |
-| **Sitemap** | MN URLs only | `public/sitemap.xml` — 18 article + home + hub |
-
-**Gap:** switching language on the homepage does not translate articles. Article hub, nav, footer, and 18 long-form pages are MN-only. SEO for EN/RU/ZH relies on homepage meta only.
+| **Homepage** (`index.html`) | MN, EN, ZH, RU | Client-side `src/i18n.js` + `?lang=en\|zh\|ru` (persisted in URL + localStorage) |
+| **Articles** | MN, EN, RU, ZH | `content/articles/` → `build-articles.mjs` → `/articles/`, `/en/articles/`, etc. |
+| **hreflang** | All pages | Per-page `<link rel="alternate">` + sitemap `xhtml:link` |
+| **FAQ JSON-LD** | MN, EN, ZH, RU | `src/faq-schema.js` synced on lang switch |
+| **Sitemap** | 77 URLs | Auto-generated `scripts/sitemap.mjs` on each build |
+| **Homepage article links** | Locale-aware | `data-article-group` + `src/article-routes.js` |
 
 ---
 
@@ -155,8 +154,9 @@ content/articles/mongol-poker-sistem.en.md
 - [ ] Register `en/articles/**/index.html` (and ru, zh) in `getArticleInputs()`
 
 ### 3. Homepage
-- [ ] Sync FAQ JSON-LD on lang change (`main.js`) OR static blocks per lang
-- [ ] Article cards in academy: optional `data-i18n` titles — or keep MN titles with «read in EN» badge until translated
+- [x] Sync FAQ JSON-LD on lang change (`src/faq-schema.js` + `main.js`)
+- [x] Locale-aware article links (`data-article-group` + `src/article-routes.js`)
+- [x] Persist `?lang=` in URL on language switch (`src/lang-url.js`)
 
 ### 4. Sitemap
 - [x] Auto-generate `sitemap.xml` in build script (`scripts/sitemap.mjs`)
@@ -236,13 +236,13 @@ I18n-9  Auto sitemap + FAQ schema i18n   ← done (2026-06-13)
 
 ---
 
-## Immediate next steps
+## Immediate next steps (post-i18n)
 
-1. Approve URL scheme (`/en/articles/{slug}/`).
-2. Refactor `build-articles.mjs` for multi-lang (keep MN output paths stable).
-3. Translate **3 Tier-1 articles to EN** as pilot.
-4. Add lang switcher + hreflang to article template.
-5. Deploy pilot → GSC validate hreflang → scale Tier 2.
+1. ~~Approve URL scheme~~ — live at `/en/articles/{slug}/`, etc.
+2. ~~72-article parity~~ — done.
+3. **Phase B:** lang switcher on articles → equivalent translated URL (not just homepage).
+4. **GSC:** run `npm run gsc:export` with credentials; monitor hreflang.
+5. **Phase 5 content:** brand-parasite articles per `BRAND-PARASITE-STRATEGY.md`.
 
 ---
 

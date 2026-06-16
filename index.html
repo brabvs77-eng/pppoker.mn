@@ -78,7 +78,7 @@
   }
   </script>
 
-  <!-- JSON-LD: WebSite with SearchAction -->
+  <!-- JSON-LD: WebSite -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -86,12 +86,7 @@
     "name": "Baatryn Öröö",
     "alternateName": "PPPoker Mongolia",
     "url": "https://pppoker.mn",
-    "inLanguage": ["mn", "en", "zh", "ru"],
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://pppoker.mn/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "inLanguage": ["mn", "en", "zh", "ru"]
   }
   </script>
 
@@ -142,11 +137,6 @@
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "MNT"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.7",
-      "ratingCount": "350"
     }
   }
   </script>
@@ -179,7 +169,7 @@
         <ul class="nav-links" id="navLinks">
           <li><a href="#games" data-i18n="nav.games">Тоглоомууд</a></li>
           <li><a href="#features" data-i18n="nav.features">Боломжууд</a></li>
-          <li><a href="/articles/" data-i18n="nav.articles">Нийтлэл</a></li>
+          <li><a href="/articles/" data-articles-hub data-i18n="nav.articles">Нийтлэл</a></li>
           <li><a href="#academy" data-i18n="nav.academy">Академи</a></li>
           <li><a href="#cinema" data-i18n="nav.cinema">Кино</a></li>
           <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
@@ -295,7 +285,7 @@
             <ul class="game-features">
               <li data-i18n="games.holdemF1">Энгийн дүрэм, гүн стратеги</li>
               <li data-i18n="games.holdemF2">Блайнд: 250/500 — 10K/20K</li>
-              <li><a href="/articles/cash-game-mongol/"><span data-i18n="games.holdemF3">Кэш тоглоом 24/7</span></a></li>
+              <li><a href="/articles/cash-game-mongol/" data-article-group="cash-game-mongol"><span data-i18n="games.holdemF3">Кэш тоглоом 24/7</span></a></li>
             </ul>
           </div>
           <div class="game-card featured" itemscope itemtype="https://schema.org/Game">
@@ -311,7 +301,7 @@
             </ul>
           </div>
         </div>
-        <p class="section-link-wrap"><a href="/articles/holdem-vs-omaha/" class="section-link" data-i18n="games.compareLink">Hold'em vs Omaha — ялгаа, аль нь эхлэгчид?</a></p>
+        <p class="section-link-wrap"><a href="/articles/holdem-vs-omaha/" class="section-link" data-article-group="holdem-vs-omaha" data-i18n="games.compareLink">Hold'em vs Omaha — ялгаа, аль нь эхлэгчид?</a></p>
         <div class="tables-preview">
           <h3 data-i18n="games.tablesTitle">Манай ширээнүүд</h3>
           <div class="tables-list">
@@ -334,8 +324,8 @@
         <h2 class="section-title" data-i18n-html="features.title">Яагаад <span class="gold">Baatryn Öröö</span>?</h2>
         <p class="section-subtitle" data-i18n="features.subtitle">Тоглогчдод зориулсан найдвартай, тав тухтай орчин</p>
         <div class="features-grid">
-          <div class="feature-card"><div class="feature-icon">🎁</div><h3 data-i18n="features.f1t">100% Бонус</h3><p data-i18n="features.f1d">Анхны депозитдээ 100% бонус аваарай.</p><a href="/articles/100-bonus-nuhtsul/" class="feature-link" data-i18n="features.f1link">Нөхцөл унших →</a></div>
-          <div class="feature-card"><div class="feature-icon">⚡</div><h3 data-i18n="features.f2t">Хурдан төлбөр</h3><p data-i18n="features.f2d">Депозит 10 минутад, мөнгө таталт хурдан.</p><a href="/articles/deposit-withdraw-mongol/" class="feature-link" data-i18n="features.f2link">Депозит, таталт →</a></div>
+          <div class="feature-card"><div class="feature-icon">🎁</div><h3 data-i18n="features.f1t">100% Бонус</h3><p data-i18n="features.f1d">Анхны депозитдээ 100% бонус аваарай.</p><a href="/articles/100-bonus-nuhtsul/" class="feature-link" data-article-group="100-bonus-nuhtsul" data-i18n="features.f1link">Нөхцөл унших →</a></div>
+          <div class="feature-card"><div class="feature-icon">⚡</div><h3 data-i18n="features.f2t">Хурдан төлбөр</h3><p data-i18n="features.f2d">Депозит 10 минутад, мөнгө таталт хурдан.</p><a href="/articles/deposit-withdraw-mongol/" class="feature-link" data-article-group="deposit-withdraw-mongol" data-i18n="features.f2link">Депозит, таталт →</a></div>
           <div class="feature-card"><div class="feature-icon">🔒</div><h3 data-i18n="features.f3t">Аюулгүй байдал</h3><p data-i18n="features.f3d">Бүх гүйлгээ хатуу хяналтын дор.</p></div>
           <div class="feature-card"><div class="feature-icon">📱</div><h3 data-i18n="features.f4t">Хялбар апп</h3><p data-i18n="features.f4d">Аль ч төхөөрөмжөөр тоглоорой.</p></div>
           <div class="feature-card"><div class="feature-icon">🤝</div><h3 data-i18n="features.f5t">24/7 Дэмжлэг</h3><p data-i18n="features.f5d">Мэргэжлийн дэмжлэгийн баг үргэлж холбоотой.</p></div>
@@ -367,16 +357,16 @@
         <h2 class="section-title" data-i18n-html="academy.title">Покер <span class="gold">Академи</span></h2>
         <p class="section-subtitle" data-i18n="academy.subtitle">Суралцаж, ур чадвараа хөгжүүлж, хүчтэй тоглогч бол</p>
         <div class="academy-grid">
-          <a href="/articles/poker-kombinatsiud/" class="academy-card"><div class="academy-tag" data-i18n="academy.a1tag">Үндэс</div><h3 data-i18n="academy.a1t">🃏 Покерын комбинациуд</h3><p data-i18n="academy.a1d">Royal Flush-ээс High Card хүртэл.</p></a>
-          <a href="/articles/pozitsiin-huch/" class="academy-card"><div class="academy-tag" data-i18n="academy.a2tag">Стратеги</div><h3 data-i18n="academy.a2t">📍 Позицийн хүч</h3><p data-i18n="academy.a2d">Эрт позици — зөвхөн хүчтэй гар.</p></a>
-          <a href="/articles/ehnii-gar-songolt/" class="academy-card"><div class="academy-tag" data-i18n="academy.a3tag">Эхлэгч</div><h3 data-i18n="academy.a3t">🎯 Эхний гарны сонголт</h3><p data-i18n="academy.a3d">AA, KK, QQ, AK — хүчтэй суурь.</p></a>
-          <a href="/articles/poker-setgel-zui/" class="academy-card"><div class="academy-tag" data-i18n="academy.a4tag">Сэтгэлзүй</div><h3 data-i18n="academy.a4t">🧠 Покерын сэтгэл зүй</h3><p data-i18n="academy.a4d">Тильт бол банкроллын дайсан.</p></a>
-          <a href="/articles/blef-uriag/" class="academy-card"><div class="academy-tag" data-i18n="academy.a5tag">Стратеги</div><h3 data-i18n="academy.a5t">🎭 Блефийн урлаг</h3><p data-i18n="academy.a5d">Блеф бол хэрэгсэл — зөв мөчид л ажилладаг.</p></a>
-          <a href="/articles/floating-taktik/" class="academy-card"><div class="academy-tag" data-i18n="academy.a6tag">Ахисан</div><h3 data-i18n="academy.a6t">🦈 Флоатинг</h3><p data-i18n="academy.a6d">Хүчтэй гаргүй ч банк хожих тактик.</p></a>
-          <a href="/articles/bankroll-udirdlaga/" class="academy-card"><div class="academy-tag" data-i18n="academy.a7tag">Менежмент</div><h3 data-i18n="academy.a7t">💰 Банкролл удирдлага</h3><p data-i18n="academy.a7d">Холдемд 30-40 бай-ин, Омахад 50-70.</p></a>
-          <a href="/articles/statistik-analiz/" class="academy-card"><div class="academy-tag" data-i18n="academy.a8tag">Мэдлэг</div><h3 data-i18n="academy.a8t">📊 Статистик ба анализ</h3><p data-i18n="academy.a8d">Тоонуудаа хар — хаана хожиж байгаагаа мэд.</p></a>
+          <a href="/articles/poker-kombinatsiud/" class="academy-card" data-article-group="poker-kombinatsiud"><div class="academy-tag" data-i18n="academy.a1tag">Үндэс</div><h3 data-i18n="academy.a1t">🃏 Покерын комбинациуд</h3><p data-i18n="academy.a1d">Royal Flush-ээс High Card хүртэл.</p></a>
+          <a href="/articles/pozitsiin-huch/" class="academy-card" data-article-group="pozitsiin-huch"><div class="academy-tag" data-i18n="academy.a2tag">Стратеги</div><h3 data-i18n="academy.a2t">📍 Позицийн хүч</h3><p data-i18n="academy.a2d">Эрт позици — зөвхөн хүчтэй гар.</p></a>
+          <a href="/articles/ehnii-gar-songolt/" class="academy-card" data-article-group="ehnii-gar-songolt"><div class="academy-tag" data-i18n="academy.a3tag">Эхлэгч</div><h3 data-i18n="academy.a3t">🎯 Эхний гарны сонголт</h3><p data-i18n="academy.a3d">AA, KK, QQ, AK — хүчтэй суурь.</p></a>
+          <a href="/articles/poker-setgel-zui/" class="academy-card" data-article-group="poker-setgel-zui"><div class="academy-tag" data-i18n="academy.a4tag">Сэтгэлзүй</div><h3 data-i18n="academy.a4t">🧠 Покерын сэтгэл зүй</h3><p data-i18n="academy.a4d">Тильт бол банкроллын дайсан.</p></a>
+          <a href="/articles/blef-uriag/" class="academy-card" data-article-group="blef-uriag"><div class="academy-tag" data-i18n="academy.a5tag">Стратеги</div><h3 data-i18n="academy.a5t">🎭 Блефийн урлаг</h3><p data-i18n="academy.a5d">Блеф бол хэрэгсэл — зөв мөчид л ажилладаг.</p></a>
+          <a href="/articles/floating-taktik/" class="academy-card" data-article-group="floating-taktik"><div class="academy-tag" data-i18n="academy.a6tag">Ахисан</div><h3 data-i18n="academy.a6t">🦈 Флоатинг</h3><p data-i18n="academy.a6d">Хүчтэй гаргүй ч банк хожих тактик.</p></a>
+          <a href="/articles/bankroll-udirdlaga/" class="academy-card" data-article-group="bankroll-udirdlaga"><div class="academy-tag" data-i18n="academy.a7tag">Менежмент</div><h3 data-i18n="academy.a7t">💰 Банкролл удирдлага</h3><p data-i18n="academy.a7d">Холдемд 30-40 бай-ин, Омахад 50-70.</p></a>
+          <a href="/articles/statistik-analiz/" class="academy-card" data-article-group="statistik-analiz"><div class="academy-tag" data-i18n="academy.a8tag">Мэдлэг</div><h3 data-i18n="academy.a8t">📊 Статистик ба анализ</h3><p data-i18n="academy.a8d">Тоонуудаа хар — хаана хожиж байгаагаа мэд.</p></a>
         </div>
-        <p class="section-link-wrap"><a href="/articles/poker-terms-mn/" class="section-link" data-i18n="academy.termsLink">Покерын нэр томьёо — бүрэн толь бичиг</a></p>
+        <p class="section-link-wrap"><a href="/articles/poker-terms-mn/" class="section-link" data-article-group="poker-terms-mn" data-i18n="academy.termsLink">Покерын нэр томьёо — бүрэн толь бичиг</a></p>
       </div>
     </section>
 
@@ -436,9 +426,9 @@
         <div class="footer-links">
           <h4 data-i18n="footer.info">Мэдээлэл</h4>
           <ul>
-            <li><a href="/articles/mongol-poker-sistem/" data-i18n="footer.a1">Монгол покер систем</a></li>
-            <li><a href="/articles/mongol-poker-tatah/" data-i18n="footer.a2">Монгол покер татах</a></li>
-            <li><a href="/articles/" data-i18n="nav.articles">Бүх нийтлэл</a></li>
+            <li><a href="/articles/mongol-poker-sistem/" data-article-group="mongol-poker-sistem" data-i18n="footer.a1">Монгол покер систем</a></li>
+            <li><a href="/articles/mongol-poker-tatah/" data-article-group="mongol-poker-tatah" data-i18n="footer.a2">Монгол покер татах</a></li>
+            <li><a href="/articles/" data-articles-hub data-i18n="nav.articles">Бүх нийтлэл</a></li>
             <li><a href="#academy" data-i18n="nav.academy">Академи</a></li>
             <li><a href="#faq">FAQ</a></li>
           </ul>

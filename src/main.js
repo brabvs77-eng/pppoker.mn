@@ -1,8 +1,21 @@
 import { translations, getLang, setLang, t } from './i18n.js'
 import { applyFaqSchema } from './faq-schema.js'
+import { articlePath, articlesHubPath } from './article-routes.js'
+import { syncLangInUrl, updateOgLocale } from './lang-url.js'
 
 function getNestedValue(obj, path) {
   return path.split('.').reduce((o, k) => o && o[k], obj)
+}
+
+function updateArticleLinks(lang) {
+  document.querySelectorAll('[data-article-group]').forEach(el => {
+    const groupId = el.getAttribute('data-article-group')
+    const path = articlePath(groupId, lang)
+    if (path) el.setAttribute('href', path)
+  })
+  document.querySelectorAll('[data-articles-hub]').forEach(el => {
+    el.setAttribute('href', articlesHubPath(lang))
+  })
 }
 
 function applyTranslations(lang) {
@@ -39,7 +52,16 @@ function applyTranslations(lang) {
   const langLabel = document.getElementById('langLabel')
   if (langLabel) langLabel.textContent = tr.langName
 
+  updateArticleLinks(lang)
+  updateOgLocale(lang)
   applyFaqSchema(lang)
+}
+
+function switchLang(lang) {
+  if (!translations[lang]) return
+  setLang(lang)
+  applyTranslations(lang)
+  syncLangInUrl(lang)
 }
 
 function initLangSwitcher() {
@@ -55,9 +77,7 @@ function initLangSwitcher() {
 
   menu.querySelectorAll('button[data-lang]').forEach(b => {
     b.addEventListener('click', () => {
-      const lang = b.getAttribute('data-lang')
-      setLang(lang)
-      applyTranslations(lang)
+      switchLang(b.getAttribute('data-lang'))
       menu.classList.remove('open')
       btn.setAttribute('aria-expanded', 'false')
     })
@@ -179,7 +199,11 @@ function initFromURL() {
     setLang(urlLang)
     return urlLang
   }
-  return getLang()
+  const stored = getLang()
+  if (stored !== 'mn') {
+    syncLangInUrl(stored)
+  }
+  return stored
 }
 
 document.addEventListener('DOMContentLoaded', () => {
