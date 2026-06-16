@@ -92,6 +92,22 @@ img { max-width: 100%; display: block; }
   color: var(--gold);
 }
 
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.slide-img--photo .slide-placeholder {
+  display: none;
+}
+
+.slide-img--photo::after {
+  background: linear-gradient(0deg, rgba(10,10,15,0.75) 0%, rgba(10,10,15,0.05) 45%, rgba(10,10,15,0.2) 100%);
+}
+
 .logo-text {
   color: var(--gold);
   font-family: 'Playfair Display', serif;
