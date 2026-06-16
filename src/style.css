@@ -72,7 +72,11 @@ body::after {
     radial-gradient(circle at 100% 100%, rgba(201, 168, 76, 0.04) 0%, transparent 28%);
 }
 
-body > header,
+body > header {
+  position: relative;
+  z-index: 100;
+}
+
 body > main,
 body > footer {
   position: relative;
@@ -1243,6 +1247,11 @@ a.academy-card {
 
   .nav-toggle {
     display: flex;
+  }
+
+  .slide-img {
+    aspect-ratio: auto;
+    height: clamp(300px, 82vw, 440px);
   }
 
   .slide-caption {

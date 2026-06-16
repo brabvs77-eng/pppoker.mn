@@ -45,8 +45,10 @@ function applyTranslations(lang) {
 function initLangSwitcher() {
   const btn = document.getElementById('langBtn')
   const menu = document.getElementById('langMenu')
+  if (!btn || !menu) return
 
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', e => {
+    e.stopPropagation()
     const open = menu.classList.toggle('open')
     btn.setAttribute('aria-expanded', open)
   })
@@ -73,6 +75,7 @@ function initNavbar() {
   const navbar = document.getElementById('navbar')
   const navToggle = document.getElementById('navToggle')
   const navLinks = document.getElementById('navLinks')
+  if (!navbar || !navToggle || !navLinks) return
 
   window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 50)
