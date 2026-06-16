@@ -35,8 +35,8 @@
   <meta property="og:description" content="Монголын #1 покерын клуб. Hold'em, Omaha — 24/7. 100% бонус, хурдан төлбөр." />
   <meta property="og:url" content="https://pppoker.mn/" />
   <meta property="og:image" content="https://pppoker.mn/images/og-cover.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:image:width" content="1080" />
+  <meta property="og:image:height" content="1350" />
   <meta property="og:image:alt" content="Baatryn Öröö — PPPoker Mongolia" />
   <meta property="og:locale" content="mn_MN" />
   <meta property="og:locale:alternate" content="en_US" />
@@ -63,7 +63,7 @@
     "name": "Baatryn Öröö",
     "alternateName": "PPPoker Mongolia",
     "url": "https://pppoker.mn",
-    "logo": "https://pppoker.mn/images/logo.png",
+    "logo": "https://pppoker.mn/images/logo.webp",
     "description": "Mongolia's #1 poker club offering Hold'em and Omaha games 24/7.",
     "foundingCountry": "MN",
     "contactPoint": {
@@ -173,7 +173,7 @@
     <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
       <div class="container nav-container">
         <a href="/" class="nav-logo" aria-label="Baatryn Öröö Home">
-          <span class="logo-icon">♠</span>
+          <img src="/images/logo.webp" alt="" class="logo-img" width="40" height="40" />
           <span class="logo-text">BAATRYN ÖRÖÖ</span>
         </a>
         <ul class="nav-links" id="navLinks">
@@ -183,6 +183,9 @@
           <li><a href="#academy" data-i18n="nav.academy">Академи</a></li>
           <li><a href="#cinema" data-i18n="nav.cinema">Кино</a></li>
           <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+          <li class="nav-mobile-play">
+            <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn nav-btn--menu" rel="noopener" target="_blank" data-i18n="nav.play">Тоглох</a>
+          </li>
         </ul>
         <div class="nav-right">
           <div class="lang-switcher" id="langSwitcher">
@@ -196,7 +199,7 @@
               <li role="menuitem"><button data-lang="mn">MN</button></li>
             </ul>
           </div>
-          <a href="https://t.me/BatrynOrooSupport" class="nav-btn" rel="noopener" target="_blank" data-i18n="nav.play">Тоглох</a>
+          <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn" rel="noopener" target="_blank" data-i18n="nav.play">Тоглох</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -210,11 +213,14 @@
     <section class="hero" id="hero">
       <div class="hero-bg"></div>
       <div class="container hero-content">
-        <p class="hero-subtitle" data-i18n="hero.subtitle">🇲🇳 Монголын #1 покерын клуб</p>
+        <p class="hero-subtitle">
+          <img src="/images/flags/mn.svg" alt="" class="hero-flag" width="22" height="15" decoding="async" />
+          <span data-i18n="hero.subtitle">Монголын #1 покерын клуб</span>
+        </p>
         <h1 class="hero-title" itemprop="name"><span data-i18n="hero.title">Жинхэнэ тоглогчдын</span><br><span class="gold" data-i18n="hero.titleGold">талбар</span></h1>
         <p class="hero-desc" itemprop="description" data-i18n="hero.desc">Монгол покер, онлайн покер Монгол — 24/7 тоглолт. PPPoker систем, хурдан төлбөр, мэргэжлийн дэмжлэг.</p>
         <div class="hero-actions">
-          <a href="https://t.me/BatrynOrooSupport" class="btn btn-primary" rel="noopener" target="_blank" data-i18n="hero.btnPlay">Одоо тоглох</a>
+          <a href="https://baatrynorpoker.ink/1FBP9k" class="btn btn-primary" rel="noopener" target="_blank" data-i18n="hero.btnPlay">Одоо тоглох</a>
           <a href="#games" class="btn btn-outline" data-i18n="hero.btnMore">Дэлгэрэнгүй</a>
         </div>
         <div class="hero-stats">
@@ -238,38 +244,32 @@
         <div class="slider" role="region" aria-label="Image gallery" aria-roledescription="carousel">
           <div class="slider-track" id="sliderTrack">
             <div class="slide" aria-roledescription="slide" aria-label="Slide 1">
-              <div class="slide-img" style="background-image:url('/images/slide-comfort.jpg')">
-                <div class="slide-placeholder">🎮</div>
+              <div class="slide-img slide-img--photo" style="background-image:url('/images/slide-comfort.webp')">
               </div>
               <p class="slide-caption" data-i18n="slider.s1">Тав тухтай тоглоомын орчин</p>
             </div>
             <div class="slide" aria-roledescription="slide" aria-label="Slide 2">
-              <div class="slide-img" style="background-image:url('/images/slide-players.jpg')">
-                <div class="slide-placeholder">♠</div>
+              <div class="slide-img slide-img--photo" style="background-image:url('/images/slide-players.webp')">
               </div>
               <p class="slide-caption" data-i18n="slider.s2">Хүчтэй тоглогчдын талбар</p>
             </div>
             <div class="slide" aria-roledescription="slide" aria-label="Slide 3">
-              <div class="slide-img" style="background-image:url('/images/slide-crypto.jpg')">
-                <div class="slide-placeholder">₿</div>
+              <div class="slide-img slide-img--photo" style="background-image:url('/images/slide-crypto.webp')">
               </div>
               <p class="slide-caption" data-i18n="slider.s3">Криптовалютаар мөнгө байршуулах</p>
             </div>
             <div class="slide" aria-roledescription="slide" aria-label="Slide 4">
-              <div class="slide-img" style="background-image:url('/images/slide-support.jpg')">
-                <div class="slide-placeholder">🤝</div>
+              <div class="slide-img slide-img--photo" style="background-image:url('/images/slide-support.webp')">
               </div>
               <p class="slide-caption" data-i18n="slider.s4">Мэргэжлийн дэмжлэг 24/7</p>
             </div>
             <div class="slide" aria-roledescription="slide" aria-label="Slide 5">
-              <div class="slide-img" style="background-image:url('/images/slide-psychology.jpg')">
-                <div class="slide-placeholder">🧠</div>
+              <div class="slide-img slide-img--photo" style="background-image:url('/images/slide-psychology.webp')">
               </div>
               <p class="slide-caption" data-i18n="slider.s5">Покерын сэтгэл зүй — хүйтэн толгой</p>
             </div>
             <div class="slide" aria-roledescription="slide" aria-label="Slide 6">
-              <div class="slide-img" style="background-image:url('/images/slide-security.jpg')">
-                <div class="slide-placeholder">🔒</div>
+              <div class="slide-img slide-img--photo" style="background-image:url('/images/slide-security.webp')">
               </div>
               <p class="slide-caption" data-i18n="slider.s6">Аюулгүй, найдвартай платформ</p>
             </div>
@@ -356,7 +356,7 @@
         <div class="cta-box">
           <h3 data-i18n="howto.ctaTitle">Бэлэн үү?</h3>
           <p data-i18n="howto.ctaDesc">Ширээнүүд чамайг хүлээж байна. Одоо нэгдээд, покерын ертөнцөд тавтай морил!</p>
-          <a href="https://t.me/BatrynOrooSupport" class="btn btn-primary btn-lg" rel="noopener" target="_blank" data-i18n="howto.ctaBtn">Одоо тоглох →</a>
+          <a href="https://baatrynorpoker.ink/1FBP9k" class="btn btn-primary btn-lg" rel="noopener" target="_blank" data-i18n="howto.ctaBtn">Одоо тоглох →</a>
         </div>
       </div>
     </section>
@@ -422,7 +422,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="nav-logo"><span class="logo-icon">♠</span><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
+          <div class="nav-logo"><img src="/images/logo.webp" alt="" class="logo-img" width="40" height="40" /><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
           <p data-i18n="footer.brand">Монголын покерын клуб. Жинхэнэ тоглогчдын талбар.</p>
         </div>
         <div class="footer-links">
@@ -447,7 +447,6 @@
           <h4 data-i18n="footer.contact">Холбоо барих</h4>
           <ul>
             <li><a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">Telegram: @BatrynOrooSupport</a></li>
-            <li><a href="https://t.me/BaatrynOroo_support_bot" rel="noopener" target="_blank">Bot: @BaatrynOroo_support_bot</a></li>
           </ul>
         </div>
       </div>

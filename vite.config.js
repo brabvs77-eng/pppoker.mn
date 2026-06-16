@@ -23,6 +23,8 @@ function getArticleInputs() {
   }
   collectArticleInputs(resolve(__dirname, 'articles'), inputs, '')
   collectArticleInputs(resolve(__dirname, 'en', 'articles'), inputs, 'en-')
+  collectArticleInputs(resolve(__dirname, 'ru', 'articles'), inputs, 'ru-')
+  collectArticleInputs(resolve(__dirname, 'zh', 'articles'), inputs, 'zh-')
   return inputs
 }
 

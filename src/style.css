@@ -16,6 +16,9 @@
   --radius: 12px;
   --radius-lg: 20px;
   --transition: 0.3s ease;
+  --pattern-trefoil: url('/images/patterns/trefoil-tile.svg');
+  --pattern-shield: url('/images/patterns/shield-watermark.svg');
+  --pattern-ornament: url('/images/patterns/section-ornament.svg');
 }
 
 /* === RESET === */
@@ -32,10 +35,52 @@ html {
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: var(--bg-dark);
+  background: transparent;
   color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-color: var(--bg-dark);
+  background-image:
+    radial-gradient(ellipse at 12% 8%, rgba(201, 168, 76, 0.12) 0%, transparent 52%),
+    radial-gradient(ellipse at 88% 92%, rgba(201, 168, 76, 0.09) 0%, transparent 48%),
+    radial-gradient(ellipse at 50% 50%, rgba(201, 168, 76, 0.04) 0%, transparent 70%),
+    var(--pattern-trefoil);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 88px 88px;
+  background-attachment: fixed;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 0 0, rgba(201, 168, 76, 0.05) 0%, transparent 28%),
+    radial-gradient(circle at 100% 0, rgba(201, 168, 76, 0.05) 0%, transparent 28%),
+    radial-gradient(circle at 0 100%, rgba(201, 168, 76, 0.04) 0%, transparent 28%),
+    radial-gradient(circle at 100% 100%, rgba(201, 168, 76, 0.04) 0%, transparent 28%);
+}
+
+body > header {
+  position: relative;
+  z-index: 100;
+}
+
+body > main,
+body > footer {
+  position: relative;
+  z-index: 1;
 }
 
 a {
@@ -90,6 +135,22 @@ img { max-width: 100%; display: block; }
 .logo-icon {
   font-size: 1.5rem;
   color: var(--gold);
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.slide-img--photo .slide-placeholder {
+  display: none;
+}
+
+.slide-img--photo::after {
+  background: linear-gradient(0deg, rgba(10,10,15,0.75) 0%, rgba(10,10,15,0.05) 45%, rgba(10,10,15,0.2) 100%);
 }
 
 .logo-text {
@@ -148,6 +209,16 @@ img { max-width: 100%; display: block; }
 .nav-btn:hover {
   background: var(--gold-light);
   transform: translateY(-1px);
+}
+
+.nav-mobile-play {
+  display: none;
+}
+
+.nav-btn--menu {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
 }
 
 /* Language Switcher */
@@ -277,6 +348,7 @@ img { max-width: 100%; display: block; }
   position: absolute;
   inset: 0;
   background:
+    var(--pattern-shield) center 58% / min(420px, 72vw) auto no-repeat,
     radial-gradient(ellipse at 20% 50%, rgba(201, 168, 76, 0.08) 0%, transparent 60%),
     radial-gradient(ellipse at 80% 20%, rgba(201, 168, 76, 0.05) 0%, transparent 50%),
     radial-gradient(ellipse at 50% 80%, rgba(39, 174, 96, 0.03) 0%, transparent 40%);
@@ -290,12 +362,25 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-subtitle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55em;
   font-size: 1rem;
   color: var(--gold);
   font-weight: 600;
   margin-bottom: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.hero-flag {
+  width: 1.35em;
+  height: auto;
+  aspect-ratio: 22 / 15;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(201, 168, 76, 0.25);
+  flex-shrink: 0;
 }
 
 .hero-title {
@@ -439,6 +524,17 @@ img { max-width: 100%; display: block; }
 /* === SECTIONS === */
 .section {
   padding: 100px 0;
+  position: relative;
+}
+
+.section > .container > .section-title::before {
+  content: '';
+  display: block;
+  width: min(240px, 60vw);
+  height: 28px;
+  margin: 0 auto 20px;
+  background: var(--pattern-ornament) center / contain no-repeat;
+  opacity: 0.9;
 }
 
 .section-title {
@@ -461,7 +557,7 @@ img { max-width: 100%; display: block; }
 
 /* === GAMES === */
 .games {
-  background: var(--bg-surface);
+  background: rgba(15, 15, 23, 0.78);
 }
 
 .games-grid {
@@ -667,7 +763,7 @@ img { max-width: 100%; display: block; }
 
 /* === HOW TO / CTA === */
 .how-to {
-  background: var(--bg-surface);
+  background: rgba(15, 15, 23, 0.78);
 }
 
 .steps {
@@ -731,7 +827,7 @@ img { max-width: 100%; display: block; }
 
 /* === ACADEMY === */
 .academy {
-  background: var(--bg-dark);
+  background: rgba(10, 10, 15, 0.75);
 }
 
 .academy-grid {
@@ -803,7 +899,7 @@ a.academy-card {
 
 /* === CINEMA === */
 .cinema {
-  background: var(--bg-surface);
+  background: rgba(15, 15, 23, 0.78);
 }
 
 .cinema-grid {
@@ -849,7 +945,7 @@ a.academy-card {
 
 /* === FAQ === */
 .faq {
-  background: var(--bg-dark);
+  background: rgba(10, 10, 15, 0.75);
 }
 
 .faq-grid {
@@ -915,7 +1011,7 @@ a.academy-card {
 
 /* === FOOTER === */
 .footer {
-  background: var(--bg-surface);
+  background: rgba(15, 15, 23, 0.94);
   border-top: 1px solid var(--border);
   padding: 60px 0 30px;
 }
@@ -966,7 +1062,7 @@ a.academy-card {
 
 /* === SLIDER === */
 .slider-section {
-  background: var(--bg-dark);
+  background: rgba(10, 10, 15, 0.72);
   overflow: hidden;
 }
 
@@ -988,14 +1084,19 @@ a.academy-card {
 }
 
 .slide-img {
-  height: 420px;
+  aspect-ratio: 16 / 9;
+  width: 100%;
   background-size: cover;
   background-position: center;
-  background-color: var(--bg-card);
+  background-color: var(--bg-dark);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+.slide-img--photo {
+  background-size: cover;
 }
 
 .slide-img::after {
@@ -1132,12 +1233,25 @@ a.academy-card {
     display: none;
   }
 
+  .nav-mobile-play {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+
+  .nav-mobile-play .nav-btn {
+    display: flex;
+  }
+
   .nav-toggle {
     display: flex;
   }
 
   .slide-img {
-    height: 280px;
+    aspect-ratio: auto;
+    height: clamp(300px, 82vw, 440px);
   }
 
   .slide-caption {

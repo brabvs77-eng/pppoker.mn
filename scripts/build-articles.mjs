@@ -7,11 +7,13 @@ import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync, statSy
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { ARTICLE_I18N, LANG_LABELS } from './article-i18n.js'
+import { writeSitemap } from './sitemap.mjs'
+import { PLAY_URL, SUPPORT_TELEGRAM } from './site-links.js'
+import { FAVICON_HEAD } from './favicon-head.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = join(__dirname, '..')
 const contentDir = join(root, 'content', 'articles')
-const TELEGRAM_PLAY = 'https://t.me/BatrynOrooSupport'
 const SITE = 'https://pppoker.mn'
 
 const ARTICLES = []
@@ -142,10 +144,14 @@ function outFilePath(article) {
 }
 
 function faviconHead() {
-  return `  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="icon" href="/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />`
+  return FAVICON_HEAD
+}
+
+function navLogo(home, ariaLabel) {
+  return `        <a href="${home}" class="nav-logo" aria-label="${ariaLabel}">
+          <img src="/images/logo.webp" alt="" class="logo-img" width="40" height="40" />
+          <span class="logo-text">BAATRYN ÖRÖÖ</span>
+        </a>`
 }
 
 function metrikaHead() {
@@ -175,6 +181,12 @@ function hreflangHead(article) {
     lines.push(`  <link rel="alternate" hreflang="x-default" href="${articleUrl(defaultArticle)}" />`)
   }
   return lines.join('\n')
+}
+
+function mobilePlayNavItem(playLabel) {
+  return `          <li class="nav-mobile-play">
+            <a href="${PLAY_URL}" class="nav-btn nav-btn--menu" rel="noopener" target="_blank">${playLabel}</a>
+          </li>`
 }
 
 function langSwitcher(article) {
@@ -209,20 +221,18 @@ function nav(article) {
   return `  <header>
     <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
       <div class="container nav-container">
-        <a href="${home}" class="nav-logo" aria-label="${t.nav.homeAria}">
-          <span class="logo-icon">♠</span>
-          <span class="logo-text">BAATRYN ÖRÖÖ</span>
-        </a>
+        ${navLogo(home, t.nav.homeAria)}
         <ul class="nav-links" id="navLinks">
           <li><a href="${home}#games">${t.nav.games}</a></li>
           <li><a href="${home}#features">${t.nav.features}</a></li>
           <li><a href="${articlesIndexPath(lang)}" class="active">${t.nav.articles}</a></li>
           <li><a href="${home}#academy">${t.nav.academy}</a></li>
           <li><a href="${home}#faq">${t.nav.faq}</a></li>
+${mobilePlayNavItem(t.nav.play)}
         </ul>
         <div class="nav-right">
 ${langSwitcher(article)}
-          <a href="${TELEGRAM_PLAY}" class="nav-btn" rel="noopener" target="_blank">${t.nav.play}</a>
+          <a href="${PLAY_URL}" class="nav-btn" rel="noopener" target="_blank">${t.nav.play}</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -241,7 +251,7 @@ function footer(lang, articles) {
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="nav-logo"><span class="logo-icon">♠</span><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
+          <div class="nav-logo"><img src="/images/logo.webp" alt="" class="logo-img" width="40" height="40" /><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
           <p>${t.footer.brand}</p>
         </div>
         <div class="footer-links">
@@ -253,7 +263,7 @@ ${articleLinks}
         <div class="footer-links">
           <h4>${t.footer.contact}</h4>
           <ul>
-            <li><a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></li>
+            <li><a href="${SUPPORT_TELEGRAM}" rel="noopener" target="_blank">@BatrynOrooSupport</a></li>
           </ul>
         </div>
       </div>
@@ -325,7 +335,7 @@ ${nav(article)}
 ${html}
       </article>
       <div class="article-cta">
-        <a href="${TELEGRAM_PLAY}" class="btn btn-primary" rel="noopener" target="_blank">${t.cta.play}</a>
+        <a href="${PLAY_URL}" class="btn btn-primary" rel="noopener" target="_blank">${t.cta.play}</a>
         <a href="${articlesIndexPath(lang)}" class="btn btn-outline">${t.cta.more}</a>
       </div>
     </div>
@@ -340,6 +350,8 @@ function indexLangSwitcher(currentLang) {
   const hubs = [
     { lang: 'mn', path: '/articles/' },
     { lang: 'en', path: '/en/articles/' },
+    { lang: 'ru', path: '/ru/articles/' },
+    { lang: 'zh', path: '/zh/articles/' },
   ]
   const t = ARTICLE_I18N[currentLang] || ARTICLE_I18N.mn
   const items = hubs
@@ -364,20 +376,18 @@ function navForIndex(lang) {
   return `  <header>
     <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
       <div class="container nav-container">
-        <a href="${home}" class="nav-logo" aria-label="${t.nav.homeAria}">
-          <span class="logo-icon">♠</span>
-          <span class="logo-text">BAATRYN ÖRÖÖ</span>
-        </a>
+        ${navLogo(home, t.nav.homeAria)}
         <ul class="nav-links" id="navLinks">
           <li><a href="${home}#games">${t.nav.games}</a></li>
           <li><a href="${home}#features">${t.nav.features}</a></li>
           <li><a href="${articlesIndexPath(lang)}" class="active">${t.nav.articles}</a></li>
           <li><a href="${home}#academy">${t.nav.academy}</a></li>
           <li><a href="${home}#faq">${t.nav.faq}</a></li>
+${mobilePlayNavItem(t.nav.play)}
         </ul>
         <div class="nav-right">
 ${indexLangSwitcher(lang)}
-          <a href="${TELEGRAM_PLAY}" class="nav-btn" rel="noopener" target="_blank">${t.nav.play}</a>
+          <a href="${PLAY_URL}" class="nav-btn" rel="noopener" target="_blank">${t.nav.play}</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -410,6 +420,8 @@ function indexPage(lang, articles) {
   <link rel="canonical" href="${t.index.canonical}" />
   <link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/" />
   <link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/" />
+  <link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/" />
+  <link rel="alternate" hreflang="zh" href="https://pppoker.mn/zh/articles/" />
   <link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/" />
 ${faviconHead()}
   <meta property="og:title" content="${t.index.metaTitle}" />
@@ -498,7 +510,7 @@ for (const article of ARTICLES) {
   built++
 }
 
-for (const lang of ['mn', 'en']) {
+for (const lang of ['mn', 'en', 'ru', 'zh']) {
   const list = byLang[lang]
   if (!list?.length) continue
   const indexOut =
@@ -508,5 +520,10 @@ for (const lang of ['mn', 'en']) {
 }
 
 const enCount = byLang.en?.length || 0
+const ruCount = byLang.ru?.length || 0
+const zhCount = byLang.zh?.length || 0
 const mnCount = byLang.mn?.length || 0
-console.log(`Built ${built} article pages (${mnCount} MN + ${enCount} EN) → articles/ + en/articles/`)
+console.log(`Built ${built} article pages (${mnCount} MN + ${enCount} EN + ${ruCount} RU + ${zhCount} ZH)`)
+
+const { outPath: sitemapPath, urlCount } = writeSitemap(GROUPS, byLang, root)
+console.log(`Wrote sitemap (${urlCount} URLs) → ${sitemapPath.replace(root + '/', '')}`)
