@@ -158,6 +158,11 @@ content/articles/mongol-poker-sistem.en.md
 - [x] Locale-aware article links (`data-article-group` + `src/article-routes.js`)
 - [x] Persist `?lang=` in URL on language switch (`src/lang-url.js`)
 
+### 3b. Article pages (Phase B)
+- [x] Lang switcher links → equivalent translated article (`langSwitcher()` in build)
+- [x] `data-lang` on switcher links + `localStorage` sync (`src/lang-switcher.js`)
+- [x] Shared dropdown init for homepage + articles
+
 ### 4. Sitemap
 - [x] Auto-generate `sitemap.xml` in build script (`scripts/sitemap.mjs`)
 - [x] Include all lang URLs with `xhtml:link` hreflang entries

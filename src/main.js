@@ -2,6 +2,7 @@ import { translations, getLang, setLang, t } from './i18n.js'
 import { applyFaqSchema } from './faq-schema.js'
 import { articlePath, articlesHubPath } from './article-routes.js'
 import { syncLangInUrl, updateOgLocale } from './lang-url.js'
+import { initLangSwitcherDropdown } from './lang-switcher.js'
 
 function getNestedValue(obj, path) {
   return path.split('.').reduce((o, k) => o && o[k], obj)
@@ -65,30 +66,7 @@ function switchLang(lang) {
 }
 
 function initLangSwitcher() {
-  const btn = document.getElementById('langBtn')
-  const menu = document.getElementById('langMenu')
-  if (!btn || !menu) return
-
-  btn.addEventListener('click', e => {
-    e.stopPropagation()
-    const open = menu.classList.toggle('open')
-    btn.setAttribute('aria-expanded', open)
-  })
-
-  menu.querySelectorAll('button[data-lang]').forEach(b => {
-    b.addEventListener('click', () => {
-      switchLang(b.getAttribute('data-lang'))
-      menu.classList.remove('open')
-      btn.setAttribute('aria-expanded', 'false')
-    })
-  })
-
-  document.addEventListener('click', e => {
-    if (!e.target.closest('.lang-switcher')) {
-      menu.classList.remove('open')
-      btn.setAttribute('aria-expanded', 'false')
-    }
-  })
+  initLangSwitcherDropdown({ onSelect: switchLang })
 }
 
 function initNavbar() {

@@ -199,7 +199,7 @@ function langSwitcher(article) {
     .map(lang => {
       const a = group[lang]
       const active = lang === article.lang ? ' class="active"' : ''
-      return `              <li role="menuitem"><a href="${articlePath(a)}"${active}>${LANG_LABELS[lang] || lang.toUpperCase()}</a></li>`
+      return `              <li role="menuitem"><a href="${articlePath(a)}" data-lang="${lang}"${active}>${LANG_LABELS[lang] || lang.toUpperCase()}</a></li>`
     })
     .join('\n')
 
@@ -304,7 +304,8 @@ function articlePage(article, langArticles) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>${metaTitle}</title>
   <meta name="description" content="${metaDesc}" />
-  <meta name="robots" content="index, follow" />
+  <meta name="article-group-id" content="${article.groupId}" />
+  <meta name="article-lang" content="${lang}" />
   <link rel="canonical" href="${url}" />
 ${hreflang}
 ${faviconHead()}
@@ -357,7 +358,7 @@ function indexLangSwitcher(currentLang) {
   const items = hubs
     .map(({ lang, path }) => {
       const active = lang === currentLang ? ' class="active"' : ''
-      return `              <li role="menuitem"><a href="${path}"${active}>${LANG_LABELS[lang]}</a></li>`
+      return `              <li role="menuitem"><a href="${path}" data-lang="${lang}"${active}>${LANG_LABELS[lang]}</a></li>`
     })
     .join('\n')
   return `          <div class="lang-switcher" id="langSwitcher">
