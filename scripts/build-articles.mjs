@@ -8,11 +8,11 @@ import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { ARTICLE_I18N, LANG_LABELS } from './article-i18n.js'
 import { writeSitemap } from './sitemap.mjs'
+import { PLAY_URL, SUPPORT_TELEGRAM } from './site-links.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = join(__dirname, '..')
 const contentDir = join(root, 'content', 'articles')
-const TELEGRAM_PLAY = 'https://t.me/BatrynOrooSupport'
 const SITE = 'https://pppoker.mn'
 
 const ARTICLES = []
@@ -177,7 +177,7 @@ function hreflangHead(article) {
 
 function mobilePlayNavItem(playLabel) {
   return `          <li class="nav-mobile-play">
-            <a href="${TELEGRAM_PLAY}" class="nav-btn nav-btn--menu" rel="noopener" target="_blank">${playLabel}</a>
+            <a href="${PLAY_URL}" class="nav-btn nav-btn--menu" rel="noopener" target="_blank">${playLabel}</a>
           </li>`
 }
 
@@ -227,7 +227,7 @@ ${mobilePlayNavItem(t.nav.play)}
         </ul>
         <div class="nav-right">
 ${langSwitcher(article)}
-          <a href="${TELEGRAM_PLAY}" class="nav-btn" rel="noopener" target="_blank">${t.nav.play}</a>
+          <a href="${PLAY_URL}" class="nav-btn" rel="noopener" target="_blank">${t.nav.play}</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -258,7 +258,7 @@ ${articleLinks}
         <div class="footer-links">
           <h4>${t.footer.contact}</h4>
           <ul>
-            <li><a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></li>
+            <li><a href="${SUPPORT_TELEGRAM}" rel="noopener" target="_blank">@BatrynOrooSupport</a></li>
           </ul>
         </div>
       </div>
@@ -330,7 +330,7 @@ ${nav(article)}
 ${html}
       </article>
       <div class="article-cta">
-        <a href="${TELEGRAM_PLAY}" class="btn btn-primary" rel="noopener" target="_blank">${t.cta.play}</a>
+        <a href="${PLAY_URL}" class="btn btn-primary" rel="noopener" target="_blank">${t.cta.play}</a>
         <a href="${articlesIndexPath(lang)}" class="btn btn-outline">${t.cta.more}</a>
       </div>
     </div>
@@ -385,7 +385,7 @@ ${mobilePlayNavItem(t.nav.play)}
         </ul>
         <div class="nav-right">
 ${indexLangSwitcher(lang)}
-          <a href="${TELEGRAM_PLAY}" class="nav-btn" rel="noopener" target="_blank">${t.nav.play}</a>
+          <a href="${PLAY_URL}" class="nav-btn" rel="noopener" target="_blank">${t.nav.play}</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
