@@ -1014,14 +1014,19 @@ a.academy-card {
 }
 
 .slide-img {
-  height: 420px;
+  aspect-ratio: 16 / 9;
+  width: 100%;
   background-size: cover;
   background-position: center;
-  background-color: var(--bg-card);
+  background-color: var(--bg-dark);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+.slide-img--photo {
+  background-size: cover;
 }
 
 .slide-img::after {
@@ -1172,10 +1177,6 @@ a.academy-card {
 
   .nav-toggle {
     display: flex;
-  }
-
-  .slide-img {
-    height: 280px;
   }
 
   .slide-caption {
