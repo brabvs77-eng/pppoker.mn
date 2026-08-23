@@ -6,8 +6,8 @@ Updated: 2026-08-23. Target corpus: **60 MN articles** (then selective i18n).
 
 | Metric | Count |
 |--------|------:|
-| **Published** | 18 |
-| **Planned (new)** | 42 |
+| **Published** | 32 |
+| **Planned (new)** | 28 |
 | **Total target** | 60 |
 | **I18n parity today** | 18 × 4 langs = 72 URLs |
 
@@ -71,24 +71,22 @@ Money, comparison, GSC tails.
 
 ---
 
-## Phase 5 — Rules & fundamentals (0/6) 🔲 NEXT
+## Phase 5 — Rules & fundamentals (6/6) ✅ DONE
 
-Absolute-beginner depth. Funnel into Academy + pillars. **Priority: high** — publish before advanced strategy.
+| # | Slug | Status |
+|---|------|--------|
+| 19 | `holdem-durem-buren` | published |
+| 20 | `omaha-durem-buren` | published |
+| 21 | `preflop-strategi` | published |
+| 22 | `pot-odds-equity` | published |
+| 23 | `bet-hmjuulelt` | published |
+| 24 | `postflop-suuri` | published |
 
-| # | Slug | Title (MN) | Target query / intent | Priority |
-|---|------|------------|----------------------|----------|
-| 19 | `holdem-durem-buren` | Texas Hold'em дүрэм — бүрэн заавар | покер дүрэм, holdem дүрэм | P1 |
-| 20 | `omaha-durem-buren` | Omaha (PLO) дүрэм — бүрэн заавар | omaha дүрэм, plo дүрэм | P1 |
-| 21 | `preflop-strategi` | Префлоп стратеги — позиц, range | префлоп покер | P1 |
-| 22 | `pot-odds-equity` | Пот оддс, equity, outs | пот оддс покер | P1 |
-| 23 | `bet-hmjuulelt` | Бет хэмжээ — хэзээ хэдэн BB | bet sizing покер | P2 |
-| 24 | `postflop-suuri` | Постфлоп суурь — шийдвэрийн framework | постфлоп стратеги | P2 |
-
-**Internal links:** → `ehnii-gar-songolt`, `poker-kombinatsiud`, `mongol-poker-tatah`.
+Each article has a unique cover image in `public/images/articles/{slug}.webp`.
 
 ---
 
-## Phase 6 — Advanced strategy (0/12) 🔲
+## Phase 6 — Advanced strategy (0/12) 🔲 NEXT
 
 Academy expansion. Cash-game focus (9-max Hold'em, 6-max PLO). **Priority: high** after Phase 5.
 
@@ -111,22 +109,20 @@ Academy expansion. Cash-game focus (9-max Hold'em, 6-max PLO). **Priority: high*
 
 ---
 
-## Phase 7 — Product & onboarding (0/8) 🔲
+## Phase 7 — Product & onboarding (8/8) ✅ DONE
 
-Trust, support, payments depth. Reduces support load; strong mid-tail SEO.
+Mongolia-themed cover art (Ulaanbaatar, Mongolian players, local context).
 
-| # | Slug | Title (MN) | Topic | Priority |
-|---|------|------------|-------|----------|
-| 37 | `burtgel-alham-alham` | Бүртгэл — алхам алхмаар | клубт бүртгүүлэх | P1 |
-| 38 | `pppoker-app-aldaa` | PPPoker апп — суулгах, алдаа засах | pppoker татах, апп алдаа | P1 |
-| 39 | `usdt-deposit-zaavar` | USDT (TRC20) цэнэглэлт | usdt покер монгол | P1 |
-| 40 | `tatalt-asuudal-shiidver` | Мөнгө таталт — түгээмэл асуудал | таталт хийх | P2 |
-| 41 | `dans-hamgaalalt` | Данс хамгаалалт | account security | P2 |
-| 42 | `hariutslagatai-togloom` | Хариуцлагатай тоглоом | responsible play | P3 |
-| 43 | `club-vs-platform` | Клуб vs PPPoker платформ | клуб гэж юу вэ | P2 |
-| 44 | `vip-shiree-mongol` | VIP ширээ — хэн, хэзээ | vip покер монгол | P2 |
-
-**Internal links:** → `deposit-withdraw-mongol`, `100-bonus-nuhtsul`, `mongol-poker-sistem`.
+| # | Slug | Status |
+|---|------|--------|
+| 37 | `burtgel-alham-alham` | published |
+| 38 | `pppoker-app-aldaa` | published |
+| 39 | `usdt-deposit-zaavar` | published |
+| 40 | `tatalt-asuudal-shiidver` | published |
+| 41 | `dans-hamgaalalt` | published |
+| 42 | `hariutslagatai-togloom` | published |
+| 43 | `club-vs-platform` | published |
+| 44 | `vip-shiree-mongol` | published |
 
 ---
 
@@ -247,7 +243,7 @@ ZH: wait until EN+RU ≥50% of expanded corpus per `I18N-TRANSLATION-PLAN.md`.
 | I18n-7 ZH Tier 3+4 (10) | published |
 | I18n-9 Auto sitemap + FAQ schema i18n | published |
 
-**Current published:** 18 MN + 18 EN + 18 RU + 18 ZH = **72 article URLs**.
+**Current published:** 32 MN + 18 EN + 18 RU + 18 ZH = **86 article URLs** (32 MN groups).
 
 ---
 

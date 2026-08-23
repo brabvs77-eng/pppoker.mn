@@ -12,6 +12,9 @@ export const ARTICLE_ROUTES = {
     "ru": "bankroll-menedzhment",
     "zh": "bankroll-guanli"
   },
+  "bet-hmjuulelt": {
+    "mn": "bet-hmjuulelt"
+  },
   "blef-uriag": {
     "mn": "blef-uriag",
     "en": "art-of-bluffing",
@@ -48,6 +51,9 @@ export const ARTICLE_ROUTES = {
     "ru": "strategiya-float",
     "zh": "float-celue"
   },
+  "holdem-durem-buren": {
+    "mn": "holdem-durem-buren"
+  },
   "holdem-vs-omaha": {
     "mn": "holdem-vs-omaha",
     "en": "holdem-vs-omaha",
@@ -65,6 +71,9 @@ export const ARTICLE_ROUTES = {
     "en": "mongol-poker-download",
     "ru": "mongol-poker-skachat",
     "zh": "mongol-poker-xiazai"
+  },
+  "omaha-durem-buren": {
+    "mn": "omaha-durem-buren"
   },
   "online-poker-mongol-2026": {
     "mn": "online-poker-mongol-2026",
@@ -90,6 +99,12 @@ export const ARTICLE_ROUTES = {
     "ru": "poker-terminy-slovar",
     "zh": "poker-shuyu-cidian"
   },
+  "postflop-suuri": {
+    "mn": "postflop-suuri"
+  },
+  "pot-odds-equity": {
+    "mn": "pot-odds-equity"
+  },
   "pozitsiin-huch": {
     "mn": "pozitsiin-huch",
     "en": "table-position-poker",
@@ -101,6 +116,9 @@ export const ARTICLE_ROUTES = {
     "en": "pppoker-club-vs-betting",
     "ru": "pppoker-klub-vs-bukmeker",
     "zh": "pppoker-klub-vs-touzhu"
+  },
+  "preflop-strategi": {
+    "mn": "preflop-strategi"
   },
   "statistik-analiz": {
     "mn": "statistik-analiz",
