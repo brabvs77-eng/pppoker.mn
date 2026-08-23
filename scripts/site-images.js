@@ -42,14 +42,32 @@ export function preloadHead() {
   <link rel="preload" href="${SLIDES[0].src}" as="image" type="image/webp" />`
 }
 
-export function ogImageMeta(alt = OG_COVER.alt) {
-  const safeAlt = escAttr(alt)
-  return `  <meta property="og:image" content="${OG_COVER.url}" />
-  <meta property="og:image:width" content="${OG_COVER.width}" />
-  <meta property="og:image:height" content="${OG_COVER.height}" />
+export function articleCoverUrl(src) {
+  if (!src) return OG_COVER.url
+  if (src.startsWith('http')) return src
+  return `${SITE}${src.startsWith('/') ? src : `/${src}`}`
+}
+
+export function resolveOgImage(alt, coverSrc) {
+  if (!coverSrc) return { ...OG_COVER, alt: alt || OG_COVER.alt }
+  return {
+    src: coverSrc,
+    url: articleCoverUrl(coverSrc),
+    width: 1600,
+    height: 900,
+    alt: alt || OG_COVER.alt,
+  }
+}
+
+export function ogImageMeta(alt = OG_COVER.alt, coverSrc) {
+  const image = resolveOgImage(alt, coverSrc)
+  const safeAlt = escAttr(image.alt)
+  return `  <meta property="og:image" content="${image.url}" />
+  <meta property="og:image:width" content="${image.width}" />
+  <meta property="og:image:height" content="${image.height}" />
   <meta property="og:image:alt" content="${safeAlt}" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="${OG_COVER.url}" />
+  <meta name="twitter:image" content="${image.url}" />
   <meta name="twitter:image:alt" content="${safeAlt}" />`
 }
 

@@ -1369,6 +1369,30 @@ a.academy-card {
   max-width: 760px;
 }
 
+.article-cover {
+  margin: 0 0 32px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.article-cover-img,
+.article-figure-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.article-figure {
+  margin: 28px 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
 .article-title {
   font-family: 'Playfair Display', serif;
   font-size: clamp(1.75rem, 4vw, 2.5rem);
@@ -1484,6 +1508,33 @@ a.academy-card {
   border-radius: var(--radius-lg);
   padding: 28px;
   transition: var(--transition);
+}
+
+.article-card--has-media {
+  padding: 0;
+  overflow: hidden;
+}
+
+.article-card-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.article-card--has-media .article-card-tag {
+  margin: 20px 28px 0;
+}
+
+.article-card--has-media h2,
+.article-card--has-media p {
+  margin-left: 28px;
+  margin-right: 28px;
+}
+
+.article-card--has-media .article-card-link {
+  display: inline-block;
+  margin: 0 28px 28px;
 }
 
 .article-card:hover {
