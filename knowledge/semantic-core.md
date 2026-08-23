@@ -54,6 +54,5 @@ Updated: 2026-06-12. Sources: GSC, Google Trends MN, competitor SERP review.
 | Technical | PPPoker | Install steps, FAQ «апп», not main keyword |
 
 Do not remove PPPoker from content — players need it to find/install the app. Shift **SEO packaging** to покер-first.
-1. mongol-poker-sistem
-2. mongol-poker-tatah
-3. online-poker-mongol-2026
+
+**Full 60-article roadmap:** `content/ARTICLE-PLAN.md` (18 published, 42 planned).

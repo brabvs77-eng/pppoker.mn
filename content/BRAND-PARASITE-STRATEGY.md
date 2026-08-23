@@ -1,6 +1,6 @@
 # Brand-parasite SEO strategy (Phase 5+)
 
-**When:** After 50–60 core articles on own brand, formats, academy, payments.
+**When:** Phase 10 in `content/ARTICLE-PLAN.md` — after Phases 5–9 (≥50 MN articles live).
 
 **Why wait:** Google trusts entity-first sites. Parasite pages before authority look like affiliate spam (pokermongolia.com model). GUIDELINE.md taboo: «No verbatim competitor copy».
 
