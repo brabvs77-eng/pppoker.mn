@@ -31,8 +31,12 @@ function parseFrontmatter(raw) {
   return { meta, body: match[2].trim() }
 }
 
+function escHtml(text) {
+  return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+}
+
 function inline(text) {
-  return text
+  return escHtml(text)
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, t, u) => {
       const ext = u.startsWith('http') && !u.includes('pppoker.mn')
@@ -107,6 +111,16 @@ function mdToHtml(md) {
         i++
       }
       out.push('</ul>')
+      continue
+    }
+
+    const imgMatch = line.match(/^!\[([^\]]*)\]\(([^)]+)\)$/)
+    if (imgMatch) {
+      const [, alt, src] = imgMatch
+      out.push(
+        `<figure class="article-figure"><img src="${src}" alt="${alt.replace(/"/g, '&quot;')}" class="article-figure-img" width="1200" height="675" loading="lazy" decoding="async" /></figure>`
+      )
+      i++
       continue
     }
 
@@ -284,6 +298,9 @@ function articlePage(article, langArticles) {
     '@type': 'Article',
     headline: title,
     description: metaDesc,
+    ...(article.coverImage
+      ? { image: `${SITE}${article.coverImage}` }
+      : {}),
     author: { '@type': 'Organization', name: 'Baatryn Öröö' },
     publisher: { '@type': 'Organization', name: 'Baatryn Öröö', url: SITE },
     mainEntityOfPage: url,
@@ -317,7 +334,7 @@ ${faviconHead()}
   <meta property="og:url" content="${url}" />
   <meta property="og:locale" content="${t.ogLocale}" />
 ${ogAlts}
-${ogImageMeta(metaTitle)}
+${ogImageMeta(metaTitle, article.coverImage || undefined)}
 ${preloadHead()}
   <link rel="stylesheet" href="/src/style.css" />
   <script type="application/ld+json">${jsonLd}</script>
@@ -333,7 +350,7 @@ ${nav(article)}
         <a href="${homeUrl(lang)}">${t.breadcrumb.home}</a> <span>/</span> <a href="${articlesIndexPath(lang)}">${t.breadcrumb.articles}</a> <span>/</span> <span>${title}</span>
       </nav>
       <article class="article-body">
-${html}
+${insertCover(html, article)}
       </article>
       <div class="article-cta">
         <a href="${PLAY_URL}" class="btn btn-primary" rel="noopener" target="_blank">${t.cta.play}</a>
@@ -402,12 +419,17 @@ function indexPage(lang, articles) {
   const t = ARTICLE_I18N[lang] || ARTICLE_I18N.mn
   const cards = articles
     .map(
-      a => `        <a href="${articlePath(a)}" class="article-card">
-          <span class="article-card-tag">${t.index.cardTag}</span>
+      a => {
+        const thumb = a.coverImage
+          ? `          <div class="article-card-media"><img src="${a.coverImage}" alt="" width="400" height="225" loading="lazy" decoding="async" /></div>\n`
+          : ''
+        return `        <a href="${articlePath(a)}" class="article-card${a.coverImage ? ' article-card--has-media' : ''}">
+${thumb}          <span class="article-card-tag">${t.index.cardTag}</span>
           <h2>${a.title}</h2>
           <p>${a.metaDesc}</p>
           <span class="article-card-link">${t.index.read}</span>
         </a>`
+      }
     )
     .join('\n')
 
@@ -469,8 +491,24 @@ function loadMarkdown(filePath, langOverride) {
     metaDesc: meta['Meta Description'] || '',
     title: h1,
     listTitle: meta['List Title'] || h1.replace(/\|.*/, '').trim().slice(0, 40),
+    coverImage: meta['Cover Image'] || '',
+    coverAlt: meta['Cover Alt'] || meta['Meta Title'] || h1,
     html: mdToHtml(body),
   }
+}
+
+function coverFigure(article) {
+  if (!article.coverImage) return ''
+  const alt = article.coverAlt.replace(/"/g, '&quot;')
+  return `<figure class="article-cover">
+          <img src="${article.coverImage}" alt="${alt}" class="article-cover-img" width="1200" height="675" decoding="async" fetchpriority="high" />
+        </figure>`
+}
+
+function insertCover(html, article) {
+  const fig = coverFigure(article)
+  if (!fig) return html
+  return html.replace(/(<h1 class="article-title">[\s\S]*?<\/h1>)/, `$1\n${fig}`)
 }
 
 // Load MN articles (flat files)

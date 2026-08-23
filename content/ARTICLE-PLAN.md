@@ -20,7 +20,20 @@ All academy cards linked to articles.
 |------|--------|
 | poker-terms-mn | published |
 
-## Phase 5 — Brand-parasite (after 50–60 core)
+## Phase 5 — Rules & fundamentals (6/6) ✅ DONE
+
+| # | Slug | Status |
+|---|------|--------|
+| 19 | `holdem-durem-buren` | published |
+| 20 | `omaha-durem-buren` | published |
+| 21 | `preflop-strategi` | published |
+| 22 | `pot-odds-equity` | published |
+| 23 | `bet-hmjuulelt` | published |
+| 24 | `postflop-suuri` | published |
+
+Each article has a unique cover image in `public/images/articles/{slug}.webp`.
+
+## Phase 6 — Brand-parasite (after 50–60 core)
 
 See `content/BRAND-PARASITE-STRATEGY.md`.
 
@@ -41,4 +54,4 @@ See `content/I18N-TRANSLATION-PLAN.md`.
 | I18n-7 ZH Tier 3+4 (10) | published |
 | I18n-9 Auto sitemap + FAQ schema i18n | published |
 
-**Total published:** 18 MN + 18 EN + 18 RU + 18 ZH articles (full MN parity all langs)
+**Total published:** 24 MN + 18 EN + 18 RU + 18 ZH articles (6 new MN in Phase 5)
