@@ -9,7 +9,7 @@ Updated: 2026-08-24. Target corpus: **60 MN articles** (then selective i18n).
 | **Published** | 60 |
 | **Planned (new)** | 0 |
 | **Total target** | 60 |
-| **I18n parity today** | 18 × 4 langs = 72 URLs |
+| **I18n parity today** | 60 × 4 langs = **240 URLs** |
 
 **Keyword packaging:** покер-first titles/H1; PPPoker as supporting entity (`GUIDELINE.md`, `knowledge/semantic-core.md`).
 
@@ -210,8 +210,9 @@ Existing 18 articles: full EN/RU/ZH parity (`content/I18N-TRANSLATION-PLAN.md`).
 | T2 | Batch C (44 MN) | Phase 6 strategy top-6 × EN/RU | ✅ done |
 | T3 | Batch E (54 MN) | Phase 9 local + remaining P1 × EN/RU/ZH | ✅ done |
 | T4 | Optional | Phase 10 parasite — EN only | ✅ done |
+| T5 | Full parity | Phase 6 advanced + Phase 10 parasite × RU/ZH | ✅ done |
 
-ZH: wait until EN+RU ≥50% of expanded corpus per `I18N-TRANSLATION-PLAN.md`.
+**Full 4-lang parity achieved:** all 60 MN groups have EN/RU/ZH translations.
 
 ---
 
@@ -239,9 +240,12 @@ ZH: wait until EN+RU ≥50% of expanded corpus per `I18N-TRANSLATION-PLAN.md`.
 | I18n RU Tier 4 strategy (5) | published |
 | I18n-6 ZH Tier 1+2 (8) | published |
 | I18n-7 ZH Tier 3+4 (10) | published |
+| I18n-8 ZH Phase 10 parasite (6) | published |
 | I18n-9 Auto sitemap + FAQ schema i18n | published |
+| I18n-10 Phase 6 advanced EN/RU/ZH (18) | published |
+| I18n-11 RU Phase 10 parasite (6) | published |
 
-**Current published:** 60 MN + 54 EN + 54 RU + 48 ZH = **216 article URLs** (60 MN groups). Phase 10 parasite RU added; 48/60 groups full 4-lang parity.
+**Current published:** 60 MN + 60 EN + 60 RU + 60 ZH = **240 article URLs** (60/60 groups full 4-lang parity). Sitemap: **246 URLs** (incl. hubs, about, home).
 
 ---
 

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HUD：VPIP、PFR、AF | 在线扑克蒙古</title>
+  <meta name="description" content="扑克 HUD 统计：VPIP、PFR、Aggression Factor。在线扑克蒙古 — 识别对手，制定利用策略。" />
+  <meta name="article-group-id" content="hud-vpip-pfr" />
+  <meta name="article-lang" content="zh" />
+  <link rel="canonical" href="https://pppoker.mn/zh/articles/hud-vpip-pfr-poker/" />
+  <link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/hud-vpip-pfr/" />
+  <link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/hud-vpip-pfr-poker/" />
+  <link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/hud-vpip-pfr-poker/" />
+  <link rel="alternate" hreflang="zh" href="https://pppoker.mn/zh/articles/hud-vpip-pfr-poker/" />
+  <link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/hud-vpip-pfr/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Baatryn Öröö" />
+  <meta property="og:title" content="HUD：VPIP、PFR、AF | 在线扑克蒙古" />
+  <meta property="og:description" content="扑克 HUD 统计：VPIP、PFR、Aggression Factor。在线扑克蒙古 — 识别对手，制定利用策略。" />
+  <meta property="og:url" content="https://pppoker.mn/zh/articles/hud-vpip-pfr-poker/" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale:alternate" content="mn_MN" />
+  <meta property="og:image" content="https://pppoker.mn/images/articles/hud-vpip-pfr.webp" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+  <meta property="og:image:alt" content="Монгол тоглогч Улаанбаатартад HUD статистик шалгаж байна" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://pppoker.mn/images/articles/hud-vpip-pfr.webp" />
+  <meta name="twitter:image:alt" content="Монгол тоглогч Улаанбаатартад HUD статистик шалгаж байна" />
+  <meta name="twitter:title" content="HUD：VPIP、PFR、AF | 在线扑克蒙古" />
+  <meta name="twitter:description" content="扑克 HUD 统计：VPIP、PFR、Aggression Factor。在线扑克蒙古 — 识别对手，制定利用策略。" />
+  <link rel="preload" href="/images/logo.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/slide-comfort.webp" as="image" type="image/webp" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"HUD：VPIP、PFR、AF — 深度解析","description":"扑克 HUD 统计：VPIP、PFR、Aggression Factor。在线扑克蒙古 — 识别对手，制定利用策略。","image":"https://pppoker.mn/images/articles/hud-vpip-pfr.webp","author":{"@type":"Organization","name":"Baatryn Öröö"},"publisher":{"@type":"Organization","name":"Baatryn Öröö","url":"https://pppoker.mn","logo":{"@type":"ImageObject","url":"https://pppoker.mn/images/logo.webp"}},"mainEntityOfPage":"https://pppoker.mn/zh/articles/hud-vpip-pfr-poker/","inLanguage":"zh","dateModified":"2026-08-24"}</script>
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109810225', 'ym');
+    ym(109810225, 'init', {ssr:true, webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+  </script>
+</head>
+<body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/109810225" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container nav-container">
+                <a href="https://pppoker.mn/?lang=zh" class="nav-logo" aria-label="Baatryn Öröö 首页">
+          <img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" fetchpriority="high" />
+          <span class="logo-text">BAATRYN ÖRÖÖ</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="https://pppoker.mn/?lang=zh#games">游戏</a></li>
+          <li><a href="https://pppoker.mn/?lang=zh#features">特色</a></li>
+          <li><a href="/zh/articles/" class="active">文章</a></li>
+          <li><a href="/about/?lang=zh">关于我们</a></li>
+          <li><a href="https://pppoker.mn/?lang=zh#academy">学院</a></li>
+          <li><a href="https://pppoker.mn/?lang=zh#faq">常见问题</a></li>
+          <li class="nav-mobile-play">
+            <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn nav-btn--menu" rel="noopener" target="_blank">开始游戏</a>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-current" id="langBtn" aria-label="切换语言" aria-expanded="false">
+              <span id="langLabel">中文</span> ▾
+            </button>
+            <ul class="lang-menu" id="langMenu" role="menu">
+              <li role="menuitem"><a href="/articles/hud-vpip-pfr/" data-lang="mn">MN</a></li>
+              <li role="menuitem"><a href="/en/articles/hud-vpip-pfr-poker/" data-lang="en">EN</a></li>
+              <li role="menuitem"><a href="/ru/articles/hud-vpip-pfr-poker/" data-lang="ru">RU</a></li>
+              <li role="menuitem"><a href="/zh/articles/hud-vpip-pfr-poker/" data-lang="zh" class="active">中文</a></li>
+            </ul>
+          </div>
+          <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn" rel="noopener" target="_blank">开始游戏</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content" class="article-page">
+    <div class="container">
+      <nav class="article-breadcrumb" aria-label="Breadcrumb">
+        <a href="https://pppoker.mn/?lang=zh">首页</a> <span>/</span> <a href="/zh/articles/">文章</a> <span>/</span> <span>HUD：VPIP、PFR、AF — 深度解析</span>
+      </nav>
+      <article class="article-body">
+<h1 class="article-title">HUD：VPIP、PFR、AF — 深度解析</h1>
+<figure class="article-cover">
+          <img src="/images/articles/hud-vpip-pfr.webp" alt="Монгол тоглогч Улаанбаатартад HUD статистик шалгаж байна" class="article-cover-img" width="1200" height="675" decoding="async" fetchpriority="high" />
+        </figure>
+<p><strong>HUD</strong>（Heads-Up Display，实时统计界面）用于追踪对手数据。PPPoker 平台对 HUD 有一定限制，但理解<a href="https://pppoker.mn/?lang=zh">统计数据</a>的含义至关重要。VPIP、PFR、AF — 这三个核心数字是读懂对手的关键。</p>
+<h2 class="article-h2">VPIP（自愿入底池率）</h2>
+<p>除盲注外，在多少比例的手牌中主动投入筹码。</p>
+<div class="article-table-wrap"><table class="article-table"><thead><tr>
+<th>VPIP</th>
+<th>类型</th>
+</tr></thead><tbody>
+<tr>
+<td>15–22%</td>
+<td>紧（Tight）</td>
+</tr>
+<tr>
+<td>22–30%</td>
+<td>常规（Regular）</td>
+</tr>
+<tr>
+<td>30%+</td>
+<td>松（Loose）</td>
+</tr>
+</tbody></table></div>
+<h2 class="article-h2">PFR（翻牌前加注率）</h2>
+<p>翻牌前进行加注的比例。</p>
+<div class="article-table-wrap"><table class="article-table"><thead><tr>
+<th>PFR</th>
+<th>含义</th>
+</tr></thead><tbody>
+<tr>
+<td>接近 VPIP</td>
+<td>激进型</td>
+</tr>
+<tr>
+<td>远低于 VPIP</td>
+<td>被动型（习惯平跟）</td>
+</tr>
+<tr>
+<td>PFR 20%+</td>
+<td>紧-激进型（TAG）</td>
+</tr>
+</tbody></table></div>
+<h2 class="article-h2">AF（侵略性系数）</h2>
+<p>（下注 + 加注）/ 跟注。衡量翻牌后的侵略性。</p>
+<ul class="article-ul">
+<li>AF 2+ — 侵略性强</li>
+<li>AF 1–2 — 均衡</li>
+<li>AF 1 以下 — 被动</li>
+</ul>
+<h2 class="article-h2">如何运用？</h2>
+<ol class="article-ol">
+<li><strong>松-被动型</strong>（VPIP 40+，PFR 10）— 多价值下注，少诈唬</li>
+<li><strong>紧型</strong>（VPIP 15）— 多 steal，遇 3-bet 弃牌</li>
+<li>样本量达 50 手以上 — 数据方可信赖</li>
+</ol>
+<p>下一步进行<a href="/zh/articles/lilong-zhanfa/">利用战法</a>。</p>
+<h2 class="article-h2">PPPoker 平台特点</h2>
+<p>平台不提供完整 HUD — 依靠手牌记录，赛后分析。重点观察 Fold to c-bet 与 3-bet 比率。</p>
+<h2 class="article-h2">实战要点</h2>
+<ol class="article-ol">
+<li>了解自己的 VPIP/PFR 数值</li>
+<li>对手样本达 20 手以上再做决策</li>
+<li><a href="/zh/articles/bankroll-guanli/">筹码管理</a> — 持续提升数据表现</li>
+</ol>
+<h2 class="article-h2">常见问题</h2>
+<h3 class="article-h3">VPIP 应该是多少？</h3>
+<p>初学者 22–28%，中级玩家 24–30%。</p>
+<h3 class="article-h3">为什么 PFR 低于 VPIP？</h3>
+<p>平跟和跟注过多 — 是弱玩家的典型特征。</p>
+<p><a href="https://pppoker.mn/?lang=zh">统计分析</a> · <a href="https://pppoker.mn/?lang=zh">读取范围</a></p>
+      </article>
+      <div class="article-cta">
+        <a href="https://baatrynorpoker.ink/1FBP9k" class="btn btn-primary" rel="noopener" target="_blank">立即游戏 →</a>
+        <a href="/zh/articles/" class="btn btn-outline">更多文章</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" /><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
+          <p>蒙古扑克俱乐部。在线扑克——真正玩家的竞技场。</p>
+        </div>
+        <div class="footer-links">
+          <h4>文章</h4>
+          <ul>
+            <li><a href="/zh/articles/100-cunkuan-jiangjin/">100% 奖金</a></li>
+            <li><a href="/zh/articles/3bet-4bet-celue/">3-bet 与 4-bet — 翻牌前侵略性打法</a></li>
+            <li><a href="/zh/articles/baatryn-oroo-jieshao/">Baatryn Öröö — 俱乐部介绍</a></li>
+            <li><a href="/zh/articles/bankroll-guanli/">资金管理</a></li>
+            <li><a href="/zh/articles/bluff-poker-mongolia-shi-shenme/">Bluff poker mongolia 是什么？</a></li>
+            <li><a href="/zh/articles/bluff-poker-mongolia/">Bluff poker mongolia</a></li>
+            <li><a href="/zh/articles/cbet-celue/">C-bet 策略 — Continuation Bet</a></li>
+            <li><a href="/zh/articles/check-raise-zhanfa/">Check-raise 战法</a></li>
+            <li><a href="/zh/articles/cunkuan-tikuan-mongolia/">存款与提款</a></li>
+            <li><a href="/zh/articles/duoren-chi/">多人底池 — 3 人以上</a></li>
+            <li><a href="/zh/articles/float-celue/">Float</a></li>
+            <li><a href="/zh/articles/fuze-renyouxi/">负责任游戏</a></li>
+            <li><a href="/zh/articles/gaoe-zhuo-vip/">高注额 10K/20K — VIP 牌桌</a></li>
+            <li><a href="/zh/articles/holdem-guize-quan/">Hold'em 规则</a></li>
+            <li><a href="/zh/articles/holdem-vs-omaha/">Hold'em vs Omaha</a></li>
+            <li><a href="/zh/articles/houfan-jichu/">翻牌后基础</a></li>
+            <li><a href="/zh/articles/hud-vpip-pfr-poker/">HUD：VPIP、PFR、AF — 深度解析</a></li>
+            <li><a href="/zh/articles/julebu-vs-pingtai/">俱乐部 vs 平台</a></li>
+            <li><a href="/zh/articles/lilong-zhanfa/">利用战法 — 针对弱对手</a></li>
+            <li><a href="/zh/articles/mangzhu-youxi/">盲注玩法 — SB 与 BB</a></li>
+            <li><a href="/zh/articles/megamax-poker-menggu/">MegaMax poker Mongolia</a></li>
+            <li><a href="/zh/articles/menggu-zhifu-fangshi/">蒙古支付方式 — IBAN、USDT</a></li>
+            <li><a href="/zh/articles/mongol-poker-xiazai/">如何下载蒙古扑克 — PPPoker 应用指南</a></li>
+            <li><a href="/zh/articles/mongol-poker-xitong/">什么是蒙古扑克系统？Baatryn Öröö 与 PPPoker</a></li>
+            <li><a href="/zh/articles/omaha-guize-quan/">Omaha 规则</a></li>
+            <li><a href="/zh/articles/one-king-poker-menggu/">One King poker Mongolia</a></li>
+            <li><a href="/zh/articles/online-poker-mongolia-2026/">2026 蒙古哪里玩在线扑克 — 完整指南</a></li>
+            <li><a href="/zh/articles/plo-draw-guize/">PLO Draw — Wrap、Nut Flush</a></li>
+            <li><a href="/zh/articles/plo-qishou-pai/">PLO 起手牌 — 开局范围</a></li>
+            <li><a href="/zh/articles/poker-fangcha/">方差 — 长期视角</a></li>
+            <li><a href="/zh/articles/poker-shoupai-paiming/">牌型排名</a></li>
+            <li><a href="/zh/articles/poker-shuyu-cidian/">扑克术语</a></li>
+            <li><a href="/zh/articles/poker-tongji-fenxi/">数据统计</a></li>
+            <li><a href="/zh/articles/poker-xinlixue/">扑克心理</a></li>
+            <li><a href="/zh/articles/pokermongolia-com-shi-shenme/">pokermongolia.com 是什么？</a></li>
+            <li><a href="/zh/articles/pot-odds-quanyi/">底池赔率与权益</a></li>
+            <li><a href="/zh/articles/pppoker-klub-vs-touzhu/">俱乐部 vs 博彩</a></li>
+            <li><a href="/zh/articles/pppoker-vs-pokerstars-menggu/">PPPoker vs PokerStars</a></li>
+            <li><a href="/zh/articles/pppoker-yingyong-cuowu/">PPPoker 应用故障排查</a></li>
+            <li><a href="/zh/articles/qianfan-choulu/">翻牌前策略</a></li>
+            <li><a href="/zh/articles/qishou-pai-xuanze/">起手牌</a></li>
+            <li><a href="/zh/articles/shouji-vs-diannao/">手机 vs 电脑 — 哪个更适合你？</a></li>
+            <li><a href="/zh/articles/tikuan-wenti/">提款问题解决</a></li>
+            <li><a href="/zh/articles/tou-qie-pai/">偷盲与反偷盲 — 夺取盲注</a></li>
+            <li><a href="/zh/articles/turbo-poker-menggu/">Turbo poker Mongolia</a></li>
+            <li><a href="/zh/articles/turn-river-wanfa/">Turn 与 River — 决策框架</a></li>
+            <li><a href="/zh/articles/ulanbator-poker-2026/">乌兰巴托，蒙古 — 在线扑克 2026</a></li>
+            <li><a href="/zh/articles/usdt-cunkuan-zhinan/">USDT 存款指南</a></li>
+            <li><a href="/zh/articles/vip-zhuo-menggu/">VIP 牌桌</a></li>
+            <li><a href="/zh/articles/waiguo-poker-menggu/">外籍人士指南 — 蒙古在线扑克</a></li>
+            <li><a href="/zh/articles/wei-xiaozhu-250-500/">微注 250/500 — 如何生存</a></li>
+            <li><a href="/zh/articles/xianjin-zhuo-mongolia/">现金局</a></li>
+            <li><a href="/zh/articles/xiazhu-daxiao/">下注大小</a></li>
+            <li><a href="/zh/articles/xuanze-zhuozi/">选择牌桌 — 和谁玩、什么时候玩</a></li>
+            <li><a href="/zh/articles/yuedu-range/">读取 Range — 基础</a></li>
+            <li><a href="/zh/articles/zaixian-poker-liyi/">在线扑克礼仪</a></li>
+            <li><a href="/zh/articles/zhanghu-anquan/">账号安全</a></li>
+            <li><a href="/zh/articles/zhapian-zhishu/">诈唬艺术</a></li>
+            <li><a href="/zh/articles/zhuce-buzhou/">注册步骤详解</a></li>
+            <li><a href="/zh/articles/zhuo-shang-weizhi/">牌桌位置</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>联系</h4>
+          <ul>
+            <li><a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>♠ BAATRYN ÖRÖÖ — 智取牌局，长久制胜。</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/article-page.js"></script>
+</body>
+</html>

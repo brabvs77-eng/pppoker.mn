@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HUD: VPIP, PFR, AF в покере | Онлайн покер — Baatryn Öröö</title>
+  <meta name="description" content="Покер HUD статистика: VPIP, PFR, Aggression Factor. Онлайн покер Монгол — читаем игрока, exploit." />
+  <meta name="article-group-id" content="hud-vpip-pfr" />
+  <meta name="article-lang" content="ru" />
+  <link rel="canonical" href="https://pppoker.mn/ru/articles/hud-vpip-pfr-poker/" />
+  <link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/hud-vpip-pfr/" />
+  <link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/hud-vpip-pfr-poker/" />
+  <link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/hud-vpip-pfr-poker/" />
+  <link rel="alternate" hreflang="zh" href="https://pppoker.mn/zh/articles/hud-vpip-pfr-poker/" />
+  <link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/hud-vpip-pfr/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Baatryn Öröö" />
+  <meta property="og:title" content="HUD: VPIP, PFR, AF в покере | Онлайн покер — Baatryn Öröö" />
+  <meta property="og:description" content="Покер HUD статистика: VPIP, PFR, Aggression Factor. Онлайн покер Монгол — читаем игрока, exploit." />
+  <meta property="og:url" content="https://pppoker.mn/ru/articles/hud-vpip-pfr-poker/" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:locale:alternate" content="mn_MN" />
+  <meta property="og:image" content="https://pppoker.mn/images/articles/hud-vpip-pfr.webp" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+  <meta property="og:image:alt" content="Монгол тоглогч Улаанбаатартад HUD статистик шалгаж байна" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://pppoker.mn/images/articles/hud-vpip-pfr.webp" />
+  <meta name="twitter:image:alt" content="Монгол тоглогч Улаанбаатартад HUD статистик шалгаж байна" />
+  <meta name="twitter:title" content="HUD: VPIP, PFR, AF в покере | Онлайн покер — Baatryn Öröö" />
+  <meta name="twitter:description" content="Покер HUD статистика: VPIP, PFR, Aggression Factor. Онлайн покер Монгол — читаем игрока, exploit." />
+  <link rel="preload" href="/images/logo.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/slide-comfort.webp" as="image" type="image/webp" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"HUD: VPIP, PFR, AF — подробно","description":"Покер HUD статистика: VPIP, PFR, Aggression Factor. Онлайн покер Монгол — читаем игрока, exploit.","image":"https://pppoker.mn/images/articles/hud-vpip-pfr.webp","author":{"@type":"Organization","name":"Baatryn Öröö"},"publisher":{"@type":"Organization","name":"Baatryn Öröö","url":"https://pppoker.mn","logo":{"@type":"ImageObject","url":"https://pppoker.mn/images/logo.webp"}},"mainEntityOfPage":"https://pppoker.mn/ru/articles/hud-vpip-pfr-poker/","inLanguage":"ru","dateModified":"2026-08-24"}</script>
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109810225', 'ym');
+    ym(109810225, 'init', {ssr:true, webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+  </script>
+</head>
+<body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/109810225" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container nav-container">
+                <a href="https://pppoker.mn/?lang=ru" class="nav-logo" aria-label="Baatryn Öröö — главная">
+          <img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" fetchpriority="high" />
+          <span class="logo-text">BAATRYN ÖRÖÖ</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="https://pppoker.mn/?lang=ru#games">Игры</a></li>
+          <li><a href="https://pppoker.mn/?lang=ru#features">Возможности</a></li>
+          <li><a href="/ru/articles/" class="active">Статьи</a></li>
+          <li><a href="/about/?lang=ru">О нас</a></li>
+          <li><a href="https://pppoker.mn/?lang=ru#academy">Академия</a></li>
+          <li><a href="https://pppoker.mn/?lang=ru#faq">FAQ</a></li>
+          <li class="nav-mobile-play">
+            <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn nav-btn--menu" rel="noopener" target="_blank">Играть</a>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-current" id="langBtn" aria-label="Сменить язык" aria-expanded="false">
+              <span id="langLabel">RU</span> ▾
+            </button>
+            <ul class="lang-menu" id="langMenu" role="menu">
+              <li role="menuitem"><a href="/articles/hud-vpip-pfr/" data-lang="mn">MN</a></li>
+              <li role="menuitem"><a href="/en/articles/hud-vpip-pfr-poker/" data-lang="en">EN</a></li>
+              <li role="menuitem"><a href="/ru/articles/hud-vpip-pfr-poker/" data-lang="ru" class="active">RU</a></li>
+              <li role="menuitem"><a href="/zh/articles/hud-vpip-pfr-poker/" data-lang="zh">中文</a></li>
+            </ul>
+          </div>
+          <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn" rel="noopener" target="_blank">Играть</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content" class="article-page">
+    <div class="container">
+      <nav class="article-breadcrumb" aria-label="Breadcrumb">
+        <a href="https://pppoker.mn/?lang=ru">Главная</a> <span>/</span> <a href="/ru/articles/">Статьи</a> <span>/</span> <span>HUD: VPIP, PFR, AF — подробно</span>
+      </nav>
+      <article class="article-body">
+<h1 class="article-title">HUD: VPIP, PFR, AF — подробно</h1>
+<figure class="article-cover">
+          <img src="/images/articles/hud-vpip-pfr.webp" alt="Монгол тоглогч Улаанбаатартад HUD статистик шалгаж байна" class="article-cover-img" width="1200" height="675" decoding="async" fetchpriority="high" />
+        </figure>
+<p><strong>HUD</strong> (Heads-Up Display) — оверлей с покерной статистикой игрока. В PPPoker возможности HUD ограничены, но понимание ключевых показателей — VPIP, PFR, AF — остаётся важным. На столах <a href="https://pppoker.mn/?lang=ru">Baatryn Öröö</a> эти три числа дают основу для считывания оппонента и принятия решений.</p>
+<h2 class="article-h2">VPIP (Voluntarily Put $ In Pot)</h2>
+<p>VPIP — процент раздач, в которых игрок добровольно вложил деньги в банк (без учёта обязательных блайндов). Это главный показатель тайтовости или лузовости:</p>
+<div class="article-table-wrap"><table class="article-table"><thead><tr>
+<th>VPIP</th>
+<th>Тип игрока</th>
+</tr></thead><tbody>
+<tr>
+<td>15–22%</td>
+<td>Tight</td>
+</tr>
+<tr>
+<td>22–30%</td>
+<td>Regular</td>
+</tr>
+<tr>
+<td>30%+</td>
+<td>Loose</td>
+</tr>
+</tbody></table></div>
+<p>Высокий VPIP (40%+) — лузовый игрок, входит со слабыми руками. Низкий (ниже 15%) — сверхтайтовый, играет только nuts. Оба отклонения — ошибка, которую можно эксплуатировать.</p>
+<p>VPIP нужен выборкой минимум <strong>50 рук</strong>, иначе число нестабильно. С 20 руками цифра может случайно быть 60% у типичного регуляра.</p>
+<h2 class="article-h2">PFR (Pre-Flop Raise)</h2>
+<p>PFR — процент раздач, в которых игрок сделал префлоп рейз (опен или ререйз).</p>
+<div class="article-table-wrap"><table class="article-table"><thead><tr>
+<th>PFR</th>
+<th>Интерпретация</th>
+</tr></thead><tbody>
+<tr>
+<td>Близко к VPIP</td>
+<td>Агрессивный, редко лимпит</td>
+</tr>
+<tr>
+<td>Намного ниже VPIP</td>
+<td>Пассивный (лимпер)</td>
+</tr>
+<tr>
+<td>PFR 20%+</td>
+<td>Tight-aggressive</td>
+</tr>
+</tbody></table></div>
+<p>Разница VPIP − PFR = процент лимпов и коллов. Если у игрока VPIP 35%, PFR 8% — он лимпер и колл-стейшн. Эксплуатация: value bet широко, без блафов.</p>
+<p>Идеальный диапазон для регуляра — VPIP близко к PFR с разницей 3–8%. Подробнее о применении этих цифр: <a href="https://pppoker.mn/ru/articles/ekspluatatsiya-taktiki/">эксплуатация тактики</a>.</p>
+<h2 class="article-h2">AF (Aggression Factor)</h2>
+<p>AF = (Bet + Raise) / Call. Постфлоп агрессия:</p>
+<ul class="article-ul">
+<li><strong>AF 2+</strong> — aggressive. Ставит и рейзит чаще, чем коллирует</li>
+<li><strong>AF 1–2</strong> — balanced</li>
+<li><strong>AF ниже 1</strong> — passive. Коллирует больше, чем ставит</li>
+</ul>
+<p>Высокий AF в сочетании с высоким VPIP — агрессивный лузовый игрок (манияк). Низкий AF + высокий VPIP — пассивный лузак (колл-стейшн). Понимание этой комбинации важнее, чем одно число.</p>
+<h2 class="article-h2">Как использовать?</h2>
+<ol class="article-ol">
+<li><strong>Loose-passive</strong> (VPIP 40+, PFR 10, AF 1) — value bet на каждой улице, никаких блафов</li>
+<li><strong>Tight</strong> (VPIP 15, PFR 12) — стилите чаще, уважайте его рейзы: <a href="https://pppoker.mn/ru/articles/steal-resteal-poker/">стил и рестил</a></li>
+<li><strong>Tight-aggressive reg</strong> (VPIP 22, PFR 18, AF 3) — играйте сбалансированно, exploitить сложнее</li>
+<li>Накопите <strong>50+ рук</strong> прежде чем принимать решения на основе статистики</li>
+</ol>
+<p>После сбора данных переходите к активной эксплуатации: <a href="https://pppoker.mn/ru/articles/ekspluatatsiya-taktiki/">эксплуатация тактики</a>.</p>
+<h2 class="article-h2">В PPPoker</h2>
+<p>PPPoker не поддерживает сторонние HUD-программы в полном объёме. Что делать:</p>
+<ul class="article-ul">
+<li>Ведите <strong>ручные заметки</strong> на каждого оппонента (кнопка Notes в приложении)</li>
+<li>После сессии анализируйте историю рук и считайте VPIP/PFR вручную по проблемным оппонентам</li>
+<li>Отслеживайте Fold to C-bet — достаточно нескольких рук для рабочей оценки</li>
+<li>Смотрите на 3-bet% — частые 3-беты сигнализируют о LAG или агрессивном регуляре</li>
+</ul>
+<p>Полный разбор инструментов статистики: <a href="https://pppoker.mn/ru/articles/statistika-pokera/">статистика в покере</a>.</p>
+<h2 class="article-h2">Практические советы</h2>
+<ol class="article-ol">
+<li>Знайте <strong>свои</strong> VPIP/PFR — анализируйте собственную игру после каждой сессии</li>
+<li>По оппоненту решение принимайте только после <strong>20+ рук</strong> наблюдений</li>
+<li>Сочетайте HUD-данные с <a href="https://pppoker.mn/ru/articles/chtenie-range/">читением рейнджей</a> — цифры объясняют поведение, рейнж объясняет конкретную руку</li>
+<li>Контролируйте <a href="https://pppoker.mn/ru/articles/bankroll-menedzhment/">банкролл</a> — статистика растёт только на дистанции</li>
+</ol>
+<h2 class="article-h2">FAQ</h2>
+<h3 class="article-h3">Какой VPIP считается нормальным?</h3>
+<p>Для начинающих — 22–28% в 6-max. Опытные регуляры держат 24–30% с соответствующим PFR. Ниже 15% — слишком тайтово, упускаете ценность. Выше 35% без высокого AF — типичная ошибка лузовой пассивной игры.</p>
+<h3 class="article-h3">Почему PFR меньше VPIP?</h3>
+<p>PFR всегда ≤ VPIP: нельзя рейзить без захода. Разница показывает лимпы и коллы. Большой gap (VPIP 40, PFR 10) — признак пассивного игрока: он входит много, но инициативу не захватывает. Это слабость — <a href="https://pppoker.mn/ru/articles/ekspluatatsiya-taktiki/">эксплуатируйте value-бетами</a>.</p>
+<p><a href="https://pppoker.mn/ru/articles/statistika-pokera/">Статистика в покере</a> · <a href="https://pppoker.mn/ru/articles/chtenie-range/">Чтение рейнджей</a> · <a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></p>
+      </article>
+      <div class="article-cta">
+        <a href="https://baatrynorpoker.ink/1FBP9k" class="btn btn-primary" rel="noopener" target="_blank">Играть →</a>
+        <a href="/ru/articles/" class="btn btn-outline">Другие статьи</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" /><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
+          <p>Покерный клуб в Монголии. Онлайн-покер — столы для настоящих игроков.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Статьи</h4>
+          <ul>
+            <li><a href="/ru/articles/3bet-4bet-strategiya/">3-bet и 4-bet</a></li>
+            <li><a href="/ru/articles/baatryn-oroo-klub/">Baatryn Öröö клуб</a></li>
+            <li><a href="/ru/articles/bankroll-menedzhment/">Банкролл</a></li>
+            <li><a href="/ru/articles/bezopasnost-akkaunta/">Безопасность аккаунта</a></li>
+            <li><a href="/ru/articles/bluff-poker-mongolia/">Bluff poker mongolia</a></li>
+            <li><a href="/ru/articles/bonus-100-usloviya/">Бонус 100%</a></li>
+            <li><a href="/ru/articles/cbet-strategiya/">C-bet стратегия</a></li>
+            <li><a href="/ru/articles/check-raise-taktika/">Check-raise тактика</a></li>
+            <li><a href="/ru/articles/chtenie-range/">Чтение range</a></li>
+            <li><a href="/ru/articles/chto-takoe-bluff-poker-mongolia/">Что такое bluff poker mongolia?</a></li>
+            <li><a href="/ru/articles/chto-takoe-pokermongolia-com/">Что такое pokermongolia.com?</a></li>
+            <li><a href="/ru/articles/deposit-vyvod-mongoliya/">Депозит и вывод</a></li>
+            <li><a href="/ru/articles/eksapat-poker-mongoliya/">Экспат-покер Монголия</a></li>
+            <li><a href="/ru/articles/ekspluatatsiya-taktiki/">Эксплуатация тактики</a></li>
+            <li><a href="/ru/articles/etiket-onlayn-pokera/">Этикет онлайн покера</a></li>
+            <li><a href="/ru/articles/high-stakes-vip/">High stakes VIP</a></li>
+            <li><a href="/ru/articles/holdem-pravila-polnostyu/">Правила Hold'em</a></li>
+            <li><a href="/ru/articles/holdem-vs-omaha/">Hold'em vs Omaha</a></li>
+            <li><a href="/ru/articles/hud-vpip-pfr-poker/">HUD VPIP PFR покер</a></li>
+            <li><a href="/ru/articles/igra-v-blayndakh/">Игра в блайндах</a></li>
+            <li><a href="/ru/articles/iskusstvo-blufa/">Искусство блефа</a></li>
+            <li><a href="/ru/articles/kesh-igry-mongoliya/">Кэш-игры</a></li>
+            <li><a href="/ru/articles/klub-vs-platforma/">Клуб vs платформа</a></li>
+            <li><a href="/ru/articles/megamax-poker-mongolia/">MegaMax poker Mongolia</a></li>
+            <li><a href="/ru/articles/micro-stavki-250-500/">Микро-ставки 250/500</a></li>
+            <li><a href="/ru/articles/mobil-vs-desktop/">Мобильный vs компьютер</a></li>
+            <li><a href="/ru/articles/mongol-poker-sistema/">Что такое система монгол покер? Baatryn </a></li>
+            <li><a href="/ru/articles/mongol-poker-skachat/">Как скачать монгол покер — гайд по прило</a></li>
+            <li><a href="/ru/articles/mongolskie-platezhi/">Монгольские платежи</a></li>
+            <li><a href="/ru/articles/multiway-pot/">Multiway pot</a></li>
+            <li><a href="/ru/articles/omaha-pravila-polnostyu/">Правила Omaha</a></li>
+            <li><a href="/ru/articles/one-king-poker-mongolia/">One King poker Mongolia</a></li>
+            <li><a href="/ru/articles/online-poker-mongoliya-2026/">Где играть в онлайн покер в Монголии — г</a></li>
+            <li><a href="/ru/articles/otvetstvennaya-igra/">Ответственная игра</a></li>
+            <li><a href="/ru/articles/plo-drow-pravila/">PLO дроу</a></li>
+            <li><a href="/ru/articles/plo-startovye-ruki/">PLO стартовые руки</a></li>
+            <li><a href="/ru/articles/poker-kombinatsii/">Комбинации</a></li>
+            <li><a href="/ru/articles/poker-terminy-slovar/">Термины покера</a></li>
+            <li><a href="/ru/articles/postflop-osnovy/">Основы постфлопа</a></li>
+            <li><a href="/ru/articles/pot-odds-ekviti/">Pot odds и equity</a></li>
+            <li><a href="/ru/articles/pozitsiya-v-pokere/">Позиция в покере</a></li>
+            <li><a href="/ru/articles/pppoker-klub-vs-bukmeker/">Клуб vs букмекер</a></li>
+            <li><a href="/ru/articles/pppoker-oshibki-prilozheniya/">Ошибки PPPoker</a></li>
+            <li><a href="/ru/articles/pppoker-vs-pokerstars-mongoliya/">PPPoker vs PokerStars</a></li>
+            <li><a href="/ru/articles/preflop-strategiya/">Префлоп-стратегия</a></li>
+            <li><a href="/ru/articles/problemy-vyvoda/">Проблемы вывода</a></li>
+            <li><a href="/ru/articles/psihologiya-pokera/">Психология покера</a></li>
+            <li><a href="/ru/articles/razmer-stavok-poker/">Размер ставок</a></li>
+            <li><a href="/ru/articles/registratsiya-poshagovo/">Регистрация пошагово</a></li>
+            <li><a href="/ru/articles/statistika-pokera/">Статистика покера</a></li>
+            <li><a href="/ru/articles/steal-resteal-poker/">Стил и рестил</a></li>
+            <li><a href="/ru/articles/strategiya-float/">Стратегия float</a></li>
+            <li><a href="/ru/articles/turbo-poker-mongolia/">Turbo poker Mongolia</a></li>
+            <li><a href="/ru/articles/turn-river-igra/">Игра на терне и ривере</a></li>
+            <li><a href="/ru/articles/ulaanbaatar-poker-2026/">Улан-Батор покер 2026</a></li>
+            <li><a href="/ru/articles/usdt-depozit-gaid/">USDT депозит</a></li>
+            <li><a href="/ru/articles/variance-poker/">Дисперсия в покере</a></li>
+            <li><a href="/ru/articles/vip-stol-mongoliya/">VIP-стол</a></li>
+            <li><a href="/ru/articles/vybor-startovykh-ruk/">Стартовые руки</a></li>
+            <li><a href="/ru/articles/vybor-stola-poker/">Выбор стола покер</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>♠ BAATRYN ÖRÖÖ — Играй с умом, побеждай долго.</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/article-page.js"></script>
+</body>
+</html>

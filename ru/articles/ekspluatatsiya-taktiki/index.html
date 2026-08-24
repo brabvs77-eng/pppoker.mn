@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Эксплуатация тактики — exploit слабых игроков | Baatryn Öröö</title>
+  <meta name="description" content="Покер exploit: используем слабых игроков. Fold to c-bet, overfold, overcall. Онлайн покер Монгол." />
+  <meta name="article-group-id" content="exploitation-taktik" />
+  <meta name="article-lang" content="ru" />
+  <link rel="canonical" href="https://pppoker.mn/ru/articles/ekspluatatsiya-taktiki/" />
+  <link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/exploitation-taktik/" />
+  <link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/exploitation-tactics/" />
+  <link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/ekspluatatsiya-taktiki/" />
+  <link rel="alternate" hreflang="zh" href="https://pppoker.mn/zh/articles/lilong-zhanfa/" />
+  <link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/exploitation-taktik/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Baatryn Öröö" />
+  <meta property="og:title" content="Эксплуатация тактики — exploit слабых игроков | Baatryn Öröö" />
+  <meta property="og:description" content="Покер exploit: используем слабых игроков. Fold to c-bet, overfold, overcall. Онлайн покер Монгол." />
+  <meta property="og:url" content="https://pppoker.mn/ru/articles/ekspluatatsiya-taktiki/" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:locale:alternate" content="mn_MN" />
+  <meta property="og:image" content="https://pppoker.mn/images/articles/exploitation-taktik.webp" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+  <meta property="og:image:alt" content="Монгол тоглогч өрсөлдөгчийг ажиглаж байна" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://pppoker.mn/images/articles/exploitation-taktik.webp" />
+  <meta name="twitter:image:alt" content="Монгол тоглогч өрсөлдөгчийг ажиглаж байна" />
+  <meta name="twitter:title" content="Эксплуатация тактики — exploit слабых игроков | Baatryn Öröö" />
+  <meta name="twitter:description" content="Покер exploit: используем слабых игроков. Fold to c-bet, overfold, overcall. Онлайн покер Монгол." />
+  <link rel="preload" href="/images/logo.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/slide-comfort.webp" as="image" type="image/webp" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Эксплуатация — используем слабых игроков","description":"Покер exploit: используем слабых игроков. Fold to c-bet, overfold, overcall. Онлайн покер Монгол.","image":"https://pppoker.mn/images/articles/exploitation-taktik.webp","author":{"@type":"Organization","name":"Baatryn Öröö"},"publisher":{"@type":"Organization","name":"Baatryn Öröö","url":"https://pppoker.mn","logo":{"@type":"ImageObject","url":"https://pppoker.mn/images/logo.webp"}},"mainEntityOfPage":"https://pppoker.mn/ru/articles/ekspluatatsiya-taktiki/","inLanguage":"ru","dateModified":"2026-08-24"}</script>
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109810225', 'ym');
+    ym(109810225, 'init', {ssr:true, webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+  </script>
+</head>
+<body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/109810225" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container nav-container">
+                <a href="https://pppoker.mn/?lang=ru" class="nav-logo" aria-label="Baatryn Öröö — главная">
+          <img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" fetchpriority="high" />
+          <span class="logo-text">BAATRYN ÖRÖÖ</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="https://pppoker.mn/?lang=ru#games">Игры</a></li>
+          <li><a href="https://pppoker.mn/?lang=ru#features">Возможности</a></li>
+          <li><a href="/ru/articles/" class="active">Статьи</a></li>
+          <li><a href="/about/?lang=ru">О нас</a></li>
+          <li><a href="https://pppoker.mn/?lang=ru#academy">Академия</a></li>
+          <li><a href="https://pppoker.mn/?lang=ru#faq">FAQ</a></li>
+          <li class="nav-mobile-play">
+            <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn nav-btn--menu" rel="noopener" target="_blank">Играть</a>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-current" id="langBtn" aria-label="Сменить язык" aria-expanded="false">
+              <span id="langLabel">RU</span> ▾
+            </button>
+            <ul class="lang-menu" id="langMenu" role="menu">
+              <li role="menuitem"><a href="/articles/exploitation-taktik/" data-lang="mn">MN</a></li>
+              <li role="menuitem"><a href="/en/articles/exploitation-tactics/" data-lang="en">EN</a></li>
+              <li role="menuitem"><a href="/ru/articles/ekspluatatsiya-taktiki/" data-lang="ru" class="active">RU</a></li>
+              <li role="menuitem"><a href="/zh/articles/lilong-zhanfa/" data-lang="zh">中文</a></li>
+            </ul>
+          </div>
+          <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn" rel="noopener" target="_blank">Играть</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content" class="article-page">
+    <div class="container">
+      <nav class="article-breadcrumb" aria-label="Breadcrumb">
+        <a href="https://pppoker.mn/?lang=ru">Главная</a> <span>/</span> <a href="/ru/articles/">Статьи</a> <span>/</span> <span>Эксплуатация — используем слабых игроков</span>
+      </nav>
+      <article class="article-body">
+<h1 class="article-title">Эксплуатация — используем слабых игроков</h1>
+<figure class="article-cover">
+          <img src="/images/articles/exploitation-taktik.webp" alt="Монгол тоглогч өрсөлдөгчийг ажиглаж байна" class="article-cover-img" width="1200" height="675" decoding="async" fetchpriority="high" />
+        </figure>
+<p><strong>Эксплуатация (exploit)</strong> — стратегия, при которой вы отходите от GTO в пользу максимизации прибыли против конкретного оппонента с выраженными ошибками. Не равновесие — профит. На столах <a href="https://pppoker.mn/?lang=ru">Baatryn Öröö</a> игроки разного уровня: умение наблюдать и адаптироваться даёт огромное преимущество.</p>
+<h2 class="article-h2">Сначала наблюдаем</h2>
+<p>Прежде чем эксплуатировать — наблюдайте. 10–20 рук минимум:</p>
+<div class="article-table-wrap"><table class="article-table"><thead><tr>
+<th>Тип игрока</th>
+<th>Exploit</th>
+</tr></thead><tbody>
+<tr>
+<td>Overfold</td>
+<td>Блафовать чаще</td>
+</tr>
+<tr>
+<td>Overcall (station)</td>
+<td>Value bet, блаф = 0</td>
+</tr>
+<tr>
+<td>Never fold</td>
+<td>Value thin, никаких блафов</td>
+</tr>
+<tr>
+<td>Limp постоянно</td>
+<td>Iso-raise с сильными руками</td>
+</tr>
+</tbody></table></div>
+<p>Используйте <a href="https://pppoker.mn/ru/articles/hud-vpip-pfr-poker/">HUD и статистику</a> для систематизации наблюдений. Без статистики exploit — догадка. С данными — инструмент.</p>
+<h2 class="article-h2">Высокий Fold to C-bet</h2>
+<p>Если оппонент фолдит на c-bet в <strong>60%+ случаев</strong> — c-betте почти любой флоп против него:</p>
+<ul class="article-ul">
+<li>C-bet 80%+ на dry бордах</li>
+<li>Блаф с air (без эквити) — норма</li>
+<li>Увеличьте частоту c-bet: <a href="https://pppoker.mn/ru/articles/cbet-strategiya/">c-bet стратегия</a></li>
+</ul>
+<p>Важно: если оппонент начал коллировать чаще — остановитесь и пересчитайте. Exploit должен быть актуальным, не догматичным.</p>
+<h2 class="article-h2">Overcall station</h2>
+<p>Игрок коллирует всё, редко фолдит — меняйте план:</p>
+<ul class="article-ul">
+<li><strong>Value bet</strong> на каждой улице с топ-парой и выше</li>
+<li>Second pair → thin value (ставите ради колла от худшего)</li>
+<li>Блаф — убираете полностью. Он не фолдит → блаф теряет деньги</li>
+<li>Размер ставки можно немного увеличить: station заплатит</li>
+</ul>
+<p>Против station уравнение простое: value &gt; всего. Никакой сложной игры.</p>
+<h2 class="article-h2">Tight nit</h2>
+<p>Tight nit — очень tight, редко входит в банки, фолдит на малейшее давление:</p>
+<ul class="article-ul">
+<li><strong>Стилите больше</strong> с BTN, CO — <a href="https://pppoker.mn/ru/articles/steal-resteal-poker/">стил и рестил</a></li>
+<li>3-бет блаф редко — nit 4-бетит только с nuts</li>
+<li>Когда он открывает рейз — уважайте. Диапазон очень узкий</li>
+<li>Fold to pressure высокий → 3-бетьте его опены шире</li>
+</ul>
+<p>Против nit постфлоп: если он check-raise — верьте ему. Это почти всегда сильная рука.</p>
+<h2 class="article-h2">Манияк (Maniac)</h2>
+<p>Maniac — агрессивный и непредсказуемый, часто блафует:</p>
+<ul class="article-ul">
+<li><strong>Trap</strong> с сильными руками: check-call вместо check-raise, дайте ему блафовать</li>
+<li>Call down шире — его блаф-ренж широкий</li>
+<li>Не блафуйте в ответ — он коллирует широко</li>
+<li>Позвольте ему самому строить банк</li>
+</ul>
+<p>Против maniac самая большая ошибка — тилт и блаф. Ждите рук, дайте ему выбросить деньги.</p>
+<h2 class="article-h2">Практические советы</h2>
+<ol class="article-ol">
+<li>Наблюдайте <strong>10–20 рук</strong> перед активным exploit — не действуйте с первой руки</li>
+<li>Один exploit на одного игрока — не смешивайте стратегии</li>
+<li>Сначала выстройте базовую стратегию: <a href="https://pppoker.mn/ru/articles/postflop-osnovy/">постфлоп основы</a></li>
+<li>Если оппонент адаптировался — возвращайтесь ближе к balanced игре</li>
+</ol>
+<p>Exploit эффективен на дистанции. Краткосрочный luck влияет на восприятие — не меняйте стратегию после 1–2 плохих рук.</p>
+<h2 class="article-h2">FAQ</h2>
+<h3 class="article-h3">Нужно ли учить GTO?</h3>
+<p>Для начинающих exploit прибыльнее, чем попытки играть GTO. Понимайте базу — <a href="https://pppoker.mn/ru/articles/chtenie-range/">чтение рейнджей</a> — и уже потом добавляйте теорию. GTO полезен против сильных оппонентов без очевидных ошибок.</p>
+<h3 class="article-h3">Монгольские столы</h3>
+<p>На столах <a href="https://pppoker.mn/?lang=ru">Baatryn Öröö</a> игроки разноплановые. Собирайте sample быстро — 20–30 рук дают уже рабочую картину. Типичные ошибки локальных игроков: limping, overfold на c-bet, weak-tight на позднем префлопе. Читайте <a href="https://pppoker.mn/ru/articles/iskusstvo-blufa/">искусство блафа</a> для понимания, где блаф работает.</p>
+<p><a href="https://pppoker.mn/ru/articles/chtenie-range/">Чтение рейнджей</a> · <a href="https://pppoker.mn/ru/articles/iskusstvo-blufa/">Искусство блафа</a> · <a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></p>
+      </article>
+      <div class="article-cta">
+        <a href="https://baatrynorpoker.ink/1FBP9k" class="btn btn-primary" rel="noopener" target="_blank">Играть →</a>
+        <a href="/ru/articles/" class="btn btn-outline">Другие статьи</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" /><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
+          <p>Покерный клуб в Монголии. Онлайн-покер — столы для настоящих игроков.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Статьи</h4>
+          <ul>
+            <li><a href="/ru/articles/3bet-4bet-strategiya/">3-bet и 4-bet</a></li>
+            <li><a href="/ru/articles/baatryn-oroo-klub/">Baatryn Öröö клуб</a></li>
+            <li><a href="/ru/articles/bankroll-menedzhment/">Банкролл</a></li>
+            <li><a href="/ru/articles/bezopasnost-akkaunta/">Безопасность аккаунта</a></li>
+            <li><a href="/ru/articles/bluff-poker-mongolia/">Bluff poker mongolia</a></li>
+            <li><a href="/ru/articles/bonus-100-usloviya/">Бонус 100%</a></li>
+            <li><a href="/ru/articles/cbet-strategiya/">C-bet стратегия</a></li>
+            <li><a href="/ru/articles/check-raise-taktika/">Check-raise тактика</a></li>
+            <li><a href="/ru/articles/chtenie-range/">Чтение range</a></li>
+            <li><a href="/ru/articles/chto-takoe-bluff-poker-mongolia/">Что такое bluff poker mongolia?</a></li>
+            <li><a href="/ru/articles/chto-takoe-pokermongolia-com/">Что такое pokermongolia.com?</a></li>
+            <li><a href="/ru/articles/deposit-vyvod-mongoliya/">Депозит и вывод</a></li>
+            <li><a href="/ru/articles/eksapat-poker-mongoliya/">Экспат-покер Монголия</a></li>
+            <li><a href="/ru/articles/ekspluatatsiya-taktiki/">Эксплуатация тактики</a></li>
+            <li><a href="/ru/articles/etiket-onlayn-pokera/">Этикет онлайн покера</a></li>
+            <li><a href="/ru/articles/high-stakes-vip/">High stakes VIP</a></li>
+            <li><a href="/ru/articles/holdem-pravila-polnostyu/">Правила Hold'em</a></li>
+            <li><a href="/ru/articles/holdem-vs-omaha/">Hold'em vs Omaha</a></li>
+            <li><a href="/ru/articles/hud-vpip-pfr-poker/">HUD VPIP PFR покер</a></li>
+            <li><a href="/ru/articles/igra-v-blayndakh/">Игра в блайндах</a></li>
+            <li><a href="/ru/articles/iskusstvo-blufa/">Искусство блефа</a></li>
+            <li><a href="/ru/articles/kesh-igry-mongoliya/">Кэш-игры</a></li>
+            <li><a href="/ru/articles/klub-vs-platforma/">Клуб vs платформа</a></li>
+            <li><a href="/ru/articles/megamax-poker-mongolia/">MegaMax poker Mongolia</a></li>
+            <li><a href="/ru/articles/micro-stavki-250-500/">Микро-ставки 250/500</a></li>
+            <li><a href="/ru/articles/mobil-vs-desktop/">Мобильный vs компьютер</a></li>
+            <li><a href="/ru/articles/mongol-poker-sistema/">Что такое система монгол покер? Baatryn </a></li>
+            <li><a href="/ru/articles/mongol-poker-skachat/">Как скачать монгол покер — гайд по прило</a></li>
+            <li><a href="/ru/articles/mongolskie-platezhi/">Монгольские платежи</a></li>
+            <li><a href="/ru/articles/multiway-pot/">Multiway pot</a></li>
+            <li><a href="/ru/articles/omaha-pravila-polnostyu/">Правила Omaha</a></li>
+            <li><a href="/ru/articles/one-king-poker-mongolia/">One King poker Mongolia</a></li>
+            <li><a href="/ru/articles/online-poker-mongoliya-2026/">Где играть в онлайн покер в Монголии — г</a></li>
+            <li><a href="/ru/articles/otvetstvennaya-igra/">Ответственная игра</a></li>
+            <li><a href="/ru/articles/plo-drow-pravila/">PLO дроу</a></li>
+            <li><a href="/ru/articles/plo-startovye-ruki/">PLO стартовые руки</a></li>
+            <li><a href="/ru/articles/poker-kombinatsii/">Комбинации</a></li>
+            <li><a href="/ru/articles/poker-terminy-slovar/">Термины покера</a></li>
+            <li><a href="/ru/articles/postflop-osnovy/">Основы постфлопа</a></li>
+            <li><a href="/ru/articles/pot-odds-ekviti/">Pot odds и equity</a></li>
+            <li><a href="/ru/articles/pozitsiya-v-pokere/">Позиция в покере</a></li>
+            <li><a href="/ru/articles/pppoker-klub-vs-bukmeker/">Клуб vs букмекер</a></li>
+            <li><a href="/ru/articles/pppoker-oshibki-prilozheniya/">Ошибки PPPoker</a></li>
+            <li><a href="/ru/articles/pppoker-vs-pokerstars-mongoliya/">PPPoker vs PokerStars</a></li>
+            <li><a href="/ru/articles/preflop-strategiya/">Префлоп-стратегия</a></li>
+            <li><a href="/ru/articles/problemy-vyvoda/">Проблемы вывода</a></li>
+            <li><a href="/ru/articles/psihologiya-pokera/">Психология покера</a></li>
+            <li><a href="/ru/articles/razmer-stavok-poker/">Размер ставок</a></li>
+            <li><a href="/ru/articles/registratsiya-poshagovo/">Регистрация пошагово</a></li>
+            <li><a href="/ru/articles/statistika-pokera/">Статистика покера</a></li>
+            <li><a href="/ru/articles/steal-resteal-poker/">Стил и рестил</a></li>
+            <li><a href="/ru/articles/strategiya-float/">Стратегия float</a></li>
+            <li><a href="/ru/articles/turbo-poker-mongolia/">Turbo poker Mongolia</a></li>
+            <li><a href="/ru/articles/turn-river-igra/">Игра на терне и ривере</a></li>
+            <li><a href="/ru/articles/ulaanbaatar-poker-2026/">Улан-Батор покер 2026</a></li>
+            <li><a href="/ru/articles/usdt-depozit-gaid/">USDT депозит</a></li>
+            <li><a href="/ru/articles/variance-poker/">Дисперсия в покере</a></li>
+            <li><a href="/ru/articles/vip-stol-mongoliya/">VIP-стол</a></li>
+            <li><a href="/ru/articles/vybor-startovykh-ruk/">Стартовые руки</a></li>
+            <li><a href="/ru/articles/vybor-stola-poker/">Выбор стола покер</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>♠ BAATRYN ÖRÖÖ — Играй с умом, побеждай долго.</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/article-page.js"></script>
+</body>
+</html>

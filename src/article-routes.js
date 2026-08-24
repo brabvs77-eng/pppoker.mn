@@ -32,7 +32,9 @@ export const ARTICLE_ROUTES = {
   },
   "blaynd-togloom": {
     "mn": "blaynd-togloom",
-    "en": "blind-defense-poker"
+    "en": "blind-defense-poker",
+    "ru": "igra-v-blayndakh",
+    "zh": "mangzhu-youxi"
   },
   "blef-uriag": {
     "mn": "blef-uriag",
@@ -43,7 +45,8 @@ export const ARTICLE_ROUTES = {
   "bluff-poker-mongolia-yu-ve": {
     "mn": "bluff-poker-mongolia-yu-ve",
     "en": "what-is-bluff-poker-mongolia",
-    "ru": "chto-takoe-bluff-poker-mongolia"
+    "ru": "chto-takoe-bluff-poker-mongolia",
+    "zh": "bluff-poker-mongolia-shi-shenme"
   },
   "bluff-poker-mongolia": {
     "mn": "bluff-poker-mongolia",
@@ -107,7 +110,9 @@ export const ARTICLE_ROUTES = {
   },
   "exploitation-taktik": {
     "mn": "exploitation-taktik",
-    "en": "exploitation-tactics"
+    "en": "exploitation-tactics",
+    "ru": "ekspluatatsiya-taktiki",
+    "zh": "lilong-zhanfa"
   },
   "floating-taktik": {
     "mn": "floating-taktik",
@@ -141,7 +146,9 @@ export const ARTICLE_ROUTES = {
   },
   "hud-vpip-pfr": {
     "mn": "hud-vpip-pfr",
-    "en": "hud-vpip-pfr-poker"
+    "en": "hud-vpip-pfr-poker",
+    "ru": "hud-vpip-pfr-poker",
+    "zh": "hud-vpip-pfr-poker"
   },
   "huudas-songolt": {
     "mn": "huudas-songolt",
@@ -152,7 +159,8 @@ export const ARTICLE_ROUTES = {
   "megamax-poker-mongolia": {
     "mn": "megamax-poker-mongolia",
     "en": "megamax-poker-mongolia",
-    "ru": "megamax-poker-mongolia"
+    "ru": "megamax-poker-mongolia",
+    "zh": "megamax-poker-menggu"
   },
   "micro-stakes-250-500": {
     "mn": "micro-stakes-250-500",
@@ -199,7 +207,8 @@ export const ARTICLE_ROUTES = {
   "one-king-poker-mongolia": {
     "mn": "one-king-poker-mongolia",
     "en": "one-king-poker-mongolia",
-    "ru": "one-king-poker-mongolia"
+    "ru": "one-king-poker-mongolia",
+    "zh": "one-king-poker-menggu"
   },
   "online-poker-mongol-2026": {
     "mn": "online-poker-mongol-2026",
@@ -209,11 +218,15 @@ export const ARTICLE_ROUTES = {
   },
   "plo-draw-buren": {
     "mn": "plo-draw-buren",
-    "en": "plo-draw-rules"
+    "en": "plo-draw-rules",
+    "ru": "plo-drow-pravila",
+    "zh": "plo-draw-guize"
   },
   "plo-ehnii-gar": {
     "mn": "plo-ehnii-gar",
-    "en": "plo-starting-hands"
+    "en": "plo-starting-hands",
+    "ru": "plo-startovye-ruki",
+    "zh": "plo-qishou-pai"
   },
   "poker-kombinatsiud": {
     "mn": "poker-kombinatsiud",
@@ -242,7 +255,8 @@ export const ARTICLE_ROUTES = {
   "pokermongolia-com-yu-ve": {
     "mn": "pokermongolia-com-yu-ve",
     "en": "what-is-pokermongolia-com",
-    "ru": "chto-takoe-pokermongolia-com"
+    "ru": "chto-takoe-pokermongolia-com",
+    "zh": "pokermongolia-com-shi-shenme"
   },
   "postflop-suuri": {
     "mn": "postflop-suuri",
@@ -277,7 +291,8 @@ export const ARTICLE_ROUTES = {
   "pppoker-vs-pokerstars-mongol": {
     "mn": "pppoker-vs-pokerstars-mongol",
     "en": "pppoker-vs-pokerstars-mongolia",
-    "ru": "pppoker-vs-pokerstars-mongoliya"
+    "ru": "pppoker-vs-pokerstars-mongoliya",
+    "zh": "pppoker-vs-pokerstars-menggu"
   },
   "preflop-strategi": {
     "mn": "preflop-strategi",
@@ -299,7 +314,9 @@ export const ARTICLE_ROUTES = {
   },
   "steal-resteal": {
     "mn": "steal-resteal",
-    "en": "steal-resteal-poker"
+    "en": "steal-resteal-poker",
+    "ru": "steal-resteal-poker",
+    "zh": "tou-qie-pai"
   },
   "tatalt-asuudal-shiidver": {
     "mn": "tatalt-asuudal-shiidver",
@@ -310,7 +327,8 @@ export const ARTICLE_ROUTES = {
   "turbo-poker-mongolia": {
     "mn": "turbo-poker-mongolia",
     "en": "turbo-poker-mongolia",
-    "ru": "turbo-poker-mongolia"
+    "ru": "turbo-poker-mongolia",
+    "zh": "turbo-poker-menggu"
   },
   "turn-river-play": {
     "mn": "turn-river-play",
