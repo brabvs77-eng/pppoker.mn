@@ -20,6 +20,7 @@ function collectArticleInputs(dir, inputs, prefix) {
 function getArticleInputs() {
   const inputs = {
     main: resolve(__dirname, 'index.html'),
+    about: resolve(__dirname, 'about', 'index.html'),
   }
   collectArticleInputs(resolve(__dirname, 'articles'), inputs, '')
   collectArticleInputs(resolve(__dirname, 'en', 'articles'), inputs, 'en-')

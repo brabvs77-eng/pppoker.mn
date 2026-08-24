@@ -1574,3 +1574,202 @@ a.academy-card {
 .nav-links a.active {
   color: var(--gold);
 }
+
+/* === ABOUT PAGE === */
+.about-page {
+  padding: 100px 0 80px;
+  min-height: 60vh;
+}
+
+.about-hero {
+  max-width: 760px;
+  margin-bottom: 40px;
+}
+
+.about-hero-tag {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.about-hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.about-hero-lead {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.about-cover {
+  max-width: 960px;
+  margin: 0 auto 48px;
+}
+
+.about-cover-caption {
+  padding: 14px 20px;
+  font-size: 0.875rem;
+  color: var(--text-dim);
+  text-align: center;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+}
+
+.about-story {
+  margin: 0 auto 72px;
+}
+
+.about-pullquote {
+  margin: 32px 0;
+  padding: 24px 28px;
+  border-left: 3px solid var(--gold);
+  background: var(--bg-card);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.about-team {
+  margin-bottom: 72px;
+}
+
+.about-team .section-title,
+.about-office .section-title {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.about-team .section-subtitle,
+.about-office .section-subtitle {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.team-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.team-card:hover {
+  border-color: var(--gold-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.team-card-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.team-card-body {
+  padding: 24px;
+}
+
+.team-card-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+
+.team-card-role {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.team-card-bio {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.about-office {
+  margin-bottom: 48px;
+}
+
+.office-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.office-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+.office-card-title {
+  font-size: 1rem;
+  color: var(--gold);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.office-address {
+  font-style: normal;
+  color: var(--text-muted);
+  line-height: 1.75;
+  font-size: 0.95rem;
+}
+
+.office-address a {
+  color: var(--gold);
+}
+
+.map-embed-wrap {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+}
+
+.map-embed {
+  display: block;
+  width: 100%;
+  height: 360px;
+  border: 0;
+}
+
+.map-caption {
+  padding: 14px 20px;
+  font-size: 0.875rem;
+  color: var(--text-dim);
+  text-align: center;
+  margin: 0;
+}
+
+.map-caption a {
+  color: var(--gold);
+}
+
+@media (max-width: 768px) {
+  .map-embed {
+    height: 280px;
+  }
+}

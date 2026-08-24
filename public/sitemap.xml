@@ -21,6 +21,11 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/" />
   </url>
   <url>
+    <loc>https://pppoker.mn/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://pppoker.mn/articles/100-bonus-nuhtsul/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>

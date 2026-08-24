@@ -52,6 +52,32 @@ test.describe('Articles', () => {
   })
 })
 
+test.describe('About page', () => {
+  test('about page loads with team and map', async ({ page }) => {
+    await page.goto('/about/')
+    await expect(page.locator('.about-hero-title')).toBeVisible()
+    await expect(page.locator('.team-card')).toHaveCount(7)
+    await expect(page.locator('.map-embed')).toBeVisible()
+    await expect(page).toHaveTitle(/Бидний тухай|Baatryn/i)
+  })
+
+  test('header about link works from homepage', async ({ page }) => {
+    await page.goto('/')
+    await page.locator('a[href="/about/"]').first().click()
+    await expect(page).toHaveURL(/\/about\//)
+    await expect(page.locator('.about-story')).toBeVisible()
+  })
+
+  test('about page switches to English', async ({ page }) => {
+    await page.goto('/about/')
+    await page.locator('#langBtn').click()
+    await page.locator('#langMenu button[data-lang="en"]').click()
+    await expect(page).toHaveURL(/\?lang=en/)
+    await expect(page.locator('.about-hero-title')).toContainText(/Our/i)
+    await expect(page).toHaveTitle(/About Us/i)
+  })
+})
+
 test.describe('Internal navigation', () => {
   test('homepage link to article works', async ({ page }) => {
     await page.goto('/')
