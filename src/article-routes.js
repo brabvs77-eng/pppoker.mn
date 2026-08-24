@@ -78,6 +78,9 @@ export const ARTICLE_ROUTES = {
   "hariutslagatai-togloom": {
     "mn": "hariutslagatai-togloom"
   },
+  "high-stakes-vip": {
+    "mn": "high-stakes-vip"
+  },
   "holdem-durem-buren": {
     "mn": "holdem-durem-buren"
   },
@@ -89,6 +92,15 @@ export const ARTICLE_ROUTES = {
   },
   "hud-vpip-pfr": {
     "mn": "hud-vpip-pfr"
+  },
+  "huudas-songolt": {
+    "mn": "huudas-songolt"
+  },
+  "micro-stakes-250-500": {
+    "mn": "micro-stakes-250-500"
+  },
+  "mobile-vs-desktop": {
+    "mn": "mobile-vs-desktop"
   },
   "mongol-poker-sistem": {
     "mn": "mongol-poker-sistem",
@@ -131,6 +143,9 @@ export const ARTICLE_ROUTES = {
     "en": "poker-psychology-mindset",
     "ru": "psihologiya-pokera",
     "zh": "poker-xinlixue"
+  },
+  "poker-soyol-online": {
+    "mn": "poker-soyol-online"
   },
   "poker-terms-mn": {
     "mn": "poker-terms-mn",
@@ -182,6 +197,9 @@ export const ARTICLE_ROUTES = {
   },
   "usdt-deposit-zaavar": {
     "mn": "usdt-deposit-zaavar"
+  },
+  "variance-poker": {
+    "mn": "variance-poker"
   },
   "vip-shiree-mongol": {
     "mn": "vip-shiree-mongol"

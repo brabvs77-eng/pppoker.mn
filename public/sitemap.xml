@@ -171,6 +171,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/hariutslagatai-togloom/" />
   </url>
   <url>
+    <loc>https://pppoker.mn/articles/high-stakes-vip/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/high-stakes-vip/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/high-stakes-vip/" />
+  </url>
+  <url>
     <loc>https://pppoker.mn/articles/holdem-durem-buren/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -193,6 +200,27 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/hud-vpip-pfr/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/hud-vpip-pfr/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/articles/huudas-songolt/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/huudas-songolt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/huudas-songolt/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/articles/micro-stakes-250-500/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/micro-stakes-250-500/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/micro-stakes-250-500/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/articles/mobile-vs-desktop/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/mobile-vs-desktop/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/mobile-vs-desktop/" />
   </url>
   <url>
     <loc>https://pppoker.mn/articles/mongol-poker-sistem/</loc>
@@ -271,6 +299,13 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/psihologiya-pokera/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://pppoker.mn/zh/articles/poker-xinlixue/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/poker-setgel-zui/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/articles/poker-soyol-online/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/poker-soyol-online/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/poker-soyol-online/" />
   </url>
   <url>
     <loc>https://pppoker.mn/articles/poker-terms-mn/</loc>
@@ -374,6 +409,13 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/usdt-deposit-zaavar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/usdt-deposit-zaavar/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/articles/variance-poker/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/variance-poker/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/variance-poker/" />
   </url>
   <url>
     <loc>https://pppoker.mn/articles/vip-shiree-mongol/</loc>

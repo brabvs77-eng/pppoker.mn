@@ -6,8 +6,8 @@ Updated: 2026-08-23. Target corpus: **60 MN articles** (then selective i18n).
 
 | Metric | Count |
 |--------|------:|
-| **Published** | 44 |
-| **Planned (new)** | 16 |
+| **Published** | 50 |
+| **Planned (new)** | 10 |
 | **Total target** | 60 |
 | **I18n parity today** | 18 × 4 langs = 72 URLs |
 
@@ -107,7 +107,7 @@ Mongolia-themed covers (Ulaanbaatar, Mongolian players, steppe).
 
 ---
 
-## Phase 8 — Stakes, formats & grind (0/6) 🔲 NEXT
+## Phase 7 — Product & onboarding (8/8) ✅ DONE
 
 Mongolia-themed cover art (Ulaanbaatar, Mongolian players, local context).
 
@@ -124,24 +124,24 @@ Mongolia-themed cover art (Ulaanbaatar, Mongolian players, local context).
 
 ---
 
-## Phase 8 — Stakes, formats & grind (0/6) 🔲
+## Phase 8 — Stakes, formats & grind (6/6) ✅ DONE
 
 Table stakes, device, session habits. Ties to real club limits (250/500 — 10K/20K).
 
-| # | Slug | Title (MN) | Topic | Priority |
-|---|------|------------|-------|----------|
-| 45 | `micro-stakes-250-500` | Micro stakes 250/500 — амьдрах | бага блайнд покер | P1 |
-| 46 | `high-stakes-vip` | High stakes 10K/20K — VIP ширээ | өндөр блайнд | P3 |
-| 47 | `huudas-songolt` | Ширээ сонголт | table selection | P2 |
-| 48 | `variance-poker` | Variance — урт хугацааны харагдац | покер variance | P2 |
-| 49 | `mobile-vs-desktop` | Гар утас vs компьютер | mobile покер | P2 |
-| 50 | `poker-soyol-online` | Онлайн покерын ёс зүй | etiquette | P3 |
+| # | Slug | Title (MN) | Status |
+|---|------|------------|--------|
+| 45 | `micro-stakes-250-500` | Micro stakes 250/500 — амьдрах | published |
+| 46 | `high-stakes-vip` | High stakes 10K/20K — VIP ширээ | published |
+| 47 | `huudas-songolt` | Ширээ сонголт | published |
+| 48 | `variance-poker` | Variance — урт хугацааны харагдац | published |
+| 49 | `mobile-vs-desktop` | Гар утас vs компьютер | published |
+| 50 | `poker-soyol-online` | Онлайн покерын ёс зүй | published |
 
 **Internal links:** → `cash-game-mongol`, `bankroll-udirdlaga`, `poker-setgel-zui`.
 
 ---
 
-## Phase 9 — Mongolia & community (0/4) 🔲
+## Phase 9 — Mongolia & community (0/4) 🔲 NEXT
 
 Local entity building. E-E-A-T for «покер монгол», expats, payments.
 
@@ -241,7 +241,7 @@ ZH: wait until EN+RU ≥50% of expanded corpus per `I18N-TRANSLATION-PLAN.md`.
 | I18n-7 ZH Tier 3+4 (10) | published |
 | I18n-9 Auto sitemap + FAQ schema i18n | published |
 
-**Current published:** 44 MN + 18 EN + 18 RU + 18 ZH = **98 article URLs** (44 MN groups).
+**Current published:** 50 MN + 18 EN + 18 RU + 18 ZH = **104 article URLs** (50 MN groups).
 
 ---
 
