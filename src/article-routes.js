@@ -41,7 +41,8 @@ export const ARTICLE_ROUTES = {
   },
   "bluff-poker-mongolia-yu-ve": {
     "mn": "bluff-poker-mongolia-yu-ve",
-    "en": "what-is-bluff-poker-mongolia"
+    "en": "what-is-bluff-poker-mongolia",
+    "ru": "chto-takoe-bluff-poker-mongolia"
   },
   "bluff-poker-mongolia": {
     "mn": "bluff-poker-mongolia",
@@ -147,7 +148,8 @@ export const ARTICLE_ROUTES = {
   },
   "megamax-poker-mongolia": {
     "mn": "megamax-poker-mongolia",
-    "en": "megamax-poker-mongolia"
+    "en": "megamax-poker-mongolia",
+    "ru": "megamax-poker-mongolia"
   },
   "micro-stakes-250-500": {
     "mn": "micro-stakes-250-500",
@@ -193,7 +195,8 @@ export const ARTICLE_ROUTES = {
   },
   "one-king-poker-mongolia": {
     "mn": "one-king-poker-mongolia",
-    "en": "one-king-poker-mongolia"
+    "en": "one-king-poker-mongolia",
+    "ru": "one-king-poker-mongolia"
   },
   "online-poker-mongol-2026": {
     "mn": "online-poker-mongol-2026",
@@ -233,7 +236,8 @@ export const ARTICLE_ROUTES = {
   },
   "pokermongolia-com-yu-ve": {
     "mn": "pokermongolia-com-yu-ve",
-    "en": "what-is-pokermongolia-com"
+    "en": "what-is-pokermongolia-com",
+    "ru": "chto-takoe-pokermongolia-com"
   },
   "postflop-suuri": {
     "mn": "postflop-suuri",
@@ -267,7 +271,8 @@ export const ARTICLE_ROUTES = {
   },
   "pppoker-vs-pokerstars-mongol": {
     "mn": "pppoker-vs-pokerstars-mongol",
-    "en": "pppoker-vs-pokerstars-mongolia"
+    "en": "pppoker-vs-pokerstars-mongolia",
+    "ru": "pppoker-vs-pokerstars-mongoliya"
   },
   "preflop-strategi": {
     "mn": "preflop-strategi",
@@ -298,7 +303,8 @@ export const ARTICLE_ROUTES = {
   },
   "turbo-poker-mongolia": {
     "mn": "turbo-poker-mongolia",
-    "en": "turbo-poker-mongolia"
+    "en": "turbo-poker-mongolia",
+    "ru": "turbo-poker-mongolia"
   },
   "turn-river-play": {
     "mn": "turn-river-play",
