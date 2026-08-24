@@ -105,6 +105,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/bluff-poker-mongolia-yu-ve/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/what-is-bluff-poker-mongolia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/bluff-poker-mongolia-yu-ve/" />
   </url>
   <url>
@@ -269,6 +270,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/megamax-poker-mongolia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/megamax-poker-mongolia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/megamax-poker-mongolia/" />
   </url>
   <url>
@@ -344,6 +346,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/one-king-poker-mongolia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/one-king-poker-mongolia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/one-king-poker-mongolia/" />
   </url>
   <url>
@@ -415,6 +418,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/pokermongolia-com-yu-ve/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/what-is-pokermongolia-com/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/pokermongolia-com-yu-ve/" />
   </url>
   <url>
@@ -469,6 +473,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/pppoker-vs-pokerstars-mongol/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/pppoker-vs-pokerstars-mongolia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/pppoker-vs-pokerstars-mongol/" />
   </url>
   <url>
@@ -520,6 +525,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/turbo-poker-mongolia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/turbo-poker-mongolia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/turbo-poker-mongolia/" />
   </url>
   <url>
@@ -773,6 +779,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/holdem-vs-omaha/" />
   </url>
   <url>
+    <loc>https://pppoker.mn/en/articles/megamax-poker-mongolia/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/megamax-poker-mongolia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/megamax-poker-mongolia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/megamax-poker-mongolia/" />
+  </url>
+  <url>
     <loc>https://pppoker.mn/en/articles/micro-stakes-250-500/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -839,6 +853,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/omaha-rules-complete/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/omaha-pravila-polnostyu/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/omaha-durem-buren/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/en/articles/one-king-poker-mongolia/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/one-king-poker-mongolia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/one-king-poker-mongolia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/one-king-poker-mongolia/" />
   </url>
   <url>
     <loc>https://pppoker.mn/en/articles/online-poker-etiquette/</loc>
@@ -948,6 +970,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/pppoker-klub-vs-betting/" />
   </url>
   <url>
+    <loc>https://pppoker.mn/en/articles/pppoker-vs-pokerstars-mongolia/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/pppoker-vs-pokerstars-mongol/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/pppoker-vs-pokerstars-mongolia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/pppoker-vs-pokerstars-mongol/" />
+  </url>
+  <url>
     <loc>https://pppoker.mn/en/articles/preflop-strategy/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1014,6 +1044,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/huudas-songolt/" />
   </url>
   <url>
+    <loc>https://pppoker.mn/en/articles/turbo-poker-mongolia/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/turbo-poker-mongolia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/turbo-poker-mongolia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/turbo-poker-mongolia/" />
+  </url>
+  <url>
     <loc>https://pppoker.mn/en/articles/turn-river-play/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1049,6 +1087,22 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/vip-table-mongolia/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/vip-stol-mongoliya/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/vip-shiree-mongol/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/en/articles/what-is-bluff-poker-mongolia/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/bluff-poker-mongolia-yu-ve/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/what-is-bluff-poker-mongolia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/bluff-poker-mongolia-yu-ve/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/en/articles/what-is-pokermongolia-com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/pokermongolia-com-yu-ve/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/what-is-pokermongolia-com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/pokermongolia-com-yu-ve/" />
   </url>
   <url>
     <loc>https://pppoker.mn/en/articles/withdrawal-issues/</loc>
