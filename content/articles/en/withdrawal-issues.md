@@ -101,6 +101,27 @@ Contact support immediately. If not yet processed, they may be able to cancel an
 
 Yes. Verification on first payout is normal. Subsequent withdrawals are usually faster.
 
+## Support checklist
+
+When contacting [@BatrynOrooSupport](https://t.me/BatrynOrooSupport), include:
+
+- PPPoker username
+- Amount and request time
+- Screenshot of withdrawal status
+- Whether active bonus applies
+
+Most delays are verification or bonus-related. Withdraw profits regularly — [responsible gaming](https://pppoker.mn/en/articles/responsible-gaming/) includes protecting winnings.
+
+Confirm [100% deposit bonus](https://pppoker.mn/en/articles/100-deposit-bonus/) wager progress before expecting full payout.
+
+## Why withdrawals matter before you deposit
+
+Choose clubs with clear payout history. Baatryn Öröö publishes 10,000₮ minimum withdrawal and 24/7 support. If a club cannot explain withdrawal timing before you deposit, that is a red flag.
+
+Keep IBAN in your legal name. Third-party accounts get rejected and delay payouts.
+
+After a winning session, withdraw a portion. Reinvest profits only after confirming the cashier process works for you. [Account security](https://pppoker.mn/en/articles/account-security/) protects access; withdrawal discipline protects profit.
+
 ---
 
 [Registration](https://pppoker.mn/en/articles/registration-step-by-step/) · [Account security](https://pppoker.mn/en/articles/account-security/)

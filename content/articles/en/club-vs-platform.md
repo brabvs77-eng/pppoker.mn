@@ -93,6 +93,30 @@ Yes, but you register separately in each club. Balances do not transfer automati
 
 Same PPPoker app globally. Club experience (payments, support, stakes) varies by club.
 
+## Rake and club economics
+
+PPPoker takes rake from pots. The club runs tables and support. Neither is house-edge casino poker.
+
+Compare [PPPoker club vs betting](https://pppoker.mn/en/articles/pppoker-club-vs-betting/) — different models.
+
+Your edge comes from skill: position, [pot odds](https://pppoker.mn/en/articles/pot-odds-equity/), reads.
+
+**PPPoker:** App and dealing. **Baatryn Öröö:** IBAN, USDT, Mongolian Telegram support at 2 AM.
+
+Ready? [Registration](https://pppoker.mn/en/articles/registration-step-by-step/) → [deposit](https://pppoker.mn/en/articles/deposit-withdraw-mongolia/) from 10,000₮ → 250/500 Hold'em.
+
+## Common confusion
+
+**«I downloaded PPPoker but see no tables.»** You need a club. Platform alone has no cash games.
+
+**«Which club is official for Mongolia?»** Baatryn Öröö — verify ID via [@BatrynOrooSupport](https://t.me/BatrynOrooSupport).
+
+**«Is this the same as Bluff Poker or betting sites?»** No. Club poker is player vs player. See [PPPoker club vs betting](https://pppoker.mn/en/articles/pppoker-club-vs-betting/).
+
+**«Where does my money go?»** Club cashier credits your PPPoker chip balance. Withdraw via same cashier to your IBAN.
+
+Understanding platform vs club prevents scams and wrong expectations. You are joining a community with local payments, not installing a generic casino app.
+
 ---
 
 [Online poker Mongolia 2026](https://pppoker.mn/en/articles/online-poker-mongolia-2026/)

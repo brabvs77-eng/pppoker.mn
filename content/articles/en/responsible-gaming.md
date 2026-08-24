@@ -98,6 +98,23 @@ Ask [@BatrynOrooSupport](https://t.me/BatrynOrooSupport) about available options
 
 Club cash games are player vs player. House edge comes from rake, not RNG against the house.
 
+## Signs you need a break
+
+- Hiding play time from family
+- Borrowing money to deposit
+- Playing to escape problems
+- Skipping sleep or work for poker
+
+Step away and reset [bankroll rules](https://pppoker.mn/en/articles/bankroll-management/). [@BatrynOrooSupport](https://t.me/BatrynOrooSupport) can discuss cooldown options.
+
+Variance lies short-term. Study [preflop strategy](https://pppoker.mn/en/articles/preflop-strategy/) — one hour of review may save more than three tired table hours.
+
+## Family and social balance
+
+Tell someone your session limits if that helps accountability. Poker should not replace meals, exercise, or sleep.
+
+The [online poker Mongolia](https://pppoker.mn/en/articles/online-poker-mongolia-2026/) scene runs 24/7 — the table will exist tomorrow. You do not need to play every profitable-looking hour.
+
 ---
 
 [Bankroll management](https://pppoker.mn/en/articles/bankroll-management/) · [Cash games Mongolia](https://pppoker.mn/en/articles/cash-game-mongolia/)

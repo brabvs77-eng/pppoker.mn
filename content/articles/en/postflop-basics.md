@@ -117,6 +117,18 @@ Tilt ruins postflop. Read [poker psychology and mindset](https://pppoker.mn/en/a
 
 Same framework, but more draws and bigger pots. See [Omaha rules](https://pppoker.mn/en/articles/omaha-rules-complete/).
 
+## Example walkthrough
+
+You raise K♠Q♠ on the button. BB calls. Flop Q♥ 7♦ 2♣. BB checks. Bet 50% pot — top pair value. BB calls.
+
+Turn 9♠. BB checks. Bet 66%. River 3♥. Value bet 50% or check vs passive opponent.
+
+If flop were Q♥ J♥ 10♥, check back — too many straights and flushes.
+
+Play one table while learning. Use the flop checklist for 100 hands.
+
+When unsure postflop, default to check-fold out of position. Aggression costs more OOP because you act first on every street without information.
+
 ---
 
 [Hold'em rules](https://pppoker.mn/en/articles/holdem-rules-complete/) · [Cash games Mongolia](https://pppoker.mn/en/articles/cash-game-mongolia/) · [@BatrynOrooSupport](https://t.me/BatrynOrooSupport)

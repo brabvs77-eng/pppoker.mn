@@ -101,6 +101,30 @@ No. PPPoker account + club membership are required.
 
 Usually under 30 minutes if deposit processes quickly.
 
+## Troubleshooting registration
+
+**Club request pending hours:** Message [@BatrynOrooSupport](https://t.me/BatrynOrooSupport) with your PPPoker username.
+
+**Cashier greyed out:** Club approval may still be pending. Complete step 3 first.
+
+**Wrong club joined:** Leave the wrong club in app settings and request Baatryn Öröö with the correct ID from support.
+
+**App install issues:** See [PPPoker app errors](https://pppoker.mn/en/articles/pppoker-app-errors/).
+
+Once registered, explore [cash games Mongolia](https://pppoker.mn/en/articles/cash-game-mongolia/) before your first session. Study [Hold'em rules](https://pppoker.mn/en/articles/holdem-rules-complete/) and [starting hand selection](https://pppoker.mn/en/articles/starting-hand-selection/) at 250/500.
+
+Expats in Mongolia use the same flow: download, register, join club, IBAN deposit from 10,000₮.
+
+## Why register through official channels?
+
+Fake clubs on Telegram promise impossible bonuses. They take your deposit and disappear. Baatryn Öröö exists only through [@BatrynOrooSupport](https://t.me/BatrynOrooSupport) and [pppoker.mn](https://pppoker.mn/?lang=en).
+
+After registration, claim the [100% deposit bonus](https://pppoker.mn/en/articles/100-deposit-bonus/) if terms fit your plan. Read wager requirements before expecting instant withdrawal.
+
+Your PPPoker account works on phone and desktop. One login, same club balance. Enable [account security](https://pppoker.mn/en/articles/account-security/) settings before your first large deposit.
+
+Mongolia players in Ulaanbaatar, Darkhan, and Erdenet all use the same registration path. Internet quality varies — use stable Wi‑Fi for first deposit confirmation.
+
 ---
 
 [mongol poker system](https://pppoker.mn/en/articles/mongol-poker-system/) · [100% deposit bonus](https://pppoker.mn/en/articles/100-deposit-bonus/)

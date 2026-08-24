@@ -104,6 +104,20 @@ Omaha ranges differ — more suited aces, double-suited hands. Master Hold'em pr
 
 Use with premiums or as polarized bluffs. Only when you understand 3-bet calling ranges.
 
+## Preflop at 250/500
+
+At micro stakes, opponents call wide and 3-bet rarely. Tighten opens from UTG. Value-bet strong hands when you get callers.
+
+Track VPIP and PFR over 500+ hands. VPIP above 30% often means too loose. PFR below 10% means too passive.
+
+Pair study with [postflop basics](https://pppoker.mn/en/articles/postflop-basics/). Raising preflop without a flop plan wastes chips.
+
+**Button vs blinds:** Open wider, steal when folds are likely.
+
+**BB defense:** Call with suited hands and pairs that flop well. Fold junk offsuit broadways.
+
+Log confusing preflop spots weekly. At 250/500 on [Baatryn Öröö](https://pppoker.mn/?lang=en), patterns repeat — tight UTG opens, loose button steals, passive blinds.
+
 ---
 
 [Online poker Mongolia](https://pppoker.mn/en/articles/online-poker-mongolia-2026/) · Play now: [mongol poker download](https://pppoker.mn/en/articles/mongol-poker-download/)

@@ -100,6 +100,31 @@ PPPoker supports many languages. Club support is available in Mongolian, Russian
 
 Update the app, restart device, check connection. Contact support if chip balance looks wrong after reconnect.
 
+## Contact support with
+
+- Device model and OS version
+- PPPoker app version
+- Screenshot of error
+- Steps already tried
+
+[@BatrynOrooSupport](https://t.me/BatrynOrooSupport) replies in Mongolian, Russian, or English.
+
+**Low-end Android:** Close background apps before playing.
+
+**Desktop:** Wired internet reduces disconnects during all-in pots.
+
+If deposits fail after app fix, check [deposit guide](https://pppoker.mn/en/articles/deposit-withdraw-mongolia/) — issue may be banking, not software.
+
+## Reinstall checklist
+
+1. Back up your PPPoker login (phone/email + password)
+2. Uninstall old version completely
+3. Download fresh from [mongol poker download](https://pppoker.mn/en/articles/mongol-poker-download/)
+4. Log in — club membership should persist
+5. Update to latest version before playing
+
+Never install APK files shared in unofficial poker groups. They are the #1 source of login theft in Mongolia.
+
 ---
 
 [Registration](https://pppoker.mn/en/articles/registration-step-by-step/) · [Deposit](https://pppoker.mn/en/articles/deposit-withdraw-mongolia/)

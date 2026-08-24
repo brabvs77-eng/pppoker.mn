@@ -93,6 +93,26 @@ Many use crypto exchanges (Binance, OKX, local P2P). Bank policy on crypto can c
 
 No. IBAN from 10,000₮ works without ever using crypto.
 
+## Before first USDT deposit
+
+1. Complete [registration](https://pppoker.mn/en/articles/registration-step-by-step/) and club approval
+2. Reach 100,000₮ total IBAN deposits
+3. Confirm USDT appears in cashier
+4. Test with small amount first
+5. Save TxID until balance credits
+
+**Binance to PPPoker:** Withdraw USDT, select TRC20, paste club address from cashier.
+
+Pair crypto with [responsible gaming](https://pppoker.mn/en/articles/responsible-gaming/) limits. Faster deposits should not mean chasing losses.
+
+## IBAN first, USDT second — why?
+
+The 100,000₮ IBAN threshold verifies your account and club relationship before crypto opens. It reduces fraud and wrong-network transfers from new players.
+
+Most Mongolia players never need USDT. IBAN from 10,000₮ handles deposits and withdrawals for the majority of [cash game](https://pppoker.mn/en/articles/cash-game-mongolia/) players.
+
+If you already hold USDT on an exchange, the TRC20 path is convenient after unlock. If you only use Mongolian banking, skip crypto entirely.
+
 ---
 
 [Registration](https://pppoker.mn/en/articles/registration-step-by-step/) · [100% deposit bonus](https://pppoker.mn/en/articles/100-deposit-bonus/)

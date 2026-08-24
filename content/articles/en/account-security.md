@@ -93,6 +93,26 @@ Avoid on shared or public computers. Use a password manager on personal devices.
 
 Only @BatrynOrooSupport and links from pppoker.mn. No exceptions.
 
+## Daily habits
+
+- Log out on shared devices
+- Do not click shortened links in poker chats
+- Deposit only via official app cashier
+- Withdraw only to your own IBAN
+- Report suspicious accounts to support
+
+Scammers exploit urgency. Real support never asks for your password in Telegram.
+
+Test with 10,000₮ deposit, play, withdraw small amount, then scale. See [registration](https://pppoker.mn/en/articles/registration-step-by-step/).
+
+## Password and recovery
+
+Use a password manager if possible. PPPoker recovery goes through your registered phone or email. If both are compromised, support verification takes longer.
+
+Never screenshot your password. Never send OTP codes to «agents» offering faster deposits.
+
+Club staff will ask for username and transaction proof — not your login credentials.
+
 ---
 
 [Registration](https://pppoker.mn/en/articles/registration-step-by-step/) · [Deposit](https://pppoker.mn/en/articles/deposit-withdraw-mongolia/)

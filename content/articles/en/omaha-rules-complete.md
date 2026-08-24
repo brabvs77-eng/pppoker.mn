@@ -103,6 +103,18 @@ Different skill set. More cards, more draws, bigger swings. Start at low limits.
 
 Only after profitable mid-stakes Hold'em and a 50+ buy-in Omaha bankroll. See [VIP tables](https://pppoker.mn/en/articles/vip-table-mongolia/).
 
+## Playing your first Omaha session
+
+Sit at 250/500 and buy in for at least 50 big blinds. Watch one orbit before joining a pot. Notice how pot sizes grow by the turn.
+
+Play connected, suited hands. Avoid four random cards that do not work together. When you flop the nuts or a strong draw, bet for value. When you miss, check and fold.
+
+Review each showdown. Did you use exactly two hole cards? That habit prevents the most common Omaha leak.
+
+6-max tables run 24/7. Deposits from 10,000₮ via IBAN. [USDT (TRC20)](https://pppoker.mn/en/articles/usdt-deposit-guide/) unlocks after 100,000₮ total IBAN history.
+
+Compare [Hold'em vs Omaha](https://pppoker.mn/en/articles/holdem-vs-omaha/) before choosing your main game. Many players learn Hold'em first, then add Omaha for variety.
+
 ---
 
 VIP tables and payments: [@BatrynOrooSupport](https://t.me/BatrynOrooSupport) · [Deposit guide](https://pppoker.mn/en/articles/deposit-withdraw-mongolia/)

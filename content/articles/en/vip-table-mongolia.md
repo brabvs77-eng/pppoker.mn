@@ -90,6 +90,29 @@ Mongolian regulars, expats, and players from the wider PPPoker network.
 
 30+ buy-ins for next level, profitable over large sample, and emotional readiness for bigger pots.
 
+## Bankroll math
+
+| Stakes | 100BB buy-in | 30 buy-ins |
+|--------|--------------|------------|
+| 250/500 | 50,000₮ | 1,500,000₮ |
+| 10K/20K VIP | 2,000,000₮ | 60,000,000₮ |
+
+Most players spend months at micro/low before VIP. Skipping stages burns money.
+
+| Stage | Focus |
+|-------|-------|
+| 250/500 | Rules, position, starting hands |
+| 5K/10K | Preflop, postflop, bet sizing |
+| VIP | Full toolkit + deep roll |
+
+Ask [@BatrynOrooSupport](https://t.me/BatrynOrooSupport) which VIP tables are active tonight.
+
+## Downswing reality
+
+At 10K/20K, losing 5 buy-ins in a week is 10 million ₮. Strong players experience this. Weak bankroll management turns a downswing into a disaster.
+
+Stay at stakes where that number would not end your poker career. [Responsible gaming](https://pppoker.mn/en/articles/responsible-gaming/) and [bankroll management](https://pppoker.mn/en/articles/bankroll-management/) matter more at VIP than anywhere else.
+
 ---
 
 [Registration](https://pppoker.mn/en/articles/registration-step-by-step/) · [@BatrynOrooSupport](https://t.me/BatrynOrooSupport)

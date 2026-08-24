@@ -105,6 +105,20 @@ In position you can bet smaller and still get folds. Out of position often needs
 
 Higher stakes players notice sizing tells faster. Study [VIP tables](https://pppoker.mn/en/articles/vip-table-mongolia/) before moving up.
 
+## Sizing tells to avoid
+
+Betting tiny with monsters and huge with bluffs is readable. Use similar sizes with value and bluffs on the same board texture.
+
+On the river, small bets get called by any pair. Large bets fold weak pairs but get called by better. Match size to goal.
+
+## Stack commitment
+
+If a bet commits 30%+ of your stack, ask if you would call a shove. At 20 BB in [cash games](https://pppoker.mn/en/articles/cash-game-mongolia/), one pot bet often means all-in.
+
+Review 10 showdowns per session. Adjust sizing next time.
+
+Consistent sizing across similar spots makes you harder to read. Varying bet size only with hand strength is an exploit good opponents will find within one session.
+
 ---
 
 [Online poker Mongolia](https://pppoker.mn/en/articles/online-poker-mongolia-2026/) · Support: [@BatrynOrooSupport](https://t.me/BatrynOrooSupport)

@@ -105,6 +105,28 @@ See [postflop basics](https://pppoker.mn/en/articles/postflop-basics/) for how p
 
 Pot odds numbers stay the same. Position affects implied odds and bluff opportunities on later streets.
 
+## Worked example
+
+Pot: 2000₮. Opponent bets 1000₮. You hold flush draw (9 outs).
+
+- Call: 1000₮. Pot after call: 4000₮. Pot odds: 25%
+- Equity: ~36% (rule of 4 on flop). **Call.**
+
+If opponent bet 2000₮ into 2000₮ pot, you need 33%. Still close.
+
+Gutshot (4 outs) on turn ≈ 8% equity. Full pot bet needs 33%. **Fold.**
+
+## Quick reference
+
+| Opponent bet | Equity needed |
+|--------------|---------------|
+| 50% pot | 25% |
+| 100% pot | 33% |
+
+Memorize these two rows for [Baatryn Öröö](https://pppoker.mn/?lang=en) cash tables.
+
+Combine pot odds with [postflop basics](https://pppoker.mn/en/articles/postflop-basics/). Calling a draw is only correct if you know what to do when you miss on the river — usually check-fold.
+
 ---
 
 [Poker hand rankings](https://pppoker.mn/en/articles/poker-hand-rankings/) · [@BatrynOrooSupport](https://t.me/BatrynOrooSupport)
