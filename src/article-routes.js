@@ -13,7 +13,9 @@ export const ARTICLE_ROUTES = {
   },
   "baatryn-oroo-taniltsuulga": {
     "mn": "baatryn-oroo-taniltsuulga",
-    "en": "baatryn-oroo-intro"
+    "en": "baatryn-oroo-intro",
+    "ru": "baatryn-oroo-klub",
+    "zh": "baatryn-oroo-jieshao"
   },
   "bankroll-udirdlaga": {
     "mn": "bankroll-udirdlaga",
@@ -89,7 +91,9 @@ export const ARTICLE_ROUTES = {
   },
   "expat-poker-mongol": {
     "mn": "expat-poker-mongol",
-    "en": "expat-poker-mongolia"
+    "en": "expat-poker-mongolia",
+    "ru": "eksapat-poker-mongoliya",
+    "zh": "waiguo-poker-menggu"
   },
   "exploitation-taktik": {
     "mn": "exploitation-taktik"
@@ -107,7 +111,9 @@ export const ARTICLE_ROUTES = {
   },
   "high-stakes-vip": {
     "mn": "high-stakes-vip",
-    "en": "high-stakes-vip"
+    "en": "high-stakes-vip",
+    "ru": "high-stakes-vip",
+    "zh": "gaoe-zhuo-vip"
   },
   "holdem-durem-buren": {
     "mn": "holdem-durem-buren",
@@ -125,18 +131,22 @@ export const ARTICLE_ROUTES = {
   },
   "huudas-songolt": {
     "mn": "huudas-songolt",
-    "en": "table-selection-poker"
+    "en": "table-selection-poker",
+    "ru": "vybor-stola-poker",
+    "zh": "xuanze-zhuozi"
   },
   "megamax-poker-mongolia": {
     "mn": "megamax-poker-mongolia"
   },
   "micro-stakes-250-500": {
     "mn": "micro-stakes-250-500",
-    "en": "micro-stakes-250-500"
+    "en": "micro-stakes-250-500",
+    "ru": "micro-stavki-250-500"
   },
   "mobile-vs-desktop": {
     "mn": "mobile-vs-desktop",
-    "en": "mobile-vs-desktop-poker"
+    "en": "mobile-vs-desktop-poker",
+    "ru": "mobil-vs-desktop"
   },
   "mongol-poker-sistem": {
     "mn": "mongol-poker-sistem",
@@ -152,7 +162,8 @@ export const ARTICLE_ROUTES = {
   },
   "mongol-tulbur-arga": {
     "mn": "mongol-tulbur-arga",
-    "en": "mongolia-payment-methods"
+    "en": "mongolia-payment-methods",
+    "ru": "mongolskie-platezhi"
   },
   "multiway-pot": {
     "mn": "multiway-pot",
@@ -193,7 +204,8 @@ export const ARTICLE_ROUTES = {
   },
   "poker-soyol-online": {
     "mn": "poker-soyol-online",
-    "en": "online-poker-etiquette"
+    "en": "online-poker-etiquette",
+    "ru": "etiket-onlayn-pokera"
   },
   "poker-terms-mn": {
     "mn": "poker-terms-mn",
@@ -268,7 +280,8 @@ export const ARTICLE_ROUTES = {
   },
   "ulaanbaatar-poker-2026": {
     "mn": "ulaanbaatar-poker-2026",
-    "en": "ulaanbaatar-poker-2026"
+    "en": "ulaanbaatar-poker-2026",
+    "ru": "ulaanbaatar-poker-2026"
   },
   "usdt-deposit-zaavar": {
     "mn": "usdt-deposit-zaavar",
@@ -277,7 +290,8 @@ export const ARTICLE_ROUTES = {
   },
   "variance-poker": {
     "mn": "variance-poker",
-    "en": "poker-variance"
+    "en": "poker-variance",
+    "ru": "variance-poker"
   },
   "vip-shiree-mongol": {
     "mn": "vip-shiree-mongol",
