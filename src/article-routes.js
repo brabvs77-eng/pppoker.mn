@@ -9,6 +9,9 @@ export const ARTICLE_ROUTES = {
   "3bet-4bet-mongol": {
     "mn": "3bet-4bet-mongol"
   },
+  "baatryn-oroo-taniltsuulga": {
+    "mn": "baatryn-oroo-taniltsuulga"
+  },
   "bankroll-udirdlaga": {
     "mn": "bankroll-udirdlaga",
     "en": "bankroll-management",
@@ -66,6 +69,9 @@ export const ARTICLE_ROUTES = {
     "ru": "vybor-startovykh-ruk",
     "zh": "qishou-pai-xuanze"
   },
+  "expat-poker-mongol": {
+    "mn": "expat-poker-mongol"
+  },
   "exploitation-taktik": {
     "mn": "exploitation-taktik"
   },
@@ -113,6 +119,9 @@ export const ARTICLE_ROUTES = {
     "en": "mongol-poker-download",
     "ru": "mongol-poker-skachat",
     "zh": "mongol-poker-xiazai"
+  },
+  "mongol-tulbur-arga": {
+    "mn": "mongol-tulbur-arga"
   },
   "multiway-pot": {
     "mn": "multiway-pot"
@@ -194,6 +203,9 @@ export const ARTICLE_ROUTES = {
   },
   "turn-river-play": {
     "mn": "turn-river-play"
+  },
+  "ulaanbaatar-poker-2026": {
+    "mn": "ulaanbaatar-poker-2026"
   },
   "usdt-deposit-zaavar": {
     "mn": "usdt-deposit-zaavar"

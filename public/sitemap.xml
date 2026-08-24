@@ -38,6 +38,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/3bet-4bet-mongol/" />
   </url>
   <url>
+    <loc>https://pppoker.mn/articles/baatryn-oroo-taniltsuulga/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/baatryn-oroo-taniltsuulga/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/baatryn-oroo-taniltsuulga/" />
+  </url>
+  <url>
     <loc>https://pppoker.mn/articles/bankroll-udirdlaga/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -147,6 +154,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/ehnii-gar-songolt/" />
   </url>
   <url>
+    <loc>https://pppoker.mn/articles/expat-poker-mongol/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/expat-poker-mongol/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/expat-poker-mongol/" />
+  </url>
+  <url>
     <loc>https://pppoker.mn/articles/exploitation-taktik/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -241,6 +255,13 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/mongol-poker-skachat/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://pppoker.mn/zh/articles/mongol-poker-xiazai/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/mongol-poker-tatah/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/articles/mongol-tulbur-arga/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/mongol-tulbur-arga/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/mongol-tulbur-arga/" />
   </url>
   <url>
     <loc>https://pppoker.mn/articles/multiway-pot/</loc>
@@ -402,6 +423,13 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/turn-river-play/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/turn-river-play/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/articles/ulaanbaatar-poker-2026/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/ulaanbaatar-poker-2026/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/ulaanbaatar-poker-2026/" />
   </url>
   <url>
     <loc>https://pppoker.mn/articles/usdt-deposit-zaavar/</loc>

@@ -6,8 +6,8 @@ Updated: 2026-08-23. Target corpus: **60 MN articles** (then selective i18n).
 
 | Metric | Count |
 |--------|------:|
-| **Published** | 50 |
-| **Planned (new)** | 10 |
+| **Published** | 54 |
+| **Planned (new)** | 6 |
 | **Total target** | 60 |
 | **I18n parity today** | 18 × 4 langs = 72 URLs |
 
@@ -141,22 +141,22 @@ Table stakes, device, session habits. Ties to real club limits (250/500 — 10K/
 
 ---
 
-## Phase 9 — Mongolia & community (0/4) 🔲 NEXT
+## Phase 9 — Mongolia & community (4/4) ✅ DONE
 
 Local entity building. E-E-A-T for «покер монгол», expats, payments.
 
-| # | Slug | Title (MN) | Topic | Priority |
-|---|------|------------|-------|----------|
-| 51 | `baatryn-oroo-taniltsuulga` | Baatryn Öröö — клубын танилцуулга | baatryn oroo | P1 |
-| 52 | `ulaanbaatar-poker-2026` | Улаанбаатар, Монгол — онлайн покер 2026 | покер улаанбаатар | P2 |
-| 53 | `mongol-tulbur-arga` | Монгол төлбөрийн арга — IBAN, USDT | төлбөр покер | P2 |
-| 54 | `expat-poker-mongol` | Expat guide — poker in Mongolia | poker mongolia expat | P2 |
+| # | Slug | Title (MN) | Status |
+|---|------|------------|--------|
+| 51 | `baatryn-oroo-taniltsuulga` | Baatryn Öröö — клубын танилцуулга | published |
+| 52 | `ulaanbaatar-poker-2026` | Улаанбаатар, Монгол — онлайн покер 2026 | published |
+| 53 | `mongol-tulbur-arga` | Монгол төлбөрийн арга — IBAN, USDT | published |
+| 54 | `expat-poker-mongol` | Expat guide — poker in Mongolia | published |
 
 **Internal links:** → `online-poker-mongol-2026`, `mongol-poker-sistem`, `deposit-withdraw-mongol`.
 
 ---
 
-## Phase 10 — Brand-parasite (0/6) 🔲 LAST
+## Phase 10 — Brand-parasite (0/6) 🔲 NEXT
 
 **Gate:** publish only after Phases 5–9 reach ≥50 articles live. Rules: `content/BRAND-PARASITE-STRATEGY.md`.
 
@@ -241,7 +241,7 @@ ZH: wait until EN+RU ≥50% of expanded corpus per `I18N-TRANSLATION-PLAN.md`.
 | I18n-7 ZH Tier 3+4 (10) | published |
 | I18n-9 Auto sitemap + FAQ schema i18n | published |
 
-**Current published:** 50 MN + 18 EN + 18 RU + 18 ZH = **104 article URLs** (50 MN groups).
+**Current published:** 54 MN + 18 EN + 18 RU + 18 ZH = **108 article URLs** (54 MN groups).
 
 ---
 
