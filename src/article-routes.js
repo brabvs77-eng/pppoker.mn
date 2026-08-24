@@ -12,7 +12,8 @@ export const ARTICLE_ROUTES = {
     "ru": "3bet-4bet-strategiya"
   },
   "baatryn-oroo-taniltsuulga": {
-    "mn": "baatryn-oroo-taniltsuulga"
+    "mn": "baatryn-oroo-taniltsuulga",
+    "en": "baatryn-oroo-intro"
   },
   "bankroll-udirdlaga": {
     "mn": "bankroll-udirdlaga",
@@ -87,7 +88,8 @@ export const ARTICLE_ROUTES = {
     "zh": "qishou-pai-xuanze"
   },
   "expat-poker-mongol": {
-    "mn": "expat-poker-mongol"
+    "mn": "expat-poker-mongol",
+    "en": "expat-poker-mongolia"
   },
   "exploitation-taktik": {
     "mn": "exploitation-taktik"
@@ -104,7 +106,8 @@ export const ARTICLE_ROUTES = {
     "ru": "otvetstvennaya-igra"
   },
   "high-stakes-vip": {
-    "mn": "high-stakes-vip"
+    "mn": "high-stakes-vip",
+    "en": "high-stakes-vip"
   },
   "holdem-durem-buren": {
     "mn": "holdem-durem-buren",
@@ -121,16 +124,19 @@ export const ARTICLE_ROUTES = {
     "mn": "hud-vpip-pfr"
   },
   "huudas-songolt": {
-    "mn": "huudas-songolt"
+    "mn": "huudas-songolt",
+    "en": "table-selection-poker"
   },
   "megamax-poker-mongolia": {
     "mn": "megamax-poker-mongolia"
   },
   "micro-stakes-250-500": {
-    "mn": "micro-stakes-250-500"
+    "mn": "micro-stakes-250-500",
+    "en": "micro-stakes-250-500"
   },
   "mobile-vs-desktop": {
-    "mn": "mobile-vs-desktop"
+    "mn": "mobile-vs-desktop",
+    "en": "mobile-vs-desktop-poker"
   },
   "mongol-poker-sistem": {
     "mn": "mongol-poker-sistem",
@@ -145,7 +151,8 @@ export const ARTICLE_ROUTES = {
     "zh": "mongol-poker-xiazai"
   },
   "mongol-tulbur-arga": {
-    "mn": "mongol-tulbur-arga"
+    "mn": "mongol-tulbur-arga",
+    "en": "mongolia-payment-methods"
   },
   "multiway-pot": {
     "mn": "multiway-pot",
@@ -185,7 +192,8 @@ export const ARTICLE_ROUTES = {
     "zh": "poker-xinlixue"
   },
   "poker-soyol-online": {
-    "mn": "poker-soyol-online"
+    "mn": "poker-soyol-online",
+    "en": "online-poker-etiquette"
   },
   "poker-terms-mn": {
     "mn": "poker-terms-mn",
@@ -259,7 +267,8 @@ export const ARTICLE_ROUTES = {
     "ru": "turn-river-igra"
   },
   "ulaanbaatar-poker-2026": {
-    "mn": "ulaanbaatar-poker-2026"
+    "mn": "ulaanbaatar-poker-2026",
+    "en": "ulaanbaatar-poker-2026"
   },
   "usdt-deposit-zaavar": {
     "mn": "usdt-deposit-zaavar",
@@ -267,7 +276,8 @@ export const ARTICLE_ROUTES = {
     "ru": "usdt-depozit-gaid"
   },
   "variance-poker": {
-    "mn": "variance-poker"
+    "mn": "variance-poker",
+    "en": "poker-variance"
   },
   "vip-shiree-mongol": {
     "mn": "vip-shiree-mongol",
