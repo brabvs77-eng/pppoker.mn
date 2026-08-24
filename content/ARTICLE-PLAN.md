@@ -6,8 +6,8 @@ Updated: 2026-08-23. Target corpus: **60 MN articles** (then selective i18n).
 
 | Metric | Count |
 |--------|------:|
-| **Published** | 54 |
-| **Planned (new)** | 6 |
+| **Published** | 60 |
+| **Planned (new)** | 0 |
 | **Total target** | 60 |
 | **I18n parity today** | 18 × 4 langs = 72 URLs |
 
@@ -156,18 +156,18 @@ Local entity building. E-E-A-T for «покер монгол», expats, payments
 
 ---
 
-## Phase 10 — Brand-parasite (0/6) 🔲 NEXT
+## Phase 10 — Brand-parasite (6/6) ✅ DONE
 
-**Gate:** publish only after Phases 5–9 reach ≥50 articles live. Rules: `content/BRAND-PARASITE-STRATEGY.md`.
+**Gate:** Phases 5–9 ≥50 articles — met. Rules: `content/BRAND-PARASITE-STRATEGY.md`.
 
-| # | Slug | Title (MN) | Competitor / query | Risk |
-|---|------|------------|-------------------|------|
-| 55 | `bluff-poker-mongolia-yu-ve` | Bluff poker mongolia гэж юу вэ? | bluff poker mongolia | low |
-| 56 | `pppoker-vs-pokerstars-mongol` | PPPoker vs PokerStars — Монгол тоглогчид | pokerstars монгол | medium |
-| 57 | `turbo-poker-mongolia` | Turbo poker Mongolia — club-first харьцуулалт | turbo poker | low |
-| 58 | `megamax-poker-mongolia` | MegaMax poker Mongolia | megamax poker | low |
-| 59 | `one-king-poker-mongolia` | One King poker Mongolia | one king poker | low |
-| 60 | `pokermongolia-com-yu-ve` | pokermongolia.com гэж юу вэ? | pokermongolia | medium |
+| # | Slug | Title (MN) | Status |
+|---|------|------------|--------|
+| 55 | `bluff-poker-mongolia-yu-ve` | Bluff poker mongolia гэж юу вэ? | published |
+| 56 | `pppoker-vs-pokerstars-mongol` | PPPoker vs PokerStars — Монгол тоглогчид | published |
+| 57 | `turbo-poker-mongolia` | Turbo poker Mongolia — club-first харьцуулалт | published |
+| 58 | `megamax-poker-mongolia` | MegaMax poker Mongolia | published |
+| 59 | `one-king-poker-mongolia` | One King poker Mongolia | published |
+| 60 | `pokermongolia-com-yu-ve` | pokermongolia.com гэж юу вэ? | published |
 
 **Rules:** club-first Ski Ramp · one competitor per page · factual only · max ~10% of corpus.
 
@@ -241,7 +241,7 @@ ZH: wait until EN+RU ≥50% of expanded corpus per `I18N-TRANSLATION-PLAN.md`.
 | I18n-7 ZH Tier 3+4 (10) | published |
 | I18n-9 Auto sitemap + FAQ schema i18n | published |
 
-**Current published:** 54 MN + 18 EN + 18 RU + 18 ZH = **108 article URLs** (54 MN groups).
+**Current published:** 60 MN + 18 EN + 18 RU + 18 ZH = **114 article URLs** (60 MN groups). **Corpus target reached.**
 
 ---
 

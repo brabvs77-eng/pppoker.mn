@@ -30,6 +30,9 @@ export const ARTICLE_ROUTES = {
     "ru": "iskusstvo-blufa",
     "zh": "zhapian-zhishu"
   },
+  "bluff-poker-mongolia-yu-ve": {
+    "mn": "bluff-poker-mongolia-yu-ve"
+  },
   "bluff-poker-mongolia": {
     "mn": "bluff-poker-mongolia",
     "en": "bluff-poker-mongolia",
@@ -102,6 +105,9 @@ export const ARTICLE_ROUTES = {
   "huudas-songolt": {
     "mn": "huudas-songolt"
   },
+  "megamax-poker-mongolia": {
+    "mn": "megamax-poker-mongolia"
+  },
   "micro-stakes-250-500": {
     "mn": "micro-stakes-250-500"
   },
@@ -128,6 +134,9 @@ export const ARTICLE_ROUTES = {
   },
   "omaha-durem-buren": {
     "mn": "omaha-durem-buren"
+  },
+  "one-king-poker-mongolia": {
+    "mn": "one-king-poker-mongolia"
   },
   "online-poker-mongol-2026": {
     "mn": "online-poker-mongol-2026",
@@ -162,6 +171,9 @@ export const ARTICLE_ROUTES = {
     "ru": "poker-terminy-slovar",
     "zh": "poker-shuyu-cidian"
   },
+  "pokermongolia-com-yu-ve": {
+    "mn": "pokermongolia-com-yu-ve"
+  },
   "postflop-suuri": {
     "mn": "postflop-suuri"
   },
@@ -183,6 +195,9 @@ export const ARTICLE_ROUTES = {
     "ru": "pppoker-klub-vs-bukmeker",
     "zh": "pppoker-klub-vs-touzhu"
   },
+  "pppoker-vs-pokerstars-mongol": {
+    "mn": "pppoker-vs-pokerstars-mongol"
+  },
   "preflop-strategi": {
     "mn": "preflop-strategi"
   },
@@ -200,6 +215,9 @@ export const ARTICLE_ROUTES = {
   },
   "tatalt-asuudal-shiidver": {
     "mn": "tatalt-asuudal-shiidver"
+  },
+  "turbo-poker-mongolia": {
+    "mn": "turbo-poker-mongolia"
   },
   "turn-river-play": {
     "mn": "turn-river-play"
