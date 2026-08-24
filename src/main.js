@@ -21,26 +21,31 @@ function updateArticleLinks(lang) {
 
 function applyTranslations(lang) {
   const tr = t(lang)
+  const isAbout = !!document.querySelector('.about-page')
+  const meta = isAbout && tr.about?.meta ? tr.about.meta : tr.meta
   document.documentElement.lang = lang
-  document.title = tr.meta.title
+  document.title = meta.title
 
   const metaDesc = document.querySelector('meta[name="description"]')
-  if (metaDesc) metaDesc.content = tr.meta.description
+  if (metaDesc) metaDesc.content = meta.description
   const metaKw = document.querySelector('meta[name="keywords"]')
-  if (metaKw) metaKw.content = tr.meta.keywords
+  if (metaKw && meta.keywords) metaKw.content = meta.keywords
 
   const ogTitle = document.querySelector('meta[property="og:title"]')
-  if (ogTitle) ogTitle.content = tr.meta.ogTitle
+  if (ogTitle) ogTitle.content = meta.ogTitle
   const ogDesc = document.querySelector('meta[property="og:description"]')
-  if (ogDesc) ogDesc.content = tr.meta.ogDesc
+  if (ogDesc) ogDesc.content = meta.ogDesc
   const twTitle = document.querySelector('meta[name="twitter:title"]')
-  if (twTitle) twTitle.content = tr.meta.ogTitle
+  if (twTitle) twTitle.content = meta.ogTitle
   const twDesc = document.querySelector('meta[name="twitter:description"]')
-  if (twDesc) twDesc.content = tr.meta.ogDesc
+  if (twDesc) twDesc.content = meta.ogDesc
   const ogImageAlt = document.querySelector('meta[property="og:image:alt"]')
-  if (ogImageAlt && tr.meta.ogImageAlt) ogImageAlt.content = tr.meta.ogImageAlt
+  if (ogImageAlt && meta.ogImageAlt) ogImageAlt.content = meta.ogImageAlt
   const twImageAlt = document.querySelector('meta[name="twitter:image:alt"]')
-  if (twImageAlt && tr.meta.ogImageAlt) twImageAlt.content = tr.meta.ogImageAlt
+  if (twImageAlt && meta.ogImageAlt) twImageAlt.content = meta.ogImageAlt
+
+  const mapFrame = document.querySelector('.map-embed')
+  if (mapFrame && tr.about?.mapTitle) mapFrame.title = tr.about.mapTitle
 
   document.querySelectorAll('[data-i18n-alt]').forEach(el => {
     const key = el.getAttribute('data-i18n-alt')

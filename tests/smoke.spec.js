@@ -67,6 +67,15 @@ test.describe('About page', () => {
     await expect(page).toHaveURL(/\/about\//)
     await expect(page.locator('.about-story')).toBeVisible()
   })
+
+  test('about page switches to English', async ({ page }) => {
+    await page.goto('/about/')
+    await page.locator('#langBtn').click()
+    await page.locator('#langMenu button[data-lang="en"]').click()
+    await expect(page).toHaveURL(/\?lang=en/)
+    await expect(page.locator('.about-hero-title')).toContainText(/Our/i)
+    await expect(page).toHaveTitle(/About Us/i)
+  })
 })
 
 test.describe('Internal navigation', () => {

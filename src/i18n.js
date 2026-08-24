@@ -448,6 +448,11 @@ export const translations = {
   },
 }
 
+import { aboutContent } from './about-i18n.js'
+for (const lang of Object.keys(translations)) {
+  translations[lang].about = aboutContent[lang]
+}
+
 export function getLang() {
   return localStorage.getItem('bo-lang') || 'mn'
 }
