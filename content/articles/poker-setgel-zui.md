@@ -4,6 +4,8 @@ Meta Description: Покер сэтгэл зүй: тильт, дисциплин
 List Title: Покерын сэтгэл зүй
 Slug: poker-setgel-zui
 Language: mn
+Cover Image: /images/articles/poker-setgel-zui.webp
+Cover Alt: Покерын сэтгэл зүй — Монгол тоглогч
 Target Word Count: 1000
 Stage: final
 ---

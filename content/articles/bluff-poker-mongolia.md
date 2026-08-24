@@ -4,6 +4,8 @@ Meta Description: Bluff poker mongolia гэж юу вэ? GSC хайлт — по
 List Title: Bluff poker mongolia
 Slug: bluff-poker-mongolia
 Language: mn
+Cover Image: /images/articles/bluff-poker-mongolia.webp
+Cover Alt: Bluff poker mongolia — Монгол клуб
 Target Word Count: 1000
 Stage: final
 ---

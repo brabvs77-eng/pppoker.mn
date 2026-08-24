@@ -4,6 +4,8 @@ Meta Description: Покер статистик ба анализ: VPIP, PFR, х
 List Title: Статистик ба анализ
 Slug: statistik-analiz
 Language: mn
+Cover Image: /images/articles/statistik-analiz.webp
+Cover Alt: Статистик ба анализ — покер
 Target Word Count: 1000
 Stage: final
 ---

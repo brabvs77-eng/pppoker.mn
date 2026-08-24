@@ -4,6 +4,8 @@ Meta Description: Покер флоатинг: хүчтэй гаргүй ч ба
 List Title: Флоатинг тактик
 Slug: floating-taktik
 Language: mn
+Cover Image: /images/articles/floating-taktik.webp
+Cover Alt: Флоатинг тактик — Монгол тоглогч
 Target Word Count: 1000
 Stage: final
 ---

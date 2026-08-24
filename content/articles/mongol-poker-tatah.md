@@ -3,6 +3,8 @@ Meta Title: Монгол покер татах | Онлайн покер апп 
 Meta Description: Монгол покер татах алхам алхмаар: PPPoker Android, iOS, PC дээр суулгаж, Baatryn Öröö клубт нэгдэх, 10,000₮-өөр цэнэглэх.
 Slug: mongol-poker-tatah
 Language: mn
+Cover Image: /images/articles/mongol-poker-tatah.webp
+Cover Alt: Монгол покер татах — апп суулгах
 Target Word Count: 1400
 Writer Draft Word Count: 1265
 Humanizer Draft Word Count: 1310

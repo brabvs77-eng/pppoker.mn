@@ -3,6 +3,8 @@ Meta Title: Монголд онлайн покер хаана тоглох вэ?
 Meta Description: Онлайн покер Монгол 2026: клуб vs казино, PPPoker, Baatryn Öröö — Hold'em, Omaha, төлбөр, бонус, найдвартай сонголт.
 Slug: online-poker-mongol-2026
 Language: mn
+Cover Image: /images/articles/online-poker-mongol-2026.webp
+Cover Alt: Онлайн покер Монгол 2026
 Target Word Count: 1600
 Writer Draft Word Count: 1445
 Humanizer Draft Word Count: 1520

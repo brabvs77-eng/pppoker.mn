@@ -4,6 +4,8 @@ Meta Description: Baatryn Öröö 100% анхны депозитын бонус 
 List Title: 100% бонус
 Slug: 100-bonus-nuhtsul
 Language: mn
+Cover Image: /images/articles/100-bonus-nuhtsul.webp
+Cover Alt: 100% депозитын бонус — Монгол тоглогч
 Target Word Count: 1000
 Stage: final
 ---

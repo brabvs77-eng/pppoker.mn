@@ -4,6 +4,8 @@ Meta Description: Покер позиц: баттон, блайнд, эрт ба
 List Title: Позицийн хүч
 Slug: pozitsiin-huch
 Language: mn
+Cover Image: /images/articles/pozitsiin-huch.webp
+Cover Alt: Позицийн хүч — ширээний стратеги
 Target Word Count: 1000
 Stage: final
 ---

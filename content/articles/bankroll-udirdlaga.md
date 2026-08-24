@@ -4,6 +4,8 @@ Meta Description: Покер банкролл: Hold'em 30–40 бай-ин, Omah
 List Title: Банкролл удирдлага
 Slug: bankroll-udirdlaga
 Language: mn
+Cover Image: /images/articles/bankroll-udirdlaga.webp
+Cover Alt: Банкролл удирдлага — Монгол тоглогч
 Target Word Count: 1000
 Stage: final
 ---

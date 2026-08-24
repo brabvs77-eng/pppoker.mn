@@ -4,6 +4,8 @@ Meta Description: Покерын комбинациуд: Royal Flush-ээс High
 List Title: Покерын комбинациуд
 Slug: poker-kombinatsiud
 Language: mn
+Cover Image: /images/articles/poker-kombinatsiud.webp
+Cover Alt: Покерын комбинациуд — суралцах
 Target Word Count: 1100
 Stage: final
 ---

@@ -4,6 +4,8 @@ Meta Description: Покер депозит, мөнгө таталт: IBAN, 10,0
 List Title: Депозит ба таталт
 Slug: deposit-withdraw-mongol
 Language: mn
+Cover Image: /images/articles/deposit-withdraw-mongol.webp
+Cover Alt: Депозит ба таталт — Монгол
 Target Word Count: 1100
 Stage: final
 ---

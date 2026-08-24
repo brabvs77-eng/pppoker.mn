@@ -3,6 +3,8 @@ Meta Title: Монгол покер систем | Онлайн покер — B
 Meta Description: Монгол покер систем — PPPoker дээрх Baatryn Öröö клуб. Hold'em, Omaha, 24/7 ширээ, 10,000₮-өөр эхлэх, 100% бонус.
 Slug: mongol-poker-sistem
 Language: mn
+Cover Image: /images/articles/mongol-poker-sistem.webp
+Cover Alt: Монгол покер систем — Улаанбаатар
 Target Word Count: 1200
 Writer Draft Word Count: 1080
 Humanizer Draft Word Count: 1145

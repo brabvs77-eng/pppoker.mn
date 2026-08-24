@@ -4,6 +4,8 @@ Meta Description: Покерын нэр томьёо монгол хэлээр: 
 List Title: Покерын нэр томьёо
 Slug: poker-terms-mn
 Language: mn
+Cover Image: /images/articles/poker-terms-mn.webp
+Cover Alt: Покерын нэр томьёо — толь бичиг
 Target Word Count: 1400
 Stage: final
 ---

@@ -4,6 +4,8 @@ Meta Description: Hold'em vs Omaha — ялгаа, аль формат эхлэ�
 List Title: Hold'em vs Omaha
 Slug: holdem-vs-omaha
 Language: mn
+Cover Image: /images/articles/holdem-vs-omaha.webp
+Cover Alt: Hold'em vs Omaha — Монгол тоглогчид
 Target Word Count: 1200
 Stage: final
 ---

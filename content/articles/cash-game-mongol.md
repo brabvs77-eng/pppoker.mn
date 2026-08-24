@@ -4,6 +4,8 @@ Meta Description: Кэш тоглоом гэж юу вэ? Онлайн поке�
 List Title: Кэш тоглоом
 Slug: cash-game-mongol
 Language: mn
+Cover Image: /images/articles/cash-game-mongol.webp
+Cover Alt: Кэш тоглоом — онлайн покер Монгол
 Target Word Count: 1100
 Stage: final
 ---

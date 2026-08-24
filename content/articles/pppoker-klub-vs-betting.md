@@ -4,6 +4,8 @@ Meta Description: PPPoker клуб vs бооцооны сайт — ялгаа, 
 List Title: Клуб vs бооцоо
 Slug: pppoker-klub-vs-betting
 Language: mn
+Cover Image: /images/articles/pppoker-klub-vs-betting.webp
+Cover Alt: Клуб vs бооцооны компани — Монгол
 Target Word Count: 1200
 Stage: final
 ---

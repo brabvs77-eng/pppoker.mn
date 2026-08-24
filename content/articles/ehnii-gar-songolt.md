@@ -4,6 +4,8 @@ Meta Description: Покер эхний гар: AA, KK, QQ, AK — аль гар
 List Title: Эхний гарны сонголт
 Slug: ehnii-gar-songolt
 Language: mn
+Cover Image: /images/articles/ehnii-gar-songolt.webp
+Cover Alt: Эхний гарны сонголт — покер стратеги
 Target Word Count: 1100
 Stage: final
 ---

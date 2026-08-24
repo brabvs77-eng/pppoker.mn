@@ -4,6 +4,8 @@ Meta Description: Покер блеф: хэзээ, хэрхэн. Онлайн п
 List Title: Блефийн урлаг
 Slug: blef-uriag
 Language: mn
+Cover Image: /images/articles/blef-uriag.webp
+Cover Alt: Блефийн урлаг — покер Монгол
 Target Word Count: 1000
 Stage: final
 ---
