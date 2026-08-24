@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>方差 — 长期视角 | 蒙古在线扑克</title>
+  <meta name="description" content="扑克方差是什么？蒙古在线扑克 — 短期波动、长期盈利。Baatryn Öröö 现金桌。" />
+  <meta name="article-group-id" content="variance-poker" />
+  <meta name="article-lang" content="zh" />
+  <link rel="canonical" href="https://pppoker.mn/zh/articles/poker-fangcha/" />
+  <link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/variance-poker/" />
+  <link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/poker-variance/" />
+  <link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/variance-poker/" />
+  <link rel="alternate" hreflang="zh" href="https://pppoker.mn/zh/articles/poker-fangcha/" />
+  <link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/variance-poker/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Baatryn Öröö" />
+  <meta property="og:title" content="方差 — 长期视角 | 蒙古在线扑克" />
+  <meta property="og:description" content="扑克方差是什么？蒙古在线扑克 — 短期波动、长期盈利。Baatryn Öröö 现金桌。" />
+  <meta property="og:url" content="https://pppoker.mn/zh/articles/poker-fangcha/" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale:alternate" content="mn_MN" />
+  <meta property="og:image" content="https://pppoker.mn/images/og-cover.jpg" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+  <meta property="og:image:alt" content="方差 — 长期视角 | 蒙古在线扑克" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://pppoker.mn/images/og-cover.jpg" />
+  <meta name="twitter:image:alt" content="方差 — 长期视角 | 蒙古在线扑克" />
+  <link rel="preload" href="/images/logo.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/slide-comfort.webp" as="image" type="image/webp" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"方差 — 长期视角","description":"扑克方差是什么？蒙古在线扑克 — 短期波动、长期盈利。Baatryn Öröö 现金桌。","author":{"@type":"Organization","name":"Baatryn Öröö"},"publisher":{"@type":"Organization","name":"Baatryn Öröö","url":"https://pppoker.mn"},"mainEntityOfPage":"https://pppoker.mn/zh/articles/poker-fangcha/","inLanguage":"zh"}</script>
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109810225', 'ym');
+    ym(109810225, 'init', {ssr:true, webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+  </script>
+</head>
+<body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/109810225" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container nav-container">
+                <a href="https://pppoker.mn/?lang=zh" class="nav-logo" aria-label="Baatryn Öröö 首页">
+          <img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" fetchpriority="high" />
+          <span class="logo-text">BAATRYN ÖRÖÖ</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="https://pppoker.mn/?lang=zh#games">游戏</a></li>
+          <li><a href="https://pppoker.mn/?lang=zh#features">特色</a></li>
+          <li><a href="/zh/articles/" class="active">文章</a></li>
+          <li><a href="https://pppoker.mn/?lang=zh#academy">学院</a></li>
+          <li><a href="https://pppoker.mn/?lang=zh#faq">常见问题</a></li>
+          <li class="nav-mobile-play">
+            <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn nav-btn--menu" rel="noopener" target="_blank">开始游戏</a>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-current" id="langBtn" aria-label="切换语言" aria-expanded="false">
+              <span id="langLabel">中文</span> ▾
+            </button>
+            <ul class="lang-menu" id="langMenu" role="menu">
+              <li role="menuitem"><a href="/articles/variance-poker/" data-lang="mn">MN</a></li>
+              <li role="menuitem"><a href="/en/articles/poker-variance/" data-lang="en">EN</a></li>
+              <li role="menuitem"><a href="/ru/articles/variance-poker/" data-lang="ru">RU</a></li>
+              <li role="menuitem"><a href="/zh/articles/poker-fangcha/" data-lang="zh" class="active">中文</a></li>
+            </ul>
+          </div>
+          <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn" rel="noopener" target="_blank">开始游戏</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content" class="article-page">
+    <div class="container">
+      <nav class="article-breadcrumb" aria-label="Breadcrumb">
+        <a href="https://pppoker.mn/?lang=zh">首页</a> <span>/</span> <a href="/zh/articles/">文章</a> <span>/</span> <span>方差 — 长期视角</span>
+      </nav>
+      <article class="article-body">
+<h1 class="article-title">方差 — 长期视角</h1>
+<p><strong>方差</strong>（variance）不是数学概念，而是扑克中的<strong>短期波动</strong>。即便你打得好，也可能输；即便你打得差，也可能赢。在 <a href="https://pppoker.mn/?lang=zh">Baatryn Öröö</a> 的<strong>在线扑克</strong>中，不理解方差会导致倾斜和资金崩溃。</p>
+<h2 class="article-h2">快速概览</h2>
+<div class="article-table-wrap"><table class="article-table"><thead><tr>
+<th></th>
+<th>方差</th>
+</tr></thead><tbody>
+<tr>
+<td>是什么</td>
+<td>短期结果的随机波动</td>
+</tr>
+<tr>
+<td>长期</td>
+<td>好玩家终将盈利</td>
+</tr>
+<tr>
+<td>短期</td>
+<td>任何结果都可能出现</td>
+</tr>
+<tr>
+<td>应对方案</td>
+<td>筹码管理 + 纪律</td>
+</tr>
+</tbody></table></div>
+<p>方差是扑克的一部分，不只是坏运气。</p>
+<h2 class="article-h2">为什么存在方差？</h2>
+<p>扑克 = 技术 + 运气。单手牌、单晚——运气成分大。1 万手牌、一年——技术占主导。</p>
+<p>示例：AA vs 72 — AA 有 80% 胜率。但 20% 会输，这就是方差。玩 100 次，AA 通常赢，但不是每次。</p>
+<h2 class="article-h2">短期 vs 长期</h2>
+<div class="article-table-wrap"><table class="article-table"><thead><tr>
+<th>时间跨度</th>
+<th>方差程度</th>
+<th>你会看到什么</th>
+</tr></thead><tbody>
+<tr>
+<td>单晚</td>
+<td>极高</td>
+<td>-5 买入或 +10 买入</td>
+</tr>
+<tr>
+<td>一个月</td>
+<td>中等</td>
+<td>有波动但趋势渐显</td>
+</tr>
+<tr>
+<td>6 个月+</td>
+<td>较低</td>
+<td>技术好的玩家开始盈利</td>
+</tr>
+</tbody></table></div>
+<p><a href="https://pppoker.mn/zh/articles/bankroll-guanli/">筹码管理</a> — 需要能承受方差的充足储备。</p>
+<h2 class="article-h2">各级别方差</h2>
+<div class="article-table-wrap"><table class="article-table"><thead><tr>
+<th>级别</th>
+<th>单晚方差</th>
+</tr></thead><tbody>
+<tr>
+<td><a href="https://pppoker.mn/zh/articles/wei-xiaozhu-250-500/">250/500</a></td>
+<td>2–5 个买入波动</td>
+</tr>
+<tr>
+<td>1K/2K</td>
+<td>3–7 个买入</td>
+</tr>
+<tr>
+<td><a href="https://pppoker.mn/zh/articles/gaoe-zhuo-vip/">10K/20K</a></td>
+<td>5–15 个买入</td>
+</tr>
+</tbody></table></div>
+<p>级别越高，波动越大，需要有心理准备。</p>
+<h2 class="article-h2">如何与方差共存</h2>
+<h3 class="article-h3">1. 筹码充足</h3>
+<p>总筹码保持 30–50 个买入。单桌最多投入 2–3 个买入。输了也还能继续。</p>
+<h3 class="article-h3">2. 心理稳健</h3>
+<p><a href="https://pppoker.mn/zh/articles/poker-xinlixue/">扑克心理</a> — 输掉 3 个买入就停止当天游戏。"倒霉"不等于方差，要区分。</p>
+<h3 class="article-h3">3. 追踪数据</h3>
+<p><a href="https://pppoker.mn/zh/articles/poker-tongji-fenxi/">统计分析</a> — 1000 手以上才能看出趋势。50 手数据毫无参考价值。</p>
+<h3 class="article-h3">4. 选桌</h3>
+<p><a href="https://pppoker.mn/zh/articles/xuanze-zhuozi/">选择牌桌</a> — 软弱对手多的桌子方差更低，盈利空间更大。</p>
+<h3 class="article-h3">5. 打好基础策略</h3>
+<p>合理的底池赔率和注码规划，长期来看可以跨越方差的阻力。</p>
+<h2 class="article-h2">"坏运气" vs 错误</h2>
+<div class="article-table-wrap"><table class="article-table"><thead><tr>
+<th>坏运气</th>
+<th>错误</th>
+</tr></thead><tbody>
+<tr>
+<td>AA 输给 72</td>
+<td>用 72 跟注</td>
+</tr>
+<tr>
+<td>听牌没中</td>
+<td>用差牌参与</td>
+</tr>
+<tr>
+<td>偶尔发生</td>
+<td>会反复出现</td>
+</tr>
+</tbody></table></div>
+<p>纠正错误。接受方差。</p>
+<h2 class="article-h2">下行期 — 怎么办？</h2>
+<ol class="article-ol">
+<li><strong>停止</strong> — 输掉 3+ 个买入，结束当天游戏</li>
+<li><strong>换桌</strong> — 参考<a href="https://pppoker.mn/zh/articles/xuanze-zhuozi/">选择牌桌</a></li>
+<li><strong>降低级别</strong> — 从高注额退回微注</li>
+<li><strong>检查数据</strong> — VPIP、PFR 是否出现变化</li>
+<li><strong>寻求支持</strong> — <a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></li>
+</ol>
+<h2 class="article-h2">上行期 — 注意什么？</h2>
+<p>赢势大时：</p>
+<ul class="article-ul">
+<li>不要过早升级到更高级别</li>
+<li>不要调整策略（比如变得过于激进）</li>
+<li>保护筹码——上行期终将结束</li>
+</ul>
+<h2 class="article-h2">常见问题</h2>
+<h3 class="article-h3">方差有多大？</h3>
+<p>取决于级别和打法风格。20–30 个买入的下行期属于正常范围。</p>
+<h3 class="article-h3">能减少方差吗？</h3>
+<p>通过选桌、收紧范围、减少多人底池可以降低方差，但无法完全消除。</p>
+<h3 class="article-h3">锦标赛和现金桌方差哪个大？</h3>
+<p>锦标赛方差更高。<a href="https://pppoker.mn/zh/articles/xianjin-zhuo-mongolia/">现金桌</a> — 更稳定。</p>
+<p><a href="https://pppoker.mn/?lang=zh">负责任游戏</a> · <a href="https://pppoker.mn/zh/articles/xianjin-zhuo-mongolia/">现金桌蒙古</a></p>
+      </article>
+      <div class="article-cta">
+        <a href="https://baatrynorpoker.ink/1FBP9k" class="btn btn-primary" rel="noopener" target="_blank">立即游戏 →</a>
+        <a href="/zh/articles/" class="btn btn-outline">更多文章</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" /><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
+          <p>蒙古扑克俱乐部。在线扑克——真正玩家的竞技场。</p>
+        </div>
+        <div class="footer-links">
+          <h4>文章</h4>
+          <ul>
+            <li><a href="/zh/articles/100-cunkuan-jiangjin/">100% 奖金</a></li>
+            <li><a href="/zh/articles/baatryn-oroo-jieshao/">Baatryn Öröö — 俱乐部介绍</a></li>
+            <li><a href="/zh/articles/bankroll-guanli/">资金管理</a></li>
+            <li><a href="/zh/articles/bluff-poker-mongolia/">Bluff poker mongolia</a></li>
+            <li><a href="/zh/articles/cunkuan-tikuan-mongolia/">存款与提款</a></li>
+            <li><a href="/zh/articles/float-celue/">Float</a></li>
+            <li><a href="/zh/articles/gaoe-zhuo-vip/">高注额 10K/20K — VIP 牌桌</a></li>
+            <li><a href="/zh/articles/holdem-vs-omaha/">Hold'em vs Omaha</a></li>
+            <li><a href="/zh/articles/menggu-zhifu-fangshi/">蒙古支付方式 — IBAN、USDT</a></li>
+            <li><a href="/zh/articles/mongol-poker-xiazai/">如何下载蒙古扑克 — PPPoker 应用指南</a></li>
+            <li><a href="/zh/articles/mongol-poker-xitong/">什么是蒙古扑克系统？Baatryn Öröö 与 PPPoker</a></li>
+            <li><a href="/zh/articles/online-poker-mongolia-2026/">2026 蒙古哪里玩在线扑克 — 完整指南</a></li>
+            <li><a href="/zh/articles/poker-fangcha/">方差 — 长期视角</a></li>
+            <li><a href="/zh/articles/poker-shoupai-paiming/">牌型排名</a></li>
+            <li><a href="/zh/articles/poker-shuyu-cidian/">扑克术语</a></li>
+            <li><a href="/zh/articles/poker-tongji-fenxi/">数据统计</a></li>
+            <li><a href="/zh/articles/poker-xinlixue/">扑克心理</a></li>
+            <li><a href="/zh/articles/pppoker-klub-vs-touzhu/">俱乐部 vs 博彩</a></li>
+            <li><a href="/zh/articles/qishou-pai-xuanze/">起手牌</a></li>
+            <li><a href="/zh/articles/shouji-vs-diannao/">手机 vs 电脑 — 哪个更适合你？</a></li>
+            <li><a href="/zh/articles/ulanbator-poker-2026/">乌兰巴托，蒙古 — 在线扑克 2026</a></li>
+            <li><a href="/zh/articles/waiguo-poker-menggu/">外籍人士指南 — 蒙古在线扑克</a></li>
+            <li><a href="/zh/articles/wei-xiaozhu-250-500/">微注 250/500 — 如何生存</a></li>
+            <li><a href="/zh/articles/xianjin-zhuo-mongolia/">现金局</a></li>
+            <li><a href="/zh/articles/xuanze-zhuozi/">选择牌桌 — 和谁玩、什么时候玩</a></li>
+            <li><a href="/zh/articles/zaixian-poker-liyi/">在线扑克礼仪</a></li>
+            <li><a href="/zh/articles/zhapian-zhishu/">诈唬艺术</a></li>
+            <li><a href="/zh/articles/zhuo-shang-weizhi/">牌桌位置</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>联系</h4>
+          <ul>
+            <li><a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>♠ BAATRYN ÖRÖÖ — 智取牌局，长久制胜。</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/article-page.js"></script>
+</body>
+</html>

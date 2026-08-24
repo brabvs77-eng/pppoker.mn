@@ -9,6 +9,9 @@
   <meta name="article-lang" content="mn" />
   <link rel="canonical" href="https://pppoker.mn/articles/mobile-vs-desktop/" />
   <link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/mobile-vs-desktop/" />
+  <link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/mobile-vs-desktop-poker/" />
+  <link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/mobil-vs-desktop/" />
+  <link rel="alternate" hreflang="zh" href="https://pppoker.mn/zh/articles/shouji-vs-diannao/" />
   <link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/mobile-vs-desktop/" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -20,7 +23,7 @@
   <meta property="og:description" content="Гар утас эсвэл компьютерээр онлайн покер тоглох уу? PPPoker Монгол — апп, desktop, multi-table. Baatryn Öröö 24/7." />
   <meta property="og:url" content="https://pppoker.mn/articles/mobile-vs-desktop/" />
   <meta property="og:locale" content="mn_MN" />
-
+  <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:image" content="https://pppoker.mn/images/articles/mobile-vs-desktop.webp" />
   <meta property="og:image:width" content="1600" />
   <meta property="og:image:height" content="900" />
@@ -63,7 +66,17 @@
           </li>
         </ul>
         <div class="nav-right">
-
+          <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-current" id="langBtn" aria-label="Change language" aria-expanded="false">
+              <span id="langLabel">MN</span> ▾
+            </button>
+            <ul class="lang-menu" id="langMenu" role="menu">
+              <li role="menuitem"><a href="/articles/mobile-vs-desktop/" data-lang="mn" class="active">MN</a></li>
+              <li role="menuitem"><a href="/en/articles/mobile-vs-desktop-poker/" data-lang="en">EN</a></li>
+              <li role="menuitem"><a href="/ru/articles/mobil-vs-desktop/" data-lang="ru">RU</a></li>
+              <li role="menuitem"><a href="/zh/articles/shouji-vs-diannao/" data-lang="zh">中文</a></li>
+            </ul>
+          </div>
           <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn" rel="noopener" target="_blank">Тоглох</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
