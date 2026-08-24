@@ -285,7 +285,8 @@ export const ARTICLE_ROUTES = {
   "ulaanbaatar-poker-2026": {
     "mn": "ulaanbaatar-poker-2026",
     "en": "ulaanbaatar-poker-2026",
-    "ru": "ulaanbaatar-poker-2026"
+    "ru": "ulaanbaatar-poker-2026",
+    "zh": "ulanbator-poker-2026"
   },
   "usdt-deposit-zaavar": {
     "mn": "usdt-deposit-zaavar",
@@ -295,7 +296,8 @@ export const ARTICLE_ROUTES = {
   "variance-poker": {
     "mn": "variance-poker",
     "en": "poker-variance",
-    "ru": "variance-poker"
+    "ru": "variance-poker",
+    "zh": "poker-fangcha"
   },
   "vip-shiree-mongol": {
     "mn": "vip-shiree-mongol",
