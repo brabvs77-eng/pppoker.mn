@@ -241,7 +241,7 @@ ZH: wait until EN+RU ≥50% of expanded corpus per `I18N-TRANSLATION-PLAN.md`.
 | I18n-7 ZH Tier 3+4 (10) | published |
 | I18n-9 Auto sitemap + FAQ schema i18n | published |
 
-**Current published:** 60 MN + 54 EN + 48 RU + 28 ZH = **190 article URLs** (60 MN groups). Full i18n expansion complete (T1–T4).
+**Current published:** 60 MN + 54 EN + 48 RU + 48 ZH = **210 article URLs** (60 MN groups). Full i18n expansion complete (T1–T4 + ZH T1/T2).
 
 ---
 
