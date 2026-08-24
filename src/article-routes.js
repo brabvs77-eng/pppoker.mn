@@ -6,6 +6,9 @@ export const ARTICLE_ROUTES = {
     "ru": "bonus-100-usloviya",
     "zh": "100-cunkuan-jiangjin"
   },
+  "3bet-4bet-mongol": {
+    "mn": "3bet-4bet-mongol"
+  },
   "bankroll-udirdlaga": {
     "mn": "bankroll-udirdlaga",
     "en": "bankroll-management",
@@ -14,6 +17,9 @@ export const ARTICLE_ROUTES = {
   },
   "bet-hmjuulelt": {
     "mn": "bet-hmjuulelt"
+  },
+  "blaynd-togloom": {
+    "mn": "blaynd-togloom"
   },
   "blef-uriag": {
     "mn": "blef-uriag",
@@ -36,6 +42,12 @@ export const ARTICLE_ROUTES = {
     "ru": "kesh-igry-mongoliya",
     "zh": "xianjin-zhuo-mongolia"
   },
+  "cbet-strategi": {
+    "mn": "cbet-strategi"
+  },
+  "check-raise-taktik": {
+    "mn": "check-raise-taktik"
+  },
   "club-vs-platform": {
     "mn": "club-vs-platform"
   },
@@ -53,6 +65,9 @@ export const ARTICLE_ROUTES = {
     "en": "starting-hand-selection",
     "ru": "vybor-startovykh-ruk",
     "zh": "qishou-pai-xuanze"
+  },
+  "exploitation-taktik": {
+    "mn": "exploitation-taktik"
   },
   "floating-taktik": {
     "mn": "floating-taktik",
@@ -72,6 +87,9 @@ export const ARTICLE_ROUTES = {
     "ru": "holdem-vs-omaha",
     "zh": "holdem-vs-omaha"
   },
+  "hud-vpip-pfr": {
+    "mn": "hud-vpip-pfr"
+  },
   "mongol-poker-sistem": {
     "mn": "mongol-poker-sistem",
     "en": "mongol-poker-system",
@@ -84,6 +102,9 @@ export const ARTICLE_ROUTES = {
     "ru": "mongol-poker-skachat",
     "zh": "mongol-poker-xiazai"
   },
+  "multiway-pot": {
+    "mn": "multiway-pot"
+  },
   "omaha-durem-buren": {
     "mn": "omaha-durem-buren"
   },
@@ -92,6 +113,12 @@ export const ARTICLE_ROUTES = {
     "en": "online-poker-mongolia-2026",
     "ru": "online-poker-mongoliya-2026",
     "zh": "online-poker-mongolia-2026"
+  },
+  "plo-draw-buren": {
+    "mn": "plo-draw-buren"
+  },
+  "plo-ehnii-gar": {
+    "mn": "plo-ehnii-gar"
   },
   "poker-kombinatsiud": {
     "mn": "poker-kombinatsiud",
@@ -135,14 +162,23 @@ export const ARTICLE_ROUTES = {
   "preflop-strategi": {
     "mn": "preflop-strategi"
   },
+  "range-unshih": {
+    "mn": "range-unshih"
+  },
   "statistik-analiz": {
     "mn": "statistik-analiz",
     "en": "poker-statistics-analysis",
     "ru": "statistika-pokera",
     "zh": "poker-tongji-fenxi"
   },
+  "steal-resteal": {
+    "mn": "steal-resteal"
+  },
   "tatalt-asuudal-shiidver": {
     "mn": "tatalt-asuudal-shiidver"
+  },
+  "turn-river-play": {
+    "mn": "turn-river-play"
   },
   "usdt-deposit-zaavar": {
     "mn": "usdt-deposit-zaavar"

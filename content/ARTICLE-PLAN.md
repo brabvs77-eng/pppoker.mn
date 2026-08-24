@@ -6,8 +6,8 @@ Updated: 2026-08-23. Target corpus: **60 MN articles** (then selective i18n).
 
 | Metric | Count |
 |--------|------:|
-| **Published** | 32 |
-| **Planned (new)** | 28 |
+| **Published** | 44 |
+| **Planned (new)** | 16 |
 | **Total target** | 60 |
 | **I18n parity today** | 18 × 4 langs = 72 URLs |
 
@@ -86,30 +86,28 @@ Each article has a unique cover image in `public/images/articles/{slug}.webp`.
 
 ---
 
-## Phase 6 — Advanced strategy (0/12) 🔲 NEXT
+## Phase 6 — Advanced strategy (12/12) ✅ DONE
 
-Academy expansion. Cash-game focus (9-max Hold'em, 6-max PLO). **Priority: high** after Phase 5.
+Mongolia-themed covers (Ulaanbaatar, Mongolian players, steppe).
 
-| # | Slug | Title (MN) | Topic | Priority |
-|---|------|------------|-------|----------|
-| 25 | `cbet-strategi` | C-bet стратеги | Continuation bet | P1 |
-| 26 | `3bet-4bet-mongol` | 3-bet ба 4-bet | 3bet стратеги | P1 |
-| 27 | `check-raise-taktik` | Check-raise тактик | Check-raise | P2 |
-| 28 | `multiway-pot` | Multiway pot | 3+ player pots | P2 |
-| 29 | `blaynd-togloom` | Блайнд тоглоом | Blind defense / steal | P1 |
-| 30 | `steal-resteal` | Steal ба re-steal | Late-position opens | P2 |
-| 31 | `plo-ehnii-gar` | PLO эхний гар | Omaha starting hands | P1 |
-| 32 | `plo-draw-buren` | PLO draw — wrap, nut flush | Omaha draws | P2 |
-| 33 | `hud-vpip-pfr` | HUD: VPIP, PFR, AF гүнзгий | покер статистик | P2 |
-| 34 | `exploitation-taktik` | Эксплойт — сул тоглогчийг ашиглах | exploitation покер | P3 |
-| 35 | `range-unshih` | Range унших суурь | range reading | P2 |
-| 36 | `turn-river-play` | Turn ба river шийдвэр | street play | P2 |
-
-**Internal links:** → `floating-taktik`, `blef-uriag`, `statistik-analiz`, `holdem-vs-omaha`.
+| # | Slug | Status |
+|---|------|--------|
+| 25 | `cbet-strategi` | published |
+| 26 | `3bet-4bet-mongol` | published |
+| 27 | `check-raise-taktik` | published |
+| 28 | `multiway-pot` | published |
+| 29 | `blaynd-togloom` | published |
+| 30 | `steal-resteal` | published |
+| 31 | `plo-ehnii-gar` | published |
+| 32 | `plo-draw-buren` | published |
+| 33 | `hud-vpip-pfr` | published |
+| 34 | `exploitation-taktik` | published |
+| 35 | `range-unshih` | published |
+| 36 | `turn-river-play` | published |
 
 ---
 
-## Phase 7 — Product & onboarding (8/8) ✅ DONE
+## Phase 8 — Stakes, formats & grind (0/6) 🔲 NEXT
 
 Mongolia-themed cover art (Ulaanbaatar, Mongolian players, local context).
 
@@ -243,7 +241,7 @@ ZH: wait until EN+RU ≥50% of expanded corpus per `I18N-TRANSLATION-PLAN.md`.
 | I18n-7 ZH Tier 3+4 (10) | published |
 | I18n-9 Auto sitemap + FAQ schema i18n | published |
 
-**Current published:** 32 MN + 18 EN + 18 RU + 18 ZH = **86 article URLs** (32 MN groups).
+**Current published:** 44 MN + 18 EN + 18 RU + 18 ZH = **98 article URLs** (44 MN groups).
 
 ---
 

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HUD: VPIP, PFR, AF | Онлайн покер Монгол</title>
+  <meta name="description" content="Покер HUD статистик: VPIP, PFR, Aggression Factor. Онлайн покер Монгол — тоглогч таних, exploit." />
+  <meta name="article-group-id" content="hud-vpip-pfr" />
+  <meta name="article-lang" content="mn" />
+  <link rel="canonical" href="https://pppoker.mn/articles/hud-vpip-pfr/" />
+  <link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/hud-vpip-pfr/" />
+  <link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/hud-vpip-pfr/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Baatryn Öröö" />
+  <meta property="og:title" content="HUD: VPIP, PFR, AF | Онлайн покер Монгол" />
+  <meta property="og:description" content="Покер HUD статистик: VPIP, PFR, Aggression Factor. Онлайн покер Монгол — тоглогч таних, exploit." />
+  <meta property="og:url" content="https://pppoker.mn/articles/hud-vpip-pfr/" />
+  <meta property="og:locale" content="mn_MN" />
+
+  <meta property="og:image" content="https://pppoker.mn/images/articles/hud-vpip-pfr.webp" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+  <meta property="og:image:alt" content="HUD: VPIP, PFR, AF | Онлайн покер Монгол" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://pppoker.mn/images/articles/hud-vpip-pfr.webp" />
+  <meta name="twitter:image:alt" content="HUD: VPIP, PFR, AF | Онлайн покер Монгол" />
+  <link rel="preload" href="/images/logo.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/slide-comfort.webp" as="image" type="image/webp" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"HUD: VPIP, PFR, AF — гүнзгий","description":"Покер HUD статистик: VPIP, PFR, Aggression Factor. Онлайн покер Монгол — тоглогч таних, exploit.","image":"https://pppoker.mn/images/articles/hud-vpip-pfr.webp","author":{"@type":"Organization","name":"Baatryn Öröö"},"publisher":{"@type":"Organization","name":"Baatryn Öröö","url":"https://pppoker.mn"},"mainEntityOfPage":"https://pppoker.mn/articles/hud-vpip-pfr/","inLanguage":"mn"}</script>
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109810225', 'ym');
+    ym(109810225, 'init', {ssr:true, webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+  </script>
+</head>
+<body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/109810225" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container nav-container">
+                <a href="https://pppoker.mn/" class="nav-logo" aria-label="Baatryn Öröö Home">
+          <img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" fetchpriority="high" />
+          <span class="logo-text">BAATRYN ÖRÖÖ</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="https://pppoker.mn/#games">Тоглоомууд</a></li>
+          <li><a href="https://pppoker.mn/#features">Боломжууд</a></li>
+          <li><a href="/articles/" class="active">Нийтлэл</a></li>
+          <li><a href="https://pppoker.mn/#academy">Академи</a></li>
+          <li><a href="https://pppoker.mn/#faq">FAQ</a></li>
+          <li class="nav-mobile-play">
+            <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn nav-btn--menu" rel="noopener" target="_blank">Тоглох</a>
+          </li>
+        </ul>
+        <div class="nav-right">
+
+          <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn" rel="noopener" target="_blank">Тоглох</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content" class="article-page">
+    <div class="container">
+      <nav class="article-breadcrumb" aria-label="Breadcrumb">
+        <a href="https://pppoker.mn/">Нүүр</a> <span>/</span> <a href="/articles/">Нийтлэл</a> <span>/</span> <span>HUD: VPIP, PFR, AF — гүнзгий</span>
+      </nav>
+      <article class="article-body">
+<h1 class="article-title">HUD: VPIP, PFR, AF — гүнзгий</h1>
+<figure class="article-cover">
+          <img src="/images/articles/hud-vpip-pfr.webp" alt="Монгол тоглогч Улаанбаатартад HUD статистик шалгаж байна" class="article-cover-img" width="1200" height="675" decoding="async" fetchpriority="high" />
+        </figure>
+<p><strong>HUD</strong> (Heads-Up Display) нь тоглогчийн статистик. PPPoker дээр хязгаарлагдмал ч <a href="https://pppoker.mn/articles/statistik-analiz/">статистик</a> ойлголт чухал. VPIP, PFR, AF — гурван гол тоо.</p>
+<h2 class="article-h2">VPIP (Voluntarily Put $ In Pot)</h2>
+<p>Хэдэн % гарт мөнгө оруулсан (блайнд биш).</p>
+<div class="article-table-wrap"><table class="article-table"><thead><tr>
+<th>VPIP</th>
+<th>Төрөл</th>
+</tr></thead><tbody>
+<tr>
+<td>15–22%</td>
+<td>Tight</td>
+</tr>
+<tr>
+<td>22–30%</td>
+<td>Regular</td>
+</tr>
+<tr>
+<td>30%+</td>
+<td>Loose</td>
+</tr>
+</tbody></table></div>
+<h2 class="article-h2">PFR (Pre-Flop Raise)</h2>
+<p>Префлоп raise хийсэн %.</p>
+<div class="article-table-wrap"><table class="article-table"><thead><tr>
+<th>PFR</th>
+<th>Тайлбар</th>
+</tr></thead><tbody>
+<tr>
+<td>VPIP-тэй ойр</td>
+<td>Aggressive</td>
+</tr>
+<tr>
+<td>VPIP-аас их бага</td>
+<td>Passive (limper)</td>
+</tr>
+<tr>
+<td>PFR 20%+</td>
+<td>Tight-aggressive</td>
+</tr>
+</tbody></table></div>
+<h2 class="article-h2">AF (Aggression Factor)</h2>
+<p>(Bet + Raise) / Call. Постфлоп агресси.</p>
+<ul class="article-ul">
+<li>AF 2+ — aggressive</li>
+<li>AF 1–2 — balanced</li>
+<li>AF 1- — passive</li>
+</ul>
+<h2 class="article-h2">Хэрхэн ашиглах вэ?</h2>
+<ol class="article-ol">
+<li><strong>Loose-passive</strong> (VPIP 40+, PFR 10) — value bet их, bluff бага</li>
+<li><strong>Tight</strong> (VPIP 15) — steal их, fold to 3-bet</li>
+<li>Sample 50+ гар — итгэх</li>
+</ol>
+<p><a href="https://pppoker.mn/articles/exploitation-taktik/">Эксплойт</a> дараагийн алхам.</p>
+<h2 class="article-h2">PPPoker дээр</h2>
+<p>Бүрэн HUD байхгүй — гар тэмдэглэл, сесс дараа шинжил. Fold to c-bet, 3-bet % ажигла.</p>
+<h2 class="article-h2">Практик</h2>
+<ol class="article-ol">
+<li>Өөрийн VPIP/PFR мэдэх</li>
+<li>Opponent 20+ гар хараад шийд</li>
+<li><a href="https://pppoker.mn/articles/bankroll-udirdlaga/">Банкролл</a> — статистик сайжруулах</li>
+</ol>
+<h2 class="article-h2">Түгээмэл асуултууд</h2>
+<h3 class="article-h3">VPIP хэд байх вэ?</h3>
+<p>Эхлэгч 22–28%, дунд 24–30%.</p>
+<h3 class="article-h3">PFR VPIP-аас бага яагаад?</h3>
+<p>Limp, call их — сул тоглогчийн тэмдэг.</p>
+<p><a href="https://pppoker.mn/articles/statistik-analiz/">Статистик</a> · <a href="https://pppoker.mn/articles/range-unshih/">Range унших</a></p>
+      </article>
+      <div class="article-cta">
+        <a href="https://baatrynorpoker.ink/1FBP9k" class="btn btn-primary" rel="noopener" target="_blank">Одоо тоглох →</a>
+        <a href="/articles/" class="btn btn-outline">Бусад нийтлэл</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" /><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
+          <p>Монголын покерын клуб. Онлайн покер — жинхэнэ тоглогчдын талбар.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Нийтлэл</h4>
+          <ul>
+            <li><a href="/articles/100-bonus-nuhtsul/">100% бонус</a></li>
+            <li><a href="/articles/3bet-4bet-mongol/">3-bet ба 4-bet</a></li>
+            <li><a href="/articles/bankroll-udirdlaga/">Банкролл удирдлага</a></li>
+            <li><a href="/articles/bet-hmjuulelt/">Бет хэмжээ</a></li>
+            <li><a href="/articles/blaynd-togloom/">Блайнд тоглоом</a></li>
+            <li><a href="/articles/blef-uriag/">Блефийн урлаг</a></li>
+            <li><a href="/articles/bluff-poker-mongolia/">Bluff poker mongolia</a></li>
+            <li><a href="/articles/burtgel-alham-alham/">Бүртгэл алхам алхмаар</a></li>
+            <li><a href="/articles/cash-game-mongol/">Кэш тоглоом</a></li>
+            <li><a href="/articles/cbet-strategi/">C-bet стратеги</a></li>
+            <li><a href="/articles/check-raise-taktik/">Check-raise тактик</a></li>
+            <li><a href="/articles/club-vs-platform/">Клуб vs платформ</a></li>
+            <li><a href="/articles/dans-hamgaalalt/">Данс хамгаалалт</a></li>
+            <li><a href="/articles/deposit-withdraw-mongol/">Депозит ба таталт</a></li>
+            <li><a href="/articles/ehnii-gar-songolt/">Эхний гарны сонголт</a></li>
+            <li><a href="/articles/exploitation-taktik/">Эксплойт тактик</a></li>
+            <li><a href="/articles/floating-taktik/">Флоатинг тактик</a></li>
+            <li><a href="/articles/hariutslagatai-togloom/">Хариуцлагатай тоглоом</a></li>
+            <li><a href="/articles/holdem-durem-buren/">Hold'em дүрэм</a></li>
+            <li><a href="/articles/holdem-vs-omaha/">Hold'em vs Omaha</a></li>
+            <li><a href="/articles/hud-vpip-pfr/">HUD VPIP PFR</a></li>
+            <li><a href="/articles/mongol-poker-sistem/">Монгол покер систем гэж юу вэ? Baatryn Ö</a></li>
+            <li><a href="/articles/mongol-poker-tatah/">Монгол покер хэрхэн татах вэ? PPPoker ап</a></li>
+            <li><a href="/articles/multiway-pot/">Multiway pot</a></li>
+            <li><a href="/articles/omaha-durem-buren/">Omaha дүрэм</a></li>
+            <li><a href="/articles/online-poker-mongol-2026/">Монголд онлайн покер хаана тоглох вэ? 20</a></li>
+            <li><a href="/articles/plo-draw-buren/">PLO draw</a></li>
+            <li><a href="/articles/plo-ehnii-gar/">PLO эхний гар</a></li>
+            <li><a href="/articles/poker-kombinatsiud/">Покерын комбинациуд</a></li>
+            <li><a href="/articles/poker-setgel-zui/">Покерын сэтгэл зүй</a></li>
+            <li><a href="/articles/poker-terms-mn/">Покерын нэр томьёо</a></li>
+            <li><a href="/articles/postflop-suuri/">Постфлоп суурь</a></li>
+            <li><a href="/articles/pot-odds-equity/">Пот оддс, equity</a></li>
+            <li><a href="/articles/pozitsiin-huch/">Позицийн хүч</a></li>
+            <li><a href="/articles/pppoker-app-aldaa/">PPPoker апп алдаа засах</a></li>
+            <li><a href="/articles/pppoker-klub-vs-betting/">Клуб vs бооцоо</a></li>
+            <li><a href="/articles/preflop-strategi/">Префлоп стратеги</a></li>
+            <li><a href="/articles/range-unshih/">Range унших</a></li>
+            <li><a href="/articles/statistik-analiz/">Статистик ба анализ</a></li>
+            <li><a href="/articles/steal-resteal/">Steal ба re-steal</a></li>
+            <li><a href="/articles/tatalt-asuudal-shiidver/">Таталт асуудал шийдвэр</a></li>
+            <li><a href="/articles/turn-river-play/">Turn ба river</a></li>
+            <li><a href="/articles/usdt-deposit-zaavar/">USDT цэнэглэлт</a></li>
+            <li><a href="/articles/vip-shiree-mongol/">VIP ширээ</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Холбоо</h4>
+          <ul>
+            <li><a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>♠ BAATRYN ÖRÖÖ — Ухаалгаар тогло, удаан ял.</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/article-page.js"></script>
+</body>
+</html>
