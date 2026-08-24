@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C-bet стратегия — continuation bet | Онлайн покер — Baatryn Öröö</title>
+  <meta name="description" content="C-bet (continuation bet): когда ставить, когда check. Онлайн покер Монгол — постфлоп Hold'em, размер ставки, fold equity." />
+  <meta name="article-group-id" content="cbet-strategi" />
+  <meta name="article-lang" content="ru" />
+  <link rel="canonical" href="https://pppoker.mn/ru/articles/cbet-strategiya/" />
+  <link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/cbet-strategi/" />
+  <link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/cbet-strategy/" />
+  <link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/cbet-strategiya/" />
+  <link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/cbet-strategi/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Baatryn Öröö" />
+  <meta property="og:title" content="C-bet стратегия — continuation bet | Онлайн покер — Baatryn Öröö" />
+  <meta property="og:description" content="C-bet (continuation bet): когда ставить, когда check. Онлайн покер Монгол — постфлоп Hold'em, размер ставки, fold equity." />
+  <meta property="og:url" content="https://pppoker.mn/ru/articles/cbet-strategiya/" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:locale:alternate" content="mn_MN" />
+  <meta property="og:image" content="https://pppoker.mn/images/og-cover.jpg" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+  <meta property="og:image:alt" content="C-bet стратегия — continuation bet | Онлайн покер — Baatryn Öröö" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://pppoker.mn/images/og-cover.jpg" />
+  <meta name="twitter:image:alt" content="C-bet стратегия — continuation bet | Онлайн покер — Baatryn Öröö" />
+  <link rel="preload" href="/images/logo.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/slide-comfort.webp" as="image" type="image/webp" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"C-bet стратегия — continuation bet","description":"C-bet (continuation bet): когда ставить, когда check. Онлайн покер Монгол — постфлоп Hold'em, размер ставки, fold equity.","author":{"@type":"Organization","name":"Baatryn Öröö"},"publisher":{"@type":"Organization","name":"Baatryn Öröö","url":"https://pppoker.mn"},"mainEntityOfPage":"https://pppoker.mn/ru/articles/cbet-strategiya/","inLanguage":"ru"}</script>
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109810225', 'ym');
+    ym(109810225, 'init', {ssr:true, webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+  </script>
+</head>
+<body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/109810225" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container nav-container">
+                <a href="https://pppoker.mn/?lang=ru" class="nav-logo" aria-label="Baatryn Öröö — главная">
+          <img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" fetchpriority="high" />
+          <span class="logo-text">BAATRYN ÖRÖÖ</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="https://pppoker.mn/?lang=ru#games">Игры</a></li>
+          <li><a href="https://pppoker.mn/?lang=ru#features">Возможности</a></li>
+          <li><a href="/ru/articles/" class="active">Статьи</a></li>
+          <li><a href="https://pppoker.mn/?lang=ru#academy">Академия</a></li>
+          <li><a href="https://pppoker.mn/?lang=ru#faq">FAQ</a></li>
+          <li class="nav-mobile-play">
+            <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn nav-btn--menu" rel="noopener" target="_blank">Играть</a>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-current" id="langBtn" aria-label="Сменить язык" aria-expanded="false">
+              <span id="langLabel">RU</span> ▾
+            </button>
+            <ul class="lang-menu" id="langMenu" role="menu">
+              <li role="menuitem"><a href="/articles/cbet-strategi/" data-lang="mn">MN</a></li>
+              <li role="menuitem"><a href="/en/articles/cbet-strategy/" data-lang="en">EN</a></li>
+              <li role="menuitem"><a href="/ru/articles/cbet-strategiya/" data-lang="ru" class="active">RU</a></li>
+            </ul>
+          </div>
+          <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn" rel="noopener" target="_blank">Играть</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content" class="article-page">
+    <div class="container">
+      <nav class="article-breadcrumb" aria-label="Breadcrumb">
+        <a href="https://pppoker.mn/?lang=ru">Главная</a> <span>/</span> <a href="/ru/articles/">Статьи</a> <span>/</span> <span>C-bet стратегия — continuation bet</span>
+      </nav>
+      <article class="article-body">
+<h1 class="article-title">C-bet стратегия — continuation bet</h1>
+<p><strong>C-bet</strong> (continuation bet) — ставка на флопе от префлоп aggressor: вы открыли raise, флоп открылся, и вы первым делаете bet. Это один из самых частых инструментов постфлопа в Hold'em. На столах <a href="https://pppoker.mn/?lang=ru">Baatryn Öröö</a> монгольские игроки используют c-bet каждый день — правильный c-bet даёт больше pot и больше fold equity.</p>
+<h2 class="article-h2">Что такое c-bet?</h2>
+<p>Логика простая: вы показали силу на префлопе → на флопе продолжаете давление. Сообщение сопернику: «я всё ещё в игре, у меня есть рука». Даже если на флопе вы промахнулись, c-bet часто заставляет fold.</p>
+<p>База для понимания: <a href="https://pppoker.mn/ru/articles/postflop-osnovy/">основы постфлопа</a> + <a href="https://pppoker.mn/ru/articles/preflop-strategiya/">префлоп-стратегия</a>.</p>
+<h2 class="article-h2">Когда делать c-bet?</h2>
+<div class="article-table-wrap"><table class="article-table"><thead><tr>
+<th>Условие</th>
+<th>C-bet?</th>
+</tr></thead><tbody>
+<tr>
+<td>Dry борд (K72 rainbow)</td>
+<td>Да — 25–33% pot</td>
+</tr>
+<tr>
+<td>Ваш range сильнее range соперника</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Лучшая рука на борде</td>
+<td>Value + protection</td>
+</tr>
+<tr>
+<td>Wet борд (JT9 two-tone)</td>
+<td>Осторожно — 50–66% или check</td>
+</tr>
+<tr>
+<td>Multiway 3+ игрока</td>
+<td>Реже — см. <a href="https://pppoker.mn/ru/articles/multiway-pot/">multiway pot</a></td>
+</tr>
+</tbody></table></div>
+<p><strong>Dry борд</strong> — карты не связаны, нет flush draw. Соперник реже попал → чаще fold. <strong>Wet борд</strong> — много straight и flush draw → нужна крупнее ставка или check.</p>
+<h2 class="article-h2">Размер c-bet</h2>
+<p>Стандарт — <strong>50% pot</strong>. Но размер зависит от текстуры:</p>
+<ul class="article-ul">
+<li><strong>Dry борд:</strong> 25–33% pot достаточно — соперник и так часто сбросит</li>
+<li><strong>Средний борд:</strong> 50% pot — универсальный размер</li>
+<li><strong>Wet борд:</strong> 66–75% pot — плохие pot odds для draw</li>
+</ul>
+<p>Подробнее о математике ставок: <a href="https://pppoker.mn/ru/articles/razmer-stavok-poker/">размер ставок в покере</a>. На wet борде мелкий c-bet даёт сопернику выгодный call с flush draw — это типичная ошибка новичков.</p>
+<h2 class="article-h2">Когда check (give up)</h2>
+<p>Не каждый флоп требует c-bet. Check — правильное решение, если:</p>
+<ul class="article-ul">
+<li>У вас <strong>air</strong> без equity — не блефуйте на всех улицах подряд</li>
+<li>Wet борд + слабая рука + вы <strong>OOP</strong> (out of position)</li>
+<li>Соперник редко fold на c-bet — смотрите <a href="https://pppoker.mn/ru/articles/statistika-pokera/">статистику покера</a></li>
+</ul>
+<p><strong>Give up</strong> на флопе экономит фишки. Bluff на терне и ривере — отдельная тема: <a href="https://pppoker.mn/ru/articles/turn-river-igra/">игра на терне и ривере</a>.</p>
+<h2 class="article-h2">IP vs OOP</h2>
+<p><strong>In position (IP):</strong> вы действуете последним. C-betте чаще — у вас информационное преимущество. Check back со слабой рукой, чтобы увидеть терн бесплатно.</p>
+<p><strong>Out of position (OOP):</strong> c-betте реже. Чаще check-call или <a href="https://pppoker.mn/ru/articles/check-raise-taktika/">check-raise</a> с сильной рукой и draw. Позиция критична — читайте <a href="https://pppoker.mn/ru/articles/pozitsiya-v-pokere/">позицию в покере</a>.</p>
+<h2 class="article-h2">Частота c-bet</h2>
+<p>Heads-up против одного соперника оптимальная частота — <strong>55–65%</strong> флопов. Не 100% и не 30%. Баланс:</p>
+<ul class="article-ul">
+<li>C-bet с value (top pair, overpair)</li>
+<li>C-bet с semi-bluff (flush draw, straight draw)</li>
+<li>Check с air и marginal hands</li>
+</ul>
+<p>Если вы c-betте 90% флопов — опытный соперник начнёт raise и float. Если 30% — вы упускаете fold equity.</p>
+<h2 class="article-h2">C-bet и range</h2>
+<p>C-bet работает лучше, когда ваш <strong>range</strong> сильнее range соперника. Пример: вы open с BTN, BB call. На борде A72 ваш range содержит все Ax — у BB их меньше. C-bet почти всегда.</p>
+<p>На борде 876 оба range попали примерно одинаково — c-bet осторожнее. Умение читать range: <a href="https://pppoker.mn/ru/articles/chtenie-range/">чтение range</a>.</p>
+<h2 class="article-h2">Практический алгоритм</h2>
+<ol class="article-ol">
+<li>Флоп открылся → у меня лучшая рука или draw?</li>
+<li>Борд dry или wet?</li>
+<li>Сколько соперников? Heads-up или multiway?</li>
+<li>IP или OOP?</li>
+<li>Решение: c-bet (какой размер) или check</li>
+</ol>
+<p><strong>Пример:</strong> Вы open 3BB с CO, BB call. Флоп K♠ 7♦ 2♣. У вас Q♥ J♥ — промах, но dry борд, один соперник, вы IP. C-bet 33% pot — BB часто fold. Если call — терн: <a href="https://pppoker.mn/ru/articles/turn-river-igra/">framework терн/ривер</a>.</p>
+<h2 class="article-h2">Типичные ошибки</h2>
+<ul class="article-ul">
+<li>C-bet на каждом флопе без анализа борда</li>
+<li>Мелкий c-bet на wet борде — даёте draw выгодные pot odds (<a href="https://pppoker.mn/ru/articles/pot-odds-ekviti/">pot odds и equity</a>)</li>
+<li>C-bet в multiway pot со слабой рукой</li>
+<li>Не адаптироваться к сопернику — если он never fold, stop bluffing</li>
+</ul>
+<h2 class="article-h2">C-bet после 3-bet pot</h2>
+<p>В 3-bet pot pot уже крупный, SPR (stack-to-pot ratio) ниже. C-betте реже, но крупнее. Борды, которые попадают в range 3-bettor (AA, KK, AK на A-high) — агрессивный c-bet. На low connected бордах — check чаще.</p>
+<p>Связь с префлопом: <a href="https://pppoker.mn/ru/articles/3bet-4bet-strategiya/">3-bet и 4-bet стратегия</a>.</p>
+<h2 class="article-h2">FAQ</h2>
+<h3 class="article-h3">Нужно ли c-bet на каждом флопе?</h3>
+<p>Нет. 60–70% — здоровая частота. Иногда check — лучшее решение, особенно OOP на wet борде.</p>
+<h3 class="article-h3">C-bet получил call — что на терне?</h3>
+<p>Переходите к <a href="https://pppoker.mn/ru/articles/turn-river-igra/">игре на терне и ривере</a>. Double barrel (ставка на терне после c-bet) — если борд не изменился кардинально и у вас equity.</p>
+<h3 class="article-h3">Как узнать, fold ли соперник на c-bet?</h3>
+<p>В PPPoker смотрите HUD-статистику: <strong>Fold to C-bet</strong>. Выше 60% — блефуйте чаще. Ниже 40% — value, не bluff. Подробнее: <a href="https://pppoker.mn/ru/articles/statistika-pokera/">статистика покера</a>.</p>
+<h3 class="article-h3">C-bet и блеф — одно и то же?</h3>
+<p>Не всегда. C-bet с top pair — value. C-bet с air — bluff. C-bet с flush draw — semi-bluff. Разные цели, один инструмент. Теория блефа: <a href="https://pppoker.mn/ru/articles/iskusstvo-blufa/">искусство блефа</a>.</p>
+<p><a href="https://pppoker.mn/ru/articles/online-poker-mongoliya-2026/">Онлайн покер Монгол 2026</a> · <a href="https://pppoker.mn/ru/articles/holdem-pravila-polnostyu/">Правила Hold'em</a> · <a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></p>
+      </article>
+      <div class="article-cta">
+        <a href="https://baatrynorpoker.ink/1FBP9k" class="btn btn-primary" rel="noopener" target="_blank">Играть →</a>
+        <a href="/ru/articles/" class="btn btn-outline">Другие статьи</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" /><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
+          <p>Покерный клуб в Монголии. Онлайн-покер — столы для настоящих игроков.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Статьи</h4>
+          <ul>
+            <li><a href="/ru/articles/3bet-4bet-strategiya/">3-bet и 4-bet</a></li>
+            <li><a href="/ru/articles/bankroll-menedzhment/">Банкролл</a></li>
+            <li><a href="/ru/articles/bezopasnost-akkaunta/">Безопасность аккаунта</a></li>
+            <li><a href="/ru/articles/bluff-poker-mongolia/">Bluff poker mongolia</a></li>
+            <li><a href="/ru/articles/bonus-100-usloviya/">Бонус 100%</a></li>
+            <li><a href="/ru/articles/cbet-strategiya/">C-bet стратегия</a></li>
+            <li><a href="/ru/articles/check-raise-taktika/">Check-raise тактика</a></li>
+            <li><a href="/ru/articles/chtenie-range/">Чтение range</a></li>
+            <li><a href="/ru/articles/deposit-vyvod-mongoliya/">Депозит и вывод</a></li>
+            <li><a href="/ru/articles/holdem-pravila-polnostyu/">Правила Hold'em</a></li>
+            <li><a href="/ru/articles/holdem-vs-omaha/">Hold'em vs Omaha</a></li>
+            <li><a href="/ru/articles/iskusstvo-blufa/">Искусство блефа</a></li>
+            <li><a href="/ru/articles/kesh-igry-mongoliya/">Кэш-игры</a></li>
+            <li><a href="/ru/articles/klub-vs-platforma/">Клуб vs платформа</a></li>
+            <li><a href="/ru/articles/mongol-poker-sistema/">Что такое система монгол покер? Baatryn </a></li>
+            <li><a href="/ru/articles/mongol-poker-skachat/">Как скачать монгол покер — гайд по прило</a></li>
+            <li><a href="/ru/articles/multiway-pot/">Multiway pot</a></li>
+            <li><a href="/ru/articles/omaha-pravila-polnostyu/">Правила Omaha</a></li>
+            <li><a href="/ru/articles/online-poker-mongoliya-2026/">Где играть в онлайн покер в Монголии — г</a></li>
+            <li><a href="/ru/articles/otvetstvennaya-igra/">Ответственная игра</a></li>
+            <li><a href="/ru/articles/poker-kombinatsii/">Комбинации</a></li>
+            <li><a href="/ru/articles/poker-terminy-slovar/">Термины покера</a></li>
+            <li><a href="/ru/articles/postflop-osnovy/">Основы постфлопа</a></li>
+            <li><a href="/ru/articles/pot-odds-ekviti/">Pot odds и equity</a></li>
+            <li><a href="/ru/articles/pozitsiya-v-pokere/">Позиция в покере</a></li>
+            <li><a href="/ru/articles/pppoker-klub-vs-bukmeker/">Клуб vs букмекер</a></li>
+            <li><a href="/ru/articles/pppoker-oshibki-prilozheniya/">Ошибки PPPoker</a></li>
+            <li><a href="/ru/articles/preflop-strategiya/">Префлоп-стратегия</a></li>
+            <li><a href="/ru/articles/problemy-vyvoda/">Проблемы вывода</a></li>
+            <li><a href="/ru/articles/psihologiya-pokera/">Психология покера</a></li>
+            <li><a href="/ru/articles/razmer-stavok-poker/">Размер ставок</a></li>
+            <li><a href="/ru/articles/registratsiya-poshagovo/">Регистрация пошагово</a></li>
+            <li><a href="/ru/articles/statistika-pokera/">Статистика покера</a></li>
+            <li><a href="/ru/articles/strategiya-float/">Стратегия float</a></li>
+            <li><a href="/ru/articles/turn-river-igra/">Игра на терне и ривере</a></li>
+            <li><a href="/ru/articles/usdt-depozit-gaid/">USDT депозит</a></li>
+            <li><a href="/ru/articles/vip-stol-mongoliya/">VIP-стол</a></li>
+            <li><a href="/ru/articles/vybor-startovykh-ruk/">Стартовые руки</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>♠ BAATRYN ÖRÖÖ — Играй с умом, побеждай долго.</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/article-page.js"></script>
+</body>
+</html>

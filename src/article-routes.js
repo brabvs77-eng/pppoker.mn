@@ -7,7 +7,9 @@ export const ARTICLE_ROUTES = {
     "zh": "100-cunkuan-jiangjin"
   },
   "3bet-4bet-mongol": {
-    "mn": "3bet-4bet-mongol"
+    "mn": "3bet-4bet-mongol",
+    "en": "3bet-4bet-strategy",
+    "ru": "3bet-4bet-strategiya"
   },
   "baatryn-oroo-taniltsuulga": {
     "mn": "baatryn-oroo-taniltsuulga"
@@ -53,10 +55,14 @@ export const ARTICLE_ROUTES = {
     "zh": "xianjin-zhuo-mongolia"
   },
   "cbet-strategi": {
-    "mn": "cbet-strategi"
+    "mn": "cbet-strategi",
+    "en": "cbet-strategy",
+    "ru": "cbet-strategiya"
   },
   "check-raise-taktik": {
-    "mn": "check-raise-taktik"
+    "mn": "check-raise-taktik",
+    "en": "check-raise-tactics",
+    "ru": "check-raise-taktika"
   },
   "club-vs-platform": {
     "mn": "club-vs-platform",
@@ -142,7 +148,9 @@ export const ARTICLE_ROUTES = {
     "mn": "mongol-tulbur-arga"
   },
   "multiway-pot": {
-    "mn": "multiway-pot"
+    "mn": "multiway-pot",
+    "en": "multiway-pot",
+    "ru": "multiway-pot"
   },
   "omaha-durem-buren": {
     "mn": "omaha-durem-buren",
@@ -224,7 +232,9 @@ export const ARTICLE_ROUTES = {
     "ru": "preflop-strategiya"
   },
   "range-unshih": {
-    "mn": "range-unshih"
+    "mn": "range-unshih",
+    "en": "reading-poker-ranges",
+    "ru": "chtenie-range"
   },
   "statistik-analiz": {
     "mn": "statistik-analiz",
@@ -244,7 +254,9 @@ export const ARTICLE_ROUTES = {
     "mn": "turbo-poker-mongolia"
   },
   "turn-river-play": {
-    "mn": "turn-river-play"
+    "mn": "turn-river-play",
+    "en": "turn-river-play",
+    "ru": "turn-river-igra"
   },
   "ulaanbaatar-poker-2026": {
     "mn": "ulaanbaatar-poker-2026"

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Turn and River Play — Decision Framework | Online Poker — Baatryn Öröö</title>
+  <meta name="description" content="Turn and river strategy: value, bluff, pot control, thin value, SPR. Online poker Mongolia — postflop framework at Baatryn Öröö." />
+  <meta name="article-group-id" content="turn-river-play" />
+  <meta name="article-lang" content="en" />
+  <link rel="canonical" href="https://pppoker.mn/en/articles/turn-river-play/" />
+  <link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/turn-river-play/" />
+  <link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/turn-river-play/" />
+  <link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/turn-river-igra/" />
+  <link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/turn-river-play/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Baatryn Öröö" />
+  <meta property="og:title" content="Turn and River Play — Decision Framework | Online Poker — Baatryn Öröö" />
+  <meta property="og:description" content="Turn and river strategy: value, bluff, pot control, thin value, SPR. Online poker Mongolia — postflop framework at Baatryn Öröö." />
+  <meta property="og:url" content="https://pppoker.mn/en/articles/turn-river-play/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="mn_MN" />
+  <meta property="og:image" content="https://pppoker.mn/images/og-cover.jpg" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+  <meta property="og:image:alt" content="Turn and River Play — Decision Framework | Online Poker — Baatryn Öröö" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://pppoker.mn/images/og-cover.jpg" />
+  <meta name="twitter:image:alt" content="Turn and River Play — Decision Framework | Online Poker — Baatryn Öröö" />
+  <link rel="preload" href="/images/logo.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/slide-comfort.webp" as="image" type="image/webp" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Turn and River — Decision Framework","description":"Turn and river strategy: value, bluff, pot control, thin value, SPR. Online poker Mongolia — postflop framework at Baatryn Öröö.","author":{"@type":"Organization","name":"Baatryn Öröö"},"publisher":{"@type":"Organization","name":"Baatryn Öröö","url":"https://pppoker.mn"},"mainEntityOfPage":"https://pppoker.mn/en/articles/turn-river-play/","inLanguage":"en"}</script>
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109810225', 'ym');
+    ym(109810225, 'init', {ssr:true, webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+  </script>
+</head>
+<body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/109810225" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container nav-container">
+                <a href="https://pppoker.mn/?lang=en" class="nav-logo" aria-label="Baatryn Öröö Home">
+          <img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" fetchpriority="high" />
+          <span class="logo-text">BAATRYN ÖRÖÖ</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="https://pppoker.mn/?lang=en#games">Games</a></li>
+          <li><a href="https://pppoker.mn/?lang=en#features">Features</a></li>
+          <li><a href="/en/articles/" class="active">Articles</a></li>
+          <li><a href="https://pppoker.mn/?lang=en#academy">Academy</a></li>
+          <li><a href="https://pppoker.mn/?lang=en#faq">FAQ</a></li>
+          <li class="nav-mobile-play">
+            <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn nav-btn--menu" rel="noopener" target="_blank">Play Now</a>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-current" id="langBtn" aria-label="Change language" aria-expanded="false">
+              <span id="langLabel">EN</span> ▾
+            </button>
+            <ul class="lang-menu" id="langMenu" role="menu">
+              <li role="menuitem"><a href="/articles/turn-river-play/" data-lang="mn">MN</a></li>
+              <li role="menuitem"><a href="/en/articles/turn-river-play/" data-lang="en" class="active">EN</a></li>
+              <li role="menuitem"><a href="/ru/articles/turn-river-igra/" data-lang="ru">RU</a></li>
+            </ul>
+          </div>
+          <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn" rel="noopener" target="_blank">Play Now</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content" class="article-page">
+    <div class="container">
+      <nav class="article-breadcrumb" aria-label="Breadcrumb">
+        <a href="https://pppoker.mn/?lang=en">Home</a> <span>/</span> <a href="/en/articles/">Articles</a> <span>/</span> <span>Turn and River — Decision Framework</span>
+      </nav>
+      <article class="article-body">
+<h1 class="article-title">Turn and River — Decision Framework</h1>
+<p>The <strong>turn</strong> and <strong>river</strong> are where pots get largest and mistakes cost most. At <a href="https://pppoker.mn/?lang=en">Baatryn Öröö</a> tables, players win or lose stacks on these streets — not because they misplayed preflop, but because they fired three barrels with air or checked back value on the river.</p>
+<p>If you know <a href="https://pppoker.mn/en/articles/postflop-basics/">postflop basics</a> and flop play, this framework organizes turn and river decisions. Every choice should be value, bluff, or pot control — not autopilot.</p>
+<h2 class="article-h2">Turn decisions</h2>
+<div class="article-table-wrap"><table class="article-table"><thead><tr>
+<th>Hand strength</th>
+<th>Action</th>
+</tr></thead><tbody>
+<tr>
+<td>Nut / very strong</td>
+<td>Value bet</td>
+</tr>
+<tr>
+<td>Draw</td>
+<td>Semi-bluff or call (<a href="https://pppoker.mn/en/articles/pot-odds-equity/">pot odds and equity</a>)</td>
+</tr>
+<tr>
+<td>Marginal (middle pair, weak top pair)</td>
+<td>Pot control — check</td>
+</tr>
+<tr>
+<td>Air</td>
+<td>Check/fold, sometimes bluff</td>
+</tr>
+</tbody></table></div>
+<p>The turn card changes everything. A blank (2♣ on K♠ 7♦ 4♥ 2♣) often favors the preflop aggressor. A scare card (flush completing, straight completing) favors the caller's range or draws.</p>
+<p>Ask: did this card help my range or theirs? If you c-bet flop and the turn brings a third spade, pause before barreling — callers often have suited hands.</p>
+<h2 class="article-h2">Double barrel (betting two streets)</h2>
+<p>Flop c-bet → turn bet = a double barrel.</p>
+<p>Continue barreling when:</p>
+<ul class="article-ul">
+<li>You have range advantage on the board</li>
+<li>Your hand has equity (pair + draw, strong draw)</li>
+<li>Opponent's range is capped (they would have raised flop with sets)</li>
+</ul>
+<p>Stop barreling when:</p>
+<ul class="article-ul">
+<li>Turn card completes obvious draws</li>
+<li>Opponent called flop and turn — their range is strong</li>
+<li>You have pure air with no blockers</li>
+</ul>
+<p>Wet turn cards demand caution. Dry turns reward aggression from the preflop raiser.</p>
+<p>Connect to <a href="https://pppoker.mn/en/articles/cbet-strategy/">c-bet strategy</a> — the flop c-bet sets up the turn barrel.</p>
+<h2 class="article-h2">River — three paths</h2>
+<p>On the river there are no more cards. Your options narrow to:</p>
+<ol class="article-ol">
+<li><strong>Value bet</strong> — worse hands call often enough</li>
+<li><strong>Bluff</strong> — better hands fold often enough</li>
+<li><strong>Check</strong> — showdown is good enough</li>
+</ol>
+<p>Medium-sized river bluffs are often wrong. You are not charging draws (they are complete or bricked). Bluff big enough to fold top pair, or do not bluff. Small river bluffs get called by every pair.</p>
+<p>Value bet when you beat enough of their calling range. If only better hands call, checking is correct.</p>
+<h2 class="article-h2">Thin value</h2>
+<p>Top pair, second pair, even third pair on some runouts — thin value bets extract chips from worse pairs and stubborn bluff-catchers.</p>
+<p>Sizing: <strong>25–33% pot</strong> for thin value. Small bets get called by wide ranges without bloating the pot when you are wrong.</p>
+<p>Full sizing guide: <a href="https://pppoker.mn/en/articles/bet-sizing-poker/">bet sizing in poker</a>.</p>
+<p>Example: river is K♠ 9♦ 4♥ 2♣ 7♠. You hold K♦ J♦. Bet small — worse kings, nines, and pocket pairs call.</p>
+<h2 class="article-h2">Bluff catching</h2>
+<p>When opponents bluff too much, call river bets with medium-strength hands — top pair weak kicker, second pair.</p>
+<p>This is an exploit play. Against tight players who only bet rivers with value, fold. Against maniacs, call down lighter. Read <a href="https://pppoker.mn/articles/exploitation-taktik/">exploitation tactics</a> for opponent-specific adjustments.</p>
+<p>Use <a href="https://pppoker.mn/en/articles/reading-poker-ranges/">reading poker ranges</a> to estimate how many bluffs remain in their river betting range.</p>
+<h2 class="article-h2">SPR (stack-to-pot ratio)</h2>
+<p><strong>SPR</strong> = effective stack ÷ pot size.</p>
+<ul class="article-ul">
+<li><strong>Low SPR (3 or less)</strong> — commit with strong top pair+; all-in decisions come fast</li>
+<li><strong>High SPR (10+)</strong> — more streets to maneuver; sets and nut draws love deep stacks</li>
+</ul>
+<p>In 3-bet pots, SPR is naturally lower — top pair is often stack-off territory. In limped pots, SPR is high and caution with one pair is correct.</p>
+<h2 class="article-h2">Turn check-raise</h2>
+<p>Strong hands and powerful draws can check-raise the turn — especially when the turn card favors your range or completes your draw.</p>
+<p>See <a href="https://pppoker.mn/en/articles/check-raise-tactics/">check-raise tactics</a>. Turn check-raises are bigger commitments than flop check-raises — make sure you can handle a river shove.</p>
+<h2 class="article-h2">Multiway turn and river</h2>
+<p>In <a href="https://pppoker.mn/en/articles/multiway-pot/">multiway pots</a>, turn and river play simplifies: bet for value with strong hands, check everything marginal, bluff almost never.</p>
+<p>Three players at the river means someone often has a piece. Thin value bets still work; bluffs rarely do.</p>
+<h2 class="article-h2">Practical rules</h2>
+<ol class="article-ol">
+<li>River = value or bluff — pick one with a reason</li>
+<li>Narrow opponent's range before every decision</li>
+<li>Do not bluff all three streets with air — pick your spot</li>
+<li>Pot control marginal hands on scary turns</li>
+<li>Review river calls — were you beat by value or a bluff?</li>
+</ol>
+<h2 class="article-h2">Common mistakes</h2>
+<ul class="article-ul">
+<li>Triple-barreling with no equity or blockers</li>
+<li>Checking back the river with hands that beat bluffs</li>
+<li>Betting too large for thin value — only better hands call</li>
+<li>Ignoring SPR — calling turn when you cannot fold river</li>
+<li>Same bet size every street — tells a story that does not match your range</li>
+</ul>
+<h2 class="article-h2">FAQ</h2>
+<h3 class="article-h3">Should I check-call rivers more?</h3>
+<p>Against players who value-bet thin, check-call with bluff-catchers. Against stations who never bluff, fold. Against aggressive bluffers, call.</p>
+<h3 class="article-h3">Turn check-raise — when?</h3>
+<p>Strong made hands (sets, two pair) and nut draws on cards that favor your range. Not with air multiway.</p>
+<h3 class="article-h3">How does this connect to bankroll?</h3>
+<p>Big turn and river pots swing variance. Solid <a href="https://pppoker.mn/en/articles/bankroll-management/">bankroll management</a> keeps you in the game through downswings.</p>
+<h3 class="article-h3">Where to practice?</h3>
+<p><a href="https://pppoker.mn/en/articles/online-poker-mongolia-2026/">Online poker Mongolia 2026</a> — club setup, stakes, and payments. Start at lower blinds until turn-river decisions feel automatic.</p>
+<p><a href="https://pppoker.mn/en/articles/cbet-strategy/">C-bet strategy</a> · <a href="https://pppoker.mn/en/articles/online-poker-mongolia-2026/">Online poker Mongolia 2026</a></p>
+      </article>
+      <div class="article-cta">
+        <a href="https://baatrynorpoker.ink/1FBP9k" class="btn btn-primary" rel="noopener" target="_blank">Play Now →</a>
+        <a href="/en/articles/" class="btn btn-outline">More articles</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" /><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
+          <p>Mongolia poker club. Online poker — arena of real players.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Articles</h4>
+          <ul>
+            <li><a href="/en/articles/100-deposit-bonus/">100% bonus</a></li>
+            <li><a href="/en/articles/3bet-4bet-strategy/">3-bet and 4-bet</a></li>
+            <li><a href="/en/articles/account-security/">Account security</a></li>
+            <li><a href="/en/articles/art-of-bluffing/">Art of bluffing</a></li>
+            <li><a href="/en/articles/bankroll-management/">Bankroll</a></li>
+            <li><a href="/en/articles/bet-sizing-poker/">Bet sizing</a></li>
+            <li><a href="/en/articles/bluff-poker-mongolia/">Bluff poker mongolia</a></li>
+            <li><a href="/en/articles/cash-game-mongolia/">Cash games</a></li>
+            <li><a href="/en/articles/cbet-strategy/">C-bet strategy</a></li>
+            <li><a href="/en/articles/check-raise-tactics/">Check-raise tactics</a></li>
+            <li><a href="/en/articles/club-vs-platform/">Club vs platform</a></li>
+            <li><a href="/en/articles/deposit-withdraw-mongolia/">Deposit & withdrawal</a></li>
+            <li><a href="/en/articles/floating-strategy/">Floating</a></li>
+            <li><a href="/en/articles/holdem-rules-complete/">Hold'em rules</a></li>
+            <li><a href="/en/articles/holdem-vs-omaha/">Hold'em vs Omaha</a></li>
+            <li><a href="/en/articles/mongol-poker-download/">How to Download Mongol Poker — PPPoker A</a></li>
+            <li><a href="/en/articles/mongol-poker-system/">What Is the Mongol Poker System? Baatryn</a></li>
+            <li><a href="/en/articles/multiway-pot/">Multiway pot</a></li>
+            <li><a href="/en/articles/omaha-rules-complete/">Omaha rules</a></li>
+            <li><a href="/en/articles/online-poker-mongolia-2026/">Where to Play Online Poker in Mongolia —</a></li>
+            <li><a href="/en/articles/poker-hand-rankings/">Hand rankings</a></li>
+            <li><a href="/en/articles/poker-psychology-mindset/">Poker psychology</a></li>
+            <li><a href="/en/articles/poker-statistics-analysis/">Statistics</a></li>
+            <li><a href="/en/articles/poker-terms-glossary/">Poker terms</a></li>
+            <li><a href="/en/articles/postflop-basics/">Postflop basics</a></li>
+            <li><a href="/en/articles/pot-odds-equity/">Pot odds and equity</a></li>
+            <li><a href="/en/articles/pppoker-app-errors/">PPPoker app errors</a></li>
+            <li><a href="/en/articles/pppoker-club-vs-betting/">Club vs betting</a></li>
+            <li><a href="/en/articles/preflop-strategy/">Preflop strategy</a></li>
+            <li><a href="/en/articles/reading-poker-ranges/">Reading poker ranges</a></li>
+            <li><a href="/en/articles/registration-step-by-step/">Registration step by step</a></li>
+            <li><a href="/en/articles/responsible-gaming/">Responsible gaming</a></li>
+            <li><a href="/en/articles/starting-hand-selection/">Starting hands</a></li>
+            <li><a href="/en/articles/table-position-poker/">Table position</a></li>
+            <li><a href="/en/articles/turn-river-play/">Turn and river</a></li>
+            <li><a href="/en/articles/usdt-deposit-guide/">USDT deposit</a></li>
+            <li><a href="/en/articles/vip-table-mongolia/">VIP tables</a></li>
+            <li><a href="/en/articles/withdrawal-issues/">Withdrawal issues</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>♠ BAATRYN ÖRÖÖ — Play smart, win long.</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/article-page.js"></script>
+</body>
+</html>

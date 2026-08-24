@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Игра на терне и ривере — value, bluff | Онлайн покер — Baatryn Öröö</title>
+  <meta name="description" content="Turn и river стратегия: double barrel, thin value, bluff catch. Онлайн покер Монгол — постфлоп Baatryn Öröö." />
+  <meta name="article-group-id" content="turn-river-play" />
+  <meta name="article-lang" content="ru" />
+  <link rel="canonical" href="https://pppoker.mn/ru/articles/turn-river-igra/" />
+  <link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/turn-river-play/" />
+  <link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/turn-river-play/" />
+  <link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/turn-river-igra/" />
+  <link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/turn-river-play/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Baatryn Öröö" />
+  <meta property="og:title" content="Игра на терне и ривере — value, bluff | Онлайн покер — Baatryn Öröö" />
+  <meta property="og:description" content="Turn и river стратегия: double barrel, thin value, bluff catch. Онлайн покер Монгол — постфлоп Baatryn Öröö." />
+  <meta property="og:url" content="https://pppoker.mn/ru/articles/turn-river-igra/" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:locale:alternate" content="mn_MN" />
+  <meta property="og:image" content="https://pppoker.mn/images/og-cover.jpg" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+  <meta property="og:image:alt" content="Игра на терне и ривере — value, bluff | Онлайн покер — Baatryn Öröö" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://pppoker.mn/images/og-cover.jpg" />
+  <meta name="twitter:image:alt" content="Игра на терне и ривере — value, bluff | Онлайн покер — Baatryn Öröö" />
+  <link rel="preload" href="/images/logo.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/slide-comfort.webp" as="image" type="image/webp" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Игра на терне и ривере","description":"Turn и river стратегия: double barrel, thin value, bluff catch. Онлайн покер Монгол — постфлоп Baatryn Öröö.","author":{"@type":"Organization","name":"Baatryn Öröö"},"publisher":{"@type":"Organization","name":"Baatryn Öröö","url":"https://pppoker.mn"},"mainEntityOfPage":"https://pppoker.mn/ru/articles/turn-river-igra/","inLanguage":"ru"}</script>
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109810225', 'ym');
+    ym(109810225, 'init', {ssr:true, webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+  </script>
+</head>
+<body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/109810225" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container nav-container">
+                <a href="https://pppoker.mn/?lang=ru" class="nav-logo" aria-label="Baatryn Öröö — главная">
+          <img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" fetchpriority="high" />
+          <span class="logo-text">BAATRYN ÖRÖÖ</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="https://pppoker.mn/?lang=ru#games">Игры</a></li>
+          <li><a href="https://pppoker.mn/?lang=ru#features">Возможности</a></li>
+          <li><a href="/ru/articles/" class="active">Статьи</a></li>
+          <li><a href="https://pppoker.mn/?lang=ru#academy">Академия</a></li>
+          <li><a href="https://pppoker.mn/?lang=ru#faq">FAQ</a></li>
+          <li class="nav-mobile-play">
+            <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn nav-btn--menu" rel="noopener" target="_blank">Играть</a>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-current" id="langBtn" aria-label="Сменить язык" aria-expanded="false">
+              <span id="langLabel">RU</span> ▾
+            </button>
+            <ul class="lang-menu" id="langMenu" role="menu">
+              <li role="menuitem"><a href="/articles/turn-river-play/" data-lang="mn">MN</a></li>
+              <li role="menuitem"><a href="/en/articles/turn-river-play/" data-lang="en">EN</a></li>
+              <li role="menuitem"><a href="/ru/articles/turn-river-igra/" data-lang="ru" class="active">RU</a></li>
+            </ul>
+          </div>
+          <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn" rel="noopener" target="_blank">Играть</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content" class="article-page">
+    <div class="container">
+      <nav class="article-breadcrumb" aria-label="Breadcrumb">
+        <a href="https://pppoker.mn/?lang=ru">Главная</a> <span>/</span> <a href="/ru/articles/">Статьи</a> <span>/</span> <span>Игра на терне и ривере</span>
+      </nav>
+      <article class="article-body">
+<h1 class="article-title">Игра на терне и ривере</h1>
+<p><strong>Терн</strong> и <strong>ривер</strong> — улицы, где pot максимален. На столах <a href="https://pppoker.mn/?lang=ru">Baatryn Öröö</a> здесь выигрывают или проигрывают больше всего. После <a href="https://pppoker.mn/ru/articles/postflop-osnovy/">основ постфлопа</a> этот framework структурирует решения на поздних улицах.</p>
+<p>База: <a href="https://pppoker.mn/ru/articles/cbet-strategiya/">c-bet стратегия</a> + <a href="https://pppoker.mn/ru/articles/chtenie-range/">чтение range</a>.</p>
+<h2 class="article-h2">Решения на терне</h2>
+<div class="article-table-wrap"><table class="article-table"><thead><tr>
+<th>Рука</th>
+<th>Действие</th>
+</tr></thead><tbody>
+<tr>
+<td>Nut / сильная</td>
+<td>Value bet</td>
+</tr>
+<tr>
+<td>Draw</td>
+<td>Semi-bluff или call (<a href="https://pppoker.mn/ru/articles/pot-odds-ekviti/">pot odds</a>)</td>
+</tr>
+<tr>
+<td>Marginal (second pair)</td>
+<td>Pot control — check</td>
+</tr>
+<tr>
+<td>Air</td>
+<td>Check/fold, иногда bluff</td>
+</tr>
+</tbody></table></div>
+<p>Терн меняет борд: flush card, pair board, straight card. Пересчитайте range соперника после новой карты.</p>
+<h2 class="article-h2">Double barrel (две улицы подряд)</h2>
+<p>Флоп c-bet → терн bet = double barrel.</p>
+<p>Когда продолжать:</p>
+<ul class="article-ul">
+<li>Борд не сильно изменился в пользу caller</li>
+<li>У вас range advantage</li>
+<li>Соперник fold to double barrel часто</li>
+</ul>
+<p>Когда остановиться:</p>
+<ul class="article-ul">
+<li>Wet терн card (flush, straight закрылся)</li>
+<li>Вы bluff без equity</li>
+<li>Соперник calling station</li>
+</ul>
+<p>Размер: <a href="https://pppoker.mn/ru/articles/razmer-stavok-poker/">размер ставок в покере</a> — терн 50–66% pot стандарт.</p>
+<h2 class="article-h2">Ривер — два пути</h2>
+<p>На ривере решение проще:</p>
+<ol class="article-ol">
+<li><strong>Value</strong> — слабая рука соперника может call</li>
+<li><strong>Bluff</strong> — есть fold equity</li>
+<li><strong>Check</strong> — showdown достаточен или bluff catch</li>
+</ol>
+<p>Средний bluff на ривере — частая ошибка. Либо крупный bluff с blockers, либо check. Полублеф 33% pot на ривере редко работает.</p>
+<h2 class="article-h2">Thin value</h2>
+<p>Top pair, second pair — <strong>тонкий value</strong> на ривере:</p>
+<ul class="article-ul">
+<li>Bet 25–33% pot — слабые руки call</li>
+<li>Не overbet — worse не call</li>
+<li>Против calling station — bet чаще</li>
+</ul>
+<p>Пример: борд K83T2, у вас KQ (top pair). Ривер bet 30% — Kx, 88 call. Check — упускаете value.</p>
+<h2 class="article-h2">Bluff catch</h2>
+<p><strong>Bluff catch</strong> — call на ривере, ожидая bluff.</p>
+<p>Когда call:</p>
+<ul class="article-ul">
+<li>Соперник bluff часто (<a href="https://pppoker.mn/ru/articles/statistika-pokera/">статистика покера</a>)</li>
+<li>Линия выглядит как bluff (check-call, check-call, bet)</li>
+<li>У вас bluff catcher (top pair weak kicker)</li>
+</ul>
+<p>Когда fold:</p>
+<ul class="article-ul">
+<li>Соперник value-heavy (never bluff)</li>
+<li>Линия = value (raise флоп, bet терн, bet ривер)</li>
+<li><a href="https://pppoker.mn/ru/articles/iskusstvo-blufa/">Искусство блефа</a> — знайте, кто блефует</li>
+</ul>
+<h2 class="article-h2">SPR (Stack-to-Pot Ratio)</h2>
+<p>SPR = effective stack / pot.</p>
+<ul class="article-ul">
+<li><strong>SPR &lt; 3</strong> — all-in решения на терне/ривере</li>
+<li><strong>SPR 3–6</strong> — одна-две улицы value</li>
+<li><strong>SPR &gt; 10</strong> — много улиц, pot control важнее</li>
+</ul>
+<p>Пример: pot 30BB, stack 60BB, SPR = 2. Top set на терне — часто all-in. Pot 10BB, stack 100BB, SPR = 10 — можно check-call несколько улиц.</p>
+<h2 class="article-h2">Терн check-raise</h2>
+<p>Сильная рука или combo draw на терне — <a href="https://pppoker.mn/ru/articles/check-raise-taktika/">check-raise</a>:</p>
+<ul class="article-ul">
+<li>Set после c-bet флоп + bet терн</li>
+<li>Nut flush draw после double barrel</li>
+<li>OOP с сильной рукой — вернуть инициативу</li>
+</ul>
+<p>Check-raise терн сильнее сигнал, чем флоп.</p>
+<h2 class="article-h2">Ривер и range</h2>
+<p>К риверу range соперника самый узкий. Используйте <a href="https://pppoker.mn/ru/articles/chtenie-range/">чтение range</a>:</p>
+<ul class="article-ul">
+<li>C-bet, call, check терн, bet ривер = value (80%+)</li>
+<li>Check-call, check-call, check = weak, bluff catch с marginal</li>
+<li>Bet, bet, bet = polarized (nuts или bluff)</li>
+</ul>
+<h2 class="article-h2">Multiway на терне/ривере</h2>
+<p>В <a href="https://pppoker.mn/ru/articles/multiway-pot/">multiway pot</a> поздние улицы опаснее:</p>
+<ul class="article-ul">
+<li>Меньше bluff</li>
+<li>Value только с сильной рукой</li>
+<li>Check-call с top pair — осторожно</li>
+</ul>
+<h2 class="article-h2">Практический framework</h2>
+<p><strong>На терне спросите:</strong></p>
+<ol class="article-ol">
+<li>Улучшилась ли моя рука?</li>
+<li>Борд опаснее или безопаснее?</li>
+<li>SPR — all-in или ещё улица?</li>
+<li>Соперник fold на pressure?</li>
+</ol>
+<p><strong>На ривере спросите:</strong></p>
+<ol class="article-ol">
+<li>Value или bluff — одно из двух?</li>
+<li>Worse call? → value</li>
+<li>Better fold? → bluff или check</li>
+<li>Showdown enough? → check</li>
+</ol>
+<h2 class="article-h2">Типичные ошибки</h2>
+<ul class="article-ul">
+<li>Bluff 3 улицы подряд без плана</li>
+<li>Check back value на ривере</li>
+<li>Call ривер без bluff catch justification</li>
+<li>Игнорировать SPR — all-in с marginal</li>
+</ul>
+<h2 class="article-h2">Терн в 3-bet pot</h2>
+<p>В 3-bet pot SPR низкий — терн часто решающая улица. C-bet флоп, bet терн all-in с top pair+ или strong draw. Check терн с marginal — pot control не нужен при SPR 2–3.</p>
+<p>Связь: <a href="https://pppoker.mn/ru/articles/3bet-4bet-strategiya/">3-bet и 4-bet стратегия</a> + <a href="https://pppoker.mn/ru/articles/cbet-strategiya/">c-bet стратегия</a>.</p>
+<h2 class="article-h2">River blockers</h2>
+<p>Bluff на ривере сильнее с blockers:</p>
+<ul class="article-ul">
+<li>Nut flush block (A♠ на 4-flush board) — у соперника меньше nut flush</li>
+<li>Top pair block — меньше value combinations</li>
+</ul>
+<p>Без blockers bluff на ривере рискованнее. Теория: <a href="https://pppoker.mn/ru/articles/iskusstvo-blufa/">искусство блефа</a>.</p>
+<h2 class="article-h2">Связь с другими темами</h2>
+<ul class="article-ul">
+<li>Префлоп: <a href="https://pppoker.mn/ru/articles/preflop-strategiya/">префлоп-стратегия</a></li>
+<li>Позиция: <a href="https://pppoker.mn/ru/articles/pozitsiya-v-pokere/">позиция в покере</a></li>
+<li>3-bet pot: <a href="https://pppoker.mn/ru/articles/3bet-4bet-strategiya/">3-bet и 4-bet</a></li>
+<li>Банкролл: <a href="https://pppoker.mn/ru/articles/bankroll-menedzhment/">банкролл-менеджмент</a></li>
+</ul>
+<h2 class="article-h2">FAQ</h2>
+<h3 class="article-h3">Check-call на ривере — мало?</h3>
+<p>Зависит. Против value bet — fold marginal. Против suspected bluff — call. Против station — fold bluff catchers, value bet yourself.</p>
+<h3 class="article-h3">Терн check-raise — когда?</h3>
+<p>Сильная рука (set, two pair) или combo draw. После агрессии c-bettor на флопе и терне.</p>
+<h3 class="article-h3">River = value или bluff?</h3>
+<p>Полярное решение. Средние руки — check. Top pair+ vs weak range — value. Air vs fold-happy — bluff.</p>
+<h3 class="article-h3">Где играть?</h3>
+<p><a href="https://pppoker.mn/?lang=ru">Baatryn Öröö</a> — Hold'em 9-max, кэш 24/7. <a href="https://pppoker.mn/ru/articles/online-poker-mongoliya-2026/">Онлайн покер Монгол 2026</a> · <a href="https://pppoker.mn/ru/articles/holdem-pravila-polnostyu/">Правила Hold'em</a>.</p>
+<p><a href="https://pppoker.mn/ru/articles/postflop-osnovy/">Постфлоп основы</a> · <a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></p>
+      </article>
+      <div class="article-cta">
+        <a href="https://baatrynorpoker.ink/1FBP9k" class="btn btn-primary" rel="noopener" target="_blank">Играть →</a>
+        <a href="/ru/articles/" class="btn btn-outline">Другие статьи</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" /><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
+          <p>Покерный клуб в Монголии. Онлайн-покер — столы для настоящих игроков.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Статьи</h4>
+          <ul>
+            <li><a href="/ru/articles/3bet-4bet-strategiya/">3-bet и 4-bet</a></li>
+            <li><a href="/ru/articles/bankroll-menedzhment/">Банкролл</a></li>
+            <li><a href="/ru/articles/bezopasnost-akkaunta/">Безопасность аккаунта</a></li>
+            <li><a href="/ru/articles/bluff-poker-mongolia/">Bluff poker mongolia</a></li>
+            <li><a href="/ru/articles/bonus-100-usloviya/">Бонус 100%</a></li>
+            <li><a href="/ru/articles/cbet-strategiya/">C-bet стратегия</a></li>
+            <li><a href="/ru/articles/check-raise-taktika/">Check-raise тактика</a></li>
+            <li><a href="/ru/articles/chtenie-range/">Чтение range</a></li>
+            <li><a href="/ru/articles/deposit-vyvod-mongoliya/">Депозит и вывод</a></li>
+            <li><a href="/ru/articles/holdem-pravila-polnostyu/">Правила Hold'em</a></li>
+            <li><a href="/ru/articles/holdem-vs-omaha/">Hold'em vs Omaha</a></li>
+            <li><a href="/ru/articles/iskusstvo-blufa/">Искусство блефа</a></li>
+            <li><a href="/ru/articles/kesh-igry-mongoliya/">Кэш-игры</a></li>
+            <li><a href="/ru/articles/klub-vs-platforma/">Клуб vs платформа</a></li>
+            <li><a href="/ru/articles/mongol-poker-sistema/">Что такое система монгол покер? Baatryn </a></li>
+            <li><a href="/ru/articles/mongol-poker-skachat/">Как скачать монгол покер — гайд по прило</a></li>
+            <li><a href="/ru/articles/multiway-pot/">Multiway pot</a></li>
+            <li><a href="/ru/articles/omaha-pravila-polnostyu/">Правила Omaha</a></li>
+            <li><a href="/ru/articles/online-poker-mongoliya-2026/">Где играть в онлайн покер в Монголии — г</a></li>
+            <li><a href="/ru/articles/otvetstvennaya-igra/">Ответственная игра</a></li>
+            <li><a href="/ru/articles/poker-kombinatsii/">Комбинации</a></li>
+            <li><a href="/ru/articles/poker-terminy-slovar/">Термины покера</a></li>
+            <li><a href="/ru/articles/postflop-osnovy/">Основы постфлопа</a></li>
+            <li><a href="/ru/articles/pot-odds-ekviti/">Pot odds и equity</a></li>
+            <li><a href="/ru/articles/pozitsiya-v-pokere/">Позиция в покере</a></li>
+            <li><a href="/ru/articles/pppoker-klub-vs-bukmeker/">Клуб vs букмекер</a></li>
+            <li><a href="/ru/articles/pppoker-oshibki-prilozheniya/">Ошибки PPPoker</a></li>
+            <li><a href="/ru/articles/preflop-strategiya/">Префлоп-стратегия</a></li>
+            <li><a href="/ru/articles/problemy-vyvoda/">Проблемы вывода</a></li>
+            <li><a href="/ru/articles/psihologiya-pokera/">Психология покера</a></li>
+            <li><a href="/ru/articles/razmer-stavok-poker/">Размер ставок</a></li>
+            <li><a href="/ru/articles/registratsiya-poshagovo/">Регистрация пошагово</a></li>
+            <li><a href="/ru/articles/statistika-pokera/">Статистика покера</a></li>
+            <li><a href="/ru/articles/strategiya-float/">Стратегия float</a></li>
+            <li><a href="/ru/articles/turn-river-igra/">Игра на терне и ривере</a></li>
+            <li><a href="/ru/articles/usdt-depozit-gaid/">USDT депозит</a></li>
+            <li><a href="/ru/articles/vip-stol-mongoliya/">VIP-стол</a></li>
+            <li><a href="/ru/articles/vybor-startovykh-ruk/">Стартовые руки</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>♠ BAATRYN ÖRÖÖ — Играй с умом, побеждай долго.</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/article-page.js"></script>
+</body>
+</html>

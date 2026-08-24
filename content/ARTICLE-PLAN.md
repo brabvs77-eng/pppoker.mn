@@ -1,6 +1,6 @@
 # Article plan — pppoker.mn
 
-Updated: 2026-08-23. Target corpus: **60 MN articles** (then selective i18n).
+Updated: 2026-08-24. Target corpus: **60 MN articles** (then selective i18n).
 
 ## Summary
 
@@ -207,8 +207,8 @@ Existing 18 articles: full EN/RU/ZH parity (`content/I18N-TRANSLATION-PLAN.md`).
 | Tier | When | What to translate | Status |
 |------|------|-------------------|--------|
 | T1 | Batch A+B (32 MN) | Phase 5 + Phase 7 (14 × EN/RU) | ✅ done |
-| T2 | Batch C (44 MN) | Phase 6 strategy top-6 × EN/RU | 🔲 next |
-| T3 | Batch E (54 MN) | Phase 9 local + remaining P1 × EN/RU/ZH | 🔲 |
+| T2 | Batch C (44 MN) | Phase 6 strategy top-6 × EN/RU | ✅ done |
+| T3 | Batch E (54 MN) | Phase 9 local + remaining P1 × EN/RU/ZH | 🔲 next |
 | T4 | Optional | Phase 10 parasite — EN only | 🔲 |
 
 ZH: wait until EN+RU ≥50% of expanded corpus per `I18N-TRANSLATION-PLAN.md`.
@@ -241,7 +241,7 @@ ZH: wait until EN+RU ≥50% of expanded corpus per `I18N-TRANSLATION-PLAN.md`.
 | I18n-7 ZH Tier 3+4 (10) | published |
 | I18n-9 Auto sitemap + FAQ schema i18n | published |
 
-**Current published:** 60 MN + 32 EN + 32 RU + 18 ZH = **142 article URLs** (60 MN groups). T1 i18n (14 groups × EN/RU) live.
+**Current published:** 60 MN + 38 EN + 38 RU + 18 ZH = **154 article URLs** (60 MN groups). T1+T2 i18n (20 groups × EN/RU) live.
 
 ---
 

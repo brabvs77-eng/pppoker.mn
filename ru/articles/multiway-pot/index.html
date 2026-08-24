@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multiway pot — стратегия 3+ игроков | Онлайн покер — Baatryn Öröö</title>
+  <meta name="description" content="Multiway pot (3+ игрока): c-bet, bluff, value. Онлайн покер Монгол — Hold'em 9-max, Baatryn Öröö." />
+  <meta name="article-group-id" content="multiway-pot" />
+  <meta name="article-lang" content="ru" />
+  <link rel="canonical" href="https://pppoker.mn/ru/articles/multiway-pot/" />
+  <link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/multiway-pot/" />
+  <link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/multiway-pot/" />
+  <link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/multiway-pot/" />
+  <link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/multiway-pot/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Baatryn Öröö" />
+  <meta property="og:title" content="Multiway pot — стратегия 3+ игроков | Онлайн покер — Baatryn Öröö" />
+  <meta property="og:description" content="Multiway pot (3+ игрока): c-bet, bluff, value. Онлайн покер Монгол — Hold'em 9-max, Baatryn Öröö." />
+  <meta property="og:url" content="https://pppoker.mn/ru/articles/multiway-pot/" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:locale:alternate" content="mn_MN" />
+  <meta property="og:image" content="https://pppoker.mn/images/og-cover.jpg" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+  <meta property="og:image:alt" content="Multiway pot — стратегия 3+ игроков | Онлайн покер — Baatryn Öröö" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://pppoker.mn/images/og-cover.jpg" />
+  <meta name="twitter:image:alt" content="Multiway pot — стратегия 3+ игроков | Онлайн покер — Baatryn Öröö" />
+  <link rel="preload" href="/images/logo.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/slide-comfort.webp" as="image" type="image/webp" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Multiway pot — 3+ игрока","description":"Multiway pot (3+ игрока): c-bet, bluff, value. Онлайн покер Монгол — Hold'em 9-max, Baatryn Öröö.","author":{"@type":"Organization","name":"Baatryn Öröö"},"publisher":{"@type":"Organization","name":"Baatryn Öröö","url":"https://pppoker.mn"},"mainEntityOfPage":"https://pppoker.mn/ru/articles/multiway-pot/","inLanguage":"ru"}</script>
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109810225', 'ym');
+    ym(109810225, 'init', {ssr:true, webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+  </script>
+</head>
+<body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/109810225" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container nav-container">
+                <a href="https://pppoker.mn/?lang=ru" class="nav-logo" aria-label="Baatryn Öröö — главная">
+          <img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" fetchpriority="high" />
+          <span class="logo-text">BAATRYN ÖRÖÖ</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="https://pppoker.mn/?lang=ru#games">Игры</a></li>
+          <li><a href="https://pppoker.mn/?lang=ru#features">Возможности</a></li>
+          <li><a href="/ru/articles/" class="active">Статьи</a></li>
+          <li><a href="https://pppoker.mn/?lang=ru#academy">Академия</a></li>
+          <li><a href="https://pppoker.mn/?lang=ru#faq">FAQ</a></li>
+          <li class="nav-mobile-play">
+            <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn nav-btn--menu" rel="noopener" target="_blank">Играть</a>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-current" id="langBtn" aria-label="Сменить язык" aria-expanded="false">
+              <span id="langLabel">RU</span> ▾
+            </button>
+            <ul class="lang-menu" id="langMenu" role="menu">
+              <li role="menuitem"><a href="/articles/multiway-pot/" data-lang="mn">MN</a></li>
+              <li role="menuitem"><a href="/en/articles/multiway-pot/" data-lang="en">EN</a></li>
+              <li role="menuitem"><a href="/ru/articles/multiway-pot/" data-lang="ru" class="active">RU</a></li>
+            </ul>
+          </div>
+          <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn" rel="noopener" target="_blank">Играть</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content" class="article-page">
+    <div class="container">
+      <nav class="article-breadcrumb" aria-label="Breadcrumb">
+        <a href="https://pppoker.mn/?lang=ru">Главная</a> <span>/</span> <a href="/ru/articles/">Статьи</a> <span>/</span> <span>Multiway pot — 3+ игрока</span>
+      </nav>
+      <article class="article-body">
+<h1 class="article-title">Multiway pot — 3+ игрока</h1>
+<p><strong>Multiway pot</strong> — когда три и более игрока доходят до флопа. На 9-max столах <a href="https://pppoker.mn/?lang=ru">Baatryn Öröö</a> это происходит постоянно. Стратегия против одного соперника (heads-up) здесь не работает: больше рук в игре, меньше fold equity, выше variance.</p>
+<p>База: <a href="https://pppoker.mn/ru/articles/postflop-osnovy/">основы постфлопа</a> + <a href="https://pppoker.mn/ru/articles/preflop-strategiya/">префлоп-стратегия</a>.</p>
+<h2 class="article-h2">Главные принципы</h2>
+<ul class="article-ul">
+<li><strong>Играйте тайтовее</strong> — только premium и сильные руки</li>
+<li><strong>Меньше bluff</strong> — один fold не значит, что остальные сбросят</li>
+<li><strong>Крупнее value</strong> — много call = больше денег в pot</li>
+<li><strong>Позиция важнее</strong> — IP в multiway = огромное преимущество</li>
+</ul>
+<p>Heads-up вы можете bluff c-bet 60% флопов. Multiway — 25–35%. Разница принципиальная.</p>
+<h2 class="article-h2">Префлоп в multiway</h2>
+<p>Multiway начинается на префлопе:</p>
+<ul class="article-ul">
+<li><strong>Не open слабые руки с EP</strong> — 3–4 call, и вы OOP с K9o</li>
+<li><strong>Iso-raise</strong> против нескольких limper — только сильные руки (AQ+, TT+)</li>
+<li><strong>Сужайте range</strong> — чем больше игроков, тем тайтовее ваш open/call</li>
+</ul>
+<div class="article-table-wrap"><table class="article-table"><thead><tr>
+<th>Ситуация</th>
+<th>Действие</th>
+</tr></thead><tbody>
+<tr>
+<td>UTG open, 2 call</td>
+<td>Fold слабые руки, call только premium</td>
+</tr>
+<tr>
+<td>BTN open, BB + SB call</td>
+<td>Шире, но осторожно на постфлопе</td>
+</tr>
+<tr>
+<td>3+ limper</td>
+<td>Iso-raise с QQ+, AK или check BB</td>
+</tr>
+</tbody></table></div>
+<p>Позиция: <a href="https://pppoker.mn/ru/articles/pozitsiya-v-pokere/">позиция в покере</a>.</p>
+<h2 class="article-h2">C-bet в multiway</h2>
+<div class="article-table-wrap"><table class="article-table"><thead><tr>
+<th>Игроков</th>
+<th>Частота c-bet</th>
+</tr></thead><tbody>
+<tr>
+<td>Heads-up</td>
+<td>55–70%</td>
+</tr>
+<tr>
+<td>3-way</td>
+<td>30–40%</td>
+</tr>
+<tr>
+<td>4+</td>
+<td>20–30%</td>
+</tr>
+</tbody></table></div>
+<p>C-betте только с сильной рукой на <strong>dry борде</strong>. Wet борд + multiway = check чаще. Подробнее: <a href="https://pppoker.mn/ru/articles/cbet-strategiya/">c-bet стратегия</a>.</p>
+<p><strong>Пример:</strong> Вы open с CO, BTN и BB call. Флоп K72 rainbow. C-bet 50% — OK, dry борд, вы можете иметь Kx. Флоп JT9 two-tone — check, даже с top pair.</p>
+<h2 class="article-h2">Draw в multiway</h2>
+<p>Multiway меняет математику draw:</p>
+<ul class="article-ul">
+<li><strong>Pot odds лучше</strong> — больше фишек в pot, дешевле call</li>
+<li><strong>Implied odds выше</strong> — если соберёте set или nut flush, pot огромный</li>
+<li><strong>Reverse implied odds</strong> — слабый draw (gutshot, bottom pair + draw) опасен</li>
+</ul>
+<p>Считайте: <a href="https://pppoker.mn/ru/articles/pot-odds-ekviti/">pot odds и equity</a>. Nut flush draw в 4-way pot — call почти всегда. Gutshot — fold.</p>
+<h2 class="article-h2">Value в multiway</h2>
+<p>Сильные руки в multiway = золото:</p>
+<ul class="article-ul">
+<li><strong>Set</strong> — bet крупно, не slow play</li>
+<li><strong>Two pair+</strong> — value bet на каждой улице</li>
+<li><strong>Top pair</strong> — осторожно, bet меньше, готовьтесь к call/raise</li>
+</ul>
+<p>Top pair в heads-up — часто лучшая рука. Top pair в 4-way — часто средняя. Не overplay.</p>
+<h2 class="article-h2">Bluff в multiway</h2>
+<p>Bluff в multiway — редкость. Нужно, чтобы <strong>все</strong> соперники выглядели слабо:</p>
+<ul class="article-ul">
+<li>Все check на флопе, терне</li>
+<li>Dry борд без draw</li>
+<li>Вы IP, можете представить сильную руку</li>
+</ul>
+<p>Даже тогда — один calling station испортит план. Теория: <a href="https://pppoker.mn/ru/articles/iskusstvo-blufa/">искусство блефа</a> — но в multiway bluff почти не применяйте.</p>
+<h2 class="article-h2">Позиция в multiway</h2>
+<p><strong>IP (in position)</strong> — вы действуете последним. Видите все действия, контролируете pot. C-bet, value bet, bluff (редко) — всё проще.</p>
+<p><strong>OOP</strong> — check-call с сильной рукой, <a href="https://pppoker.mn/ru/articles/check-raise-taktika/">check-raise</a> с set. Не lead bet со слабой рукой — вас raise несколько игроков.</p>
+<h2 class="article-h2">Практические сценарии</h2>
+<p><strong>Сценарий 1:</strong> Флоп A83, 4 игрока, у вас A8 (two pair). Bet 60% pot — value. Не check.</p>
+<p><strong>Сценарий 2:</strong> Флоп 876, 3 игрока, у вас 99 (overpair). Check — борд опасный, кто-то мог попасть.</p>
+<p><strong>Сценарий 3:</strong> Флоп KQ2, 3 игрока, у вас air. Check-fold. Не c-bet bluff.</p>
+<p><strong>Сценарий 4:</strong> Терн закрыл flush, 4 в pot, у вас set. Bet 75% pot — charge draws, value.</p>
+<h2 class="article-h2">SPR в multiway</h2>
+<p>Stack-to-pot ratio в multiway pot часто ниже — много call на префлопе. При SPR &lt; 4 готовьтесь к all-in на терне с сильной рукой. Framework: <a href="https://pppoker.mn/ru/articles/turn-river-igra/">игра на терне и ривере</a>.</p>
+<h2 class="article-h2">Чтение range в multiway</h2>
+<p>Сложнее, чем heads-up. Каждый игрок имеет свой range:</p>
+<ul class="article-ul">
+<li>UTG caller — тайтовый range</li>
+<li>BTN caller — широкий range</li>
+<li>BB caller — defense range</li>
+</ul>
+<p>Сужайте range каждого по действиям. <a href="https://pppoker.mn/ru/articles/chtenie-range/">Чтение range</a> — ключевой навык.</p>
+<h2 class="article-h2">9-max и Baatryn Öröö</h2>
+<p>9-max = больше multiway pot, чем 6-max. Привыкайте к тайтовой игре. Не играйте каждую руку — <a href="https://pppoker.mn/ru/articles/vybor-startovykh-ruk/">выбор стартовых рук</a> и <a href="https://pppoker.mn/ru/articles/bankroll-menedzhment/">банкролл-менеджмент</a> важнее в multiway.</p>
+<h2 class="article-h2">Типичные ошибки</h2>
+<ul class="article-ul">
+<li>C-bet bluff в 3-way pot</li>
+<li>Overplay top pair против 3 соперников</li>
+<li>Iso-raise слабой рукой против 4 limper</li>
+<li>Игнорировать позицию — OOP lead bet со средней рукой</li>
+</ul>
+<h2 class="article-h2">FAQ</h2>
+<h3 class="article-h3">Bluff в multiway — когда?</h3>
+<p>Почти никогда. Исключение: все check, dry борд, вы IP, один слабый соперник.</p>
+<h3 class="article-h3">Top pair в 4-way — что делать?</h3>
+<p>Малый bet или check-call. Не строите большой pot без set или two pair.</p>
+<h3 class="article-h3">Как часто multiway на 9-max?</h3>
+<p>Часто — 30–40% раздач доходят до флопа с 3+ игроками при loose столе. Тайтовый стол — реже.</p>
+<h3 class="article-h3">Где играть?</h3>
+<p><a href="https://pppoker.mn/?lang=ru">Baatryn Öröö</a> — 9-max, кэш 24/7. <a href="https://pppoker.mn/ru/articles/online-poker-mongoliya-2026/">Онлайн покер Монгол 2026</a> · <a href="https://pppoker.mn/ru/articles/holdem-pravila-polnostyu/">Правила Hold'em</a>.</p>
+<p><a href="https://pppoker.mn/ru/articles/razmer-stavok-poker/">Размер ставок</a> · <a href="https://pppoker.mn/ru/articles/statistika-pokera/">Статистика покера</a> · <a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></p>
+      </article>
+      <div class="article-cta">
+        <a href="https://baatrynorpoker.ink/1FBP9k" class="btn btn-primary" rel="noopener" target="_blank">Играть →</a>
+        <a href="/ru/articles/" class="btn btn-outline">Другие статьи</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" /><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
+          <p>Покерный клуб в Монголии. Онлайн-покер — столы для настоящих игроков.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Статьи</h4>
+          <ul>
+            <li><a href="/ru/articles/3bet-4bet-strategiya/">3-bet и 4-bet</a></li>
+            <li><a href="/ru/articles/bankroll-menedzhment/">Банкролл</a></li>
+            <li><a href="/ru/articles/bezopasnost-akkaunta/">Безопасность аккаунта</a></li>
+            <li><a href="/ru/articles/bluff-poker-mongolia/">Bluff poker mongolia</a></li>
+            <li><a href="/ru/articles/bonus-100-usloviya/">Бонус 100%</a></li>
+            <li><a href="/ru/articles/cbet-strategiya/">C-bet стратегия</a></li>
+            <li><a href="/ru/articles/check-raise-taktika/">Check-raise тактика</a></li>
+            <li><a href="/ru/articles/chtenie-range/">Чтение range</a></li>
+            <li><a href="/ru/articles/deposit-vyvod-mongoliya/">Депозит и вывод</a></li>
+            <li><a href="/ru/articles/holdem-pravila-polnostyu/">Правила Hold'em</a></li>
+            <li><a href="/ru/articles/holdem-vs-omaha/">Hold'em vs Omaha</a></li>
+            <li><a href="/ru/articles/iskusstvo-blufa/">Искусство блефа</a></li>
+            <li><a href="/ru/articles/kesh-igry-mongoliya/">Кэш-игры</a></li>
+            <li><a href="/ru/articles/klub-vs-platforma/">Клуб vs платформа</a></li>
+            <li><a href="/ru/articles/mongol-poker-sistema/">Что такое система монгол покер? Baatryn </a></li>
+            <li><a href="/ru/articles/mongol-poker-skachat/">Как скачать монгол покер — гайд по прило</a></li>
+            <li><a href="/ru/articles/multiway-pot/">Multiway pot</a></li>
+            <li><a href="/ru/articles/omaha-pravila-polnostyu/">Правила Omaha</a></li>
+            <li><a href="/ru/articles/online-poker-mongoliya-2026/">Где играть в онлайн покер в Монголии — г</a></li>
+            <li><a href="/ru/articles/otvetstvennaya-igra/">Ответственная игра</a></li>
+            <li><a href="/ru/articles/poker-kombinatsii/">Комбинации</a></li>
+            <li><a href="/ru/articles/poker-terminy-slovar/">Термины покера</a></li>
+            <li><a href="/ru/articles/postflop-osnovy/">Основы постфлопа</a></li>
+            <li><a href="/ru/articles/pot-odds-ekviti/">Pot odds и equity</a></li>
+            <li><a href="/ru/articles/pozitsiya-v-pokere/">Позиция в покере</a></li>
+            <li><a href="/ru/articles/pppoker-klub-vs-bukmeker/">Клуб vs букмекер</a></li>
+            <li><a href="/ru/articles/pppoker-oshibki-prilozheniya/">Ошибки PPPoker</a></li>
+            <li><a href="/ru/articles/preflop-strategiya/">Префлоп-стратегия</a></li>
+            <li><a href="/ru/articles/problemy-vyvoda/">Проблемы вывода</a></li>
+            <li><a href="/ru/articles/psihologiya-pokera/">Психология покера</a></li>
+            <li><a href="/ru/articles/razmer-stavok-poker/">Размер ставок</a></li>
+            <li><a href="/ru/articles/registratsiya-poshagovo/">Регистрация пошагово</a></li>
+            <li><a href="/ru/articles/statistika-pokera/">Статистика покера</a></li>
+            <li><a href="/ru/articles/strategiya-float/">Стратегия float</a></li>
+            <li><a href="/ru/articles/turn-river-igra/">Игра на терне и ривере</a></li>
+            <li><a href="/ru/articles/usdt-depozit-gaid/">USDT депозит</a></li>
+            <li><a href="/ru/articles/vip-stol-mongoliya/">VIP-стол</a></li>
+            <li><a href="/ru/articles/vybor-startovykh-ruk/">Стартовые руки</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>♠ BAATRYN ÖRÖÖ — Играй с умом, побеждай долго.</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/article-page.js"></script>
+</body>
+</html>
