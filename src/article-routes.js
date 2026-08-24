@@ -31,7 +31,8 @@ export const ARTICLE_ROUTES = {
     "zh": "xiazhu-daxiao"
   },
   "blaynd-togloom": {
-    "mn": "blaynd-togloom"
+    "mn": "blaynd-togloom",
+    "en": "blind-defense-poker"
   },
   "blef-uriag": {
     "mn": "blef-uriag",
@@ -105,7 +106,8 @@ export const ARTICLE_ROUTES = {
     "zh": "waiguo-poker-menggu"
   },
   "exploitation-taktik": {
-    "mn": "exploitation-taktik"
+    "mn": "exploitation-taktik",
+    "en": "exploitation-tactics"
   },
   "floating-taktik": {
     "mn": "floating-taktik",
@@ -138,7 +140,8 @@ export const ARTICLE_ROUTES = {
     "zh": "holdem-vs-omaha"
   },
   "hud-vpip-pfr": {
-    "mn": "hud-vpip-pfr"
+    "mn": "hud-vpip-pfr",
+    "en": "hud-vpip-pfr-poker"
   },
   "huudas-songolt": {
     "mn": "huudas-songolt",
@@ -205,10 +208,12 @@ export const ARTICLE_ROUTES = {
     "zh": "online-poker-mongolia-2026"
   },
   "plo-draw-buren": {
-    "mn": "plo-draw-buren"
+    "mn": "plo-draw-buren",
+    "en": "plo-draw-rules"
   },
   "plo-ehnii-gar": {
-    "mn": "plo-ehnii-gar"
+    "mn": "plo-ehnii-gar",
+    "en": "plo-starting-hands"
   },
   "poker-kombinatsiud": {
     "mn": "poker-kombinatsiud",
@@ -293,7 +298,8 @@ export const ARTICLE_ROUTES = {
     "zh": "poker-tongji-fenxi"
   },
   "steal-resteal": {
-    "mn": "steal-resteal"
+    "mn": "steal-resteal",
+    "en": "steal-resteal-poker"
   },
   "tatalt-asuudal-shiidver": {
     "mn": "tatalt-asuudal-shiidver",
