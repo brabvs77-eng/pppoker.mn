@@ -10,7 +10,7 @@ import { ARTICLE_I18N, LANG_LABELS } from './article-i18n.js'
 import { writeSitemap } from './sitemap.mjs'
 import { PLAY_URL, SUPPORT_TELEGRAM } from './site-links.js'
 import { FAVICON_HEAD } from './favicon-head.js'
-import { logoImgTag, ogImageMeta, preloadHead } from './site-images.js'
+import { logoImgTag, ogImageMeta, preloadHead, escAttr, twitterMeta } from './site-images.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = join(__dirname, '..')
@@ -303,9 +303,15 @@ function articlePage(article, langArticles) {
       ? { image: `${SITE}${article.coverImage}` }
       : {}),
     author: { '@type': 'Organization', name: 'Baatryn Öröö' },
-    publisher: { '@type': 'Organization', name: 'Baatryn Öröö', url: SITE },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Baatryn Öröö',
+      url: SITE,
+      logo: { '@type': 'ImageObject', url: `${SITE}/images/logo.webp` },
+    },
     mainEntityOfPage: url,
     inLanguage: lang,
+    ...(article.fileMtime ? { dateModified: article.fileMtime } : {}),
   })
 
   const hreflang = hreflangHead(article)
@@ -321,8 +327,8 @@ function articlePage(article, langArticles) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>${metaTitle}</title>
-  <meta name="description" content="${metaDesc}" />
+  <title>${escAttr(metaTitle)}</title>
+  <meta name="description" content="${escAttr(metaDesc)}" />
   <meta name="article-group-id" content="${article.groupId}" />
   <meta name="article-lang" content="${lang}" />
   <link rel="canonical" href="${url}" />
@@ -330,12 +336,13 @@ ${hreflang}
 ${faviconHead()}
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Baatryn Öröö" />
-  <meta property="og:title" content="${metaTitle}" />
-  <meta property="og:description" content="${metaDesc}" />
+  <meta property="og:title" content="${escAttr(metaTitle)}" />
+  <meta property="og:description" content="${escAttr(metaDesc)}" />
   <meta property="og:url" content="${url}" />
   <meta property="og:locale" content="${t.ogLocale}" />
 ${ogAlts}
-${ogImageMeta(metaTitle, article.coverImage || undefined)}
+${ogImageMeta(article.coverAlt, article.coverImage || undefined)}
+${twitterMeta(metaTitle, metaDesc)}
 ${preloadHead()}
   <link rel="stylesheet" href="/src/style.css" />
   <script type="application/ld+json">${jsonLd}</script>
@@ -423,7 +430,7 @@ function indexPage(lang, articles) {
     .map(
       a => {
         const thumb = a.coverImage
-          ? `          <div class="article-card-media"><img src="${a.coverImage}" alt="" width="400" height="225" loading="lazy" decoding="async" /></div>\n`
+          ? `          <div class="article-card-media"><img src="${a.coverImage}" alt="${escAttr(a.coverAlt || a.listTitle)}" width="400" height="225" loading="lazy" decoding="async" /></div>\n`
           : ''
         return `        <a href="${articlePath(a)}" class="article-card${a.coverImage ? ' article-card--has-media' : ''}">
 ${thumb}          <span class="article-card-tag">${t.index.cardTag}</span>
@@ -440,8 +447,8 @@ ${thumb}          <span class="article-card-tag">${t.index.cardTag}</span>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>${t.index.metaTitle}</title>
-  <meta name="description" content="${t.index.metaDesc}" />
+  <title>${escAttr(t.index.metaTitle)}</title>
+  <meta name="description" content="${escAttr(t.index.metaDesc)}" />
   <link rel="canonical" href="${t.index.canonical}" />
   <link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/" />
   <link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/" />
@@ -449,10 +456,14 @@ ${thumb}          <span class="article-card-tag">${t.index.cardTag}</span>
   <link rel="alternate" hreflang="zh" href="https://pppoker.mn/zh/articles/" />
   <link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/" />
 ${faviconHead()}
-  <meta property="og:title" content="${t.index.metaTitle}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Baatryn Öröö" />
+  <meta property="og:title" content="${escAttr(t.index.metaTitle)}" />
+  <meta property="og:description" content="${escAttr(t.index.metaDesc)}" />
   <meta property="og:url" content="${t.index.canonical}" />
   <meta property="og:locale" content="${t.ogLocale}" />
-${ogImageMeta(t.index.metaTitle)}
+${ogImageMeta(t.index.metaTitle, '/images/og-cover.jpg')}
+${twitterMeta(t.index.metaTitle, t.index.metaDesc)}
 ${preloadHead()}
   <link rel="stylesheet" href="/src/style.css" />
 ${metrikaHead()}
@@ -485,6 +496,7 @@ function loadMarkdown(filePath, langOverride) {
   const lang = langOverride || meta.Language || 'mn'
   const groupId = meta['Source Slug'] || slug
   const h1 = body.match(/^# (.+)$/m)?.[1] || slug
+  const fileMtime = statSync(filePath).mtime.toISOString().split('T')[0]
   return {
     slug,
     lang,
@@ -495,7 +507,20 @@ function loadMarkdown(filePath, langOverride) {
     listTitle: meta['List Title'] || h1.replace(/\|.*/, '').trim().slice(0, 40),
     coverImage: meta['Cover Image'] || '',
     coverAlt: meta['Cover Alt'] || meta['Meta Title'] || h1,
+    hasCoverAlt: Boolean(meta['Cover Alt']),
+    fileMtime,
     html: mdToHtml(body),
+  }
+}
+
+function resolveInheritedCovers() {
+  for (const article of ARTICLES) {
+    const mn = GROUPS.get(article.groupId)?.mn
+    if (!mn?.coverImage) continue
+    if (!article.coverImage) {
+      article.coverImage = mn.coverImage
+      if (!article.hasCoverAlt) article.coverAlt = mn.coverAlt
+    }
   }
 }
 
@@ -534,6 +559,8 @@ for (const article of ARTICLES) {
   if (!GROUPS.has(article.groupId)) GROUPS.set(article.groupId, {})
   GROUPS.get(article.groupId)[article.lang] = article
 }
+
+resolveInheritedCovers()
 
 const byLang = { mn: [], en: [], ru: [], zh: [] }
 for (const article of ARTICLES) {

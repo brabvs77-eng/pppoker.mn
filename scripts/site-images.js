@@ -71,9 +71,14 @@ export function ogImageMeta(alt = OG_COVER.alt, coverSrc) {
   <meta name="twitter:image:alt" content="${safeAlt}" />`
 }
 
-function escAttr(value) {
+export function escAttr(value) {
   return String(value)
     .replace(/&/g, '&amp;')
     .replace(/"/g, '&quot;')
     .replace(/</g, '&lt;')
+}
+
+export function twitterMeta(title, description) {
+  return `  <meta name="twitter:title" content="${escAttr(title)}" />
+  <meta name="twitter:description" content="${escAttr(description)}" />`
 }

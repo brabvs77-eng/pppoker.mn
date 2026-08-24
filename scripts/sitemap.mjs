@@ -52,19 +52,40 @@ function hreflangLinks(group) {
   return lines.join('\n')
 }
 
-function urlEntry(loc, changefreq, priority, extraLines = '') {
+function urlEntry(loc, changefreq, priority, extraLines = '', lastmod) {
   const extras = extraLines ? `\n${extraLines}` : ''
+  const lastmodLine = lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : ''
   return `  <url>
-    <loc>${loc}</loc>
+    <loc>${loc}</loc>${lastmodLine}
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>${extras}
   </url>`
 }
 
+function groupLastmod(group) {
+  const dates = Object.values(group)
+    .map(a => a.fileMtime)
+    .filter(Boolean)
+  if (!dates.length) return null
+  return dates.sort().pop()
+}
+
 function homeHreflang() {
-  return LANGS.map(
-    lang => `    <xhtml:link rel="alternate" hreflang="${lang}" href="${SITE}/?lang=${lang}" />`
-  ).join('\n')
+  const lines = LANGS.map(lang => {
+    const href = lang === 'mn' ? `${SITE}/` : `${SITE}/?lang=${lang}`
+    return `    <xhtml:link rel="alternate" hreflang="${lang}" href="${href}" />`
+  })
+  lines.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}/" />`)
+  return lines.join('\n')
+}
+
+function aboutHreflang() {
+  const lines = LANGS.map(lang => {
+    const href = lang === 'mn' ? `${SITE}/about/` : `${SITE}/about/?lang=${lang}`
+    return `    <xhtml:link rel="alternate" hreflang="${lang}" href="${href}" />`
+  })
+  lines.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}/about/" />`)
+  return lines.join('\n')
 }
 
 function hubHreflang() {
@@ -76,17 +97,18 @@ function hubHreflang() {
 
 function buildSitemapXml(groups, byLang) {
   const entries = []
+  const buildDate = new Date().toISOString().split('T')[0]
 
   entries.push(
-    urlEntry(`${SITE}/`, 'daily', 1.0, homeHreflang())
+    urlEntry(`${SITE}/`, 'daily', 1.0, homeHreflang(), buildDate)
   )
 
   entries.push(
-    urlEntry(`${SITE}/articles/`, 'weekly', HUB_PRIORITY.mn, `${hubHreflang()}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}/articles/" />`)
+    urlEntry(`${SITE}/articles/`, 'weekly', HUB_PRIORITY.mn, `${hubHreflang()}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}/articles/" />`, buildDate)
   )
 
   entries.push(
-    urlEntry(`${SITE}/about/`, 'monthly', 0.85)
+    urlEntry(`${SITE}/about/`, 'monthly', 0.85, aboutHreflang(), buildDate)
   )
 
   const sortedGroupIds = [...groups.keys()].sort()
@@ -94,15 +116,16 @@ function buildSitemapXml(groups, byLang) {
     const group = groups.get(groupId)
     const priority = GROUP_PRIORITY[groupId] ?? 0.8
     const hreflang = hreflangLinks(group)
+    const lastmod = groupLastmod(group)
     if (group.mn) {
-      entries.push(urlEntry(articleUrl(group.mn), 'monthly', priority, hreflang))
+      entries.push(urlEntry(articleUrl(group.mn), 'monthly', priority, hreflang, lastmod))
     }
   }
 
   for (const lang of ['en', 'ru', 'zh']) {
     if (!byLang[lang]?.length) continue
     entries.push(
-      urlEntry(`${SITE}${articlesHubPath(lang)}`, 'weekly', HUB_PRIORITY[lang], `${hubHreflang()}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}/articles/" />`)
+      urlEntry(`${SITE}${articlesHubPath(lang)}`, 'weekly', HUB_PRIORITY[lang], `${hubHreflang()}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}/articles/" />`, buildDate)
     )
   }
 
@@ -111,7 +134,7 @@ function buildSitemapXml(groups, byLang) {
     for (const article of list.sort((a, b) => a.slug.localeCompare(b.slug))) {
       const group = groups.get(article.groupId)
       const priority = GROUP_PRIORITY[article.groupId] ?? 0.8
-      entries.push(urlEntry(articleUrl(article), 'monthly', priority, hreflangLinks(group)))
+      entries.push(urlEntry(articleUrl(article), 'monthly', priority, hreflangLinks(group), article.fileMtime || groupLastmod(group)))
     }
   }
 
