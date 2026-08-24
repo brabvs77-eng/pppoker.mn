@@ -27,11 +27,20 @@ export const ARTICLE_ROUTES = {
     "ru": "bluff-poker-mongolia",
     "zh": "bluff-poker-mongolia"
   },
+  "burtgel-alham-alham": {
+    "mn": "burtgel-alham-alham"
+  },
   "cash-game-mongol": {
     "mn": "cash-game-mongol",
     "en": "cash-game-mongolia",
     "ru": "kesh-igry-mongoliya",
     "zh": "xianjin-zhuo-mongolia"
+  },
+  "club-vs-platform": {
+    "mn": "club-vs-platform"
+  },
+  "dans-hamgaalalt": {
+    "mn": "dans-hamgaalalt"
   },
   "deposit-withdraw-mongol": {
     "mn": "deposit-withdraw-mongol",
@@ -50,6 +59,9 @@ export const ARTICLE_ROUTES = {
     "en": "floating-strategy",
     "ru": "strategiya-float",
     "zh": "float-celue"
+  },
+  "hariutslagatai-togloom": {
+    "mn": "hariutslagatai-togloom"
   },
   "holdem-durem-buren": {
     "mn": "holdem-durem-buren"
@@ -111,6 +123,9 @@ export const ARTICLE_ROUTES = {
     "ru": "pozitsiya-v-pokere",
     "zh": "zhuo-shang-weizhi"
   },
+  "pppoker-app-aldaa": {
+    "mn": "pppoker-app-aldaa"
+  },
   "pppoker-klub-vs-betting": {
     "mn": "pppoker-klub-vs-betting",
     "en": "pppoker-club-vs-betting",
@@ -125,6 +140,15 @@ export const ARTICLE_ROUTES = {
     "en": "poker-statistics-analysis",
     "ru": "statistika-pokera",
     "zh": "poker-tongji-fenxi"
+  },
+  "tatalt-asuudal-shiidver": {
+    "mn": "tatalt-asuudal-shiidver"
+  },
+  "usdt-deposit-zaavar": {
+    "mn": "usdt-deposit-zaavar"
+  },
+  "vip-shiree-mongol": {
+    "mn": "vip-shiree-mongol"
   }
 }
 

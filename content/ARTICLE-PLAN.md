@@ -84,7 +84,30 @@ Money, comparison, GSC tails.
 
 Each article has a unique cover image in `public/images/articles/{slug}.webp`.
 
+<<<<<<< HEAD
 ---
+=======
+## Phase 7 — Product & onboarding (8/8) ✅ DONE
+
+Mongolia-themed cover art (Ulaanbaatar, Mongolian players, local context).
+
+| # | Slug | Status |
+|---|------|--------|
+| 25 | `burtgel-alham-alham` | published |
+| 26 | `pppoker-app-aldaa` | published |
+| 27 | `usdt-deposit-zaavar` | published |
+| 28 | `tatalt-asuudal-shiidver` | published |
+| 29 | `dans-hamgaalalt` | published |
+| 30 | `hariutslagatai-togloom` | published |
+| 31 | `club-vs-platform` | published |
+| 32 | `vip-shiree-mongol` | published |
+
+## Phase 8 — Advanced strategy (0/12) 🔲 NEXT
+
+See full 60-article roadmap (Batch C). Slugs: `cbet-strategi`, `3bet-4bet-mongol`, etc.
+
+## Phase 9 — Brand-parasite (after 50–60 core)
+>>>>>>> 42d364c (Publish Phase 7 product articles with Mongolia-themed covers)
 
 ## Phase 6 — Advanced strategy (0/12) 🔲 NEXT
 
@@ -243,6 +266,7 @@ ZH: wait until EN+RU ≥50% of expanded corpus per `I18N-TRANSLATION-PLAN.md`.
 | I18n-7 ZH Tier 3+4 (10) | published |
 | I18n-9 Auto sitemap + FAQ schema i18n | published |
 
+<<<<<<< HEAD
 **Current published:** 32 MN + 18 EN + 18 RU + 18 ZH = **86 article URLs** (32 MN groups).
 
 ---
@@ -254,3 +278,6 @@ ZH: wait until EN+RU ≥50% of expanded corpus per `I18N-TRANSLATION-PLAN.md`.
 - `content/BRAND-PARASITE-STRATEGY.md` — Phase 10 rules
 - `content/I18N-TRANSLATION-PLAN.md` — translation workflow
 - `CLAUDE.md` — **create article** pipeline
+=======
+**Total published:** 32 MN + 18 EN + 18 RU + 18 ZH articles (14 new MN in Phases 5–7)
+>>>>>>> 42d364c (Publish Phase 7 product articles with Mongolia-themed covers)
