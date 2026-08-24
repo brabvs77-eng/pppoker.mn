@@ -19,7 +19,9 @@ export const ARTICLE_ROUTES = {
     "zh": "bankroll-guanli"
   },
   "bet-hmjuulelt": {
-    "mn": "bet-hmjuulelt"
+    "mn": "bet-hmjuulelt",
+    "en": "bet-sizing-poker",
+    "ru": "razmer-stavok-poker"
   },
   "blaynd-togloom": {
     "mn": "blaynd-togloom"
@@ -40,7 +42,9 @@ export const ARTICLE_ROUTES = {
     "zh": "bluff-poker-mongolia"
   },
   "burtgel-alham-alham": {
-    "mn": "burtgel-alham-alham"
+    "mn": "burtgel-alham-alham",
+    "en": "registration-step-by-step",
+    "ru": "registratsiya-poshagovo"
   },
   "cash-game-mongol": {
     "mn": "cash-game-mongol",
@@ -55,10 +59,14 @@ export const ARTICLE_ROUTES = {
     "mn": "check-raise-taktik"
   },
   "club-vs-platform": {
-    "mn": "club-vs-platform"
+    "mn": "club-vs-platform",
+    "en": "club-vs-platform",
+    "ru": "klub-vs-platforma"
   },
   "dans-hamgaalalt": {
-    "mn": "dans-hamgaalalt"
+    "mn": "dans-hamgaalalt",
+    "en": "account-security",
+    "ru": "bezopasnost-akkaunta"
   },
   "deposit-withdraw-mongol": {
     "mn": "deposit-withdraw-mongol",
@@ -85,13 +93,17 @@ export const ARTICLE_ROUTES = {
     "zh": "float-celue"
   },
   "hariutslagatai-togloom": {
-    "mn": "hariutslagatai-togloom"
+    "mn": "hariutslagatai-togloom",
+    "en": "responsible-gaming",
+    "ru": "otvetstvennaya-igra"
   },
   "high-stakes-vip": {
     "mn": "high-stakes-vip"
   },
   "holdem-durem-buren": {
-    "mn": "holdem-durem-buren"
+    "mn": "holdem-durem-buren",
+    "en": "holdem-rules-complete",
+    "ru": "holdem-pravila-polnostyu"
   },
   "holdem-vs-omaha": {
     "mn": "holdem-vs-omaha",
@@ -133,7 +145,9 @@ export const ARTICLE_ROUTES = {
     "mn": "multiway-pot"
   },
   "omaha-durem-buren": {
-    "mn": "omaha-durem-buren"
+    "mn": "omaha-durem-buren",
+    "en": "omaha-rules-complete",
+    "ru": "omaha-pravila-polnostyu"
   },
   "one-king-poker-mongolia": {
     "mn": "one-king-poker-mongolia"
@@ -175,10 +189,14 @@ export const ARTICLE_ROUTES = {
     "mn": "pokermongolia-com-yu-ve"
   },
   "postflop-suuri": {
-    "mn": "postflop-suuri"
+    "mn": "postflop-suuri",
+    "en": "postflop-basics",
+    "ru": "postflop-osnovy"
   },
   "pot-odds-equity": {
-    "mn": "pot-odds-equity"
+    "mn": "pot-odds-equity",
+    "en": "pot-odds-equity",
+    "ru": "pot-odds-ekviti"
   },
   "pozitsiin-huch": {
     "mn": "pozitsiin-huch",
@@ -187,7 +205,9 @@ export const ARTICLE_ROUTES = {
     "zh": "zhuo-shang-weizhi"
   },
   "pppoker-app-aldaa": {
-    "mn": "pppoker-app-aldaa"
+    "mn": "pppoker-app-aldaa",
+    "en": "pppoker-app-errors",
+    "ru": "pppoker-oshibki-prilozheniya"
   },
   "pppoker-klub-vs-betting": {
     "mn": "pppoker-klub-vs-betting",
@@ -199,7 +219,9 @@ export const ARTICLE_ROUTES = {
     "mn": "pppoker-vs-pokerstars-mongol"
   },
   "preflop-strategi": {
-    "mn": "preflop-strategi"
+    "mn": "preflop-strategi",
+    "en": "preflop-strategy",
+    "ru": "preflop-strategiya"
   },
   "range-unshih": {
     "mn": "range-unshih"
@@ -214,7 +236,9 @@ export const ARTICLE_ROUTES = {
     "mn": "steal-resteal"
   },
   "tatalt-asuudal-shiidver": {
-    "mn": "tatalt-asuudal-shiidver"
+    "mn": "tatalt-asuudal-shiidver",
+    "en": "withdrawal-issues",
+    "ru": "problemy-vyvoda"
   },
   "turbo-poker-mongolia": {
     "mn": "turbo-poker-mongolia"
@@ -226,13 +250,17 @@ export const ARTICLE_ROUTES = {
     "mn": "ulaanbaatar-poker-2026"
   },
   "usdt-deposit-zaavar": {
-    "mn": "usdt-deposit-zaavar"
+    "mn": "usdt-deposit-zaavar",
+    "en": "usdt-deposit-guide",
+    "ru": "usdt-depozit-gaid"
   },
   "variance-poker": {
     "mn": "variance-poker"
   },
   "vip-shiree-mongol": {
-    "mn": "vip-shiree-mongol"
+    "mn": "vip-shiree-mongol",
+    "en": "vip-table-mongolia",
+    "ru": "vip-stol-mongoliya"
   }
 }
 

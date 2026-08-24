@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Postflop Basics — Decision Framework | Online Poker — Baatryn Öröö</title>
+  <meta name="description" content="Postflop strategy: flop, turn, river decisions. Online poker Mongolia — check, bet, call framework for beginners." />
+  <meta name="article-group-id" content="postflop-suuri" />
+  <meta name="article-lang" content="en" />
+  <link rel="canonical" href="https://pppoker.mn/en/articles/postflop-basics/" />
+  <link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/postflop-suuri/" />
+  <link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/postflop-basics/" />
+  <link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/postflop-osnovy/" />
+  <link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/postflop-suuri/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Baatryn Öröö" />
+  <meta property="og:title" content="Postflop Basics — Decision Framework | Online Poker — Baatryn Öröö" />
+  <meta property="og:description" content="Postflop strategy: flop, turn, river decisions. Online poker Mongolia — check, bet, call framework for beginners." />
+  <meta property="og:url" content="https://pppoker.mn/en/articles/postflop-basics/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="mn_MN" />
+  <meta property="og:image" content="https://pppoker.mn/images/og-cover.jpg" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+  <meta property="og:image:alt" content="Postflop Basics — Decision Framework | Online Poker — Baatryn Öröö" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://pppoker.mn/images/og-cover.jpg" />
+  <meta name="twitter:image:alt" content="Postflop Basics — Decision Framework | Online Poker — Baatryn Öröö" />
+  <link rel="preload" href="/images/logo.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/slide-comfort.webp" as="image" type="image/webp" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Postflop Basics — Decision Framework","description":"Postflop strategy: flop, turn, river decisions. Online poker Mongolia — check, bet, call framework for beginners.","author":{"@type":"Organization","name":"Baatryn Öröö"},"publisher":{"@type":"Organization","name":"Baatryn Öröö","url":"https://pppoker.mn"},"mainEntityOfPage":"https://pppoker.mn/en/articles/postflop-basics/","inLanguage":"en"}</script>
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109810225', 'ym');
+    ym(109810225, 'init', {ssr:true, webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+  </script>
+</head>
+<body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/109810225" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container nav-container">
+                <a href="https://pppoker.mn/?lang=en" class="nav-logo" aria-label="Baatryn Öröö Home">
+          <img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" fetchpriority="high" />
+          <span class="logo-text">BAATRYN ÖRÖÖ</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="https://pppoker.mn/?lang=en#games">Games</a></li>
+          <li><a href="https://pppoker.mn/?lang=en#features">Features</a></li>
+          <li><a href="/en/articles/" class="active">Articles</a></li>
+          <li><a href="https://pppoker.mn/?lang=en#academy">Academy</a></li>
+          <li><a href="https://pppoker.mn/?lang=en#faq">FAQ</a></li>
+          <li class="nav-mobile-play">
+            <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn nav-btn--menu" rel="noopener" target="_blank">Play Now</a>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-current" id="langBtn" aria-label="Change language" aria-expanded="false">
+              <span id="langLabel">EN</span> ▾
+            </button>
+            <ul class="lang-menu" id="langMenu" role="menu">
+              <li role="menuitem"><a href="/articles/postflop-suuri/" data-lang="mn">MN</a></li>
+              <li role="menuitem"><a href="/en/articles/postflop-basics/" data-lang="en" class="active">EN</a></li>
+              <li role="menuitem"><a href="/ru/articles/postflop-osnovy/" data-lang="ru">RU</a></li>
+            </ul>
+          </div>
+          <a href="https://baatrynorpoker.ink/1FBP9k" class="nav-btn" rel="noopener" target="_blank">Play Now</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content" class="article-page">
+    <div class="container">
+      <nav class="article-breadcrumb" aria-label="Breadcrumb">
+        <a href="https://pppoker.mn/?lang=en">Home</a> <span>/</span> <a href="/en/articles/">Articles</a> <span>/</span> <span>Postflop Basics — Decision Framework</span>
+      </nav>
+      <article class="article-body">
+<h1 class="article-title">Postflop Basics — Decision Framework</h1>
+<p><strong>Postflop</strong> covers every decision on the flop, turn, and river. After preflop, most of your profit (or loss) is decided here. This framework is the foundation for Hold'em at <a href="https://pppoker.mn/?lang=en">Baatryn Öröö</a>.</p>
+<p>If <a href="https://pppoker.mn/en/articles/preflop-strategy/">preflop strategy</a> is the door, postflop is the room. Weak preflop hands make postflop miserable. Strong ranges make decisions simpler.</p>
+<h2 class="article-h2">What you know after preflop</h2>
+<ol class="article-ol">
+<li>Your hand strength (pair, overcards, draw, air)</li>
+<li>Position (in position or out of position)</li>
+<li>Who was the aggressor (last raiser preflop)</li>
+<li>Pot size and effective stack depth</li>
+</ol>
+<p>Also review: <a href="https://pppoker.mn/en/articles/table-position-poker/">table position in poker</a>.</p>
+<h2 class="article-h2">Hand types postflop</h2>
+<div class="article-table-wrap"><table class="article-table"><thead><tr>
+<th>Type</th>
+<th>Example</th>
+<th>Default action</th>
+</tr></thead><tbody>
+<tr>
+<td>Made hand</td>
+<td>Top pair, two pair</td>
+<td>Value bet</td>
+</tr>
+<tr>
+<td>Draw</td>
+<td>Flush draw, straight draw</td>
+<td>Semi-bluff or call (<a href="https://pppoker.mn/en/articles/pot-odds-equity/">pot odds</a>)</td>
+</tr>
+<tr>
+<td>Air</td>
+<td>High card, missed draw</td>
+<td>Check/fold, sometimes bluff</td>
+</tr>
+<tr>
+<td>Monster</td>
+<td>Set, straight, flush</td>
+<td>Value, larger <a href="https://pppoker.mn/en/articles/bet-sizing-poker/">bet sizing</a></td>
+</tr>
+</tbody></table></div>
+<h2 class="article-h2">Flop framework</h2>
+<p><strong>In position (IP) — you act last:</strong></p>
+<ul class="article-ul">
+<li>C-bet on boards that favor your range (if you were the aggressor)</li>
+<li>Check back weak hands and some medium pairs</li>
+<li>Float bets to steal on later streets: <a href="https://pppoker.mn/en/articles/floating-strategy/">floating strategy</a></li>
+</ul>
+<p><strong>Out of position (OOP) — you act first:</strong></p>
+<ul class="article-ul">
+<li>Check-call medium strength hands</li>
+<li>Check-raise strong hands and combo draws</li>
+<li>Check-fold weak hands without equity</li>
+</ul>
+<h2 class="article-h2">Turn decisions</h2>
+<p>Ask on every turn card:</p>
+<ul class="article-ul">
+<li>Did the board change? (flush completes, board pairs)</li>
+<li>Did my equity improve or collapse?</li>
+<li>What is stack-to-pot ratio (SPR)?</li>
+</ul>
+<p><strong>SPR &lt; 4:</strong> All-in decisions come up often. <strong>SPR &gt; 10:</strong> More streets to maneuver.</p>
+<p>Example: 3000₮ pot, 9000₮ effective stack → SPR = 3. One big bet and you are committed.</p>
+<h2 class="article-h2">River decisions</h2>
+<p>Simplest rule: <strong>value or bluff — pick one.</strong></p>
+<ul class="article-ul">
+<li>Value: weaker hands may call → bet</li>
+<li>Bluff: fold equity exists and you block nuts → bet</li>
+<li>Check: showdown is enough, or you are bluff-catching</li>
+</ul>
+<p><a href="https://pppoker.mn/en/articles/art-of-bluffing/">Art of bluffing</a> — triple-barrel bluffs need the right opponent and board.</p>
+<h2 class="article-h2">Multiway pots</h2>
+<p>3+ players — play tighter:</p>
+<ul class="article-ul">
+<li>C-bet less (someone usually connected)</li>
+<li>Bluff less (harder to fold everyone)</li>
+<li>Value bet larger when you have the nuts</li>
+<li>Position matters even more</li>
+</ul>
+<h2 class="article-h2">Practical checklist</h2>
+<p>On the flop ask:</p>
+<ol class="article-ol">
+<li>Do I likely have the best hand?</li>
+<li>Do I have a draw? What are pot odds?</li>
+<li>Is position in my favor?</li>
+<li>How many opponents remain?</li>
+</ol>
+<p>Enough yes answers → bet or call. Otherwise → check or fold.</p>
+<h2 class="article-h2">Common mistakes</h2>
+<ul class="article-ul">
+<li>Triple-barrel bluffing with pure air</li>
+<li>Always checking top pair (missing value)</li>
+<li>Calling draws without pot odds</li>
+<li>Too many c-bets out of position vs multiple players</li>
+<li>Ignoring board texture changes on turn</li>
+</ul>
+<h2 class="article-h2">Study plan</h2>
+<ol class="article-ol">
+<li>Master c-bet + check-fold weak hands</li>
+<li>Add check-raise with strong hands</li>
+<li>Learn turn and river value sizing</li>
+<li>Track stats: C-bet %, fold to c-bet (<a href="https://pppoker.mn/en/articles/poker-statistics-analysis/">poker statistics</a>)</li>
+</ol>
+<h2 class="article-h2">FAQ</h2>
+<h3 class="article-h3">What to learn postflop first?</h3>
+<p>C-bet on good boards, check-fold air. Build from there.</p>
+<h3 class="article-h3">Do I need statistics?</h3>
+<p>Yes. C-bet % and fold to c-bet help you exploit opponents.</p>
+<h3 class="article-h3">How does mindset fit?</h3>
+<p>Tilt ruins postflop. Read <a href="https://pppoker.mn/en/articles/poker-psychology-mindset/">poker psychology and mindset</a>.</p>
+<h3 class="article-h3">Omaha postflop?</h3>
+<p>Same framework, but more draws and bigger pots. See <a href="https://pppoker.mn/en/articles/omaha-rules-complete/">Omaha rules</a>.</p>
+<h2 class="article-h2">Example walkthrough</h2>
+<p>You raise K♠Q♠ on the button. BB calls. Flop Q♥ 7♦ 2♣. BB checks. Bet 50% pot — top pair value. BB calls.</p>
+<p>Turn 9♠. BB checks. Bet 66%. River 3♥. Value bet 50% or check vs passive opponent.</p>
+<p>If flop were Q♥ J♥ 10♥, check back — too many straights and flushes.</p>
+<p>Play one table while learning. Use the flop checklist for 100 hands.</p>
+<p>When unsure postflop, default to check-fold out of position. Aggression costs more OOP because you act first on every street without information.</p>
+<p><a href="https://pppoker.mn/en/articles/holdem-rules-complete/">Hold'em rules</a> · <a href="https://pppoker.mn/en/articles/cash-game-mongolia/">Cash games Mongolia</a> · <a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></p>
+      </article>
+      <div class="article-cta">
+        <a href="https://baatrynorpoker.ink/1FBP9k" class="btn btn-primary" rel="noopener" target="_blank">Play Now →</a>
+        <a href="/en/articles/" class="btn btn-outline">More articles</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><img src="/images/logo.webp" alt="Baatryn Öröö — PPPoker Mongolia" class="logo-img" width="40" height="40" decoding="async" /><span class="logo-text">BAATRYN ÖRÖÖ</span></div>
+          <p>Mongolia poker club. Online poker — arena of real players.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Articles</h4>
+          <ul>
+            <li><a href="/en/articles/100-deposit-bonus/">100% bonus</a></li>
+            <li><a href="/en/articles/account-security/">Account security</a></li>
+            <li><a href="/en/articles/art-of-bluffing/">Art of bluffing</a></li>
+            <li><a href="/en/articles/bankroll-management/">Bankroll</a></li>
+            <li><a href="/en/articles/bet-sizing-poker/">Bet sizing</a></li>
+            <li><a href="/en/articles/bluff-poker-mongolia/">Bluff poker mongolia</a></li>
+            <li><a href="/en/articles/cash-game-mongolia/">Cash games</a></li>
+            <li><a href="/en/articles/club-vs-platform/">Club vs platform</a></li>
+            <li><a href="/en/articles/deposit-withdraw-mongolia/">Deposit & withdrawal</a></li>
+            <li><a href="/en/articles/floating-strategy/">Floating</a></li>
+            <li><a href="/en/articles/holdem-rules-complete/">Hold'em rules</a></li>
+            <li><a href="/en/articles/holdem-vs-omaha/">Hold'em vs Omaha</a></li>
+            <li><a href="/en/articles/mongol-poker-download/">How to Download Mongol Poker — PPPoker A</a></li>
+            <li><a href="/en/articles/mongol-poker-system/">What Is the Mongol Poker System? Baatryn</a></li>
+            <li><a href="/en/articles/omaha-rules-complete/">Omaha rules</a></li>
+            <li><a href="/en/articles/online-poker-mongolia-2026/">Where to Play Online Poker in Mongolia —</a></li>
+            <li><a href="/en/articles/poker-hand-rankings/">Hand rankings</a></li>
+            <li><a href="/en/articles/poker-psychology-mindset/">Poker psychology</a></li>
+            <li><a href="/en/articles/poker-statistics-analysis/">Statistics</a></li>
+            <li><a href="/en/articles/poker-terms-glossary/">Poker terms</a></li>
+            <li><a href="/en/articles/postflop-basics/">Postflop basics</a></li>
+            <li><a href="/en/articles/pot-odds-equity/">Pot odds and equity</a></li>
+            <li><a href="/en/articles/pppoker-app-errors/">PPPoker app errors</a></li>
+            <li><a href="/en/articles/pppoker-club-vs-betting/">Club vs betting</a></li>
+            <li><a href="/en/articles/preflop-strategy/">Preflop strategy</a></li>
+            <li><a href="/en/articles/registration-step-by-step/">Registration step by step</a></li>
+            <li><a href="/en/articles/responsible-gaming/">Responsible gaming</a></li>
+            <li><a href="/en/articles/starting-hand-selection/">Starting hands</a></li>
+            <li><a href="/en/articles/table-position-poker/">Table position</a></li>
+            <li><a href="/en/articles/usdt-deposit-guide/">USDT deposit</a></li>
+            <li><a href="/en/articles/vip-table-mongolia/">VIP tables</a></li>
+            <li><a href="/en/articles/withdrawal-issues/">Withdrawal issues</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="https://t.me/BatrynOrooSupport" rel="noopener" target="_blank">@BatrynOrooSupport</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>♠ BAATRYN ÖRÖÖ — Play smart, win long.</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/article-page.js"></script>
+</body>
+</html>
