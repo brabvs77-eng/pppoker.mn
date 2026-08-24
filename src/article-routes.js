@@ -141,12 +141,14 @@ export const ARTICLE_ROUTES = {
   "micro-stakes-250-500": {
     "mn": "micro-stakes-250-500",
     "en": "micro-stakes-250-500",
-    "ru": "micro-stavki-250-500"
+    "ru": "micro-stavki-250-500",
+    "zh": "wei-xiaozhu-250-500"
   },
   "mobile-vs-desktop": {
     "mn": "mobile-vs-desktop",
     "en": "mobile-vs-desktop-poker",
-    "ru": "mobil-vs-desktop"
+    "ru": "mobil-vs-desktop",
+    "zh": "shouji-vs-diannao"
   },
   "mongol-poker-sistem": {
     "mn": "mongol-poker-sistem",
@@ -163,7 +165,8 @@ export const ARTICLE_ROUTES = {
   "mongol-tulbur-arga": {
     "mn": "mongol-tulbur-arga",
     "en": "mongolia-payment-methods",
-    "ru": "mongolskie-platezhi"
+    "ru": "mongolskie-platezhi",
+    "zh": "menggu-zhifu-fangshi"
   },
   "multiway-pot": {
     "mn": "multiway-pot",
@@ -205,7 +208,8 @@ export const ARTICLE_ROUTES = {
   "poker-soyol-online": {
     "mn": "poker-soyol-online",
     "en": "online-poker-etiquette",
-    "ru": "etiket-onlayn-pokera"
+    "ru": "etiket-onlayn-pokera",
+    "zh": "zaixian-poker-liyi"
   },
   "poker-terms-mn": {
     "mn": "poker-terms-mn",
