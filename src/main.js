@@ -173,7 +173,7 @@ function initAnimations() {
   }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' })
 
   document.querySelectorAll(
-    '.game-card, .feature-card, .academy-card, .movie-card, .step, .faq-item, .table-item, .slide'
+    '.game-card, .feature-card, .academy-card, .movie-card, .step, .faq-item, .table-item, .slide, .team-card'
   ).forEach(el => {
     el.classList.add('fade-up')
     observer.observe(el)

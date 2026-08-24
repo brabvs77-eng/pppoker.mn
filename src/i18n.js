@@ -10,7 +10,7 @@ export const translations = {
       ogDesc: 'Монголын #1 покерын клуб. PPPoker систем — Hold\'em, Omaha 24/7. Монгол покер татах, 100% бонус.',
       ogImageAlt: 'Baatryn Öröö — Монголын онлайн покер клуб',
     },
-    nav: { games: 'Тоглоомууд', features: 'Боломжууд', articles: 'Нийтлэл', academy: 'Академи', cinema: 'Кино', faq: 'FAQ', play: 'Тоглох' },
+    nav: { games: 'Тоглоомууд', features: 'Боломжууд', articles: 'Нийтлэл', about: 'Бидний тухай', academy: 'Академи', cinema: 'Кино', faq: 'FAQ', play: 'Тоглох' },
     hero: {
       subtitle: 'Монголын #1 покерын клуб',
       title: 'Жинхэнэ тоглогчдын',
@@ -122,7 +122,7 @@ export const translations = {
       ogDesc: 'Mongolia\'s #1 poker club. PPPoker system — Hold\'em, Omaha 24/7. Mongol poker download, 100% bonus.',
       ogImageAlt: 'Baatryn Öröö — online poker club in Mongolia',
     },
-    nav: { games: 'Games', features: 'Features', articles: 'Articles', academy: 'Academy', cinema: 'Cinema', faq: 'FAQ', play: 'Play Now' },
+    nav: { games: 'Games', features: 'Features', articles: 'Articles', about: 'About Us', academy: 'Academy', cinema: 'Cinema', faq: 'FAQ', play: 'Play Now' },
     hero: {
       subtitle: 'Mongolia\'s #1 Poker Club',
       title: 'The Arena of',
@@ -234,7 +234,7 @@ export const translations = {
       ogDesc: '蒙古第一扑克俱乐部。德州扑克、奥马哈 — 全天候。100%存款奖金。',
       ogImageAlt: 'Baatryn Öröö — 蒙古在线扑克俱乐部',
     },
-    nav: { games: '游戏', features: '特色', articles: '文章', academy: '学院', cinema: '电影', faq: '常见问题', play: '开始游戏' },
+    nav: { games: '游戏', features: '特色', articles: '文章', about: '关于我们', academy: '学院', cinema: '电影', faq: '常见问题', play: '开始游戏' },
     hero: {
       subtitle: '蒙古第一扑克俱乐部',
       title: '真正玩家的',
@@ -346,7 +346,7 @@ export const translations = {
       ogDesc: 'Покер-клуб №1 в Монголии. PPPoker система — Hold\'em, Omaha 24/7.',
       ogImageAlt: 'Baatryn Öröö — онлайн покер-клуб в Монголии',
     },
-    nav: { games: 'Игры', features: 'Возможности', articles: 'Статьи', academy: 'Академия', cinema: 'Кино', faq: 'FAQ', play: 'Играть' },
+    nav: { games: 'Игры', features: 'Возможности', articles: 'Статьи', about: 'О нас', academy: 'Академия', cinema: 'Кино', faq: 'FAQ', play: 'Играть' },
     hero: {
       subtitle: 'Покер-клуб №1 в Монголии',
       title: 'Арена настоящих',

@@ -85,6 +85,10 @@ function buildSitemapXml(groups, byLang) {
     urlEntry(`${SITE}/articles/`, 'weekly', HUB_PRIORITY.mn, `${hubHreflang()}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}/articles/" />`)
   )
 
+  entries.push(
+    urlEntry(`${SITE}/about/`, 'monthly', 0.85)
+  )
+
   const sortedGroupIds = [...groups.keys()].sort()
   for (const groupId of sortedGroupIds) {
     const group = groups.get(groupId)

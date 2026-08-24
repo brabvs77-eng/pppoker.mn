@@ -241,6 +241,7 @@ function nav(article) {
           <li><a href="${home}#games">${t.nav.games}</a></li>
           <li><a href="${home}#features">${t.nav.features}</a></li>
           <li><a href="${articlesIndexPath(lang)}" class="active">${t.nav.articles}</a></li>
+          <li><a href="${lang === 'mn' ? '/about/' : '/about/?lang=' + lang}">${t.nav.about}</a></li>
           <li><a href="${home}#academy">${t.nav.academy}</a></li>
           <li><a href="${home}#faq">${t.nav.faq}</a></li>
 ${mobilePlayNavItem(t.nav.play)}
@@ -399,6 +400,7 @@ function navForIndex(lang) {
           <li><a href="${home}#games">${t.nav.games}</a></li>
           <li><a href="${home}#features">${t.nav.features}</a></li>
           <li><a href="${articlesIndexPath(lang)}" class="active">${t.nav.articles}</a></li>
+          <li><a href="${lang === 'mn' ? '/about/' : '/about/?lang=' + lang}">${t.nav.about}</a></li>
           <li><a href="${home}#academy">${t.nav.academy}</a></li>
           <li><a href="${home}#faq">${t.nav.faq}</a></li>
 ${mobilePlayNavItem(t.nav.play)}
