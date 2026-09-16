@@ -174,6 +174,9 @@ export const ARTICLE_ROUTES = {
     "ru": "mobil-vs-desktop",
     "zh": "shouji-vs-diannao"
   },
+  "mongol-poker-bairshil": {
+    "mn": "mongol-poker-bairshil"
+  },
   "mongol-poker-sistem": {
     "mn": "mongol-poker-sistem",
     "en": "mongol-poker-system",
