@@ -428,6 +428,9 @@ export const ARTICLE_ROUTES = {
   },
   "mongol-poker-australia": {
     "en": "mongol-poker-australia"
+  },
+  "mongol-poker-usa": {
+    "en": "mongol-poker-usa"
   }
 }
 
