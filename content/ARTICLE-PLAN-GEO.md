@@ -134,10 +134,10 @@ Updated: 2026-09-16. **Baseline:** 60 MN articles · 240 article URLs · full EN
 | G1-2 | `erdenet-poker-2026` | Erdenet | покер эрдэнэт | №3, Orkhon, сменные графики | **published** (MN+EN+RU) |
 | G1-3 | `choibalsan-poker-mongol` | Choibalsan | покер чойбалсан / дорнод | восток, RU-влияние, граница | **published** (MN+EN+RU) |
 | G1-4 | `khovd-poker-mongol` | Khovd | покер ховд | запад, Oirat/Kazakh community | **published** (MN+EN+RU) |
-| G1-5 | `murun-poker-mongol` | Murun | покер мөрөн / хөвсгөл | туризм, сезонность |
-| G1-6 | `dalanzadgad-poker-mongol` | Dalanzadgad | покер даланзадгад / говь | Gobi, низкая плотность, 4G |
-| G1-7 | `ulaangom-poker-mongol` | Ulaangom | покер улаангом | Bayan-Ölgii, казахскоязычный контекст |
-| G1-8 | `sainshand-poker-mongol` | Sainshand | покер сайншанд | Dornogovi, транзит UB–CN |
+| G1-5 | `murun-poker-mongol` | Murun | покер мөрөн / хөвсгөл | туризм, сезонность | **published** (MN+EN) |
+| G1-6 | `dalanzadgad-poker-mongol` | Dalanzadgad | покер даланзадгад / говь | Gobi, низкая плотность, 4G | **published** (MN+EN) |
+| G1-7 | `ulaangom-poker-mongol` | Ulaangom | покер улаангом | Bayan-Ölgii, казахскоязычный контекст | **published** (MN+EN) |
+| G1-8 | `sainshand-poker-mongol` | Sainshand | покер сайншанд | Dornogovi, транзит UB–CN | **published** (MN+EN) |
 
 **Не делаем:** отдельные страницы на 21 аймак без объёма — только hot + региональные кластеры (G2).
 

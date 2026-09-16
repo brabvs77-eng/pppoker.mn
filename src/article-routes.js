@@ -89,6 +89,10 @@ export const ARTICLE_ROUTES = {
     "ru": "klub-vs-platforma",
     "zh": "julebu-vs-pingtai"
   },
+  "dalanzadgad-poker-mongol": {
+    "mn": "dalanzadgad-poker-mongol",
+    "en": "dalanzadgad-poker-mongol"
+  },
   "dans-hamgaalalt": {
     "mn": "dans-hamgaalalt",
     "en": "account-security",
@@ -224,6 +228,10 @@ export const ARTICLE_ROUTES = {
     "ru": "multiway-pot",
     "zh": "duoren-chi"
   },
+  "murun-poker-mongol": {
+    "mn": "murun-poker-mongol",
+    "en": "murun-poker-mongol"
+  },
   "omaha-durem-buren": {
     "mn": "omaha-durem-buren",
     "en": "omaha-rules-complete",
@@ -332,6 +340,10 @@ export const ARTICLE_ROUTES = {
     "ru": "chtenie-range",
     "zh": "yuedu-range"
   },
+  "sainshand-poker-mongol": {
+    "mn": "sainshand-poker-mongol",
+    "en": "sainshand-poker-mongol"
+  },
   "statistik-analiz": {
     "mn": "statistik-analiz",
     "en": "poker-statistics-analysis",
@@ -367,6 +379,10 @@ export const ARTICLE_ROUTES = {
     "en": "ulaanbaatar-poker-2026",
     "ru": "ulaanbaatar-poker-2026",
     "zh": "ulanbator-poker-2026"
+  },
+  "ulaangom-poker-mongol": {
+    "mn": "ulaangom-poker-mongol",
+    "en": "ulaangom-poker-mongol"
   },
   "usdt-deposit-zaavar": {
     "mn": "usdt-deposit-zaavar",
