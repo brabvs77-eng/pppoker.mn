@@ -79,6 +79,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/bankroll-udirdlaga/" />
   </url>
   <url>
+    <loc>https://pppoker.mn/articles/baruun-mongol-poker/</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/baruun-mongol-poker/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/baruun-mongol-poker/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/baruun-mongol-poker/" />
+  </url>
+  <url>
     <loc>https://pppoker.mn/articles/bet-hmjuulelt/</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
@@ -879,6 +888,15 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/bankroll-menedzhment/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://pppoker.mn/zh/articles/bankroll-guanli/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/bankroll-udirdlaga/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/en/articles/baruun-mongol-poker/</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/baruun-mongol-poker/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/baruun-mongol-poker/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/baruun-mongol-poker/" />
   </url>
   <url>
     <loc>https://pppoker.mn/en/articles/bet-sizing-poker/</loc>
