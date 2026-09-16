@@ -24,6 +24,10 @@ export const ARTICLE_ROUTES = {
     "ru": "bankroll-menedzhment",
     "zh": "bankroll-guanli"
   },
+  "baruun-mongol-poker": {
+    "mn": "baruun-mongol-poker",
+    "en": "baruun-mongol-poker"
+  },
   "bet-hmjuulelt": {
     "mn": "bet-hmjuulelt",
     "en": "bet-sizing-poker",
