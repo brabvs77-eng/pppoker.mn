@@ -370,6 +370,9 @@ export const ARTICLE_ROUTES = {
     "ru": "problemy-vyvoda",
     "zh": "tikuan-wenti"
   },
+  "tov-aimag-poker-mongol": {
+    "mn": "tov-aimag-poker-mongol"
+  },
   "turbo-poker-mongolia": {
     "mn": "turbo-poker-mongolia",
     "en": "turbo-poker-mongolia",
