@@ -90,6 +90,11 @@ export const ARTICLE_ROUTES = {
     "ru": "bezopasnost-akkaunta",
     "zh": "zhanghu-anquan"
   },
+  "darkhan-poker-2026": {
+    "mn": "darkhan-poker-2026",
+    "en": "darkhan-poker-2026",
+    "ru": "darkhan-poker-2026"
+  },
   "deposit-withdraw-mongol": {
     "mn": "deposit-withdraw-mongol",
     "en": "deposit-withdraw-mongolia",
@@ -175,7 +180,10 @@ export const ARTICLE_ROUTES = {
     "zh": "shouji-vs-diannao"
   },
   "mongol-poker-bairshil": {
-    "mn": "mongol-poker-bairshil"
+    "mn": "mongol-poker-bairshil",
+    "en": "mongol-poker-locations",
+    "ru": "pokher-mongoliya-po-gorodam",
+    "zh": "menggu-poker-weizhi"
   },
   "mongol-poker-sistem": {
     "mn": "mongol-poker-sistem",
