@@ -172,7 +172,7 @@ Updated: 2026-09-16. **Baseline:** 60 MN articles · 240 article URLs · full EN
 | G3-2 | `mongol-poker-australia` | 🇦🇺 Australia | mongolian poker australia | AEST, MNT deposit via family IBAN | **published** (EN) |
 | G3-3 | `mongol-poker-usa` | 🇺🇸 USA | mongolian poker usa | US time zones, VPN myths (factual) | **published** (EN) |
 | G3-4 | `mongol-poker-czech` | 🇨🇿 Czech Republic | mongol poker czech | сильная MN community | **published** (EN) |
-| G3-5 | `mongol-poker-germany` | 🇩🇪 Germany | mongol poker germany | EU, USDT path |
+| G3-5 | `mongol-poker-germany` | 🇩🇪 Germany | mongol poker germany | EU, USDT path | **published** (EN) |
 | G3-6 | `mongol-poker-japan` | 🇯🇵 Japan | mongol poker japan | JST, workers |
 | G3-7 | `mongol-poker-china` | 🇨🇳 China / Inner Mongolia | mongol poker china | ZH support, cross-border intent |
 | G3-8 | `mongol-poker-timezone-guide` | Global | poker mongolia timezone | ULAT table, когда открыты столы |
