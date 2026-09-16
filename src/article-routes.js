@@ -147,6 +147,9 @@ export const ARTICLE_ROUTES = {
     "ru": "strategiya-float",
     "zh": "float-celue"
   },
+  "govi-poker-mongol": {
+    "mn": "govi-poker-mongol"
+  },
   "hariutslagatai-togloom": {
     "mn": "hariutslagatai-togloom",
     "en": "responsible-gaming",
