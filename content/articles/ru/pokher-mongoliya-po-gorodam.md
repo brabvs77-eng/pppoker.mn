@@ -40,7 +40,7 @@ Stage: final
 | **Дархан** | №2 город, близко к UB | [Покер Дархан 2026](https://pppoker.mn/ru/articles/darkhan-poker-2026/) |
 | **Эрдэнэт** | Орхон, горняцкий город | [Покер Эрдэнэт 2026](https://pppoker.mn/ru/articles/erdenet-poker-2026/) |
 | **Чойбалсан** | Восток, граница | [Покер Чойбалсан](https://pppoker.mn/ru/articles/choibalsan-poker-mongol/) |
-| **Ховд** | Запад | Скоро |
+| **Ховд** | Запад | [Покер Ховд](https://pppoker.mn/ru/articles/khovd-poker-mongol/) |
 | **Мөрөн** | Хөвсгөл | Скоро |
 | **Даланзадгад** | Гоби | Скоро |
 | **Улаангом** | Баян-Өлгий | Скоро |
