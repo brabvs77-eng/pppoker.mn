@@ -40,8 +40,8 @@ Players in Mongolia's main cities use the same club and app. Differences: intern
 |------|-------|-----------------|
 | **Ulaanbaatar** | Largest player pool, strong 4G/5G | [Ulaanbaatar poker 2026](https://pppoker.mn/en/articles/ulaanbaatar-poker-2026/) |
 | **Darkhan** | #2 city, close to UB | [Darkhan poker 2026](https://pppoker.mn/en/articles/darkhan-poker-2026/) |
-| **Erdenet** | Orkhon, mining town | Coming soon |
-| **Choibalsan** | East, border region | Coming soon |
+| **Erdenet** | Orkhon, mining town | [Erdenet poker 2026](https://pppoker.mn/en/articles/erdenet-poker-2026/) |
+| **Choibalsan** | East, border region | [Choibalsan poker](https://pppoker.mn/en/articles/choibalsan-poker-mongol/) |
 | **Khovd** | West, multilingual community | Coming soon |
 | **Murun** | Khövsgöl, tourism | Coming soon |
 | **Dalanzadgad** | Gobi, 4G main link | Coming soon |
