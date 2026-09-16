@@ -43,10 +43,10 @@ Players in Mongolia's main cities use the same club and app. Differences: intern
 | **Erdenet** | Orkhon, mining town | [Erdenet poker 2026](https://pppoker.mn/en/articles/erdenet-poker-2026/) |
 | **Choibalsan** | East, border region | [Choibalsan poker](https://pppoker.mn/en/articles/choibalsan-poker-mongol/) |
 | **Khovd** | West, multilingual community | [Khovd poker](https://pppoker.mn/en/articles/khovd-poker-mongol/) |
-| **Murun** | Khövsgöl, tourism | Coming soon |
-| **Dalanzadgad** | Gobi, 4G main link | Coming soon |
-| **Ulaangom** | Bayan-Ölgii | Coming soon |
-| **Sainshand** | Dornogovi, transit | Coming soon |
+| **Murun** | Khövsgöl, tourism | [Murun poker](https://pppoker.mn/en/articles/murun-poker-mongol/) |
+| **Dalanzadgad** | Gobi, 4G main link | [Dalanzadgad poker](https://pppoker.mn/en/articles/dalanzadgad-poker-mongol/) |
+| **Ulaangom** | Bayan-Ölgii | [Ulaangom poker](https://pppoker.mn/en/articles/ulaangom-poker-mongol/) |
+| **Sainshand** | Dornogovi, transit | [Sainshand poker](https://pppoker.mn/en/articles/sainshand-poker-mongol/) |
 
 Many search **darkhan poker** or **erdenet poker** from those cities. Shift workers in mining towns often play early morning or late night. Same flow: [download](https://pppoker.mn/en/articles/mongol-poker-download/) → register → deposit.
 
