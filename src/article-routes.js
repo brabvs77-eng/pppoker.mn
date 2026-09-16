@@ -114,6 +114,10 @@ export const ARTICLE_ROUTES = {
     "ru": "deposit-vyvod-mongoliya",
     "zh": "cunkuan-tikuan-mongolia"
   },
+  "dorvon-mongol-poker": {
+    "mn": "dorvon-mongol-poker",
+    "en": "dorvon-mongol-poker"
+  },
   "ehnii-gar-songolt": {
     "mn": "ehnii-gar-songolt",
     "en": "starting-hand-selection",

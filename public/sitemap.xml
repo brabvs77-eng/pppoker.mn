@@ -249,6 +249,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/deposit-withdraw-mongol/" />
   </url>
   <url>
+    <loc>https://pppoker.mn/articles/dorvon-mongol-poker/</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/dorvon-mongol-poker/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/dorvon-mongol-poker/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/dorvon-mongol-poker/" />
+  </url>
+  <url>
     <loc>https://pppoker.mn/articles/ehnii-gar-songolt/</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
@@ -1014,6 +1023,15 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/deposit-vyvod-mongoliya/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://pppoker.mn/zh/articles/cunkuan-tikuan-mongolia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/deposit-withdraw-mongol/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/en/articles/dorvon-mongol-poker/</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/dorvon-mongol-poker/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/dorvon-mongol-poker/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/dorvon-mongol-poker/" />
   </url>
   <url>
     <loc>https://pppoker.mn/en/articles/erdenet-poker-2026/</loc>
