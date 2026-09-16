@@ -153,7 +153,7 @@ Updated: 2026-09-16. **Baseline:** 60 MN articles · 240 article URLs · full EN
 |---|------|--------|-----------------|-------|
 | G2-1 | `baruun-mongol-poker` | Баруун | Khovd, Uvs, Bayan-Ölgii, Govi-Altai, Zavkhan | запад, расстояния, мобильный интернет | **published** (MN+EN) |
 | G2-2 | `dorvon-mongol-poker` | Дорнод | Dornod, Sukhbaatar, Khentii | восток, РФ-соседство, русский FAQ block | **published** (MN+EN) |
-| G2-3 | `tov-aimag-poker-mongol` | Төв | Töv + rural UB commuter | «гэрээсээ», спутниковый/4G |
+| G2-3 | `tov-aimag-poker-mongol` | Төв | Töv + rural UB commuter | «гэрээсээ», спутниковый/4G | **published** (MN) |
 | G2-4 | `govi-poker-mongol` | Говь | Dundgovi, Dornogovi, Ömnögovi | ночные столы, жара, низкий ping |
 | G2-5 | `hovsgol-poker-mongol` | Хөвсгөл | Khövsgöl (+ Murun link) | сезон, туристы, летний всплеск |
 | G2-6 | `arkhangai-dundgovi-poker` | Төв-зүүн | Arkhangai, Bulgan, Övörkhangai | мал отгон, вечерний прайм |
