@@ -467,6 +467,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/mongol-poker-sistem/" />
   </url>
   <url>
+    <loc>https://pppoker.mn/articles/mongol-poker-south-korea/</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/mongol-poker-south-korea/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/mongol-poker-south-korea/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/mongol-poker-south-korea/" />
+  </url>
+  <url>
     <loc>https://pppoker.mn/articles/mongol-poker-tatah/</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
@@ -1216,6 +1225,15 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://pppoker.mn/ru/articles/pokher-mongoliya-po-gorodam/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://pppoker.mn/zh/articles/menggu-poker-weizhi/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/mongol-poker-bairshil/" />
+  </url>
+  <url>
+    <loc>https://pppoker.mn/en/articles/mongol-poker-south-korea/</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/mongol-poker-south-korea/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pppoker.mn/en/articles/mongol-poker-south-korea/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/mongol-poker-south-korea/" />
   </url>
   <url>
     <loc>https://pppoker.mn/en/articles/mongol-poker-system/</loc>

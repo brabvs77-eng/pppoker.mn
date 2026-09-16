@@ -88,7 +88,7 @@ Players in South Korea, Australia, the USA, Czech Republic, Germany, Japan, or C
 
 Payments: Mongolian IBAN or USDT (after 100,000₮ total deposit). Family in Mongolia often helps with IBAN top-ups. See [Mongolia payment methods](https://pppoker.mn/en/articles/mongolia-payment-methods/).
 
-Workers in Korea often play 19:00–23:00 KST — close to Mongol peak. US players may find softer tables at Mongol night hours; VIP action still peaks ULAT evening.
+Workers in Korea often play 19:00–23:00 KST — close to Mongol peak. [Mongol poker South Korea](https://pppoker.mn/en/articles/mongol-poker-south-korea/) — KST vs ULAT, IBAN, full guide. US players may find softer tables at Mongol night hours; VIP action still peaks ULAT evening.
 
 Full timezone guide coming later. For now: table above + [Ulaanbaatar](https://pppoker.mn/en/articles/ulaanbaatar-poker-2026/).
 
