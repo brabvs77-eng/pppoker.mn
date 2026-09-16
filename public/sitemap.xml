@@ -364,6 +364,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/holdem-vs-omaha/" />
   </url>
   <url>
+    <loc>https://pppoker.mn/articles/hovsgol-poker-mongol/</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://pppoker.mn/articles/hovsgol-poker-mongol/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pppoker.mn/articles/hovsgol-poker-mongol/" />
+  </url>
+  <url>
     <loc>https://pppoker.mn/articles/hud-vpip-pfr/</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
