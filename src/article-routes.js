@@ -174,6 +174,9 @@ export const ARTICLE_ROUTES = {
     "ru": "holdem-vs-omaha",
     "zh": "holdem-vs-omaha"
   },
+  "hovsgol-poker-mongol": {
+    "mn": "hovsgol-poker-mongol"
+  },
   "hud-vpip-pfr": {
     "mn": "hud-vpip-pfr",
     "en": "hud-vpip-pfr-poker",
