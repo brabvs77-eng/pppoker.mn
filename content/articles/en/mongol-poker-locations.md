@@ -60,7 +60,7 @@ All 21 aimags can join online tables. Each zone has its own angle:
 
 **West (Khovd, Uvs, Bayan-Ölgii, Govi-Altai, Zavkhan)** — remote from capital, 4G is the main link. Evening ULAT 20:00–02:00 is busiest. [West Mongolia poker](https://pppoker.mn/en/articles/baruun-mongol-poker/) — regional guide.
 
-**East (Dornod, Sukhbaatar, Khentii)** — Choibalsan hub. Russian-speaking players common.
+**East (Dornod, Sukhbaatar, Khentii)** — Choibalsan hub. Russian-speaking players common. [East Mongolia poker](https://pppoker.mn/en/articles/dorvon-mongol-poker/) — regional guide.
 
 **Central aimag (Töv)** — many commute to UB, play from home.
 
