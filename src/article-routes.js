@@ -227,6 +227,10 @@ export const ARTICLE_ROUTES = {
     "ru": "mongol-poker-sistema",
     "zh": "mongol-poker-xitong"
   },
+  "mongol-poker-south-korea": {
+    "mn": "mongol-poker-south-korea",
+    "en": "mongol-poker-south-korea"
+  },
   "mongol-poker-tatah": {
     "mn": "mongol-poker-tatah",
     "en": "mongol-poker-download",
