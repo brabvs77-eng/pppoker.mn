@@ -425,6 +425,9 @@ export const ARTICLE_ROUTES = {
     "en": "vip-table-mongolia",
     "ru": "vip-stol-mongoliya",
     "zh": "vip-zhuo-menggu"
+  },
+  "mongol-poker-australia": {
+    "en": "mongol-poker-australia"
   }
 }
 
