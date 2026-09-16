@@ -34,5 +34,6 @@ Approved drafts → `src/i18n.js` + `index.html`. See `CLAUDE.md` → Site integ
 
 ## Other files
 
+- `content/ARTICLE-PLAN-GEO.md` — geo expansion plan (cities, diaspora, regions)
 - `content/GUIDELINE_MAKER.md` — rebuild GUIDELINE via interview
 - `content/GUIDELINE_EXAMPLE.md` — thruuu reference

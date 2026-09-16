@@ -1,14 +1,14 @@
 # Article plan — pppoker.mn
 
-Updated: 2026-08-24. Target corpus: **60 MN articles** (then selective i18n).
+Updated: 2026-09-16. Baseline corpus: **60 MN articles** (full i18n). **Next:** geo expansion → `content/ARTICLE-PLAN-GEO.md`.
 
 ## Summary
 
 | Metric | Count |
 |--------|------:|
 | **Published** | 60 |
-| **Planned (new)** | 0 |
-| **Total target** | 60 |
+| **Planned (geo Phase G)** | 30 |
+| **Total target (post-G)** | 90 |
 | **I18n parity today** | 60 × 4 langs = **240 URLs** |
 
 **Keyword packaging:** покер-first titles/H1; PPPoker as supporting entity (`GUIDELINE.md`, `knowledge/semantic-core.md`).
@@ -249,8 +249,24 @@ Existing 18 articles: full EN/RU/ZH parity (`content/I18N-TRANSLATION-PLAN.md`).
 
 ---
 
+## Phase G — Geo expansion (planned)
+
+**30 new MN articles** — cities, regions, diaspora, inbound. Full plan: **`content/ARTICLE-PLAN-GEO.md`**.
+
+| Batch | Focus | Articles |
+|-------|-------|----------|
+| GA | Geo hub `mongol-poker-bairshil` | 1 |
+| GB | Hot cities (Darkhan, Erdenet, …) | 8 |
+| GC | Diaspora (KR, AU, US, …) | 8 |
+| GD | Regional clusters | 6 |
+| GE | Inbound RU/ZH/KR + 4G | 4 |
+| GF–GG | Format-geo + parasite (gated) | 3–6 |
+
+---
+
 ## References
 
+- `content/ARTICLE-PLAN-GEO.md` — **geo content plan (Phase G)**
 - `GUIDELINE.md` — voice, Zipf, taboos
 - `knowledge/semantic-core.md` — keyword tiers
 - `content/BRAND-PARASITE-STRATEGY.md` — Phase 10 rules
