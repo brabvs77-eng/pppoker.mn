@@ -171,6 +171,11 @@ export const ARTICLE_ROUTES = {
     "ru": "vybor-stola-poker",
     "zh": "xuanze-zhuozi"
   },
+  "khovd-poker-mongol": {
+    "mn": "khovd-poker-mongol",
+    "en": "khovd-poker-mongol",
+    "ru": "khovd-poker-mongol"
+  },
   "megamax-poker-mongolia": {
     "mn": "megamax-poker-mongolia",
     "en": "megamax-poker-mongolia",
