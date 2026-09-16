@@ -78,6 +78,11 @@ export const ARTICLE_ROUTES = {
     "ru": "check-raise-taktika",
     "zh": "check-raise-zhanfa"
   },
+  "choibalsan-poker-mongol": {
+    "mn": "choibalsan-poker-mongol",
+    "en": "choibalsan-poker-mongol",
+    "ru": "choibalsan-poker-mongol"
+  },
   "club-vs-platform": {
     "mn": "club-vs-platform",
     "en": "club-vs-platform",
@@ -106,6 +111,11 @@ export const ARTICLE_ROUTES = {
     "en": "starting-hand-selection",
     "ru": "vybor-startovykh-ruk",
     "zh": "qishou-pai-xuanze"
+  },
+  "erdenet-poker-2026": {
+    "mn": "erdenet-poker-2026",
+    "en": "erdenet-poker-2026",
+    "ru": "erdenet-poker-2026"
   },
   "expat-poker-mongol": {
     "mn": "expat-poker-mongol",
