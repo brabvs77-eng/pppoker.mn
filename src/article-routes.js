@@ -12,6 +12,9 @@ export const ARTICLE_ROUTES = {
     "ru": "3bet-4bet-strategiya",
     "zh": "3bet-4bet-celue"
   },
+  "arkhangai-dundgovi-poker": {
+    "mn": "arkhangai-dundgovi-poker"
+  },
   "baatryn-oroo-taniltsuulga": {
     "mn": "baatryn-oroo-taniltsuulga",
     "en": "baatryn-oroo-intro",
